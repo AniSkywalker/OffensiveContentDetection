@@ -97,6 +97,13 @@ class train_model(offensive_content_model):
 
         self.load_train_validation_data()
 
+        #batch size
+        batch_size = 128
+        print('bb',batch_size)
+
+        self.train = self.train[-len(self.train)%batch_size:]
+        print('bb', batch_size)
+
         print(self._line_maxlen)
 
         # build vocabulary
@@ -143,11 +150,11 @@ class train_model(offensive_content_model):
 
         open(self._model_file + 'model.json', 'w').write(model.to_json())
         save_best = ModelCheckpoint(model_file + 'model.json.hdf5', save_best_only=True)
-        early_stopping = EarlyStopping(monitor='val_loss', patience=5, verbose=1)
+        early_stopping = EarlyStopping(monitor='val_loss', patience=10, verbose=1)
 
         # training
-        model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.2, shuffle=True,
-                  callbacks=[save_best, early_stopping], class_weight=ratio)
+        model.fit(X, Y, batch_size=128, epochs=500, validation_split=0.2, shuffle=True,
+                  callbacks=[save_best, early_stopping], class_weight=ratio, verbose=2)
 
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
         #           callbacks=[save_best,early_stopping],class_weight=ratio)
