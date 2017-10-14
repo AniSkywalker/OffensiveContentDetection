@@ -64,11 +64,14 @@ class offensive_content_model():
         model.add(Flatten())
 
         model.add(Dense(hidden_units, kernel_initializer='he_normal', activation='relu'))
+        model.add(BatchNormalization(momentum=0.9))
+
         model.add(Dense(2))
         model.add(Activation('softmax'))
         adam = Adam(lr=0.0001)
         model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
         print('No of parameter:', model.count_params())
+        print(model.summary())
         return model
 
 
@@ -261,9 +264,9 @@ class test_model(offensive_content_model):
 
 if __name__ == "__main__":
     basepath = os.getcwd()[:os.getcwd().rfind('/')]
-    train_file = basepath + '/resource/train/Train_v1.txt'
-    validation_file = basepath + '/resource/test/Test_v1.txt'
-    test_file = basepath + '/resource/dev/Dev_v1.txt'
+    train_file = basepath + '/resource/train/train_english.txt.train'
+    validation_file = basepath + '/resource/test/train_english.txt.train'
+    test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
 
     output_file = basepath + '/resource/text_model/TestResults.txt'
