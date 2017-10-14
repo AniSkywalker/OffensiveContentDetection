@@ -50,7 +50,7 @@ class offensive_content_model():
         model.add(BatchNormalization(momentum=0.9))
 
         model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
-        model.add(MaxPooling2D(2,2))
+        # model.add(MaxPooling2D(2,2))
         model.add(Dropout(0.5))
 
         # model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
