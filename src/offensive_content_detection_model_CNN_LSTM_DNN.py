@@ -113,6 +113,10 @@ class train_model(offensive_content_model):
         tX, tY, tD, tC, tA = dh.vectorize_word_dimension(self.validation, self._vocab)
         tX = dh.pad_sequence_1d(tX, maxlen=self._line_maxlen)
 
+        #hidden units
+        hidden_units = 32
+
+
         # word2vec dimension
         dimension_size = 128
         W = None
@@ -132,7 +136,7 @@ class train_model(offensive_content_model):
         print('validation_Y', tY.shape)
 
         # trainable true if you want word2vec weights to be updated
-        model = self._build_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,hidden_units, trainable=True)
+        model = self._build_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,hidden_units=hidden_units, trainable=True)
 
         # open(self._model_file + 'model.json', 'w').write(model.to_json())
         # save_best = ModelCheckpoint(model_file + 'model.json.hdf5', save_best_only=True)
