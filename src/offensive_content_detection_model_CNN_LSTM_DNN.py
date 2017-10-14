@@ -20,6 +20,8 @@ from keras.utils import np_utils
 from collections import defaultdict
 import OffensiveContentDetection.src.data_processing.data_handler as dh
 
+numpy.random.seed(1337)
+
 
 class offensive_content_model():
     _train_file = None
@@ -279,8 +281,8 @@ class test_model(offensive_content_model):
 if __name__ == "__main__":
     basepath = os.getcwd()[:os.getcwd().rfind('/')]
     # train_file = basepath + '/resource/train/train_english.txt.train'
-    train_file = basepath + '/resource/train/all_speech_format.train'
-    # train_file = basepath + '/resource/train/neither_hate_speech_format.train'
+    # train_file = basepath + '/resource/train/all_speech_format.train'
+    train_file = basepath + '/resource/train/neither_hate_speech_format.train'
     validation_file = basepath + '/resource/test/train_english.txt.test'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
