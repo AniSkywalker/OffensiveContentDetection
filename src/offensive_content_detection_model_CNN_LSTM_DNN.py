@@ -51,11 +51,11 @@ class offensive_content_model():
 
         print(model.output_shape)
 
-        model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
+        model.add(Convolution2D(64, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
         model.add(MaxPooling2D(2,2))
         model.add(Dropout(0.5))
 
-        model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
+        model.add(Convolution2D(128, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
         model.add(MaxPooling2D(2, 2))
         model.add(Dropout(0.5))
 
@@ -117,7 +117,7 @@ class train_model(offensive_content_model):
         tX = dh.pad_sequence_1d(tX, maxlen=self._line_maxlen)
 
         #hidden units
-        hidden_units = 32
+        hidden_units = 256
 
 
         # word2vec dimension
@@ -141,13 +141,13 @@ class train_model(offensive_content_model):
         # trainable true if you want word2vec weights to be updated
         model = self._build_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,hidden_units=hidden_units, trainable=True)
 
-        # open(self._model_file + 'model.json', 'w').write(model.to_json())
-        # save_best = ModelCheckpoint(model_file + 'model.json.hdf5', save_best_only=True)
-        # early_stopping = EarlyStopping(monitor='val_loss', patience=5, verbose=1)
+        open(self._model_file + 'model.json', 'w').write(model.to_json())
+        save_best = ModelCheckpoint(model_file + 'model.json.hdf5', save_best_only=True)
+        early_stopping = EarlyStopping(monitor='val_loss', patience=5, verbose=1)
 
         # training
-        # model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.2, shuffle=True,
-        #           callbacks=[save_best, early_stopping], class_weight=ratio)
+        model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.2, shuffle=True,
+                  callbacks=[save_best, early_stopping], class_weight=ratio)
 
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
         #           callbacks=[save_best,early_stopping],class_weight=ratio)
