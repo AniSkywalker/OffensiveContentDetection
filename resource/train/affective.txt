@@ -1,0 +1,501 @@
+ID	2	Mortar assault leaves at least 18 dead
+ID	4	Mortar assault leaves at least 18 dead
+ID	3	Goal delight for Sheva
+ID	2	Nigeria hostage feared dead is freed
+ID	3	Nigeria hostage feared dead is freed
+ID	5	Nigeria hostage feared dead is freed
+ID	0	Bombers kill shoppers
+ID	2	Bombers kill shoppers
+ID	4	Bombers kill shoppers
+ID	3	Kate is marrying Doherty
+ID	3	Happy birthday, iPod
+ID	3	Alonso would be happy to retire with three titles
+ID	3	Madonna's New Tot 'Happy at Home' in London
+ID	3	United Finds Good Connection in Win
+ID	4	We were 'arrogant and stupid' over Iraq, says US diplomat
+ID	5	Madonna's new baby's daddy didn't realize adoption was `for good'
+ID	3	Moderate drinking reduces men's heart attack risk
+ID	3	Tom Cruise and Katie Holmes set wedding date
+ID	1	Bush Insists Troops Stay in Iraq, Predicts Midterm Victory
+ID	3	Three found alive from missing Russian ship -report
+ID	5	Three found alive from missing Russian ship -report
+ID	3	Injured Marathon Winner Leaves Hospital
+ID	5	Hacker unlocks Apple music download protection
+ID	0	Spanish journalist seized in Gaza
+ID	1	Spanish journalist seized in Gaza
+ID	2	Spanish journalist seized in Gaza
+ID	4	Spanish journalist seized in Gaza
+ID	3	The sweet tune of an anniversary
+ID	4	More Human Remains Found at Ground Zero
+ID	2	How to Prevent Iraq From Getting Even Worse
+ID	4	Parachutist dies at bridge-jump festival
+ID	4	US Troops Killed In October In Iraq
+ID	4	Deaths linked to flu vaccine
+ID	2	Bread-Heavy Diet Linked to Kidney Cancer
+ID	3	Game on! London exhibition celebrates the history of video games
+ID	3	Making peace from victory over poverty
+ID	2	Deaths linked to flu vaccine
+ID	4	Deaths linked to flu vaccine
+ID	0	Israel admits using phosphorous shells in Lebanon
+ID	4	Israel admits using phosphorous shells in Lebanon
+ID	2	4th person dies after receiving flu shot
+ID	4	4th person dies after receiving flu shot
+ID	2	Police and shoppers targeted in growing Iraq violence
+ID	4	Police and shoppers targeted in growing Iraq violence
+ID	2	Hurricane Paul nears Category 3 status
+ID	2	Russian ship sinks, 18-member crew missing
+ID	4	Russian ship sinks, 18-member crew missing
+ID	3	Tailors and housewives busy as Muslims celebrate Eid
+ID	3	Active peace brings the promise of development
+ID	0	Abbas condemns Israeli massacre in northern Gaza Strip
+ID	1	Abbas condemns Israeli massacre in northern Gaza Strip
+ID	2	Abbas condemns Israeli massacre in northern Gaza Strip
+ID	4	Abbas condemns Israeli massacre in northern Gaza Strip
+ID	4	Bangladesh ferry sinks, 15 dead
+ID	0	Police warn of child exploitation online
+ID	1	Police warn of child exploitation online
+ID	4	Russian ship sinks in Pacific
+ID	3	China Successfully Launches Two Satellites
+ID	4	Riot warning for France suburbs
+ID	3	Full recovery expected for marathon winner
+ID	1	Photographer kidnapping condemned
+ID	0	Photographer kidnapped in Gaza
+ID	1	Photographer kidnapped in Gaza
+ID	4	Photographer kidnapped in Gaza
+ID	3	Baseball: Rogers enjoys his muddied streak
+ID	3	Cultural revolutionary, the iPod is five
+ID	3	Three found alive from missing Russian ship -report
+ID	5	Three found alive from missing Russian ship -report
+ID	3	The sweet tune of an anniversary
+ID	2	Ottawa must redefine 'terror'
+ID	3	Tom Cruise and Katie Holmes set wedding date
+ID	2	Ukraine gas deal marred by fears
+ID	0	College tuition continues climbing
+ID	1	German paper shows soldiers desecrating skull
+ID	0	War is close, Ethiopia tells Somali rebels
+ID	2	War is close, Ethiopia tells Somali rebels
+ID	4	Tropical Storm Paul's Outer Bands Hit Mexico's Baja California
+ID	0	Israeli Bomblets Plague Lebanon
+ID	2	Israeli Bomblets Plague Lebanon
+ID	0	New Indonesia Calamity, a Mud Bath, Is Man-Made
+ID	0	U.S. Weighs Sanctions Against North Korea
+ID	0	Kurdish Lawmaker Killed in an Attack in Baghdad
+ID	2	Kurdish Lawmaker Killed in an Attack in Baghdad
+ID	4	Kurdish Lawmaker Killed in an Attack in Baghdad
+ID	0	Anti-U.S. Attack Videos Spread on the Internet
+ID	2	Anti-U.S. Attack Videos Spread on the Internet
+ID	4	Anti-U.S. Attack Videos Spread on the Internet
+ID	0	Women Face Greatest Threat of Violence at Home, Study Finds
+ID	1	Women Face Greatest Threat of Violence at Home, Study Finds
+ID	2	Women Face Greatest Threat of Violence at Home, Study Finds
+ID	4	Women Face Greatest Threat of Violence at Home, Study Finds
+ID	4	Brazil Air Force Cites Faults and Confusion in Fatal Crash
+ID	4	Global Sludge Ends in Tragedy for Ivory Coast
+ID	4	Equipment on Plane in Brazil Collision May Have Been Faulty
+ID	0	New Indonesia Calamity, a Mud Bath, Is Man-Made
+ID	4	New Indonesia Calamity, a Mud Bath, Is Man-Made
+ID	2	Growing Unarmed Battalion in Qaeda Army Is Using Internet to Get the Message Out
+ID	3	Friends for Life: An Emerging Biology of Emotional Healing
+ID	4	Alzheimer's Drugs Offer No Help, Study Finds
+ID	3	Fitness: Bodies in Motion, Clean and Sober
+ID	4	Yankee Dies in Plane Crash, Official Says
+ID	3	With YouTube, Grad Student Hits Jackpot Again
+ID	3	Dow flirts with record highs again
+ID	5	Dow flirts with record highs again
+ID	2	Tropical Storm Isaac forms in Atlantic
+ID	2	New Iraq terror tape calls for abducting foreigners
+ID	2	Squirrel jumps boy in park; rabies suspected
+ID	5	Squirrel jumps boy in park; rabies suspected
+ID	2	Girl left comatose after dental visit dies
+ID	4	Girl left comatose after dental visit dies
+ID	3	Charlie Sheen to become highest-paid sitcom star
+ID	0	Toddler died from tainted spinach
+ID	4	Toddler died from tainted spinach
+ID	2	10 die in 22-hour Kashmir standoff
+ID	4	10 die in 22-hour Kashmir standoff
+ID	4	Slain Amish girls laid to rest
+ID	2	5,000 flee plant fire
+ID	4	Probe under way in Yankee crash
+ID	4	Amish schoolhouse torn down
+ID	2	Gunmen kill 9 at Iraqi TV station
+ID	4	Gunmen kill 9 at Iraqi TV station
+ID	4	Waste plant fire forces 5,000 to evacuate
+ID	4	Toddler died from E. coli tainted spinach
+ID	1	Disturbing finds in child sex raids
+ID	5	Pot smokers may avoid Alzheimer's, study says
+ID	2	Alaska town cut off from rest of state by flood
+ID	3	$10,000 poetry prize awarded
+ID	3	Las Vegas honour for tiger pair
+ID	3	UK characters boosting box office
+ID	3	Lily Allen wins web music award
+ID	0	Costner appeals in casino wrangle
+ID	3	Melua's deep sea gig sets record
+ID	4	Sri Lanka clashes kill 129 troops
+ID	4	Gunmen kill 11 in Iraq TV raid
+ID	3	Pamuk wins Nobel Literature prize
+ID	2	Man admits UK-US terror bomb plot
+ID	4	Trucks swallowed in subway collapse
+ID	5	Sarkozy letter surprises French cartoons hearing
+ID	5	Sudan tells United Nations envoy to leave in 72 hours
+ID	3	5000 years on but couple still hugging
+ID	5	5000 years on but couple still hugging
+ID	3	Dance movie takes over No. 1
+ID	3	After Iraq trip, Clinton proposes war limits
+ID	4	7 dead in apartment building fire
+ID	5	Male sweat boosts women's hormone levels
+ID	0	Cisco sues Apple over iPhone name
+ID	3	Press sees hope in Mecca talks
+ID	1	Global National Major child porn ring bust
+ID	3	"Stomp the Yard" has winning moves in its weekend debut
+ID	3	Discovered boys bring shock, joy
+ID	5	Discovered boys bring shock, joy
+ID	3	Golden Globes on their way
+ID	1	Two detained in body parts mailing
+ID	4	Hussein's niece pleads for father's life
+ID	0	Global web of suspects in child-rape download
+ID	1	Global web of suspects in child-rape download
+ID	2	Storms kill, knock out power, cancel flights
+ID	4	Storms kill, knock out power, cancel flights
+ID	4	Aquarium puts ailing beluga whale to sleep
+ID	3	India's Taj Mahal gets facelift
+ID	2	Iraq car bombings kill 22 People, wound more than 60
+ID	4	Iraq car bombings kill 22 People, wound more than 60
+ID	3	'Stomp' steps to No. 1 at box office
+ID	2	Filipino woman kidnapped in Nigeria
+ID	3	'Sunshine' Goydos wins Sony open
+ID	0	Teacher charged with sex assault
+ID	1	Teacher charged with sex assault
+ID	3	Bananaconda inventor is top poet of kids
+ID	2	Israelis retaliate after attack by Lebanese Army
+ID	2	Deadly bird flu confirmed in British Turkeys
+ID	5	Too little sleep may mean too fat kids
+ID	4	Bathing mom awakes to find baby dead
+ID	5	More sleep, healthier slimmer children
+ID	2	Ice storm smacks roads, power
+ID	0	Iran says it will strike US interests if Attacked
+ID	2	Iran says it will strike US interests if Attacked
+ID	5	Study: men's sweat triggers high sexual arousal in women
+ID	2	Outcry at N Korea 'nuclear test'
+ID	2	Russia plans major military build-up
+ID	5	Archaeologists find remains of couple locked in a hug
+ID	5	Man rides stationary bike for 85 hours
+ID	2	Ice storm coating Midwest
+ID	0	Iran warns will hit back at US if attacked
+ID	2	Iran warns will hit back at US if attacked
+ID	4	Iraqi death toll exceeded 34,000 in 2006, United Nations says
+ID	2	Israel intensifies military flights over Lebanon
+ID	4	Another death at Georgia Aquarium
+ID	2	US to urge Nato Afghan spring offensive
+ID	2	UK letter bombs may be from extremist drivers
+ID	0	Anger at release of two held over beheading plot
+ID	0	Bush adamant on troops to Iraq
+ID	0	Investigation of child porn site hits 77 nations
+ID	1	Investigation of child porn site hits 77 nations
+ID	3	Prehistoric Romeo and Juliet discovered
+ID	5	Prehistoric Romeo and Juliet discovered
+ID	4	Participant in water-drinking contest dies
+ID	3	Bollywood's 'Brangelina' engaged
+ID	2	Firms on alert for letter bombs
+ID	1	Porn ring scandal reaches Australia
+ID	4	Deputy health minister arrested in US-Iraqi raid
+ID	5	Senator Carl Krueger thinks iPods can kill you
+ID	2	Somalia declares state of emergency
+ID	3	Matt shines with his Alpine finish
+ID	2	Life in Gaza steadily worsens
+ID	4	Life in Gaza steadily worsens
+ID	2	Iran steps up production of weapons-grade uranium
+ID	5	Male sweat can raise hormones
+ID	5	Vital Signs: Hazards: Antidepressant linked to fractures in older people
+ID	2	City sets up ice storm shelters
+ID	0	Republicans plan to block Iraq debate
+ID	5	Skip the showers: male sweat turns women on, study says
+ID	3	Canete wins inaugural Joburg Open
+ID	2	Gunmen abduct Filipino woman in Nigeria
+ID	4	Gunmen abduct Filipino woman in Nigeria
+ID	2	10 kidnapped at Nigeria oil base
+ID	5	Guy sweat is babe magnet
+ID	3	Township tourism booming in South Africa
+ID	2	Terror network
+ID	4	Now it's official: Iraq's a mess
+ID	4	Snow brings travel misery to England
+ID	4	Two men killed by London tube train
+ID	2	New Orleans violence sparks tourism fears
+ID	5	SPACE.com: Black hole triplets spotted
+ID	0	Congolese soldiers riot, loot over pay issue
+ID	3	Commodities lead Europe higher
+ID	5	Ingredient in male sweat raises women's hormone levels
+ID	3	Goetschl ends Austrian win drought
+ID	2	Troops massing around Somali town
+ID	0	Peretz orders IDF to respond with force to north border attacks
+ID	2	Trains crash near Thai resort town
+ID	4	Trains crash near Thai resort town
+ID	4	7 Die As US Helicopter Crashes in Iraq
+ID	4	Millionaire secret Santa dies
+ID	3	Morrissey may cheer up Eurovision
+ID	0	Israeli woman's tirade spurs PM outrage
+ID	0	Italy to try US soldier for agent's Iraq death
+ID	4	Second hanging also went awry, Iraq tape shows
+ID	4	Hussein co-defendants executed
+ID	2	Memo from Frankfurt: Germany relives 1970s terror as 2 seek release from jail
+ID	3	Blissing out in Ojai
+ID	3	Amazon.com has 'best ever' sales
+ID	0	Hackers attack root servers
+ID	5	Video games can improve your vision
+ID	5	Internet attacked! (Did anyone notice?)
+ID	2	Floods force Malaysia evacuations
+ID	4	Floods force Malaysia evacuations
+ID	3	Europe take big Royal Trophy lead
+ID	2	PC World editor slain at California home
+ID	4	PC World editor slain at California home
+ID	1	Investigation of child porn site hits 77 nations USA Today
+ID	3	News Baby pandas! Baby pandas! Baby pandas!
+ID	3	Get ready for the earnings
+ID	4	Germany agonizes over a brain drain
+ID	3	Philippine president welcomes Senate approval of anti-terror bill
+ID	2	Small jet crashes on takeoff, killing 2
+ID	4	Small jet crashes on takeoff, killing 2
+ID	1	Bigger, more aggressive rats infesting UK
+ID	2	Bigger, more aggressive rats infesting UK
+ID	3	Travel+Leisure: Next island hot spot: St. Lucia
+ID	2	Iran's boast on uranium enrichment is put to test
+ID	4	Eye on cosmos is lost to short circuit on hubble
+ID	4	Too young for this: facing cancer under 40
+ID	3	Rare optimism as North Korea talks reach crossroads
+ID	4	Man beheaded in southern Thailand
+ID	2	China's 'nightmare scenario'
+ID	4	As inflation soars, Zimbabwe economy plunges
+ID	2	Experts: Fear likely shackled boy
+ID	2	What's behind the chopper crashes in Iraq
+ID	2	Freed Muslim terror suspect says Britain is "police state"
+ID	3	In rigorous test, talk therapy works for panic disorder
+ID	4	Subway collapse caught on camera
+ID	5	Stinky but true: men's sweat is made for love
+ID	4	Sri Lanka floods displace 60,000
+ID	4	Justin Timberlake, Cameron Diaz announce split
+ID	2	Iran to hit US interests if attacked
+ID	4	Two Palestinians killed near fence
+ID	4	EarthLink CEO dies at age 49
+ID	4	A star dies, a family feud is born
+ID	3	European shares hit fresh highs
+ID	5	For women, nothing's like the smell of men's sweat
+ID	2	Freed kidnap suspect: my terror at police raid
+ID	3	Far away, Super Bowl's losers will be champs
+ID	4	Woman dies after water binge
+ID	3	Mancuso sparks U.S. celebrations
+ID	3	'Bookworm Adventures' wordsmith's joy
+ID	4	Kylie's love split
+ID	5	Male sweat boosts women's hormone levels
+ID	2	North Korea claims nuclear test
+ID	3	Talks begin on Somalia peacekeepers
+ID	2	IDF shells Lebanese Army positions across northern border
+ID	3	Internet boom in China is built on virtual fun
+ID	3	Machinery orders drive Asia upward
+ID	2	Russia to strengthen its military muscle
+ID	3	Ferrer victorious in Spanish duel
+ID	2	UK workers on alert for letter bombs
+ID	5	Did NASA accidentally kill life on Mars?
+ID	4	Search on for victims of subway collapse
+ID	4	Human error caused Helios crash
+ID	3	North Korea may begin to dismantle nukes
+ID	2	Kidnappers seize two in Nigeria
+ID	4	Attack video saddens "friendly fire" widow
+ID	3	Europe retain trophy with big win
+ID	2	Ice storm descends on central U.S.
+ID	4	Snow brings travel misery to England
+ID	4	Indonesia flood forces 340,000 from homes
+ID	2	Ice storm brings chaos in U.S.
+ID	0	Congressman rebukes U.S. allies for lack of support in Afghanistan
+ID	3	Prehistoric Romeo and Juliet discovered
+ID	2	U.S. and Iraqis are wrangling over war plans
+ID	2	Iran to Hit US Interests if Attacked
+ID	2	Blair: Terror battle will be long
+ID	3	Bear cub returned to the wilderness
+ID	5	Male sweat raises female hormones
+ID	0	Italy's dispute with US over Iraq shooting
+ID	3	Here come the Globes!
+ID	2	Dozens killed in Baghdad bombing
+ID	4	Dozens killed in Baghdad bombing
+ID	2	Ice storms kill 21 across nation
+ID	4	Ice storms kill 21 across nation
+ID	5	Why the smell of a man's armpit is a turn-on
+ID	3	Boy missing since 2002 found alive
+ID	3	Russia honors Sputnik designer
+ID	2	In Kenya's capital, a sense that danger is ever stronger
+ID	2	Airlines: UK airport runway unsafe
+ID	2	The amounts you have to pay for a bomb scare
+ID	4	Weekly Nielsen Yvonne De Carlo, 'Munsters' star, dead
+ID	4	EarthLink CEO dies at age 49
+ID	3	Families celebrate return of sons
+ID	1	China detains 2 after body parts found in mail
+ID	2	China detains 2 after body parts found in mail
+ID	5	For women, nothing's like the smell of men's sweat
+ID	3	Panda cub makes her debut
+ID	3	Harris haul puts South Africa on top
+ID	0	Venezuela, Iran fight U.S. dominance
+ID	2	Tsunami fears ease after quake
+ID	2	At least 130 die as blast levels Baghdad market
+ID	4	At least 130 die as blast levels Baghdad market
+ID	2	Deaths as bird flu flares in Asia
+ID	4	Deaths as bird flu flares in Asia
+ID	2	Indonesian bird flu deaths hit 61
+ID	4	Indonesian bird flu deaths hit 61
+ID	4	Somali refugees cut off from aid
+ID	3	Rescued boys parents hail 'miracle'
+ID	1	Canadians tracked in child porn ring
+ID	2	Russia plans new ICBMs, nuclear subs
+ID	5	Study: Male sweat causes female hormones to rise
+ID	4	Collision on icy road kills 7
+ID	3	Surprise: China cuts price of gas
+ID	3	Glamour -- and 'Borat' -- at Golden Globes
+ID	2	Terror officials see Al Qaeda chiefs regaining power
+ID	2	Militants attack U.S. base in Iraq
+ID	2	North Africa feared as staging ground for terror
+ID	2	Iran says Sunnis, using Pakistan as base, planned fatal bombing
+ID	2	Homemade bombs kill 65 on Indian train
+ID	4	Homemade bombs kill 65 on Indian train
+ID	2	Al Qaeda chiefs are seen to regain power
+ID	0	Chvez threatens to jail violators of price controls
+ID	2	Bush declares Iran's arms role in Iraq is certain
+ID	3	Accord on North Korea is announced
+ID	2	Planning seen in Iraqi attacks on U.S. copters
+ID	4	In the world of life-saving drugs, a growing epidemic of deadly fakes
+ID	3	A familiar and prescient voice, brought to life
+ID	3	Call it serendipity: a missing piece of Washington's war tent is found
+ID	5	Archaeologists find signs of early chimps' tool use
+ID	5	Wizardry at Harvard: physicists move light
+ID	3	Pakistan-India peace talks planned despite bombings
+ID	2	Czechs, Poles get missile warning
+ID	2	Russia warns US against missile bases in East Europe
+ID	2	Iraq insurgents attack US base
+ID	4	US soldiers die in day of violence
+ID	2	Iraqi suicide attack kills two US troops as militants fight purge
+ID	4	Iraqi suicide attack kills two US troops as militants fight purge
+ID	4	Victims of Air India still wait for justice
+ID	2	Taliban seize rural district in southwest as police flee
+ID	4	US helicopter crash kills 8 troops in Afghanistan
+ID	4	Eight US soldiers killed in Zabul helicopter crash
+ID	3	Arroyo lauds passage of anti-terror bill
+ID	4	Thailand attacks kill three, injure 70
+ID	2	Ready to eat chicken breasts recalled due to suspected listeria
+ID	2	Thousands tested after Russian H5N1 outbreak
+ID	2	Russian bird flu outbreak is deadly "Asian strain"
+ID	4	Bernard Matthews to lay off up to 500 workers
+ID	4	Matthews lays off 130 turkey workers
+ID	2	Reopening bird flu-hitfactory ignores risks - poultryman
+ID	2	A shot in the arm
+ID	3	Bush vows cooperation on health care
+ID	3	Small-business owners find Bush health plan appealing
+ID	3	Retinal implant helping blind people see again
+ID	2	Planned cesareans not risk-free, group warns
+ID	3	Scientists tout cocoa's health benefits
+ID	3	Feeding your brain: new benefits found in chocolate
+ID	3	Some cocoa may improve brain blood flow
+ID	3	Cocoa could be antidote to age-related diseases, says new study
+ID	3	BellSouth says profit rises 30% on cingular earnings
+ID	3	Firefox 2.0 hits the Web
+ID	3	Oracle World opens with Dell unveiling AMD-powered computers
+ID	3	Marathon winner released from hospital
+ID	4	Steelers' Roethlisberger has concussion
+ID	4	Bad weather cancels men's downhill
+ID	3	Cool millions for YouTube founders
+ID	3	'Jackass' star marries childhood friend The secrets people reveal
+ID	3	Audio Slide Show: A love story lasting 61 years
+ID	3	Microsoft to release next generation phone
+ID	4	Storm leaves behind major travel troubles
+ID	4	3 U.S. troops killed hunting weapons cache
+ID	3	NATO: Afghanistan peace 'by 2009'
+ID	3	Alaska's northern lights captivate Japanese
+ID	4	Smith can't be buried until hearing
+ID	3	Spacewalker sets new U.S. record
+ID	3	'Ronnie' and Eto'o hug and make up
+ID	3	'Grey's,' 'Betty,' 'Scrubs' get boost
+ID	2	Massive mud traps dozens of families
+ID	4	Massive mud traps dozens of families
+ID	4	Town packs gym to mourn 10 killed in fire
+ID	2	Fear hinders black marrow donation
+ID	5	Horse teeth give details of ancient big chill
+ID	4	Swiss plane crashes at Moscow airport
+ID	3	Study: napping might help heart
+ID	3	MySpace sales surging
+ID	4	Telecoms giant slashes 12,500 jobs
+ID	3	Air France KLM profit rises
+ID	3	King and queen reign at British film awards
+ID	3	Miss Brazil wins lawsuit competition
+ID	4	Snow wreaks havoc in East, Midwest
+ID	5	Research supports medicinal marijuana
+ID	3	All African amputee football games kick off
+ID	4	Group: Video shows chopper go down
+ID	3	Technology may save India's river dolphins
+ID	3	Airbus A380 superjumbo takes off
+ID	3	Naps are great for chaps
+ID	3	Female astronaut sets record
+ID	4	Salt Lake City mall shooter was teenager
+ID	3	Female astronaut sets record
+ID	3	Man gets second chance at space ride
+ID	4	Indonesian with bird flu dies
+ID	3	St. Louis poised for entertainment upswing
+ID	4	Boy allegedly told to kill by mom gives up
+ID	3	Gray wolves off endangered list
+ID	2	Bomb kills 18 on military bus in Iran
+ID	4	Bomb kills 18 on military bus in Iran
+ID	4	Desperate Iraqi mother relies on militia for help
+ID	3	Beckham goal helps Real snatch win
+ID	3	Japan's economy grows
+ID	5	Siesta cuts risk of heart disease death, study finds
+ID	3	Napping may be good for your heart
+ID	4	Ryan O'Neal injured son's girlfriend
+ID	4	Chrysler's Valentine's Day massacre
+ID	2	12 dead in Lebanese minibus bombings
+ID	4	12 dead in Lebanese minibus bombings
+ID	5	Mega-marsupials once roamed Australia
+ID	4	Anna Nicole Smith fans mourn in cyberspace
+ID	2	Antibiotic Ketek more dangerous than thought
+ID	3	Wilkinson sets record in tame win
+ID	2	India to test new nuclear missile
+ID	3	Napping is good for your heart, study finds
+ID	3	Malaysia launches tourism campaign
+ID	4	Study: Africa's Internet gap getting wider
+ID	2	Salmonella outbreak traced to peanut butter
+ID	2	Double bus-bombing kills three in Lebanon
+ID	4	Double bus-bombing kills three in Lebanon
+ID	3	Paterson boots Scotland to victory
+ID	3	Reports: Harvard set to name first female president
+ID	3	University offers support to New Orleans school
+ID	4	South Korea fire kills 10 foreigners
+ID	3	Siestas may cut heart disease risk
+ID	4	Oregon snorkeler mistaken for rodent, shot in face
+ID	4	6 dead after Utah Mall shooting rampage
+ID	4	Sharks kill four people in 'dull' year
+ID	3	Record-shattering day on Wall St.
+ID	3	Rockers big winners at Brit Awards
+ID	4	Samba school leader killed before Rio carnival
+ID	0	Woman fights to keep drunken driver in jail
+ID	2	Al Qaeda group calls for attacks on U.S. oil
+ID	4	Jump reported in accidental drug-overdose deaths
+ID	3	Isinbayeva sets 20th world record
+ID	4	South Africa mourns Adelaide Tambo
+ID	3	Evacuees can return home after plant blast
+ID	4	Anna Nicole Smith's body lies in legal limbo
+ID	2	Trolley Square shooting leaves 6 dead, including gunman
+ID	4	Trolley Square shooting leaves 6 dead, including gunman
+ID	2	Bridge blast stops I-95 traffic
+ID	4	Mother, daughter stabbed near school
+ID	4	Beating leaves teen in coma
+ID	3	Breast cancer drug promises hope
+ID	5	Ancient coin shows Cleopatra was no beauty
+ID	5	YouTube yields surprising payback
+ID	3	The breast cancer breakthrough saving 1000 women a year
+ID	3	World tourism sets record in 2006
+ID	2	EU document: Iranian bomb unstoppable
+ID	3	New cancer drug to save a thousand lives a year
+ID	1	Ex-teacher guilty in nude-pictures scheme
+ID	4	Ex-Border Patrol agent beaten in prison
+ID	5	Stonehenge workers' village found
+ID	1	Study: More kids exposed to online porn
+ID	5	Marijuana helps ease HIV nerve pain, study says
+ID	4	Dryer blamed for fire killing 39 cats, dogs
+ID	4	'House of Cards' actor Ian Richardson dead
+ID	4	Taliban leader killed in airstrike
+ID	5	Kathmandu: First snow in 63 years
+ID	4	Ex-pastor gets death sentence
+ID	5	Baby born on turnpike after dad misses exit
