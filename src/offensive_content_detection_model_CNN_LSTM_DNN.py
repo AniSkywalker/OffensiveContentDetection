@@ -44,8 +44,9 @@ class offensive_content_model():
         else:
             model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
                                 trainable=trainable))
+        print(model.output_shape)
 
-        model.add(Reshape((1,30,300)))
+        model.add(Reshape((1,30,128)))
         model.add(BatchNormalization(momentum=0.9))
 
         model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
