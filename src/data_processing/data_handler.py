@@ -232,7 +232,7 @@ def get_word2vec_weight(vocab,n=300,lang = 'en', path='/home/word2vec/GoogleNews
     return emb_weights
 
 
-def load_glove_model(vocab,n=200,path = '/home/glove/glove.twitter.27B/glove.twitter.27B.200d.txt'):
+def get_glove_weights(vocab,n=200,path = '/home/glove/glove.twitter.27B/glove.twitter.27B.200d.txt'):
     word2vecmodel = glove.load_glove_word2vec(path)
 
     emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
