@@ -3,7 +3,7 @@ import sys
 
 from keras.layers.normalization import BatchNormalization
 
-sys.path.append('../')
+sys.path.append('../../')
 import collections
 import time
 import numpy
