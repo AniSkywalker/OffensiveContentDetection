@@ -13,8 +13,7 @@ from keras.layers.core import Dropout, Dense, Activation, Reshape, Flatten
 from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM
 from keras.layers.convolutional import Convolution2D, MaxPooling2D
-from keras.callbacks import ModelCheckpoint
-from keras.callbacks import EarlyStopping
+from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 from keras.optimizers import Adam
 from keras.utils import np_utils
 from collections import defaultdict
@@ -111,7 +110,7 @@ class offensive_content_model():
         model.add(Dense(hidden_units, kernel_initializer='he_normal', activation='relu'))
         model.add(BatchNormalization(momentum=0.9))
 
-        model.add(Dense(7))
+        model.add(Dense(6))
         model.add(Activation('softmax'))
         adam = Adam(lr=0.0001)
         model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
@@ -200,6 +199,9 @@ class train_model(offensive_content_model):
         open(self._model_file + self._model_filename, 'w').write(model.to_json())
         save_best = ModelCheckpoint(model_file + self._model_filename+'.hdf5', save_best_only=True)
         early_stopping = EarlyStopping(monitor='val_loss', patience=10, verbose=1)
+        lr_tuner = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=2, verbose=1, mode='auto', epsilon=0.0001,
+                                     cooldown=0, min_lr=0.000001)
+
 
         # training
         model.fit(X, Y, batch_size=128, epochs=150, validation_split=0.2, shuffle=True,
