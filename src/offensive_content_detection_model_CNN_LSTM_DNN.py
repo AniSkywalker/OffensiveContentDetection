@@ -173,7 +173,7 @@ class train_model(offensive_content_model):
         dimension_size = 128
         W = None
         # W = dh.get_word2vec_weight(self._vocab, n=dimension_size, path='/home/word2vec/GoogleNews-vectors-negative300.bin')
-        W = dh.get_glove_weights(self._vocab, n=dimension_size, path='/home/TCDteam12/glove.twitter.27B.200d.txt')
+        W = dh.get_glove_weights(self._vocab, n=dimension_size, path='/home/TCDteam12/glove/glove.twitter.27B.200d.txt')
         print('Word2vec obtained....')
 
         # solving class imbalance
