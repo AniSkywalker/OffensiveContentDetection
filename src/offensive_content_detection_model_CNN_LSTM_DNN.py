@@ -31,7 +31,7 @@ class offensive_content_model():
     _model_file = None
     _word_file_path = None
     _vocab_file_path = None
-    _input_weight_file_path = None
+    _model_filename = 'model.json'
     _vocab = None
     _line_maxlen = None
 
@@ -78,6 +78,46 @@ class offensive_content_model():
         print('No of parameter:', model.count_params())
         print(model.summary())
         return model
+    def _build_emotion_network(self, vocab_size, maxlen, emb_weights=None, hidden_units=256, trainable=False):
+        print('Build model...')
+        model = Sequential()
+        if (emb_weights == None):
+            model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
+        else:
+            model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
+                                trainable=trainable))
+        print(model.output_shape)
+
+        model.add(Reshape((30,128,1)))
+        model.add(BatchNormalization(momentum=0.9))
+
+        print(model.output_shape)
+
+        model.add(Convolution2D(64, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
+        model.add(MaxPooling2D(2,2))
+        model.add(Dropout(0.5))
+
+        model.add(Convolution2D(128, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
+        model.add(MaxPooling2D(2, 2))
+        model.add(Dropout(0.5))
+
+        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid', return_sequences=True))
+        # model.add(Dropout(0.25))
+        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid'))
+        # model.add(Dropout(0.25))
+
+        model.add(Flatten())
+
+        model.add(Dense(hidden_units, kernel_initializer='he_normal', activation='relu'))
+        model.add(BatchNormalization(momentum=0.9))
+
+        model.add(Dense(10))
+        model.add(Activation('softmax'))
+        adam = Adam(lr=0.0001)
+        model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
+        print('No of parameter:', model.count_params())
+        print(model.summary())
+        return model
 
 
 class train_model(offensive_content_model):
@@ -86,7 +126,7 @@ class train_model(offensive_content_model):
     print("Loading resource...")
 
     def __init__(self, train_file, validation_file, word_file_path, model_file, vocab_file, output_file,
-                 input_weight_file_path=None):
+                 model_filename=None):
         offensive_content_model.__init__(self)
 
         self._train_file = train_file
@@ -95,7 +135,7 @@ class train_model(offensive_content_model):
         self._model_file = model_file
         self._vocab_file_path = vocab_file
         self._output_file = output_file
-        self._input_weight_file_path = input_weight_file_path
+        self._model_filename = model_filename
 
         self.load_train_validation_data()
 
@@ -132,7 +172,7 @@ class train_model(offensive_content_model):
         # word2vec dimension
         dimension_size = 128
         W = None
-        # W = dh.get_word2vec_weight(self._vocab, n=dimension_size)
+        # W = dh.get_word2vec_weight(self._vocab, n=dimension_size, path='/home/word2vec/GoogleNews-vectors-negative300.bin')
         print('Word2vec obtained....')
 
         # solving class imbalance
@@ -141,6 +181,7 @@ class train_model(offensive_content_model):
         print('class ratio::', ratio)
 
         Y, tY = [np_utils.to_categorical(x) for x in (Y, tY)]
+        # Y, tY = [np_utils.to_categorical(x) for x in (Y, tY)]
 
         print('train_X', X.shape)
         print('train_Y', Y.shape)
@@ -148,14 +189,19 @@ class train_model(offensive_content_model):
         print('validation_Y', tY.shape)
 
         # trainable true if you want word2vec weights to be updated
-        model = self._build_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,hidden_units=hidden_units, trainable=True)
+        model = None
+        if(model_filename=='emotion.json'):
+            model = self._build_emotion_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,
+                                        hidden_units=hidden_units, trainable=True)
+        else:
+            model = self._build_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,hidden_units=hidden_units, trainable=True)
 
-        open(self._model_file + 'model.json', 'w').write(model.to_json())
-        save_best = ModelCheckpoint(model_file + 'model.json.hdf5', save_best_only=True)
+        open(self._model_file + self._model_filename, 'w').write(model.to_json())
+        save_best = ModelCheckpoint(model_file + self._model_filename+'.hdf5', save_best_only=True)
         early_stopping = EarlyStopping(monitor='val_loss', patience=10, verbose=1)
 
         # training
-        model.fit(X, Y, batch_size=128, epochs=500, validation_split=0.2, shuffle=True,
+        model.fit(X, Y, batch_size=128, epochs=150, validation_split=0.2, shuffle=True,
                   callbacks=[save_best, early_stopping], class_weight=ratio, verbose=1)
 
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
@@ -280,10 +326,38 @@ class test_model(offensive_content_model):
 
 if __name__ == "__main__":
     basepath = os.getcwd()[:os.getcwd().rfind('/')]
-    # train_file = basepath + '/resource/train/train_english.txt.train'
-    # train_file = basepath + '/resource/train/all_speech_format.train'
-    train_file = basepath + '/resource/train/neither_hate_speech_format.train'
-    validation_file = basepath + '/resource/test/train_english.txt.test'
+
+    #offensive content
+
+    # train_file = basepath + '/resource/train/offensive_train.txt'
+    # train_file = basepath + '/resource/train/neither_hate_speech_format.train'
+    # validation_file = basepath + '/resource/test/train_english.txt.test'
+    # test_file = basepath + '/resource/dev/train_english.txt.train'
+    # word_file_path = basepath + '/resource/word_list.txt'
+    #
+    # output_file = basepath + '/resource/text_model/TestResults.txt'
+    # model_file = basepath + '/resource/text_model/weights/'
+    # vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+    #
+    # tr = train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
+
+    #hate_speech
+
+    # train_file = basepath + '/resource/train/neither_hate_speech_format.train'
+    # validation_file = basepath + '/resource/test/train_english.txt.test'
+    # test_file = basepath + '/resource/dev/train_english.txt.train'
+    # word_file_path = basepath + '/resource/word_list.txt'
+    #
+    # output_file = basepath + '/resource/text_model/TestResults.txt'
+    # model_file = basepath + '/resource/text_model/weights/'
+    # vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+    #
+    # tr = train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='hate_speech.json')
+
+    # emotion
+
+    train_file = basepath + '/resource/train/text_emotion_processed.txt'
+    validation_file = basepath + '/resource/test/text_emotion_processed.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
 
@@ -291,7 +365,11 @@ if __name__ == "__main__":
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
-    tr = train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file)
+    tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,
+                     model_filename='emotion.json')
+
+
+
 
     # t = test_model(word_file_path, model_file, vocab_file_path, output_file)
     # t.load_trained_model()
