@@ -1,21 +1,25 @@
 import os
 import sys
+
+from keras.layers.normalization import BatchNormalization
+
 sys.path.append('../../')
 import collections
 import time
 import numpy
 from sklearn import metrics
 from keras.models import Sequential, model_from_json
-from keras.layers.core import Dropout, Dense, Activation
+from keras.layers.core import Dropout, Dense, Activation, Reshape, Flatten
 from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM
-from keras.layers.convolutional import Convolution1D
+from keras.layers.convolutional import Convolution2D, MaxPooling2D
 from keras.callbacks import ModelCheckpoint
 from keras.callbacks import EarlyStopping
 from keras.optimizers import Adam
 from keras.utils import np_utils
 from collections import defaultdict
 import OffensiveContentDetection.src.data_processing.data_handler as dh
+
 
 class offensive_content_model():
     _train_file = None
@@ -32,30 +36,41 @@ class offensive_content_model():
     def __init__(self):
         self._line_maxlen = 30
 
-    def _build_network(self,vocab_size, maxlen,emb_weights=None, hidden_units=256,trainable=False):
+    def _build_network(self, vocab_size, maxlen, emb_weights=None, hidden_units=256, trainable=False):
         print('Build model...')
         model = Sequential()
-        if(emb_weights == None):
-            model.add(Embedding(vocab_size, 256, input_length=maxlen, embeddings_initializer='glorot_normal'))
+        if (emb_weights == None):
+            model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
         else:
             model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
-                                 trainable=trainable))
+                                trainable=trainable))
 
-        model.add(Convolution1D(hidden_units, 3, kernel_initializer='he_normal', padding='valid', activation='sigmoid', input_shape=(1, maxlen)))
-        model.add(Convolution1D(hidden_units, 3, kernel_initializer='he_normal', padding='valid', activation='sigmoid', input_shape=(1, maxlen-2)))
+        model.add(Reshape(1,30,300))
+        model.add(BatchNormalization(momentum=0.9))
 
-        model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid', return_sequences=True))
-        model.add(Dropout(0.25))
-        model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid'))
-        model.add(Dropout(0.25))
+        model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
+        model.add(MaxPooling2D(2,2))
+        model.add(Dropout(0.5))
 
-        model.add(Dense(hidden_units, kernel_initializer='he_normal', activation='sigmoid'))
+        model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
+        model.add(MaxPooling2D(2, 2))
+        model.add(Dropout(0.5))
+
+        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid', return_sequences=True))
+        # model.add(Dropout(0.25))
+        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid'))
+        # model.add(Dropout(0.25))
+
+        model.add(Flatten())
+
+        model.add(Dense(hidden_units, kernel_initializer='he_normal', activation='relu'))
         model.add(Dense(2))
         model.add(Activation('softmax'))
         adam = Adam(lr=0.0001)
         model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
         print('No of parameter:', model.count_params())
         return model
+
 
 class train_model(offensive_content_model):
     train = None
@@ -64,7 +79,6 @@ class train_model(offensive_content_model):
 
     def __init__(self, train_file, validation_file, word_file_path, model_file, vocab_file, output_file,
                  input_weight_file_path=None):
-
         offensive_content_model.__init__(self)
 
         self._train_file = train_file
@@ -79,29 +93,30 @@ class train_model(offensive_content_model):
 
         print(self._line_maxlen)
 
-        #build vocabulary
+        # build vocabulary
         self._vocab = dh.build_vocab(self.train)
         self._vocab['unk'] = len(self._vocab.keys()) + 1
 
         print(len(self._vocab.keys()) + 1)
         print('unk::', self._vocab['unk'])
 
-        dh.write_vocab(self._vocab_file_path,self._vocab)
+        dh.write_vocab(self._vocab_file_path, self._vocab)
 
-        #prepares input
+        # prepares input
         X, Y, D, C, A = dh.vectorize_word_dimension(self.train, self._vocab)
         X = dh.pad_sequence_1d(X, maxlen=self._line_maxlen)
 
-        #prepares input
-        tX, tY, tD, tC ,tA = dh.vectorize_word_dimension(self.validation, self._vocab)
+        # prepares input
+        tX, tY, tD, tC, tA = dh.vectorize_word_dimension(self.validation, self._vocab)
         tX = dh.pad_sequence_1d(tX, maxlen=self._line_maxlen)
 
-        #word2vec dimension
+        # word2vec dimension
         dimension_size = 128
-        W = dh.get_word2vec_weight(self._vocab, n=dimension_size)
+        W = None
+        # W = dh.get_word2vec_weight(self._vocab, n=dimension_size)
         print('Word2vec obtained....')
 
-        #solving class imbalance
+        # solving class imbalance
         ratio = self.calculate_label_ratio(Y)
         ratio = [max(ratio.values()) / value for key, value in ratio.items()]
         print('class ratio::', ratio)
@@ -110,31 +125,30 @@ class train_model(offensive_content_model):
 
         print('train_X', X.shape)
         print('train_Y', Y.shape)
-        print('validation_X',tX.shape)
-        print('validation_Y',tY.shape)
+        print('validation_X', tX.shape)
+        print('validation_Y', tY.shape)
 
         # trainable true if you want word2vec weights to be updated
-        model = self._build_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,trainable=True)
+        model = self._build_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W, trainable=True)
 
-        open(self._model_file + 'model.json', 'w').write(model.to_json())
-        save_best = ModelCheckpoint(model_file + 'model.json.hdf5', save_best_only=True)
-        early_stopping = EarlyStopping(monitor='val_loss', patience=5, verbose=1)
+        # open(self._model_file + 'model.json', 'w').write(model.to_json())
+        # save_best = ModelCheckpoint(model_file + 'model.json.hdf5', save_best_only=True)
+        # early_stopping = EarlyStopping(monitor='val_loss', patience=5, verbose=1)
 
         # training
-        model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.2, shuffle=True,
-                  callbacks=[save_best, early_stopping], class_weight=ratio)
+        # model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.2, shuffle=True,
+        #           callbacks=[save_best, early_stopping], class_weight=ratio)
 
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
         #           callbacks=[save_best,early_stopping],class_weight=ratio)
 
-
     def load_train_validation_data(self):
         self.train = dh.loaddata(self._train_file, self._word_file_path, normalize_text=True,
-                              split_hashtag=True,
-                              ignore_profiles=False)
+                                 split_hashtag=True,
+                                 ignore_profiles=False)
         self.validation = dh.loaddata(self._validation_file, self._word_file_path, normalize_text=True,
-                                   split_hashtag=True,
-                                   ignore_profiles=False)
+                                      split_hashtag=True,
+                                      ignore_profiles=False)
 
     def get_maxlen(self):
         return max(map(len, (x for _, x in self.train + self.validation)))
@@ -146,6 +160,7 @@ class train_model(offensive_content_model):
 
     def calculate_label_ratio(self, labels):
         return collections.Counter(labels)
+
 
 class test_model(offensive_content_model):
     test = None
@@ -163,7 +178,7 @@ class test_model(offensive_content_model):
 
         print('test_maxlen', self._line_maxlen)
 
-    def load_trained_model(self,weight_file='model.json.hdf5'):
+    def load_trained_model(self, weight_file='model.json.hdf5'):
         start = time.time()
         self.__load_model(self._model_file + 'model.json', self._model_file + weight_file)
         end = time.time()
@@ -184,13 +199,13 @@ class test_model(offensive_content_model):
 
         return vocab
 
-    def predict(self,test_file,verbose=False):
+    def predict(self, test_file, verbose=False):
         try:
             start = time.time()
             self.test = dh.loaddata(test_file, self._word_file_path, normalize_text=True, split_hashtag=True,
-                                 ignore_profiles=True)
+                                    ignore_profiles=True)
             end = time.time()
-            if(verbose==True):
+            if (verbose == True):
                 print('test resource loading time::', (end - start))
 
             self._vocab = self.load_vocab()
@@ -199,16 +214,15 @@ class test_model(offensive_content_model):
             tX, tY, tD, tC, tA = dh.vectorize_word_dimension(self.test, self._vocab)
             tX = dh.pad_sequence_1d(tX, maxlen=self._line_maxlen)
             end = time.time()
-            if(verbose==True):
+            if (verbose == True):
                 print('test resource preparation time::', (end - start))
 
             self.__predict_model(tX, self.test)
         except Exception as e:
-            print('Error:',e)
+            print('Error:', e)
 
-
-    def __predict_model(self,tX, test):
-        #calculates output and writes to a file.
+    def __predict_model(self, tX, test):
+        # calculates output and writes to a file.
         prediction_probability = self.model.predict_proba(tX, batch_size=1, verbose=1)
 
         y = []
@@ -228,7 +242,6 @@ class test_model(offensive_content_model):
                 y.append(int(gold_label))
                 y_pred.append(predicted)
 
-
                 fd.write(str(label[0]) + '\t' + str(label[1]) + '\t'
                          + str(gold_label) + '\t'
                          + str(predicted) + '\t'
@@ -246,7 +259,6 @@ class test_model(offensive_content_model):
             print(e)
 
 
-
 if __name__ == "__main__":
     basepath = os.getcwd()[:os.getcwd().rfind('/')]
     train_file = basepath + '/resource/train/Train_v1.txt'
@@ -258,9 +270,8 @@ if __name__ == "__main__":
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
-    tr=train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file)
+    tr = train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file)
 
     # t = test_model(word_file_path, model_file, vocab_file_path, output_file)
     # t.load_trained_model()
     # t.predict(test_file)
-
