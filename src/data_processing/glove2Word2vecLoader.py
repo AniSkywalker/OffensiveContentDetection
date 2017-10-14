@@ -70,7 +70,7 @@ def load_glove_word2vec(filename):
     dims = int(dimensions[:-1])
 
     # Output: Gensim Model text format.
-    gensim_file = '/home/glove/glove_model.txt'
+    gensim_file = '/home/TCDteam12/glove/glove_model.txt'
     gensim_first_line = "{} {}".format(num_lines, dims)
 
     # Prepends the line.
