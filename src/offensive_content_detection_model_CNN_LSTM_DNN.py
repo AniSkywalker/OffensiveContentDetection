@@ -81,10 +81,10 @@ class offensive_content_model():
     def _build_emotion_network(self, vocab_size, maxlen, emb_weights=None, hidden_units=256, trainable=False):
         print('Build model...')
         model = Sequential()
-        if (emb_weights == None):
-            model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
-        else:
-            model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
+        # if (emb_weights == None):
+        #     model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
+        # else:
+        model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
                                 trainable=trainable))
         print(model.output_shape)
 
