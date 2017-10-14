@@ -83,7 +83,7 @@ def parsedata(lines, word_list, normalize_text=False, split_hashtag=False, ignor
             # print(line)
 
             if(len(token)<3):
-                print(line)
+                continue
 
             label = int(token[1].strip())
 
