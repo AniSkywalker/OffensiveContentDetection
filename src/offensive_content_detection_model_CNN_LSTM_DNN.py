@@ -52,12 +52,12 @@ class offensive_content_model():
         print(model.output_shape)
 
         model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
-        # model.add(MaxPooling2D(2,2))
+        model.add(MaxPooling2D(2,2))
         model.add(Dropout(0.5))
 
-        # model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
-        # model.add(MaxPooling2D(2, 2))
-        # model.add(Dropout(0.5))
+        model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
+        model.add(MaxPooling2D(2, 2))
+        model.add(Dropout(0.5))
 
         # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid', return_sequences=True))
         # model.add(Dropout(0.25))
