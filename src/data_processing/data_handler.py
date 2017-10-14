@@ -82,6 +82,9 @@ def parsedata(lines, word_list, normalize_text=False, split_hashtag=False, ignor
             token = line.split('\t')
             # print(line)
 
+            if(len(token)<3):
+                print(line)
+
             label = int(token[1].strip())
 
             target_text = TweetTokenizer().tokenize(token[2].strip())
