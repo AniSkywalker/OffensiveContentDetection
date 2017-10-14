@@ -111,7 +111,7 @@ class offensive_content_model():
         model.add(Dense(hidden_units, kernel_initializer='he_normal', activation='relu'))
         model.add(BatchNormalization(momentum=0.9))
 
-        model.add(Dense(10))
+        model.add(Dense(7))
         model.add(Activation('softmax'))
         adam = Adam(lr=0.0001)
         model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
@@ -356,7 +356,7 @@ if __name__ == "__main__":
 
     # emotion
 
-    train_file = basepath + '/resource/train/text_emotion_processed.txt'
+    train_file = basepath + '/resource/train/text_emotion_processed_mapped.txt'
     validation_file = basepath + '/resource/test/text_emotion_processed.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
