@@ -357,8 +357,8 @@ if __name__ == "__main__":
 
     # emotion
 
-    train_file = basepath + '/resource/train/text_emotion_processed_mapped.txt'
-    validation_file = basepath + '/resource/test/text_emotion_processed.txt'
+    train_file = basepath + '/resource/train/emotion_train.txt'
+    validation_file = basepath + '/resource/test/emotion_train.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
 
