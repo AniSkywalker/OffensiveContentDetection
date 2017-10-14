@@ -99,10 +99,10 @@ class train_model(offensive_content_model):
 
         #batch size
         batch_size = 128
-        print('bb',batch_size)
+        print('bb',len(self.train))
 
         self.train = self.train[-len(self.train)%batch_size:]
-        print('bb', batch_size)
+        print('bb', len(self.train))
 
         print(self._line_maxlen)
 
@@ -154,7 +154,7 @@ class train_model(offensive_content_model):
 
         # training
         model.fit(X, Y, batch_size=128, epochs=500, validation_split=0.2, shuffle=True,
-                  callbacks=[save_best, early_stopping], class_weight=ratio, verbose=2)
+                  callbacks=[save_best, early_stopping], class_weight=ratio, verbose=1)
 
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
         #           callbacks=[save_best,early_stopping],class_weight=ratio)
