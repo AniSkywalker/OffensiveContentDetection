@@ -81,10 +81,10 @@ class offensive_content_model():
     def _build_emotion_network(self, vocab_size, maxlen, emb_weights=None, hidden_units=256, trainable=False):
         print('Build model...')
         model = Sequential()
-        if (emb_weights == None):
-            model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
-        else:
-            model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
+        # if (emb_weights == None):
+        #     model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
+        # else:
+        model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
                                 trainable=trainable))
         print(model.output_shape)
 
@@ -173,7 +173,7 @@ class train_model(offensive_content_model):
         dimension_size = 128
         W = None
         # W = dh.get_word2vec_weight(self._vocab, n=dimension_size, path='/home/word2vec/GoogleNews-vectors-negative300.bin')
-        W = dh.get_glove_weights(self._vocab, n=dimension_size, path='/home/TCDteam12/glove/glove.twitter.27B.200d.txt')
+        W = dh.get_glove_weights(self._vocab, n=dimension_size, path='/home/TCDteam12/glove/glove_model.txt')
         print('Word2vec obtained....')
 
         # solving class imbalance
