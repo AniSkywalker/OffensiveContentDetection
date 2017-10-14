@@ -46,8 +46,10 @@ class offensive_content_model():
                                 trainable=trainable))
         print(model.output_shape)
 
-        model.add(Reshape((1,30,128)))
+        model.add(Reshape((30,128,1)))
         model.add(BatchNormalization(momentum=0.9))
+
+        print(model.output_shape)
 
         model.add(Convolution2D(hidden_units, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
         # model.add(MaxPooling2D(2,2))
