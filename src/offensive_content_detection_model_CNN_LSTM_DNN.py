@@ -81,13 +81,13 @@ class offensive_content_model():
         print('Build model...')
         model = Sequential()
         # if (emb_weights == None):
-        # model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
+        model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
         # else:
-        model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
-                                trainable=trainable))
+        # model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
+        #                         trainable=trainable))
         print(model.output_shape)
 
-        model.add(Reshape((model.output_shape[1],model.output_shape[2],1)))
+        model.add(Reshape((30,128,1)))
         model.add(BatchNormalization(momentum=0.9))
 
         print(model.output_shape)
@@ -172,7 +172,7 @@ class train_model(offensive_content_model):
         dimension_size = 128
         W = None
         # W = dh.get_word2vec_weight(self._vocab, n=dimension_size, path='/home/word2vec/GoogleNews-vectors-negative300.bin')
-        W = dh.get_glove_weights(self._vocab, n=200, path='/home/TCDteam12/glove/glove_model.txt')
+        # W = dh.get_glove_weights(self._vocab, n=200, path='/home/TCDteam12/glove/glove_model.txt')
         print('Word2vec obtained....')
 
         # solving class imbalance
@@ -204,7 +204,7 @@ class train_model(offensive_content_model):
 
 
         # training
-        model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.1, shuffle=True,
+        model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.2, shuffle=True,
                   callbacks=[save_best, early_stopping,lr_tuner], class_weight=ratio, verbose=1)
 
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
