@@ -346,7 +346,7 @@ if __name__ == "__main__":
 
     #hate_speech
 
-    train_file = basepath + '/resource/train/neither_hate_speech_format.train'
+    train_file = basepath + '/resource/train/hate_speech_train.txt'
     validation_file = basepath + '/resource/test/train_english.txt.test'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
