@@ -283,6 +283,8 @@ class Interaction():
     model_file = basepath + '/../resource/text_model/weights/'
     vocab_file_path = basepath + '/../resource/text_model/vocab_list_emotion.txt'
 
+    output_file_emotion_audience = basepath + '/../resource/text_model/TestResults_emotion.txt'
+
 
     # t_offensive = test_model(word_file_path, model_file, vocab_file_path, output_file)
     # t.load_trained_model()
@@ -342,12 +344,6 @@ class Interaction():
 
 
 
-
-
-
-
-
-
     def get_direct_tweets(self, screen_name):
         self.direct_tweets = self.ta.get_all_search_queries(screen_name, max_len=100)
 
@@ -366,8 +362,6 @@ class Interaction():
         for line in user_offensive:
             token = line.strip().split('\t')
             offensive.append(float(token[1]))
-
-
 
         #hate
 
@@ -396,12 +390,46 @@ class Interaction():
     def get_audience_moods(self):
         audiences = [tweet['user']['screen_name'] for tweet in self.direct_tweets]
         audiences = audiences[:10]
+
+        audience_emotions = []
+
         for audience in audiences:
-            audience_timeline = ta.get_all_tweets(audience, max_len=200)
+            audience_timeline = self.ta.get_all_tweets(audience, max_len=100)
+            fw = open(self.output_file_emotion_audience, 'w')
 
+            for tweet in audience_timeline:
+                fw.write('ID' + '\t' + '-1' + '\t' + tweet['text'].strip() + '\n')
+            fw.close()
 
+            self.t_emotion.predict(self.output_file_emotion_audience)
 
+            user_emotions = open(self.output_file_emotion_audience + '.analysis', 'r').readlines()
+            anger = 0.0
+            disgust = 0.0
+            fear = 0.0
+            joy = 0.0
+            sadness = 0.0
+            surprise = 0.0
 
+            for line in user_emotions:
+                token = line.strip().split('\t')
+                anger = anger + float(token[0])
+                disgust = disgust + float(token[1])
+                fear = fear + float(token[2])
+                joy = joy + float(token[3])
+                sadness = sadness + float(token[4])
+                surprise = surprise + float(token[5])
+
+            anger = anger / len(user_emotions)
+            disgust = disgust / len(user_emotions)
+            fear = fear / len(user_emotions)
+            joy = joy / len(user_emotions)
+            sadness = sadness / len(user_emotions)
+            surprise = surprise / len(user_emotions)
+
+            audience_emotions.append((audience,[anger, disgust, fear, joy, sadness, surprise]))
+
+        return audience_emotions
 
 
 if __name__=='__main__':
