@@ -64,7 +64,7 @@ class twitter_api():
                 return e.message[0]['message']
             return None
 
-    def get_all_tweets(self, screen_name):
+    def get_all_tweets(self, screen_name,max_len=18000):
         # initialize a list to hold all the tweepy Tweets
         alltweets = []
 
@@ -80,7 +80,7 @@ class twitter_api():
         # print(alltweets[-1])
 
         # keep grabbing tweets until there are no tweets left to grab
-        while len(new_tweets) > 0:
+        while len(new_tweets) > 0 and len(alltweets)<max_len:
             print("getting tweets before %s" % (oldest))
 
             # all subsiquent requests use the max_id param to prevent duplicates
@@ -167,7 +167,7 @@ class twitter_api():
     def search_query(self, query):
         return self._api.search(q=query, count=200)
 
-    def get_all_search_queries(self,query):
+    def get_all_search_queries(self,query,max_len=18000):
         # initialize a list to hold all the tweepy Tweets
         alltweets = []
 
@@ -181,7 +181,7 @@ class twitter_api():
         oldest = alltweets[-1]['id'] - 1
 
         # keep grabbing tweets until there are no tweets left to grab
-        while len(new_tweets['statuses']) > 0:
+        while len(new_tweets['statuses']) > 0 and len(alltweets)< max_len:
             print("getting tweets before %s" % (oldest))
 
             # all subsiquent requests use the max_id param to prevent duplicates
@@ -254,12 +254,18 @@ class CustomStreamListener(tweepy.StreamListener):
 
 class Interaction():
     ta = None
+    timeline = None
+    direct_tweets = None
+
     def __init__(self):
         self.ta = twitter_api()
         self.ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
 
+    def get_recent_tweets(self,screen_name):
+        self.timeline = ta.get_all_tweets(screen_name, max_len=200)
 
-
+    def get_direct_tweets(self, screen_name):
+        self.direct_tweets = ta.get_all_search_queries(screen_name, max_len=200)
 
 
 if __name__=='__main__':
@@ -267,8 +273,11 @@ if __name__=='__main__':
     ta = twitter_api()
     ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
 
-    ta.get_all_search_queries('@realDonaldTrump')
-    ta.get_all_tweets('trumpscuttlebot')
+    tweets = ta.get_all_search_queries('@realDonaldTrump', max_len=100)
+
+    for tweet  in tweets:
+        print(tweet['text'],tweet['user']['screen_name'])
+    # ta.get_all_tweets('trumpscuttlebot')
 
 
     # print(ta.get_status_details(426071803560075264))
