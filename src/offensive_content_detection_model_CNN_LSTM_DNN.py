@@ -330,6 +330,8 @@ class test_model(offensive_content_model):
 if __name__ == "__main__":
     basepath = os.getcwd()[:os.getcwd().rfind('/')]
 
+    #validation set is created by splliting train dataset by 0.9-0.1
+
     #offensive content
 
     train_file = basepath + '/resource/train/offensive_train.txt'
