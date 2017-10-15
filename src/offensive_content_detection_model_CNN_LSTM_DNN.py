@@ -204,7 +204,7 @@ class train_model(offensive_content_model):
 
 
         # training
-        model.fit(X, Y, batch_size=128, epochs=150, validation_split=0.2, shuffle=True,
+        model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.1, shuffle=True,
                   callbacks=[save_best, early_stopping,lr_tuner], class_weight=ratio, verbose=1)
 
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
@@ -332,34 +332,34 @@ if __name__ == "__main__":
 
     #offensive content
 
-    # train_file = basepath + '/resource/train/offensive_train.txt'
-    # train_file = basepath + '/resource/train/neither_hate_speech_format.train'
-    # validation_file = basepath + '/resource/test/train_english.txt.test'
-    # test_file = basepath + '/resource/dev/train_english.txt.train'
-    # word_file_path = basepath + '/resource/word_list.txt'
-    #
-    # output_file = basepath + '/resource/text_model/TestResults.txt'
-    # model_file = basepath + '/resource/text_model/weights/'
-    # vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
-    #
-    # tr = train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
+    train_file = basepath + '/resource/train/offensive_train.txt'
+    train_file = basepath + '/resource/train/neither_hate_speech_format.train'
+    validation_file = basepath + '/resource/test/train_english.txt.test'
+    test_file = basepath + '/resource/dev/train_english.txt.train'
+    word_file_path = basepath + '/resource/word_list.txt'
+
+    output_file = basepath + '/resource/text_model/TestResults.txt'
+    model_file = basepath + '/resource/text_model/weights/'
+    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+
+    tr = train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
 
     #hate_speech
 
-    # train_file = basepath + '/resource/train/neither_hate_speech_format.train'
-    # validation_file = basepath + '/resource/test/train_english.txt.test'
-    # test_file = basepath + '/resource/dev/train_english.txt.train'
-    # word_file_path = basepath + '/resource/word_list.txt'
-    #
-    # output_file = basepath + '/resource/text_model/TestResults.txt'
-    # model_file = basepath + '/resource/text_model/weights/'
-    # vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
-    #
-    # tr = train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='hate_speech.json')
+    train_file = basepath + '/resource/train/neither_hate_speech_format.train'
+    validation_file = basepath + '/resource/test/train_english.txt.test'
+    test_file = basepath + '/resource/dev/train_english.txt.train'
+    word_file_path = basepath + '/resource/word_list.txt'
+
+    output_file = basepath + '/resource/text_model/TestResults.txt'
+    model_file = basepath + '/resource/text_model/weights/'
+    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+
+    tr = train_model(train_file, validation_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='hate_speech.json')
 
     # emotion
 
-    train_file = basepath + '/resource/train/emotion_train.txt'
+    train_file = basepath + '/resource/train/emotion_train_v3.txt'
     validation_file = basepath + '/resource/test/emotion_train.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
