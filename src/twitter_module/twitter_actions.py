@@ -298,14 +298,14 @@ class Interaction():
     def __init__(self):
         self.ta = twitter_api()
         self.ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
-        t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_offensive)
-        t_offensive.load_trained_model(model_file_name = 'offensive.json', weight_file='offensive.json.hdf5')
+        self.t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_offensive)
+        self.t_offensive.load_trained_model(model_file_name = 'offensive.json', weight_file='offensive.json.hdf5')
 
-        t_hate = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_hate)
-        t_hate.load_trained_model(model_file_name = 'hate_speech.json', weight_file='hate_speech.json.hdf5')
+        self.t_hate = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_hate)
+        self.t_hate.load_trained_model(model_file_name = 'hate_speech.json', weight_file='hate_speech.json.hdf5')
 
-        t_emotion = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_emotion)
-        t_emotion.load_trained_model(model_file_name = 'emotion.json', weight_file='emotion.json.hdf5')
+        self.t_emotion = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_emotion)
+        self.t_emotion.load_trained_model(model_file_name = 'emotion.json', weight_file='emotion.json.hdf5')
 
 
     def get_recent_tweets(self,screen_name):
@@ -314,6 +314,9 @@ class Interaction():
         for tweet in self.timeline:
             fw.write('ID'+'-1'+'\t'+tweet['text'].strip()+'\n')
         fw.close()
+
+        self.t_emotion.predict(self.output_file_offensive)
+
 
 
 

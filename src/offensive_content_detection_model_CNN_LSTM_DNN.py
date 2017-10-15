@@ -297,7 +297,7 @@ class test_model(offensive_content_model):
         y_pred = []
 
         try:
-            fd = open(self._output_file + '.analysis', 'w')
+            fd = open(self._output_file, 'w')
             for i, (label) in enumerate(prediction_probability):
                 gold_label = test[i][0]
                 words = test[i][1]
@@ -305,21 +305,20 @@ class test_model(offensive_content_model):
                 context = test[i][3]
                 author = test[i][4]
 
-                predicted = numpy.argmax(prediction_probability[i])
+                # predicted = numpy.argmax(prediction_probability[i])
 
-                y.append(int(gold_label))
-                y_pred.append(predicted)
+                # y.append(int(gold_label))
+                # y_pred.append(predicted)
 
-                fd.write(str(label[0]) + '\t' + str(label[1]) + '\t'
-                         + str(gold_label) + '\t'
-                         + str(predicted) + '\t'
-                         + ' '.join(words) + '\t'
-                         + ' '.join(context))
+                fd.write('\t'.join([str(l) for l in label]) + '\t'
+                         # + str(gold_label) + '\t'
+                         # + str(predicted) + '\t'
+                         + ' '.join(words))
                 fd.write('\n')
 
-            print('precision::', metrics.precision_score(y, y_pred, average='weighted'))
-            print('recall::', metrics.recall_score(y, y_pred, average='weighted'))
-            print('f_score::', metrics.f1_score(y, y_pred, average='weighted'))
+            # print('precision::', metrics.precision_score(y, y_pred, average='weighted'))
+            # print('recall::', metrics.recall_score(y, y_pred, average='weighted'))
+            # print('f_score::', metrics.f1_score(y, y_pred, average='weighted'))
 
             fd.close()
 
@@ -334,16 +333,16 @@ if __name__ == "__main__":
 
     #offensive content
 
-    train_file = basepath + '/resource/train/offensive_train.txt'
-    validation_file = basepath + '/resource/test/train_english.txt.test'
-    test_file = basepath + '/resource/dev/train_english.txt.train'
-    word_file_path = basepath + '/resource/word_list.txt'
-
-    output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
-    model_file = basepath + '/resource/text_model/weights/'
-    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
-
-    tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
+    # train_file = basepath + '/resource/train/offensive_train.txt'
+    # validation_file = basepath + '/resource/test/train_english.txt.test'
+    # test_file = basepath + '/resource/dev/train_english.txt.train'
+    # word_file_path = basepath + '/resource/word_list.txt'
+    #
+    # output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
+    # model_file = basepath + '/resource/text_model/weights/'
+    # vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+    #
+    # tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
 
     #hate_speech
 
