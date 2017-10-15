@@ -247,7 +247,8 @@ def prepare_glove_model(vocab,n=200,path = '/home/glove/glove.twitter.27B/glove.
 def get_glove_weights(vocab,n=200,path = '/home/glove/glove.twitter.27B/glove.twitter.27B.200d.txt'):
     word2vecmodel = gensim.models.KeyedVectors.load_word2vec_format(path, binary=False)
 
-    emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
+    # emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
+    emb_weights = numpy.random.rand((len(vocab.keys()) + 1, n))
     for k, v in vocab.items():
         if (word2vecmodel.__contains__(k)):
             emb_weights[v, :] = word2vecmodel[k][:n]
