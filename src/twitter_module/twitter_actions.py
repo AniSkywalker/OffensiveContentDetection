@@ -359,6 +359,18 @@ class Interaction():
 
         self.t_offensive.predict(self.output_file_offensive)
 
+        user_offensive = open(self.output_file_offensive + '.analysis', 'r').readlines()
+
+        offensive = []
+
+        for line in user_offensive:
+            token = line.strip().split('\t')
+            offensive.append(float(token[1]))
+
+
+
+        #hate
+
         fw = open(self.output_file_hate, 'w')
 
         for tweet in self.direct_tweets:
@@ -367,9 +379,19 @@ class Interaction():
 
         self.t_hate.predict(self.output_file_hate)
 
+        hate = []
+
+        for line in user_offensive:
+            token = line.strip().split('\t')
+            hate.append(float(token[1]))
 
 
+        overall = []
 
+        for i, offence in enumerate(offensive):
+            overall.append((offensive[i]+hate[i]*1.5)/2)
+
+        return offensive,hate,overall
 
     def get_audience_moods(self):
         audiences = [tweet['user']['screen_name'] for tweet in self.direct_tweets]
