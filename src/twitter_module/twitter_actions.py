@@ -1,10 +1,12 @@
 import codecs
+import sys
 from collections import defaultdict
 import time
 import tweepy
 import os
 import re
 import urllib
+sys.path.append('../../../')
 
 # Consumer keys and access tokens, used for OAuth
 from tweepy.error import TweepError
@@ -98,14 +100,7 @@ class twitter_api():
 
         # transform the tweepy tweets into a 2D array that will populate the csv
 
-        outtweets = [[tweet['id_str'],tweet['favorite_count'],tweet['retweet_count'], convert_one_line(tweet['text']).encode("utf-8")] for tweet in alltweets]
-
-        # write the csv
-        with open('crawl/' + '%s_tweets.csv' % screen_name, 'wb') as f:
-            for outtweet in outtweets:
-                f.write(str(outtweet[0]) + '\t' + str(outtweet[1]) + '\t'+ str(outtweet[2]) + '\t' + outtweet[3].strip() + '\n')
-
-        pass
+        return  alltweets
 
     def get_all_liked_shared_tweets(self, screen_name):
         # initialize a list to hold all the tweepy Tweets
@@ -261,32 +256,32 @@ class Interaction():
 
     basepath = os.getcwd()[:os.getcwd().rfind('/')]
 
-    test_file = basepath + '/resource/test/test_offensive.txt'
-    word_file_path = basepath + '/resource/word_list.txt'
+    test_file = basepath + '/../resource/test/test_offensive.txt'
+    word_file_path = basepath + '/../resource/word_list.txt'
 
-    output_file_offensive = basepath + '/resource/text_model/TestResults_offensive.txt'
-    model_file = basepath + '/resource/text_model/weights/'
-    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+    output_file_offensive = basepath + '/../resource/text_model/TestResults_offensive.txt'
+    model_file = basepath + '/../resource/text_model/weights/'
+    vocab_file_path = basepath + '/../resource/text_model/vocab_list.txt'
 
 
     # hate_speech
 
-    test_file = basepath + '/resource/test/test_hate.txt'
-    word_file_path = basepath + '/resource/word_list.txt'
+    test_file = basepath + '/../resource/test/test_hate.txt'
+    word_file_path = basepath + '/../resource/word_list.txt'
 
-    output_file_hate = basepath + '/resource/text_model/TestResults_hate.txt'
-    model_file = basepath + '/resource/text_model/weights/'
-    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+    output_file_hate = basepath + '/../resource/text_model/TestResults_hate.txt'
+    model_file = basepath + '/../resource/text_model/weights/'
+    vocab_file_path = basepath + '/../resource/text_model/vocab_list.txt'
 
 
     # emotion
 
-    test_file = basepath + '/resource/test/test_emotion.txt'
-    word_file_path = basepath + '/resource/word_list.txt'
+    test_file = basepath + '/../resource/test/test_emotion.txt'
+    word_file_path = basepath + '/../resource/word_list.txt'
 
-    output_file_emotion = basepath + '/resource/text_model/TestResults_emotion.txt'
-    model_file = basepath + '/resource/text_model/weights/'
-    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+    output_file_emotion = basepath + '/../resource/text_model/TestResults_emotion.txt'
+    model_file = basepath + '/../resource/text_model/weights/'
+    vocab_file_path = basepath + '/../resource/text_model/vocab_list.txt'
 
 
     # t_offensive = test_model(word_file_path, model_file, vocab_file_path, output_file)
@@ -297,19 +292,20 @@ class Interaction():
 
     def __init__(self):
         self.ta = twitter_api()
-        self.ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
-        self.t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_offensive)
-        self.t_offensive.load_trained_model(model_file_name = 'offensive.json', weight_file='offensive.json.hdf5')
+        self.ta._api = tweepy.API(self.ta._auth, parser=tweepy.parsers.JSONParser())
 
-        self.t_hate = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_hate)
-        self.t_hate.load_trained_model(model_file_name = 'hate_speech.json', weight_file='hate_speech.json.hdf5')
+        # self.t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_offensive)
+        # self.t_offensive.load_trained_model(model_file_name = 'offensive.json', weight_file='offensive.json.hdf5')
+        #
+        # self.t_hate = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_hate)
+        # self.t_hate.load_trained_model(model_file_name = 'hate_speech.json', weight_file='hate_speech.json.hdf5')
 
         self.t_emotion = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_emotion)
         self.t_emotion.load_trained_model(model_file_name = 'emotion.json', weight_file='emotion.json.hdf5')
 
 
     def get_recent_tweets(self,screen_name):
-        self.timelines = ta.get_all_tweets(screen_name, max_len=200)
+        self.timelines = self.ta.get_all_tweets(screen_name, max_len=100)
         fw = open(self.output_file_offensive,'w')
         for tweet in self.timeline:
             fw.write('ID'+'-1'+'\t'+tweet['text'].strip()+'\n')
@@ -325,7 +321,7 @@ class Interaction():
 
 
     def get_direct_tweets(self, screen_name):
-        self.direct_tweets = ta.get_all_search_queries(screen_name, max_len=200)
+        self.direct_tweets = self.ta.get_all_search_queries(screen_name, max_len=100)
 
     def get_audience_moods(self):
         audiences = [tweet['user']['screen_name'] for tweet in self.direct_tweets]
@@ -340,10 +336,14 @@ class Interaction():
 
 if __name__=='__main__':
 
-    ta = twitter_api()
-    ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
+    # ta = twitter_api()
+    # ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
+    #
+    # tweets = ta.get_all_search_queries('@realDonaldTrump', max_len=100)
 
-    tweets = ta.get_all_search_queries('@realDonaldTrump', max_len=100)
+    inte = Interaction()
+    inte.get_recent_tweets('realDonaldTrump')
+
 
 
 
