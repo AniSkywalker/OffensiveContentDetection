@@ -252,6 +252,14 @@ class CustomStreamListener(tweepy.StreamListener):
         print(status_code)
         return True
 
+class Interaction():
+    ta = None
+    def __init__(self):
+        self.ta = twitter_api()
+        self.ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
+
+
+
 
 
 if __name__=='__main__':
