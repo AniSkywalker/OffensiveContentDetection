@@ -306,12 +306,13 @@ class Interaction():
 
     def get_recent_tweets(self,screen_name):
         self.timelines = self.ta.get_all_tweets(screen_name, max_len=100)
-        fw = open(self.output_file_offensive,'w')
-        for tweet in self.timeline:
-            fw.write('ID'+'-1'+'\t'+tweet['text'].strip()+'\n')
+        fw = open(self.output_file_emotion,'w')
+
+        for tweet in self.timelines:
+            fw.write('ID'+'\t'+'-1'+'\t'+tweet['text'].strip()+'\n')
         fw.close()
 
-        self.t_emotion.predict(self.output_file_offensive)
+        self.t_emotion.predict(self.output_file_emotion)
 
 
 
