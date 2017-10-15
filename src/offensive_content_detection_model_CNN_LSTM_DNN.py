@@ -246,9 +246,9 @@ class test_model(offensive_content_model):
 
         print('test_maxlen', self._line_maxlen)
 
-    def load_trained_model(self, weight_file='model.json.hdf5'):
+    def load_trained_model(self, model_file_name = 'model.json', weight_file='model.json.hdf5'):
         start = time.time()
-        self.__load_model(self._model_file + 'model.json', self._model_file + weight_file)
+        self.__load_model(self._model_file + model_file_name, self._model_file + weight_file)
         end = time.time()
         print('model loading time::', (end - start))
 
@@ -334,16 +334,16 @@ if __name__ == "__main__":
 
     #offensive content
 
-    train_file = basepath + '/resource/train/offensive_train.txt'
-    validation_file = basepath + '/resource/test/train_english.txt.test'
-    test_file = basepath + '/resource/dev/train_english.txt.train'
-    word_file_path = basepath + '/resource/word_list.txt'
-
-    output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
-    model_file = basepath + '/resource/text_model/weights/'
-    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
-
-    tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
+    # train_file = basepath + '/resource/train/offensive_train.txt'
+    # validation_file = basepath + '/resource/test/train_english.txt.test'
+    # test_file = basepath + '/resource/dev/train_english.txt.train'
+    # word_file_path = basepath + '/resource/word_list.txt'
+    #
+    # output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
+    # model_file = basepath + '/resource/text_model/weights/'
+    # vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+    #
+    # tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
 
     #hate_speech
 

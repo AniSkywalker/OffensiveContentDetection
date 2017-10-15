@@ -261,30 +261,30 @@ class Interaction():
 
     basepath = os.getcwd()[:os.getcwd().rfind('/')]
 
-    test_file = basepath + '/resource/dev/train_english.txt.train'
+    test_file = basepath + '/resource/test/test_offensive.txt'
     word_file_path = basepath + '/resource/word_list.txt'
 
-    output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
+    output_file_offensive = basepath + '/resource/text_model/TestResults_offensive.txt'
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
 
     # hate_speech
 
-    test_file = basepath + '/resource/dev/train_english.txt.train'
+    test_file = basepath + '/resource/test/test_hate.txt'
     word_file_path = basepath + '/resource/word_list.txt'
 
-    output_file = basepath + '/resource/text_model/TestResults_hate.txt'
+    output_file_hate = basepath + '/resource/text_model/TestResults_hate.txt'
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
 
     # emotion
 
-    test_file = basepath + '/resource/dev/train_english.txt.train'
+    test_file = basepath + '/resource/test/test_emotion.txt'
     word_file_path = basepath + '/resource/word_list.txt'
 
-    output_file = basepath + '/resource/text_model/TestResults_emotion.txt'
+    output_file_emotion = basepath + '/resource/text_model/TestResults_emotion.txt'
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
@@ -298,9 +298,15 @@ class Interaction():
     def __init__(self):
         self.ta = twitter_api()
         self.ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
+        t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_offensive)
+        t_offensive.load_trained_model(model_file_name = 'offensive.json', weight_file='offensive.json.hdf5')
+
 
     def get_recent_tweets(self,screen_name):
         self.timeline = ta.get_all_tweets(screen_name, max_len=200)
+        for
+
+
 
     def get_direct_tweets(self, screen_name):
         self.direct_tweets = ta.get_all_search_queries(screen_name, max_len=200)
