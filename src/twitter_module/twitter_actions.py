@@ -2,14 +2,14 @@ import codecs
 from collections import defaultdict
 import time
 import tweepy
-import codecs
+import os
 import re
 import urllib
 
 # Consumer keys and access tokens, used for OAuth
 from tweepy.error import TweepError
 
-import OffensiveContentDetection.src.test_model
+from OffensiveContentDetection.src.offensive_content_detection_model_CNN_LSTM_DNN import test_model
 
 consumer_key = "1xd5E01MLPzcr0AN6Xm0iXyS3"
 consumer_secret = "Z73tLVF1fBojSj1joZki1kEdzMrpjjXGh8wGJ4MKMnolkd8L3c"
@@ -259,6 +259,40 @@ class Interaction():
     timeline = None
     direct_tweets = None
 
+    basepath = os.getcwd()[:os.getcwd().rfind('/')]
+
+    test_file = basepath + '/resource/dev/train_english.txt.train'
+    word_file_path = basepath + '/resource/word_list.txt'
+
+    output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
+    model_file = basepath + '/resource/text_model/weights/'
+    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+
+
+    # hate_speech
+
+    test_file = basepath + '/resource/dev/train_english.txt.train'
+    word_file_path = basepath + '/resource/word_list.txt'
+
+    output_file = basepath + '/resource/text_model/TestResults_hate.txt'
+    model_file = basepath + '/resource/text_model/weights/'
+    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+
+
+    # emotion
+
+    test_file = basepath + '/resource/dev/train_english.txt.train'
+    word_file_path = basepath + '/resource/word_list.txt'
+
+    output_file = basepath + '/resource/text_model/TestResults_emotion.txt'
+    model_file = basepath + '/resource/text_model/weights/'
+    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+
+
+    # t_offensive = test_model(word_file_path, model_file, vocab_file_path, output_file)
+    # t.load_trained_model()
+    # t.predict(test_file)
+
 
 
     def __init__(self):
@@ -305,57 +339,5 @@ if __name__=='__main__':
 
     # ta.get_all_tweets('TIME')
 
-    # ta.get_relies(ta.get_all_search_queries("@onlinesarcasm"))
 
-
-    # cStreamListener = CustomStreamListener()
-    # stream = tweepy.Stream(auth=ta._auth, parser=tweepy.parsers.JSONParser(), listener=cStreamListener)
-    # stream.filter(languages=['en'],track=[' as '])
-
-    # results = ta._api.search(q=' as ', count=100)
-
-    # for result in results['statuses']:
-    #
-    #     text = result['text']
-    #     if(not text.startswith('RT ')):
-    #         print(text)
-
-
-
-
-
-    # crawl_by_file(ta)
-    # get_tweet_source_by_file(ta)
-
-
-
-
-
-
-
-    # list=set()
-    #
-    #
-    # list.update(str(x) for x in ta.get_friends_id(id='onlinesarcasm'))
-    # print(len(list),list)
-
-
-    # print(t['id_str'])
-    # twitter_account_list = []
-    # twitter_account_list.append(ta.api.me()['id'])
-    #
-    # i=0
-
-    # while(i<len(twitter_account_list)):
-    #     time.sleep(1)
-    #     id = twitter_account_list[i]
-    #     i+=1
-    #     screen_name = ta.get_user(id)['screen_name']
-    #     followers = ta.get_follower_ids(id)
-    #     print(screen_name,len(followers))
-    #     if(len(followers)>100):
-    #         print(screen_name, len(followers))
-    #     for fid in followers:
-    #         if(not twitter_account_list.__contains__(fid)):
-    #             twitter_account_list.append(fid)
 

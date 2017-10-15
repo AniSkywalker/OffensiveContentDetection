@@ -171,7 +171,7 @@ class train_model(offensive_content_model):
         # word2vec dimension
         dimension_size = 200
         W = None
-        W = dh.get_word2vec_weight(self._vocab, n=dimension_size, path='/home/word2vec/GoogleNews-vectors-negative300.bin')
+        # W = dh.get_word2vec_weight(self._vocab, n=dimension_size, path='/home/word2vec/GoogleNews-vectors-negative300.bin')
         # W = dh.get_glove_weights(self._vocab, n=200, path='/home/TCDteam12/glove/glove_model.txt')
         print('Word2vec obtained....')
 
@@ -339,7 +339,7 @@ if __name__ == "__main__":
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
 
-    output_file = basepath + '/resource/text_model/TestResults.txt'
+    output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
@@ -352,7 +352,7 @@ if __name__ == "__main__":
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
 
-    output_file = basepath + '/resource/text_model/TestResults.txt'
+    output_file = basepath + '/resource/text_model/TestResults_hate.txt'
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
@@ -365,7 +365,7 @@ if __name__ == "__main__":
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list.txt'
 
-    output_file = basepath + '/resource/text_model/TestResults.txt'
+    output_file = basepath + '/resource/text_model/TestResults_emotion.txt'
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
