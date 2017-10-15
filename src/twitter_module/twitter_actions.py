@@ -261,7 +261,7 @@ class Interaction():
 
     output_file_offensive = basepath + '/../resource/text_model/TestResults_offensive.txt'
     model_file = basepath + '/../resource/text_model/weights/'
-    vocab_file_path = basepath + '/../resource/text_model/vocab_list.txt'
+    vocab_file_path = basepath + '/../resource/text_model/vocab_list_offensive.txt'
 
 
     # hate_speech
@@ -271,7 +271,7 @@ class Interaction():
 
     output_file_hate = basepath + '/../resource/text_model/TestResults_hate.txt'
     model_file = basepath + '/../resource/text_model/weights/'
-    vocab_file_path = basepath + '/../resource/text_model/vocab_list.txt'
+    vocab_file_path = basepath + '/../resource/text_model/vocab_list_hate.txt'
 
 
     # emotion
@@ -281,7 +281,7 @@ class Interaction():
 
     output_file_emotion = basepath + '/../resource/text_model/TestResults_emotion.txt'
     model_file = basepath + '/../resource/text_model/weights/'
-    vocab_file_path = basepath + '/../resource/text_model/vocab_list.txt'
+    vocab_file_path = basepath + '/../resource/text_model/vocab_list_emotion.txt'
 
 
     # t_offensive = test_model(word_file_path, model_file, vocab_file_path, output_file)
