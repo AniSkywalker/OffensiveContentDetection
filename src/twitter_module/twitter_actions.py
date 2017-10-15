@@ -9,6 +9,8 @@ import urllib
 # Consumer keys and access tokens, used for OAuth
 from tweepy.error import TweepError
 
+import OffensiveContentDetection.src.test_model
+
 consumer_key = "1xd5E01MLPzcr0AN6Xm0iXyS3"
 consumer_secret = "Z73tLVF1fBojSj1joZki1kEdzMrpjjXGh8wGJ4MKMnolkd8L3c"
 
@@ -257,6 +259,8 @@ class Interaction():
     timeline = None
     direct_tweets = None
 
+
+
     def __init__(self):
         self.ta = twitter_api()
         self.ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
@@ -267,6 +271,16 @@ class Interaction():
     def get_direct_tweets(self, screen_name):
         self.direct_tweets = ta.get_all_search_queries(screen_name, max_len=200)
 
+    def get_audience_moods(self):
+        audiences = [tweet['user']['screen_name'] for tweet in self.direct_tweets]
+        audiences = audiences[:10]
+        for audience in audiences:
+            audience_timeline = ta.get_all_tweets(audience, max_len=200)
+
+
+
+
+
 
 if __name__=='__main__':
 
@@ -275,8 +289,8 @@ if __name__=='__main__':
 
     tweets = ta.get_all_search_queries('@realDonaldTrump', max_len=100)
 
-    for tweet  in tweets:
-        print(tweet['text'],tweet['user']['screen_name'])
+
+
     # ta.get_all_tweets('trumpscuttlebot')
 
 
