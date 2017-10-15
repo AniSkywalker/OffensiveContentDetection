@@ -319,6 +319,8 @@ class Interaction():
 
 
 
+
+
     def get_direct_tweets(self, screen_name):
         self.direct_tweets = ta.get_all_search_queries(screen_name, max_len=200)
 

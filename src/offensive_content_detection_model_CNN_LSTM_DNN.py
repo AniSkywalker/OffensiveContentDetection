@@ -334,16 +334,16 @@ if __name__ == "__main__":
 
     #offensive content
 
-    # train_file = basepath + '/resource/train/offensive_train.txt'
-    # validation_file = basepath + '/resource/test/train_english.txt.test'
-    # test_file = basepath + '/resource/dev/train_english.txt.train'
-    # word_file_path = basepath + '/resource/word_list.txt'
-    #
-    # output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
-    # model_file = basepath + '/resource/text_model/weights/'
-    # vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
-    #
-    # tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
+    train_file = basepath + '/resource/train/offensive_train.txt'
+    validation_file = basepath + '/resource/test/train_english.txt.test'
+    test_file = basepath + '/resource/dev/train_english.txt.train'
+    word_file_path = basepath + '/resource/word_list.txt'
+
+    output_file = basepath + '/resource/text_model/TestResults_offensive.txt'
+    model_file = basepath + '/resource/text_model/weights/'
+    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+
+    tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,model_filename='offensive.json')
 
     #hate_speech
 
@@ -360,17 +360,17 @@ if __name__ == "__main__":
 
     # emotion
 
-    train_file = basepath + '/resource/train/emotion_train.txt'
-    validation_file = basepath + '/resource/test/emotion_train.txt'
-    test_file = basepath + '/resource/dev/train_english.txt.train'
-    word_file_path = basepath + '/resource/word_list.txt'
-
-    output_file = basepath + '/resource/text_model/TestResults_emotion.txt'
-    model_file = basepath + '/resource/text_model/weights/'
-    vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
-
-    tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,
-                     model_filename='emotion.json')
+    # train_file = basepath + '/resource/train/emotion_train.txt'
+    # validation_file = basepath + '/resource/test/emotion_train.txt'
+    # test_file = basepath + '/resource/dev/train_english.txt.train'
+    # word_file_path = basepath + '/resource/word_list.txt'
+    #
+    # output_file = basepath + '/resource/text_model/TestResults_emotion.txt'
+    # model_file = basepath + '/resource/text_model/weights/'
+    # vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
+    #
+    # tr = train_model(train_file, train_file, word_file_path, model_file, vocab_file_path, output_file,
+    #                  model_filename='emotion.json')
 
 
 
