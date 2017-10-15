@@ -1,0 +1,35 @@
+<div class="jumbotron">
+    <h1 class="title display-1 text-center">SafeSocial</h1>
+    <div class="card text-center row">
+        <form class="form-group col-md-6 col-md-offset-3" action="/handle_data" method="POST" onsubmit="return validate()">
+            <div class="form-group">
+                <input type="text" onkeyup="check_for_at()" name="userTwitterHandle" required class="form-control" placeholder="@username">
+            </div>
+            <p id="error_message" class="text-danger"></p>
+            <div class="form-group col-md-8 col-md-offset-2 row">
+                <button id="btnSubmit" type="submit" class="btn btn-success btn-lg">Analyse
+                    <i class="fa fa-comments"></i>
+                </button>
+            </div>
+    </div>
+    </form>
+</div>
+<script type="text/javascript">
+function validate() {
+    var x = document.getElementsByName('userTwitterHandle')[0].value;
+    if (x[0] !== "@") {
+        alert('Name must start with an "@" symbol!');
+        return false;
+    }
+}
+function check_for_at() {
+    var x = document.getElementsByName('userTwitterHandle')[0].value;
+    if (x[0] !== "@") {
+        document.getElementById('btnSubmit').setAttribute("disabled", "true");
+        document.getElementById('error_message').innerHTML = "Name must start with an @ symbol";
+    } else {
+        document.getElementById('btnSubmit').removeAttribute("disabled");
+        document.getElementById('error_message').innerHTML = "";
+    }
+}
+</script>
