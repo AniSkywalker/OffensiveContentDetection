@@ -236,7 +236,8 @@ def get_word2vec_weight(vocab,n=300,lang = 'en', path='/home/word2vec/GoogleNews
 def prepare_glove_model(vocab,n=200,path = '/home/glove/glove.twitter.27B/glove.twitter.27B.200d.txt'):
     word2vecmodel = glove.load_glove_word2vec(path)
 
-    emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
+    # emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
+    emb_weights = numpy.random.rand((len(vocab.keys()) + 1, n))
     for k, v in vocab.items():
         if (word2vecmodel.__contains__(k)):
             emb_weights[v, :] = word2vecmodel[k][:n]
