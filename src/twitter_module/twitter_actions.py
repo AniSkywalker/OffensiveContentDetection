@@ -294,11 +294,11 @@ class Interaction():
         self.ta = twitter_api()
         self.ta._api = tweepy.API(self.ta._auth, parser=tweepy.parsers.JSONParser())
 
-        # self.t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_offensive)
-        # self.t_offensive.load_trained_model(model_file_name = 'offensive.json', weight_file='offensive.json.hdf5')
-        #
-        # self.t_hate = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_hate)
-        # self.t_hate.load_trained_model(model_file_name = 'hate_speech.json', weight_file='hate_speech.json.hdf5')
+        self.t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_offensive)
+        self.t_offensive.load_trained_model(model_file_name = 'offensive.json', weight_file='offensive.json.hdf5')
+
+        self.t_hate = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_hate)
+        self.t_hate.load_trained_model(model_file_name = 'hate_speech.json', weight_file='hate_speech.json.hdf5')
 
         self.t_emotion = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_emotion)
         self.t_emotion.load_trained_model(model_file_name = 'emotion.json', weight_file='emotion.json.hdf5')
@@ -314,6 +314,33 @@ class Interaction():
 
         self.t_emotion.predict(self.output_file_emotion)
 
+        user_emotions = open(self.output_file_emotion+'.analysis','r').readlines()
+        anger = 0.0
+        disgust = 0.0
+        fear = 0.0
+        joy = 0.0
+        sadness = 0.0
+        surprise = 0.0
+
+        for line in user_emotions:
+            token = line.strip().split('\t')
+            anger = anger +  float(token[0])
+            disgust = disgust +  float(token[1])
+            fear = fear +  float(token[2])
+            joy = joy +  float(token[3])
+            sadness = sadness +  float(token[4])
+            surprise = surprise +  float(token[5])
+
+        anger = anger/len(user_emotions)
+        disgust = disgust/len(user_emotions)
+        fear = fear/len(user_emotions)
+        joy = joy/len(user_emotions)
+        sadness = sadness/len(user_emotions)
+        surprise = surprise/len(user_emotions)
+
+        return anger, disgust,fear, joy, sadness, surprise
+
+
 
 
 
@@ -323,6 +350,26 @@ class Interaction():
 
     def get_direct_tweets(self, screen_name):
         self.direct_tweets = self.ta.get_all_search_queries(screen_name, max_len=100)
+
+        fw = open(self.output_file_offensive, 'w')
+
+        for tweet in self.direct_tweets:
+            fw.write('ID' + '\t' + '-1' + '\t' + tweet['text'].strip() + '\n')
+        fw.close()
+
+        self.t_offensive.predict(self.output_file_offensive)
+
+        fw = open(self.output_file_hate, 'w')
+
+        for tweet in self.direct_tweets:
+            fw.write('ID' + '\t' + '-1' + '\t' + tweet['text'].strip() + '\n')
+        fw.close()
+
+        self.t_hate.predict(self.output_file_hate)
+
+
+
+
 
     def get_audience_moods(self):
         audiences = [tweet['user']['screen_name'] for tweet in self.direct_tweets]
