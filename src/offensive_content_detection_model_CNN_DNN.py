@@ -38,6 +38,7 @@ class offensive_content_model():
         self._line_maxlen = 30
 
     def _build_network(self, vocab_size, maxlen, emb_weights=None, hidden_units=256, trainable=False):
+
         print('Build model...')
         model = Sequential()
         if (emb_weights == None):
@@ -50,7 +51,7 @@ class offensive_content_model():
         model.add(Reshape((30,128,1)))
         model.add(BatchNormalization(momentum=0.9))
 
-        print(model.output_shape)
+        #CNN
 
         model.add(Convolution2D(64, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
         model.add(MaxPooling2D(2,2))
@@ -60,13 +61,9 @@ class offensive_content_model():
         model.add(MaxPooling2D(2, 2))
         model.add(Dropout(0.5))
 
-        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid', return_sequences=True))
-        # model.add(Dropout(0.25))
-        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid'))
-        # model.add(Dropout(0.25))
-
         model.add(Flatten())
 
+        #DNN model
         model.add(Dense(hidden_units, kernel_initializer='he_normal', activation='relu'))
         model.add(BatchNormalization(momentum=0.9))
 
@@ -77,21 +74,17 @@ class offensive_content_model():
         print('No of parameter:', model.count_params())
         print(model.summary())
         return model
+
     def _build_emotion_network(self, vocab_size, maxlen, emb_weights=None, hidden_units=256, trainable=False):
         print('Build model...')
         model = Sequential()
-        # if (emb_weights == None):
+
         model.add(Embedding(vocab_size, 128, input_length=maxlen, embeddings_initializer='glorot_normal'))
-        # else:
-        # model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
-        #                         trainable=trainable))
-        print(model.output_shape)
 
         model.add(Reshape((30,128,1)))
         model.add(BatchNormalization(momentum=0.9))
 
-        print(model.output_shape)
-
+        #CNN
         model.add(Convolution2D(64, (3,5), kernel_initializer='he_normal', padding='valid', activation='relu'))
         model.add(MaxPooling2D(2,2))
         model.add(Dropout(0.5))
@@ -100,13 +93,9 @@ class offensive_content_model():
         model.add(MaxPooling2D(2, 2))
         model.add(Dropout(0.5))
 
-        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid', return_sequences=True))
-        # model.add(Dropout(0.25))
-        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid'))
-        # model.add(Dropout(0.25))
-
         model.add(Flatten())
 
+        # DNN
         model.add(Dense(hidden_units, kernel_initializer='he_normal', activation='relu'))
         model.add(BatchNormalization(momentum=0.9))
 
@@ -173,7 +162,7 @@ class train_model(offensive_content_model):
         W = None
         # W = dh.get_word2vec_weight(self._vocab, n=dimension_size, path='/home/word2vec/GoogleNews-vectors-negative300.bin')
         # W = dh.get_glove_weights(self._vocab, n=200, path='/home/TCDteam12/glove/glove_model.txt')
-        print('Word2vec obtained....')
+        # print('Word2vec obtained....')
 
         # solving class imbalance
         ratio = self.calculate_label_ratio(Y)
@@ -204,8 +193,8 @@ class train_model(offensive_content_model):
 
 
         # training
-        # model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.2, shuffle=True,
-        #           callbacks=[save_best, early_stopping,lr_tuner], class_weight=ratio, verbose=1)
+        model.fit(X, Y, batch_size=128, epochs=100, validation_split=0.2, shuffle=True,
+                  callbacks=[save_best, early_stopping,lr_tuner], class_weight=ratio, verbose=1)
 
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
         #           callbacks=[save_best,early_stopping],class_weight=ratio)
@@ -299,11 +288,11 @@ class test_model(offensive_content_model):
         try:
             fd = open(self._output_file + '.analysis', 'w')
             for i, (label) in enumerate(prediction_probability):
-                gold_label = test[i][0]
+                # gold_label = test[i][0]
                 words = test[i][1]
-                dimensions = test[i][2]
-                context = test[i][3]
-                author = test[i][4]
+                # dimensions = test[i][2]
+                # context = test[i][3]
+                # author = test[i][4]
 
 
                 fd.write('\t'.join([str(l) for l in label]) + '\t'
