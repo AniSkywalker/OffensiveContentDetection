@@ -6,12 +6,13 @@ import tweepy
 import os
 import re
 import urllib
+
 sys.path.append('../../../')
 
 # Consumer keys and access tokens, used for OAuth
 from tweepy.error import TweepError
 
-from OffensiveContentDetection.src.offensive_content_detection_model_CNN_LSTM_DNN import test_model
+from OffensiveContentDetection.src.offensive_content_detection_model_CNN_DNN import test_model
 
 consumer_key = "1xd5E01MLPzcr0AN6Xm0iXyS3"
 consumer_secret = "Z73tLVF1fBojSj1joZki1kEdzMrpjjXGh8wGJ4MKMnolkd8L3c"
@@ -20,6 +21,7 @@ access_token = "2807844465-rPINnrjMi3aonlgWQqAVBUAGSrPmigiVEwY2Lqx"
 access_token_secret = "g0OBiXmXcl63ZFew6rByp4rcVNegKPptMzYuNYrvtyvOR"
 
 reply_file = None
+
 
 class twitter_api():
     _api = None
@@ -52,7 +54,7 @@ class twitter_api():
         return self._api.get_user(id)
 
     def get_user_screen_name(self, screen_name=''):
-        return self._api.get_user(screen_name = screen_name)
+        return self._api.get_user(screen_name=screen_name)
 
     def get_status_details(self, id):
         return self._api.get_status(id)
@@ -68,7 +70,7 @@ class twitter_api():
                 return e.message[0]['message']
             return None
 
-    def get_all_tweets(self, screen_name,max_len=18000):
+    def get_all_tweets(self, screen_name, max_len=18000):
         # initialize a list to hold all the tweepy Tweets
         alltweets = []
 
@@ -84,7 +86,7 @@ class twitter_api():
         # print(alltweets[-1])
 
         # keep grabbing tweets until there are no tweets left to grab
-        while len(new_tweets) > 0 and len(alltweets)<max_len:
+        while len(new_tweets) > 0 and len(alltweets) < max_len:
             print("getting tweets before %s" % (oldest))
 
             # all subsiquent requests use the max_id param to prevent duplicates
@@ -100,7 +102,7 @@ class twitter_api():
 
         # transform the tweepy tweets into a 2D array that will populate the csv
 
-        return  alltweets
+        return alltweets
 
     def get_all_liked_shared_tweets(self, screen_name):
         # initialize a list to hold all the tweepy Tweets
@@ -136,9 +138,11 @@ class twitter_api():
 
         outtweets = []
         for tweet in alltweets:
-            if(int(tweet['favorite_count'])> 0 or int(tweet['retweet_count'])> 0):
+            if (int(tweet['favorite_count']) > 0 or int(tweet['retweet_count']) > 0):
                 try:
-                    outtweets.append([tweet['id_str'],tweet['favorite_count'],tweet['retweet_count'],tweet['quoted_status_id'], convert_one_line(tweet['text'])])
+                    outtweets.append(
+                        [tweet['id_str'], tweet['favorite_count'], tweet['retweet_count'], tweet['quoted_status_id'],
+                         convert_one_line(tweet['text'])])
                 except:
                     pass
 
@@ -148,23 +152,23 @@ class twitter_api():
             try:
                 tweet = self.get_status_details(id=outtweet[3])
                 context_tweet = 'NA'
-                if(tweet['in_reply_to_status_id_str']!=None):
+                if (tweet['in_reply_to_status_id_str'] != None):
                     tweet = self.ta.get_status_details(id=tweet['in_reply_to_status_id_str'])
                     context_tweet = tweet['text']
 
                 print(tweet['text'])
-                list_of_tweets[convert_one_line(tweet['text'].strip())]=[outtweet[0],outtweet[1],outtweet[2], context_tweet]
+                list_of_tweets[convert_one_line(tweet['text'].strip())] = [outtweet[0], outtweet[1], outtweet[2],
+                                                                           context_tweet]
             except:
                 pass
             time.sleep(9)
 
         return list_of_tweets
 
-
     def search_query(self, query):
         return self._api.search(q=query, count=200)
 
-    def get_all_search_queries(self,query,max_len=18000):
+    def get_all_search_queries(self, query, max_len=18000):
         # initialize a list to hold all the tweepy Tweets
         alltweets = []
 
@@ -178,7 +182,7 @@ class twitter_api():
         oldest = alltweets[-1]['id'] - 1
 
         # keep grabbing tweets until there are no tweets left to grab
-        while len(new_tweets['statuses']) > 0 and len(alltweets)< max_len:
+        while len(new_tweets['statuses']) > 0 and len(alltweets) < max_len:
             print("getting tweets before %s" % (oldest))
 
             # all subsiquent requests use the max_id param to prevent duplicates
@@ -194,20 +198,20 @@ class twitter_api():
 
         return alltweets
 
-    def get_relies(self,res):
+    def get_relies(self, res):
         print(len(res))
 
         tweets = defaultdict(int)
 
-        with open(reply_file,'r') as f:
+        with open(reply_file, 'r') as f:
             lines = f.readlines()
             for line in lines:
                 token = line.strip().split('\t')
-                tweets[token[1]+'\t'+token[2]+'\t'+token[3]] = token[0]
+                tweets[token[1] + '\t' + token[2] + '\t' + token[3]] = token[0]
 
         print(len(tweets.keys()))
 
-        with open(reply_file,'w') as fw:
+        with open(reply_file, 'w') as fw:
             for r in res:
                 try:
                     print(r['text'])
@@ -218,18 +222,20 @@ class twitter_api():
 
                     tweet = self.get_status_details(id=tweet['quoted_status_id_str'])
 
-                    tweets[convert_one_line(tweet['text']) +'\t'+ reply_text + '\t' + convert_one_line(r['text'])] = favorite_count
+                    tweets[convert_one_line(tweet['text']) + '\t' + reply_text + '\t' + convert_one_line(
+                        r['text'])] = favorite_count
                 except:
                     pass
                 time.sleep(6)
 
-            for key,value in tweets.iteritems():
+            for key, value in tweets.iteritems():
                 fw.write(str(value) + '\t' + key + '\n')
 
 
 def convert_one_line(text):
     token = re.split(' |\n|\r', text)
     return ' '.join([t.strip() for t in token])
+
 
 class CustomStreamListener(tweepy.StreamListener):
     text = None
@@ -242,12 +248,10 @@ class CustomStreamListener(tweepy.StreamListener):
             self.text = status.extended_tweet['full_text']
             print('after::', self.text)
 
-
-
-
     def on_error(self, status_code):
         print(status_code)
         return True
+
 
 class Interaction():
     ta = None
@@ -263,7 +267,6 @@ class Interaction():
     model_file = basepath + '/../resource/text_model/weights/'
     vocab_file_path = basepath + '/../resource/text_model/vocab_list_offensive.txt'
 
-
     # hate_speech
 
     test_file = basepath + '/../resource/test/test_hate.txt'
@@ -272,7 +275,6 @@ class Interaction():
     output_file_hate = basepath + '/../resource/text_model/TestResults_hate.txt'
     model_file = basepath + '/../resource/text_model/weights/'
     vocab_file_path = basepath + '/../resource/text_model/vocab_list_hate.txt'
-
 
     # emotion
 
@@ -285,7 +287,6 @@ class Interaction():
 
     output_file_emotion_audience = basepath + '/../resource/text_model/TestResults_emotion.txt'
 
-
     # t_offensive = test_model(word_file_path, model_file, vocab_file_path, output_file)
     # t.load_trained_model()
     # t.predict(test_file)
@@ -296,27 +297,36 @@ class Interaction():
         self.ta = twitter_api()
         self.ta._api = tweepy.API(self.ta._auth, parser=tweepy.parsers.JSONParser())
 
-        self.t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_offensive)
-        self.t_offensive.load_trained_model(model_file_name = 'offensive.json', weight_file='offensive.json.hdf5')
+        self.t_offensive = test_model(self.word_file_path, self.model_file, self.vocab_file_path,
+                                      self.output_file_offensive)
+        self.t_offensive.load_trained_model(model_file_name='offensive.json', weight_file='offensive.json.hdf5')
 
         self.t_hate = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_hate)
-        self.t_hate.load_trained_model(model_file_name = 'hate_speech.json', weight_file='hate_speech.json.hdf5')
+        self.t_hate.load_trained_model(model_file_name='hate_speech.json', weight_file='hate_speech.json.hdf5')
 
-        self.t_emotion = test_model(self.word_file_path, self.model_file, self.vocab_file_path, self.output_file_emotion)
-        self.t_emotion.load_trained_model(model_file_name = 'emotion.json', weight_file='emotion.json.hdf5')
+        self.t_emotion = test_model(self.word_file_path, self.model_file, self.vocab_file_path,
+                                    self.output_file_emotion)
+        self.t_emotion.load_trained_model(model_file_name='emotion.json', weight_file='emotion.json.hdf5')
 
-
-    def get_recent_tweets(self,screen_name):
+    def get_recent_tweets(self, screen_name):
         self.timelines = self.ta.get_all_tweets(screen_name, max_len=100)
-        fw = open(self.output_file_emotion,'w')
+
+        fw = open(self.output_file_emotion, 'w')
 
         for tweet in self.timelines:
-            fw.write('ID'+'\t'+'-1'+'\t'+tweet['text'].strip()+'\n')
+            fw.write('ID' + '\t' + '-1' + '\t' + convert_one_line(tweet['text'].strip()) + '\n')
         fw.close()
 
-        self.t_emotion.predict(self.output_file_emotion)
+        try:
 
-        user_emotions = open(self.output_file_emotion+'.analysis','r').readlines()
+            self.t_emotion.predict(self.output_file_emotion)
+
+        except:
+            raise
+
+
+
+        user_emotions = open(self.output_file_emotion + '.analysis', 'r').readlines()
         anger = 0.0
         disgust = 0.0
         fear = 0.0
@@ -326,23 +336,21 @@ class Interaction():
 
         for line in user_emotions:
             token = line.strip().split('\t')
-            anger = anger +  float(token[0])
-            disgust = disgust +  float(token[1])
-            fear = fear +  float(token[2])
-            joy = joy +  float(token[3])
-            sadness = sadness +  float(token[4])
-            surprise = surprise +  float(token[5])
+            anger = anger + float(token[0])
+            disgust = disgust + float(token[1])
+            fear = fear + float(token[2])
+            joy = joy + float(token[3])
+            sadness = sadness + float(token[4])
+            surprise = surprise + float(token[5])
 
-        anger = anger/len(user_emotions)
-        disgust = disgust/len(user_emotions)
-        fear = fear/len(user_emotions)
-        joy = joy/len(user_emotions)
-        sadness = sadness/len(user_emotions)
-        surprise = surprise/len(user_emotions)
+        anger = anger / len(user_emotions)
+        disgust = disgust / len(user_emotions)
+        fear = fear / len(user_emotions)
+        joy = joy / len(user_emotions)
+        sadness = sadness / len(user_emotions)
+        surprise = surprise / len(user_emotions)
 
-        return anger, disgust,fear, joy, sadness, surprise
-
-
+        return anger, disgust, fear, joy, sadness, surprise
 
     def get_direct_tweets(self, screen_name):
         self.direct_tweets = self.ta.get_all_search_queries(screen_name, max_len=100)
@@ -363,7 +371,7 @@ class Interaction():
             token = line.strip().split('\t')
             offensive.append(float(token[1]))
 
-        #hate
+        # hate
         fw = open(self.output_file_hate, 'w')
 
         for tweet in self.direct_tweets:
@@ -380,11 +388,11 @@ class Interaction():
             token = line.strip().split('\t')
             hate.append(float(token[1]))
 
-        #overall
+        # overall
         overall = []
 
         for i, offence in enumerate(offensive):
-            overall.append((offensive[i]+hate[i]*1.5)/2)
+            overall.append((offensive[i] + hate[i] * 1.5) / 2)
 
         return offensive, hate, overall
 
@@ -428,13 +436,12 @@ class Interaction():
             sadness = sadness / len(user_emotions)
             surprise = surprise / len(user_emotions)
 
-            audience_emotions.append((audience,[anger, disgust, fear, joy, sadness, surprise]))
+            audience_emotions.append((audience, [anger, disgust, fear, joy, sadness, surprise]))
 
         return audience_emotions
 
 
-if __name__=='__main__':
-
+if __name__ == '__main__':
     # ta = twitter_api()
     # ta._api = tweepy.API(ta._auth, parser=tweepy.parsers.JSONParser())
     #
@@ -459,6 +466,3 @@ if __name__=='__main__':
     # urllib.urlretrieve(image_url, '/root/PycharmProjects/Projects/aclSarcasm/image/' + handle + '.png')
 
     # ta.get_all_tweets('TIME')
-
-
-
