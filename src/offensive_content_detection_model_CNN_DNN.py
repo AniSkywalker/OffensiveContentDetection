@@ -3,7 +3,7 @@ import sys
 
 from keras.layers.normalization import BatchNormalization
 
-sys.path.append('../../')
+sys.path.append('../../../')
 import collections
 import time
 import numpy
@@ -297,7 +297,7 @@ class test_model(offensive_content_model):
         y_pred = []
 
         try:
-            fd = open(self._output_file+'.analysis', 'w')
+            fd = open(self._output_file + '.analysis', 'w')
             for i, (label) in enumerate(prediction_probability):
                 gold_label = test[i][0]
                 words = test[i][1]
@@ -305,10 +305,6 @@ class test_model(offensive_content_model):
                 context = test[i][3]
                 author = test[i][4]
 
-                # predicted = numpy.argmax(prediction_probability[i])
-
-                # y.append(int(gold_label))
-                # y_pred.append(predicted)
 
                 fd.write('\t'.join([str(l) for l in label]) + '\t'
                          # + str(gold_label) + '\t'
@@ -316,9 +312,6 @@ class test_model(offensive_content_model):
                          + ' '.join(words))
                 fd.write('\n')
 
-            # print('precision::', metrics.precision_score(y, y_pred, average='weighted'))
-            # print('recall::', metrics.recall_score(y, y_pred, average='weighted'))
-            # print('f_score::', metrics.f1_score(y, y_pred, average='weighted'))
 
             fd.close()
 

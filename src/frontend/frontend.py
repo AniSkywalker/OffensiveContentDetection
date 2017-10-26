@@ -1,11 +1,14 @@
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
+
 import os, sys, inspect
 
 sys.path.append('../../')
 
 from OffensiveContentDetection.src.twitter_module import twitter_actions
+
 interaction = twitter_actions.Interaction()
+
 app = Flask(__name__)
 
 @app.route('/')
