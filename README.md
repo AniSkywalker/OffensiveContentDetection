@@ -1,0 +1,2 @@
+cd src/
+python offensive_content_detection_model_CNN_DNN.py
