@@ -339,7 +339,7 @@ class Interaction():
             negative = negative + float(token[0])
             positive = positive + float(token[1])
 
-        return positive, negative
+        return negative, positive
 
     def get_recent_tweets(self, screen_name):
         self.timelines = self.ta.get_all_tweets(screen_name, max_len=100)

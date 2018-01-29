@@ -39,9 +39,9 @@
 
 
                 var sarcasm_score = google.visualization.arrayToDataTable([
-                      ['Sarcasm', 'Amount'],
-                      ['Sadness',    {{sarcasm_score[0]}}],
-                      ['Surprise',    {{sarcasm_score[1]}}]
+                      ['Sarcastic score', 'Amount'],
+                      ['Negative',    {{sarcasm_score[0]}}],
+                      ['Positive',    {{sarcasm_score[1]}}]
                     ]);
 
 
@@ -57,8 +57,8 @@
     </script>
     <link rel="stylesheet" href="../static/twitter.css">
 
-    <div class="col-md-6 col-md-offset-2 card card-btm">
-        <h3>Analysis of {{username}}'s received tweets</h3>
+    <div class="col-md-6 col-md-offset-4">
+        <h3>Analysis of the tweet</h3>
         <div id="sarcasm_chart_div"></div>
     </div>
     {%- endif %}
@@ -163,6 +163,8 @@
 
     </script>
     <link rel="stylesheet" href="../static/twitter.css">
+
+
     <div class="col-md-4 text-center name">
         <h1>{{username}}</h1>
         <h3>This user receives:</h3>
