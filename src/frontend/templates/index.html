@@ -1,139 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>SafeSocial</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="https://use.fontawesome.com/4d22a7c46d.js"></script>
-    <link rel="stylesheet" href="../static/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Skywalker</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://use.fontawesome.com/4d22a7c46d.js"></script>
+        <link rel="stylesheet" href="../static/style.css">
 
-</head>
-{% include "navbar.html" %}
-{% if not username %}
-{% include "body.html" %}
-{% else %}
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load('current', {
-    'packages': ['corechart']
-  });
+    </head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    {% include "navbar.html" %}
 
-  // Set a callback to run when the Google Visualization API is loaded.
-  google.charts.setOnLoadCallback(drawChart);
-
-  // Callback that creates and populates a data table,
-  // instantiates the pie chart, passes in the data and
-  // draws it.
-  function drawChart() {
-
-    // Create the data table.
-    var data = google.visualization.arrayToDataTable([
-          ['Emotion', 'Amount'],
-          ['Anger',     {{tweet_emotions[0]}}],
-          ['Disgust',      {{tweet_emotions[1]}}],
-          ['Fear',  {{tweet_emotions[2]}}],
-          ['Joy', {{tweet_emotions[3]}}],
-          ['Sadness',    {{tweet_emotions[4]}}],
-          ['Surprise',    {{tweet_emotions[5]}}]
-        ]);
-
-    // Set chart options
-    var options = {
-      'title': 'Interactions and Emotions',
-      'width': 400,
-      'height': 300
-    };
-
-    // Instantiate and draw our chart, passing in some options.
-    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-
-    var hate_data = google.visualization.arrayToDataTable([
-    ['Tweets', 'Hate'],
-    {% for score in direct_emotions[0] %}
-    ["", {{score}}],
-    {% endfor %}
-  ]);
-
-  var hate_options = {
-    title: 'Amount of hate in tweets',
-    curveType: 'function',
-    legend: { position: 'bottom' },
-      'width': 400,
-      'height': 300
-    };
-
-    // Instantiate and draw our chart, passing in some options.
-    var hate_chart = new google.visualization.LineChart(document.getElementById('hate_chart_div'));
-    hate_chart.draw(hate_data, hate_options);
+    {% if not username and not text_input %}
+    {% include "body.html" %}
+    {%- endif %}
 
 
-    var offense_data = google.visualization.arrayToDataTable([
-    ['Tweets', 'Offensive Language'],
-    {% for score_offense in direct_emotions[1] %}
-    ["", {{score_offense}}],
-    {% endfor %}
-  ]);
+    {% if sarcasm_score %}
 
-  var offense_options = {
-    title: 'Amount of offensive language in tweets',
-    curveType: 'function',
-    legend: { position: 'bottom' },
-      'width': 400,
-      'height': 300
-    };
+    <script type="text/javascript">
+          google.charts.load('current', {
+            'packages': ['corechart']
+          });
+          // Set a callback to run when the Google Visualization API is loaded.
+          google.charts.setOnLoadCallback(draw_sarcasm_chart);
 
-    // Instantiate and draw our chart, passing in some options.
-    var offensive_chart = new google.visualization.LineChart(document.getElementById('offensive_chart_div'));
-    offensive_chart.draw(offense_data, offense_options);
+          // Callback that creates and populates a data table,
+          // instantiates the pie chart, passes in the data and
+          // draws it.
+          function draw_sarcasm_chart() {
+                // Instantiate and draw our chart, passing in some options.
+                var sarcasm_chart = new google.visualization.PieChart(document.getElementById('sarcasm_chart_div'));
 
 
-    var both_data = google.visualization.arrayToDataTable([
-    ['Tweets', 'Hate and Offense'],
-    {% for score_both in direct_emotions[2] %}
-    ["", {{score_both}}],
-    {% endfor %}
-  ]);
-
-  var both_options = {
-    title: 'Amount of offensive language or hate in tweets',
-    curveType: 'function',
-    legend: { position: 'bottom' },
-      'width': 400,
-      'height': 300
-    };
-
-    // Instantiate and draw our chart, passing in some options.
-    var both_chart = new google.visualization.LineChart(document.getElementById('both_chart_div'));
-    both_chart.draw(both_data, both_options);
-  };
-
-</script>
-<link rel="stylesheet" href="../static/twitter.css">
-<div class="col-md-4 text-center name">
-<h1>{{username}}</h1>
-<h3>This user receives:</h3>
-<h4>Average Hate: <strong>{{hate*100}} /100</strong></h4>
-<h4>Average Offensive Content: <strong>{{offensive*100}} /100</strong></h4>
-<h4>Overall: <strong>{{both*100}} /100</strong></h4>
-</div>
-<div class="col-md-6 col-md-offset-2 card card-btm">
-  <h3>{{username}}'s mood based on past 100 tweets:</h3>
-  <div id="chart_div"></div>
-</div>
-<div class="col-md-12 card card-btm">
-    <h3>Analysis of {{username}}'s received tweets</h3>
-    <div class="col-md-3" id="hate_chart_div"></div>
-    <div class="col-md-3 col-md-offset-1" id="offensive_chart_div"></div>
-    <div class="col-md-3 col-md-offset-1" id="both_chart_div"></div>
-  </div>
+                var sarcasm_score = google.visualization.arrayToDataTable([
+                      ['Sarcasm', 'Amount'],
+                      ['Sadness',    {{sarcasm_score[0]}}],
+                      ['Surprise',    {{sarcasm_score[1]}}]
+                    ]);
 
 
-{% endif %}
+                // Set chart options
+                var sarcasm_options = {
+                  'title': 'Sarcasm meter',
+                  'width': 400,
+                  'height': 300
+                };
+
+                sarcasm_chart.draw(sarcasm_score, sarcasm_options);}
+
+    </script>
+    <link rel="stylesheet" href="../static/twitter.css">
+
+    <div class="col-md-6 col-md-offset-2 card card-btm">
+        <h3>Analysis of {{username}}'s received tweets</h3>
+        <div id="sarcasm_chart_div"></div>
+    </div>
+    {%- endif %}
+
+
+
+    {% if username %}
+    <script type="text/javascript">
+          google.charts.load('current', {
+            'packages': ['corechart']
+          });
+          // Set a callback to run when the Google Visualization API is loaded.
+          google.charts.setOnLoadCallback(draw_hate_emotion_Chart);
+
+          // Callback that creates and populates a data table,
+          // instantiates the pie chart, passes in the data and
+          // draws it.
+          function draw_hate_emotion_Chart() {
+
+                // Create the data table.
+                var user_emotion_data = google.visualization.arrayToDataTable([
+                      ['Emotion', 'Amount'],
+                      ['Anger',     {{tweet_emotions[0]}}],
+                      ['Disgust',      {{tweet_emotions[1]}}],
+                      ['Fear',  {{tweet_emotions[2]}}],
+                      ['Joy', {{tweet_emotions[3]}}],
+                      ['Sadness',    {{tweet_emotions[4]}}],
+                      ['Surprise',    {{tweet_emotions[5]}}]
+                    ]);
+
+                // Set chart options
+                var user_emotion_options = {
+                  'title': 'Interactions and Emotions',
+                  'width': 400,
+                  'height': 300
+                };
+
+                // Instantiate and draw our chart, passing in some options.
+                var user_emotion_chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                user_emotion_chart.draw(user_emotion_data, user_emotion_options);
+
+
+                var hate_data = google.visualization.arrayToDataTable([
+                ['Tweets', 'Hate'],
+                {% for score in direct_emotions[0] %}
+                ["", {{score}}],
+                {% endfor %}
+              ]);
+
+              var hate_options = {
+                title: 'Amount of hate in tweets',
+                curveType: 'function',
+                legend: { position: 'bottom' },
+                  'width': 400,
+                  'height': 300
+                };
+
+                // Instantiate and draw our chart, passing in some options.
+                var hate_chart = new google.visualization.LineChart(document.getElementById('hate_chart_div'));
+                hate_chart.draw(hate_data, hate_options);
+
+
+                var offense_data = google.visualization.arrayToDataTable([
+                ['Tweets', 'Offensive Language'],
+                {% for score_offense in direct_emotions[1] %}
+                ["", {{score_offense}}],
+                {% endfor %}
+              ]);
+
+              var offense_options = {
+                title: 'Amount of offensive language in tweets',
+                curveType: 'function',
+                legend: { position: 'bottom' },
+                  'width': 400,
+                  'height': 300
+                };
+
+                // Instantiate and draw our chart, passing in some options.
+                var offensive_chart = new google.visualization.LineChart(document.getElementById('offensive_chart_div'));
+                offensive_chart.draw(offense_data, offense_options);
+
+
+                var both_data = google.visualization.arrayToDataTable([
+                ['Tweets', 'Hate and Offense'],
+                {% for score_both in direct_emotions[2] %}
+                ["", {{score_both}}],
+                {% endfor %}
+              ]);
+
+              var both_options = {
+                title: 'Amount of offensive language or hate in tweets',
+                curveType: 'function',
+                legend: { position: 'bottom' },
+                  'width': 400,
+                  'height': 300
+                };
+
+                // Instantiate and draw our chart, passing in some options.
+                var both_chart = new google.visualization.LineChart(document.getElementById('both_chart_div'));
+                both_chart.draw(both_data, both_options);
+              };
+
+    </script>
+    <link rel="stylesheet" href="../static/twitter.css">
+    <div class="col-md-4 text-center name">
+        <h1>{{username}}</h1>
+        <h3>This user receives:</h3>
+        <h4>Average Hate: <strong>{{hate*100}} /100</strong></h4>
+        <h4>Average Offensive Content: <strong>{{offensive*100}} /100</strong></h4>
+        <h4>Overall: <strong>{{both*100}} /100</strong></h4>
+    </div>
+
+    <div class="col-md-6 col-md-offset-2 card card-btm">
+      <h3>{{username}}'s mood based on past 100 tweets:</h3>
+      <div id="chart_div"></div>
+    </div>
+
+    <div class="col-md-12 card card-btm">
+        <h3>Analysis of {{username}}'s received tweets</h3>
+        <div class="col-md-3" id="hate_chart_div"></div>
+        <div class="col-md-3 col-md-offset-1" id="offensive_chart_div"></div>
+        <div class="col-md-3 col-md-offset-1" id="both_chart_div"></div>
+    </div>
+
+
+    {%- endif %}
 
 </html>

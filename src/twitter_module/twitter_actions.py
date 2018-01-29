@@ -260,6 +260,7 @@ class Interaction():
 
     basepath = os.getcwd()[:os.getcwd().rfind('/')]
 
+    # offensive
     test_file = basepath + '/../resource/test/test_offensive.txt'
     word_file_path = basepath + '/../resource/word_list.txt'
 
@@ -268,7 +269,6 @@ class Interaction():
     vocab_file_path = basepath + '/../resource/text_model/vocab_list_offensive.txt'
 
     # hate_speech
-
     test_file = basepath + '/../resource/test/test_hate.txt'
     word_file_path = basepath + '/../resource/word_list.txt'
 
@@ -277,13 +277,20 @@ class Interaction():
     vocab_file_path = basepath + '/../resource/text_model/vocab_list_hate.txt'
 
     # emotion
-
     test_file = basepath + '/../resource/test/test_emotion.txt'
     word_file_path = basepath + '/../resource/word_list.txt'
 
     output_file_emotion = basepath + '/../resource/text_model/TestResults_emotion.txt'
     model_file = basepath + '/../resource/text_model/weights/'
     vocab_file_path = basepath + '/../resource/text_model/vocab_list_emotion.txt'
+
+    # sarcasm
+    test_file_sarcasm = basepath + '/../resource/test/test_sarcasm.txt'
+    word_file_path = basepath + '/../resource/word_list.txt'
+
+    output_file_sarcasm = basepath + '/../resource/text_model_2D/TestResults_sarcasm.txt'
+    model_file_sarcasm = basepath + '/../resource/text_model_2D/weights/'
+    vocab_file_path_sarcasm = basepath + '/../resource/text_model_2D/vocab_list_sarcasm.txt'
 
     output_file_emotion_audience = basepath + '/../resource/text_model/TestResults_emotion.txt'
 
@@ -308,6 +315,32 @@ class Interaction():
                                     self.output_file_emotion)
         self.t_emotion.load_trained_model(model_file_name='emotion.json', weight_file='emotion.json.hdf5')
 
+        self.t_sarcasm = test_model(self.word_file_path, self.model_file_sarcasm, self.vocab_file_path_sarcasm,
+                                    self.output_file_sarcasm)
+        self.t_sarcasm.load_trained_model(model_file_name='sarcasm.json', weight_file='sarcasm.json.hdf5')
+
+    def get_sarcasm_score(self, text):
+        fw = open(self.output_file_sarcasm, 'w')
+
+        fw.write('ID' + '\t' + '-1' + '\t' + convert_one_line(text.strip()) + '\n')
+        fw.close()
+
+        try:
+            self.t_sarcasm.predict(self.output_file_sarcasm)
+
+        except:
+            raise
+
+        sarcasm_score = open(self.output_file_sarcasm + '.analysis', 'r').readlines()
+        positive = 0.0
+        negative = 0.0
+        for line in sarcasm_score:
+            token = line.strip().split('\t')
+            negative = negative + float(token[0])
+            positive = positive + float(token[1])
+
+        return positive, negative
+
     def get_recent_tweets(self, screen_name):
         self.timelines = self.ta.get_all_tweets(screen_name, max_len=100)
 
@@ -318,13 +351,10 @@ class Interaction():
         fw.close()
 
         try:
-
             self.t_emotion.predict(self.output_file_emotion)
 
         except:
             raise
-
-
 
         user_emotions = open(self.output_file_emotion + '.analysis', 'r').readlines()
         anger = 0.0
