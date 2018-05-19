@@ -1,0 +1,96 @@
+<div class="jumbotron">
+    <h1 class="title display-1 text-center">Skywalker</h1>
+    <div class="card text-center row">
+        <form class="form-group col-md-6 col-md-offset-3" action="/handle_data" method="POST" onsubmit="return validate()">
+            <div class="form-group">
+                <input type="text" onkeyup="check_for_at()" name="userTwitterHandle" required class="form-control" placeholder="@username">
+            </div>
+            <p id="error_message" class="text-danger"></p>
+
+            <div class="form-group col-md-8 col-md-offset-2 row">
+                <button id="btnSubmit" type="submit" class="btn btn-success btn-lg">Analyse
+                    <i class="fa fa-comments"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="card text-center row">
+        <form class="form-group col-md-6 col-md-offset-3" action="/predict" method="POST">
+            <div class="form-group">
+                <input type="text" onkeyup="check_for_text()" name="input_tweet" required class="form-control" placeholder="I love it #sarcasm">
+            </div>
+            <p id="error_message_input_text" class="text-danger"></p>
+
+            <div class="form-group col-md-8 col-md-offset-2 row">
+                <button id="btnPredictSarcasmSubmit" type="submit" class="btn btn-success btn-lg">Analyse
+                    <i class="fa fa-comments"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!--<div class="card text-center row">-->
+        <!--<form name="generation" class="form-group col-md-6 col-md-offset-3" action="/generation" method="POST" onsubmit="return validate()">-->
+            <!--<div class="form-group">-->
+                <!--<input type="text" onkeyup="line_completion()" name="typed_text" required class="form-control" placeholder="I love Sarcasm">-->
+            <!--</div>-->
+        <!--</form>-->
+    <!--</div>-->
+
+</div>
+
+<script type="text/javascript">
+function validate() {
+    var x = document.getElementsByName('userTwitterHandle')[0].value;
+    if (x[0] !== "@") {
+        alert('Name must start with an "@" symbol!');
+        return false;
+    }
+}
+
+// check in the input text is not empty
+function check_for_text() {
+    var x = document.getElementsByName('input_tweet')[0].value;
+    if (len(x.split(' ')) == 0) {
+        document.getElementById('btnPredictSarcasmSubmit').setAttribute("disabled", "true");
+        document.getElementById('error_message_input_text').innerHTML = "Input tweet is empty";
+    } else {
+        document.getElementById('btnPredictSarcasmSubmit').removeAttribute("disabled");
+        document.getElementById('error_message_input_text').innerHTML = "";
+    }
+}
+
+
+function check_for_at() {
+    var x = document.getElementsByName('userTwitterHandle')[0].value;
+    if (x[0] !== "@") {
+        document.getElementById('btnSubmit').setAttribute("disabled", "true");
+        document.getElementById('error_message').innerHTML = "Name must start with an @ symbol";
+    } else {
+        document.getElementById('btnSubmit').removeAttribute("disabled");
+        document.getElementById('error_message').innerHTML = "";
+    }
+}
+
+
+function line_completion() {
+    var x = document.getElementsByName('typed_text')[0].value;
+    $.ajax({
+            url: '/generation',
+            data: $('form').serialize(),
+            type: 'POST',
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+
+    document.getElementById('error_message').innerHTML = x.concat(' I will finish one day Yay');
+
+}
+</script>

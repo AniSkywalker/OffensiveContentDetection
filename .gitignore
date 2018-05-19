@@ -1,1 +1,3 @@
 .idea/**
+resource/text_model/weights/offensive.json.hdf5
+resource/text_model/weights/emotion.json.hdf5
