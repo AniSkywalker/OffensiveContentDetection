@@ -1,10 +1,11 @@
 import os
 import sys
 
+from keras import Input, Model
 from keras.layers import GlobalMaxPooling1D, GlobalMaxPooling2D
 from keras.layers.normalization import BatchNormalization
 
-sys.path.append('../../')
+sys.path.append('../')
 import collections
 import time
 import numpy
@@ -13,12 +14,13 @@ from keras.models import Sequential, model_from_json
 from keras.layers.core import Dropout, Dense, Activation, Reshape, Flatten
 from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM
+from keras.layers.merge import add, concatenate, subtract
 from keras.layers.convolutional import Convolution2D, MaxPooling2D
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 from keras.optimizers import Adam
 from keras.utils import np_utils
 from collections import defaultdict
-import OffensiveContentDetection.src.data_processing.data_handler as dh
+import src.data_processing.data_handler as dh
 
 numpy.random.seed(1337)
 
@@ -37,53 +39,82 @@ class offensive_content_model():
 
     def __init__(self):
         self._line_maxlen = 50
+        self._line_char_maxlen = 200
 
-    def _build_network(self, vocab_size, maxlen, emb_weights=None, hidden_units=256, trainable=False):
+    def _build_network(self, vocab_size, char_vocab_size, emb_weights=None, hidden_units=256, trainable=False,
+                       batch_size=1):
         print('Build model...')
-        model = Sequential()
 
-        print('embe', emb_weights.shape, len(emb_weights))
+        text_input = Input(name='text', batch_shape=(batch_size, self._line_maxlen))
 
         if (len(emb_weights) == 0):
-            model.add(Embedding(vocab_size, 10, input_length=maxlen, embeddings_initializer='glorot_normal'))
+            emb = Embedding(vocab_size, 256, input_length=self._line_maxlen, embeddings_initializer='glorot_normal',
+                            trainable=trainable)(text_input)
         else:
-            model.add(Embedding(vocab_size, emb_weights.shape[1], input_length=maxlen, weights=[emb_weights],
-                                trainable=trainable))
-        print(model.output_shape)
+            emb = Embedding(vocab_size, emb_weights.shape[1], input_length=self._line_maxlen, weights=[emb_weights],
+                            trainable=trainable)(text_input)
 
-        model.add(Reshape((self._line_maxlen, model.output_shape[2], 1)))
-        model.add(BatchNormalization(momentum=0.9))
+        emb = Reshape((emb.output_shape[1], emb.output_shape[2], 1))(emb)
 
-        print(model.output_shape)
+        t_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
+                               bias_initializer='he_normal',
+                               activation='relu', padding='valid', use_bias=True, input_shape=(1, self._line_maxlen))(
+            emb)
+        t_cnn1 = MaxPooling2D((2, 1))(t_cnn1)
+        t_cnn1 = Dropout(0.5)(t_cnn1)
 
-        model.add(Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal', padding='valid',
-                                activation='relu'))
-        model.add(MaxPooling2D(pool_size=(2, 1)))
-        model.add(Dropout(0.5))
+        t_cnn2 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
+                               bias_initializer='he_normal',
+                               activation='relu', padding='valid', use_bias=True)(t_cnn1)
+        t_cnn2 = MaxPooling2D((2, 1))(t_cnn2)
+        t_cnn2 = Dropout(0.5)(t_cnn2)
 
-        model.add(Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal', padding='valid',
-                                activation='relu'))
-        model.add(MaxPooling2D(pool_size=(2, 1)))
-        model.add(Dropout(0.5))
+        t_cnn3 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
+                               bias_initializer='he_normal',
+                               activation='relu', padding='valid', use_bias=True)(t_cnn2)
+        t_cnn3 = MaxPooling2D((2, 1))(t_cnn3)
+        t_cnn3 = Dropout(0.5)(t_cnn3)
 
-        model.add(Convolution2D(int(hidden_units / 2), (2, 1), kernel_initializer='he_normal', padding='valid',
-                                activation='relu'))
-        model.add(MaxPooling2D(pool_size=(2, 1)))
-        model.add(Dropout(0.5))
+        gmp = GlobalMaxPooling2D()(t_cnn3)
 
-        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid', return_sequences=True))
-        # model.add(Dropout(0.25))
+        char_input = Input(name='text', batch_shape=(batch_size, self._line_char_maxlen))
 
-        model.add(GlobalMaxPooling2D())
+        char_emb = Embedding(char_vocab_size, 25, input_length=self._line_char_maxlen,
+                             embeddings_initializer='glorot_normal',
+                             trainable=trainable)(char_input)
 
-        # model.add(Dense(int(hidden_units / 4), kernel_initializer='he_normal', activation='relu'))
-        # model.add(BatchNormalization(momentum=0.9))
+        char_emb = Reshape((char_emb.output_shape[1], char_emb.output_shape[2], 1))(char_emb)
 
-        model.add(Dense(2))
-        model.add(Activation('softmax'))
-        adam = Adam(lr=0.001)
-        model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
+        char_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
+                                  bias_initializer='he_normal',
+                                  activation='relu', padding='valid', use_bias=True,
+                                  input_shape=(1, self._line_char_maxlen))(char_emb)
+        char_cnn1 = MaxPooling2D((2, 1))(char_cnn1)
+        char_cnn1 = Dropout(0.5)(char_cnn1)
+
+        char_cnn2 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
+                                  bias_initializer='he_normal',
+                                  activation='relu', padding='valid', use_bias=True)(char_cnn1)
+        char_cnn2 = MaxPooling2D((2, 1))(char_cnn2)
+        char_cnn2 = Dropout(0.5)(char_cnn2)
+
+        char_cnn3 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
+                                  bias_initializer='he_normal',
+                                  activation='relu', padding='valid', use_bias=True)(char_cnn2)
+        char_cnn3 = MaxPooling2D((2, 1))(char_cnn3)
+        char_cnn3 = Dropout(0.5)(char_cnn3)
+
+        char_gmp = GlobalMaxPooling2D()(char_cnn3)
+
+        merged = concatenate([char_gmp, gmp])
+
+        output = Dense(2, activation='softmax')(merged)
+
+        model = Model(inputs=[text_input, char_input], outputs=output)
+
+        model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
         print('No of parameter:', model.count_params())
+
         print(model.summary())
         return model
 
@@ -150,25 +181,39 @@ class train_model(offensive_content_model):
         self._output_file = output_file
         self._model_filename = model_filename
 
+        self.load_train_validation_data(lowercase=False, at_character=True)
+        self.char_train = self.train
+        self.char_validation = self.validation
+
         self.load_train_validation_data()
 
         # batch size
         batch_size = 16
         print('bb', len(self.train))
+        print('bb', len(self.char_train))
 
         self.train = self.train[-len(self.train) % batch_size:]
+        self.char_train = self.char_train[-len(self.char_train) % batch_size:]
         print('bb', len(self.train))
+        print('bb', len(self.char_train))
 
         print(self._line_maxlen)
+        print(self._line_char_maxlen)
 
         # build vocabulary
         self._vocab = dh.build_vocab(self.train)
         self._vocab['unk'] = len(self._vocab.keys()) + 1
 
+        self._char_vocab = dh.build_vocab(self.char_train)
+        self._char_vocab['unk'] = len(self._char_vocab.keys()) + 1
+
         print(len(self._vocab.keys()) + 1)
         print('unk::', self._vocab['unk'])
+        print(len(self._char_vocab.keys()) + 1)
+        print('unk::', self._char_vocab['unk'])
 
         dh.write_vocab(self._vocab_file_path, self._vocab)
+        dh.write_vocab(self._vocab_file_path + '.char', self._char_vocab)
 
         # prepares input
         X, Y, D, C, A = dh.vectorize_word_dimension(self.train, self._vocab)
@@ -177,6 +222,14 @@ class train_model(offensive_content_model):
         # prepares input
         tX, tY, tD, tC, tA = dh.vectorize_word_dimension(self.validation, self._vocab)
         tX = dh.pad_sequence_1d(tX, maxlen=self._line_maxlen)
+
+        # prepares character input
+        cX, cY, cD, cC, cA = dh.vectorize_word_dimension(self.char_train, self._char_vocab)
+        cX = dh.pad_sequence_1d(cX, maxlen=self._line_char_maxlen)
+
+        # prepares character input
+        ctX, ctY, ctD, ctC, ctA = dh.vectorize_word_dimension(self.char_validation, self._char_vocab)
+        ctX = dh.pad_sequence_1d(ctX, maxlen=self._line_char_maxlen)
 
         # hidden units
         hidden_units = 256
@@ -208,7 +261,7 @@ class train_model(offensive_content_model):
             model = self._build_emotion_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,
                                                 hidden_units=hidden_units, trainable=False)
         if (model_filename == 'offensive.json'):
-            model = self._build_network(len(self._vocab.keys()) + 1, self._line_maxlen, emb_weights=W,
+            model = self._build_network(len(self._vocab.keys()) + 1, len(self._char_vocab.keys()) + 1, emb_weights=W,
                                         hidden_units=hidden_units, trainable=False)
 
         open(self._model_file + self._model_filename, 'w').write(model.to_json())
@@ -224,16 +277,17 @@ class train_model(offensive_content_model):
         # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
         #           callbacks=[save_best,early_stopping],class_weight=ratio)
 
-    def load_train_validation_data(self):
+    def load_train_validation_data(self, lowercase=True, at_character=False):
         self.train = dh.loaddata(self._train_file, self._word_file_path, self._split_word_file_path,
                                  self._emoji_file_path, normalize_text=True,
-                                 split_hashtag=True,
-                                 ignore_profiles=False)
+                                 split_hashtag=True, lowercase=lowercase,
+                                 ignore_profiles=False, at_character=at_character)
+
         self.validation = dh.loaddata(self._validation_file, self._word_file_path, self._split_word_file_path,
                                       self._emoji_file_path,
                                       normalize_text=True,
-                                      split_hashtag=True,
-                                      ignore_profiles=False)
+                                      split_hashtag=True, lowercase=lowercase,
+                                      ignore_profiles=False, at_character=at_character)
 
     def get_maxlen(self):
         return max(map(len, (x for _, x in self.train + self.validation)))
@@ -291,9 +345,9 @@ class test_model(offensive_content_model):
         try:
             start = time.time()
             self.test = dh.loaddata(test_file, self._word_file_path, self._split_word_file_path, self._emoji_file_path,
-                                normalize_text=True,
-                                split_hashtag=True,
-                                ignore_profiles=False)
+                                    normalize_text=True,
+                                    split_hashtag=True,
+                                    ignore_profiles=False)
             end = time.time()
             if (verbose == True):
                 print('test resource loading time::', (end - start))
@@ -358,7 +412,7 @@ if __name__ == "__main__":
     train_file = basepath + '/resource/train/hate_speech_kaggle_train.txt'
     validation_file = basepath + '/resource/test/onlineHarassmentDataset.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
-    word_file_path = basepath + '/resource/word_list.txt'
+    word_file_path = basepath + '/resource/word_list_freq.txt'
 
     split_word_path = basepath + '/resource/word_split.txt'
     emoji_file_path = basepath + '/resource/emoji_unicode_names_final.txt'
