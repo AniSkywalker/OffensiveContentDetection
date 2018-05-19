@@ -62,8 +62,6 @@ class offensive_content_model():
 
         # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid', return_sequences=True))
         # model.add(Dropout(0.25))
-        # model.add(LSTM(hidden_units, kernel_initializer='he_normal', activation='sigmoid'))
-        # model.add(Dropout(0.25))
 
         model.add(Flatten())
 

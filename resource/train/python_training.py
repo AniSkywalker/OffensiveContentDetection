@@ -9,11 +9,11 @@ import urllib
 # Consumer keys and access tokens, used for OAuth
 from tweepy.error import TweepError
 
-consumer_key = "8bYbTwXwmeg7dE9Y9zzQI55bG"
-consumer_secret = "kE9XPKStigeV3KReukSY2iFZW2oLVSrCv0m2Op77c2t3NryHUg"
+consumer_key = "1xd5E01MLPzcr0AN6Xm0iXyS3"
+consumer_secret = "Z73tLVF1fBojSj1joZki1kEdzMrpjjXGh8wGJ4MKMnolkd8L3c"
 
-access_token = "256094350-8EwRZcvtQPkqkMN8ks3MFWgYVdUSYaAQ5ePOHn8W"
-access_token_secret = "S6Br3zTvoM6JxVgSMXsa9iEn5lSfAK54CyVaiJnyckOLK"
+access_token = "2807844465-rPINnrjMi3aonlgWQqAVBUAGSrPmigiVEwY2Lqx"
+access_token_secret = "g0OBiXmXcl63ZFew6rByp4rcVNegKPptMzYuNYrvtyvOR"
 
 reply_file = '/home/PycharmProjects/Projects/twitter_browser/reply_file.txt'
 
@@ -217,7 +217,7 @@ class twitter_api():
     def search_query(self, query):
         return self._api.search(q=query, count=200)
 
-    def get_all_search_queries(self, query):
+    def get_all_search_queries(self, query,max_len=18000):
         # initialize a list to hold all the tweepy Tweets
         alltweets = []
 
@@ -231,7 +231,7 @@ class twitter_api():
         oldest = alltweets[-1]['id'] - 1
 
         # keep grabbing tweets until there are no tweets left to grab
-        while len(new_tweets['statuses']) > 0:
+        while len(new_tweets['statuses']) > 0 and len(alltweets) < max_len:
             print("getting tweets before %s" % (oldest))
 
             # all subsiquent requests use the max_id param to prevent duplicates
@@ -310,26 +310,26 @@ def word_ratio(inputText):
         return 0
 
 
-def crawl_by_file(ta):
-    parsed_tweets = set()
-    with codecs.open('/root/Downloads/sarcasm_wsd/resource/tweet.SARCASM.all.text.TRAIN', 'r', 'utf-8') as f:
-        parsed_tweets.update([line.split('\t')[1] for line in f.readlines()])
-
-    with codecs.open('/root/Downloads/sarcasm_wsd/resource/tweet.SARCASM.all.id.TRAIN', 'r', 'utf-8') as f:
-        with codecs.open('/root/Downloads/sarcasm_wsd/resource/tweet.SARCASM.all.text.TRAIN', 'a', 'utf-8') as fw:
-            lines = f.readlines()
-            for i, line in enumerate(lines):
-                print(i, line)
-
-                tag, id = line.strip().split('\t')
-                id = id
-                if (not parsed_tweets.__contains__(id)):
-                    status = ta.get_status(id)
-                    if (status != None):
-                        fw.write(tag + '\t' + str(id) + '\t' + unicode(convert_one_line(status.strip())) + '\n')
-                    # else:
-                    #     fw.write(tag+'\t'+str(id)+'\t'+'not found'+'\n')
-                    time.sleep(1)
+# def crawl_by_file(ta):
+#     parsed_tweets = set()
+#     with codecs.open('/root/Downloads/sarcasm_wsd/resource/tweet.SARCASM.all.text.TRAIN', 'r', 'utf-8') as f:
+#         parsed_tweets.update([line.split('\t')[1] for line in f.readlines()])
+#
+#     with codecs.open('/root/Downloads/sarcasm_wsd/resource/tweet.SARCASM.all.id.TRAIN', 'r', 'utf-8') as f:
+#         with codecs.open('/root/Downloads/sarcasm_wsd/resource/tweet.SARCASM.all.text.TRAIN', 'a', 'utf-8') as fw:
+#             lines = f.readlines()
+#             for i, line in enumerate(lines):
+#                 print(i, line)
+#
+#                 tag, id = line.strip().split('\t')
+#                 id = id
+#                 if (not parsed_tweets.__contains__(id)):
+#                     status = ta.get_status(id)
+#                     if (status != None):
+#                         fw.write(tag + '\t' + str(id) + '\t' + unicode(convert_one_line(status.strip())) + '\n')
+#                     # else:
+#                     #     fw.write(tag+'\t'+str(id)+'\t'+'not found'+'\n')
+#                     time.sleep(1)
 
 
 def get_tweet_source_by_file(ta):
@@ -360,22 +360,22 @@ def get_tweet_source_by_file(ta):
 def choose_emotion(text):
     for word in text.strip().split(' '):
         if love_tags.__contains__(word):
-            print('love \t' + text)
+            print('love \t' + text.replace(word).strip())
             return 'love'
         elif sad_tags.__contains__(word):
-            print('sad\t' + text)
+            print('sad\t' + text.replace(word).strip())
             return 'sad'
         elif joy_tags.__contains__(word):
-            print('joy\t' + text)
+            print('joy\t' + text.replace(word).strip())
             return 'joy'
         elif fear_tags.__contains__(word):
-            print('fear\t' + text)
+            print('fear\t' + text.replace(word).strip())
             return 'fear'
         elif anger_tags.__contains__(word):
-            print('anger\t' + text)
+            print('anger\t' + text.replace(word).strip())
             return 'anger'
         elif surprise_tags.__contains__(word):
-            print('surprise\t' + text)
+            print('surprise\t' + text.replace(word).strip())
             return 'surprise'
 
 
@@ -384,6 +384,8 @@ def write_file(text):
     if emotion != None:
         f = open('emotion.txt', 'a+')
         f.write('ID' + '\t' + str(emotion) + '\t' + convert_one_line(text) + '\n')
+        # print(convert_one_line(text))
+        f.close()
 
 
 class CustomStreamListener(tweepy.StreamListener):
@@ -399,8 +401,9 @@ class CustomStreamListener(tweepy.StreamListener):
                     self.text = status.extended_tweet['full_text']
                 else:
                     self.text = status.text
+
                 self.text = convert_one_line(self.text)
-                if (word_ratio(self.text) > 70):
+                if (word_ratio(self.text) > 60.0):
                     write_file(self.text)
 
 
@@ -427,49 +430,117 @@ if __name__ == '__main__':
     # ta.get_relies(ta.get_all_search_queries("@onlinesarcasm"))
 
 
-    cStreamListener = CustomStreamListener()
-    stream = tweepy.Stream(auth=ta._auth, parser=tweepy.parsers.JSONParser(), listener=cStreamListener)
-    stream.filter(languages=['en'], track=['#adoration', '#affection', '#love', '#fondness', '#liking', '#lovin',
-                                           '#loving', '#bliss', '#blithe', '#cheerfulness', '#gaiety', '#jolliness',
-                                           '#joviality', '#joy', '#delight', '#enjoyment', '#gladness', '#happiness',
-                                           '#jubilation', '#elation', '#euphoria', '#cheerful', '#gleeful', '#gayety',
-                                           '#jolly', '#joyful', '#delightful', '#glad', '#happy', '#jubilant',
-                                           '#elated',
-                                           '#enthusiasm', '#zeal', '#zest', '#excitement', '#thrill', '#exciting',
-                                           '#excited', '#thrilled', '#pride', '#proud', '#pridefulness', '#prideful',
-                                           '#optimism', '#optimistic', '#hopefulness', '#hopeful', '#hoping',
-                                           '#expecting',
-                                           '#Relief', '#ease', '#relaxation', '#alleviation', '#irritation',
-                                           '#annoyance',
-                                           '#irritating', '#irritated', '#annoying', '#annoyed', '#bothersome',
-                                           '#irksome', '#disturbing', '#anger', '#rage', '#outrage', '#fury', '#wrath',
-                                           '#angry', '#frenzy', '#enraged', '#infuriated', '#irate', '#ireful',
-                                           '#offended', '#outraged', '#raging', '#wrathful', '#furious', '#disgust',
-                                           '#disgusting', '#disgusted', '#frustration', '#frustrated', '#frustrating',
-                                           '#frustrate', '#envy', '#jealousy', '#jealous', '#envying', '#surprise',
-                                           '#amazement', '#astonishment', '#astoundment', '#Surprised', '#Surprising',
-                                           '#astonished', '#astounded', '#amazed', '#unexpected', '#depression',
-                                           '#despair',
-                                           '#hopelessness', '#sadness', '#unhappiness', '#sorrow', '#sad', '#depressed',
-                                           '#depressing', '#desperation', '#despairing', '#unhappy', '#cheerless',
-                                           '#dejected',
-                                           '#brokenhearted', '#heartbroken', '#heartbreak', '#agony', '#suffering',
-                                           '#hurt',
-                                           '#anguish', '#suffer', '#pain', '#torment', '#torture', '#misery', '#grief',
-                                           '#woe',
-                                           '#dismay', '#disappointment', '#disappoint', '#disappointed',
-                                           '#disappointing',
-                                           '#letdown', '#neglect', '#loneliness', '#aloneness', '#homesickness',
-                                           '#neglected',
-                                           '#neglecting', '#lonely', '#lonesome', '#friendless', '#homesick',
-                                           '#embarrassment',
-                                           '#embarrass', '#embarrassed', '#embarrassing', '#abashment', '#awkwardness',
-                                           '#abashed', '#ashamed', '#regretting', '#remorseful', '#guilt', '#regret',
-                                           '#remorse', '#guilty', '#regretful', '#fear', '#fright', '#horror',
-                                           '#terror', '#scare', '#panic', '#scared', '#frightened', '#fearful',
-                                           '#panicking', '#panicked', '#panicky', '#anxiety', '#nervousness',
-                                           '#tenseness', '#tension', '#uneasiness', '#worry', '#anxious', '#nervous',
-                                           '#tense', '#uneasy', '#worried', '#worrying'])
+    # cStreamListener = CustomStreamListener()
+    # stream = tweepy.Stream(auth=ta._auth, parser=tweepy.parsers.JSONParser(), listener=cStreamListener)
+    # stream.filter(languages=['en'], track=['#adoration', '#affection', '#love', '#fondness', '#liking', '#lovin',
+    #                                        '#loving', '#bliss', '#blithe', '#cheerfulness', '#gaiety', '#jolliness',
+    #                                        '#joviality', '#joy', '#delight', '#enjoyment', '#gladness', '#happiness',
+    #                                        '#jubilation', '#elation', '#euphoria', '#cheerful', '#gleeful', '#gayety',
+    #                                        '#jolly', '#joyful', '#delightful', '#glad', '#happy', '#jubilant',
+    #                                        '#elated',
+    #                                        '#enthusiasm', '#zeal', '#zest', '#excitement', '#thrill', '#exciting',
+    #                                        '#excited', '#thrilled', '#pride', '#proud', '#pridefulness', '#prideful',
+    #                                        '#optimism', '#optimistic', '#hopefulness', '#hopeful', '#hoping',
+    #                                        '#expecting',
+    #                                        '#Relief', '#ease', '#relaxation', '#alleviation', '#irritation',
+    #                                        '#annoyance',
+    #                                        '#irritating', '#irritated', '#annoying', '#annoyed', '#bothersome',
+    #                                        '#irksome', '#disturbing', '#anger', '#rage', '#outrage', '#fury', '#wrath',
+    #                                        '#angry', '#frenzy', '#enraged', '#infuriated', '#irate', '#ireful',
+    #                                        '#offended', '#outraged', '#raging', '#wrathful', '#furious', '#disgust',
+    #                                        '#disgusting', '#disgusted', '#frustration', '#frustrated', '#frustrating',
+    #                                        '#frustrate', '#envy', '#jealousy', '#jealous', '#envying', '#surprise',
+    #                                        '#amazement', '#astonishment', '#astoundment', '#Surprised', '#Surprising',
+    #                                        '#astonished', '#astounded', '#amazed', '#unexpected', '#depression',
+    #                                        '#despair',
+    #                                        '#hopelessness', '#sadness', '#unhappiness', '#sorrow', '#sad', '#depressed',
+    #                                        '#depressing', '#desperation', '#despairing', '#unhappy', '#cheerless',
+    #                                        '#dejected',
+    #                                        '#brokenhearted', '#heartbroken', '#heartbreak', '#agony', '#suffering',
+    #                                        '#hurt',
+    #                                        '#anguish', '#suffer', '#pain', '#torment', '#torture', '#misery', '#grief',
+    #                                        '#woe',
+    #                                        '#dismay', '#disappointment', '#disappoint', '#disappointed',
+    #                                        '#disappointing',
+    #                                        '#letdown', '#neglect', '#loneliness', '#aloneness', '#homesickness',
+    #                                        '#neglected',
+    #                                        '#neglecting', '#lonely', '#lonesome', '#friendless', '#homesick',
+    #                                        '#embarrassment',
+    #                                        '#embarrass', '#embarrassed', '#embarrassing', '#abashment', '#awkwardness',
+    #                                        '#abashed', '#ashamed', '#regretting', '#remorseful', '#guilt', '#regret',
+    #                                        '#remorse', '#guilty', '#regretful', '#fear', '#fright', '#horror',
+    #                                        '#terror', '#scare', '#panic', '#scared', '#frightened', '#fearful',
+    #                                        '#panicking', '#panicked', '#panicky', '#anxiety', '#nervousness',
+    #                                        '#tenseness', '#tension', '#uneasiness', '#worry', '#anxious', '#nervous',
+    #                                        '#tense', '#uneasy', '#worried', '#worrying'])
+    with open('Love.txt','a') as fw:
+        for tags in love_tags:
+            try:
+                tweets = ta.get_all_search_queries(tags,max_len=3000)
+                texts = [convert_one_line(tweet['text'].replace(tags,'')) for tweet in tweets if not tweet['text'].startswith('RT') and len(tweet['text'].split(' '))>10]
+                for text in texts:
+                    fw.write(text.strip()+'\n')
+            except:
+                print('error')
+            print('sleeping')
+
+            time.sleep(240)
+
+    with open('joy.txt','a') as fw:
+        for tags in joy_tags:
+            try:
+                tweets = ta.get_all_search_queries(tags,max_len=3000)
+                texts = [convert_one_line(tweet['text'].replace(tags,'')) for tweet in tweets if not tweet['text'].startswith('RT') and len(tweet['text'].split(' '))>10]
+                for text in texts:
+                    fw.write(text.strip()+'\n')
+            except:
+                print('error')
+            print('sleeping')
+
+            time.sleep(240)
+
+
+    with open('anger.txt','a') as fw:
+        for tags in anger_tags:
+            try:
+                tweets = ta.get_all_search_queries(tags,max_len=3000)
+                texts = [convert_one_line(tweet['text'].replace(tags,'')) for tweet in tweets if not tweet['text'].startswith('RT') and len(tweet['text'].split(' '))>10]
+                for text in texts:
+                    fw.write(text.strip()+'\n')
+            except:
+                print('error')
+            print('sleeping')
+
+            time.sleep(240)
+
+    with open('fear.txt','a') as fw:
+        for tags in fear_tags:
+            try:
+                tweets = ta.get_all_search_queries(tags,max_len=3000)
+                texts = [convert_one_line(tweet['text'].replace(tags,'')) for tweet in tweets if not tweet['text'].startswith('RT') and len(tweet['text'].split(' '))>10]
+                for text in texts:
+                    fw.write(text.strip()+'\n')
+            except:
+                print('error')
+            print('sleeping')
+
+            time.sleep(240)
+
+    with open('sad.txt','a') as fw:
+        for tags in sad_tags:
+            try:
+                tweets = ta.get_all_search_queries(tags,max_len=3000)
+                texts = [convert_one_line(tweet['text'].replace(tags,'')) for tweet in tweets if not tweet['text'].startswith('RT') and len(tweet['text'].split(' '))>10]
+                for text in texts:
+                    fw.write(text.strip()+'\n')
+            except:
+                print('error')
+            print('sleeping')
+
+            time.sleep(240)
+
+
+
 
     # results = ta._api.search(q=' as ', count=100)
 
