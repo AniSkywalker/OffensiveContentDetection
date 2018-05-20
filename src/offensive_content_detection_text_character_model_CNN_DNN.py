@@ -45,16 +45,16 @@ class offensive_content_model():
                        batch_size=1):
         print('Build model...')
 
-        text_input = Input(name='text', batch_shape=(batch_size, self._line_maxlen))
+        text_input = Input(name='text', shape=(self._line_maxlen,))
 
         if (len(emb_weights) == 0):
-            emb = Embedding(vocab_size, 256, input_length=self._line_maxlen, embeddings_initializer='glorot_normal',
+            emb = Embedding(vocab_size, 128, input_length=self._line_maxlen, embeddings_initializer='glorot_normal',
                             trainable=trainable)(text_input)
         else:
             emb = Embedding(vocab_size, emb_weights.shape[1], input_length=self._line_maxlen, weights=[emb_weights],
                             trainable=trainable)(text_input)
 
-        emb = Reshape((emb.output_shape[1], emb.output_shape[2], 1))(emb)
+        emb = Reshape((int(emb.shape[1]), int(emb.shape[2]), 1))(emb)
 
         t_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
                                bias_initializer='he_normal',
@@ -77,13 +77,13 @@ class offensive_content_model():
 
         gmp = GlobalMaxPooling2D()(t_cnn3)
 
-        char_input = Input(name='text', batch_shape=(batch_size, self._line_char_maxlen))
+        char_input = Input(name='char_text', shape=(self._line_char_maxlen,))
 
         char_emb = Embedding(char_vocab_size, 25, input_length=self._line_char_maxlen,
                              embeddings_initializer='glorot_normal',
-                             trainable=trainable)(char_input)
+                             trainable=True)(char_input)
 
-        char_emb = Reshape((char_emb.output_shape[1], char_emb.output_shape[2], 1))(char_emb)
+        char_emb = Reshape((int(char_emb.shape[1]), int(char_emb.shape[2]), 1))(char_emb)
 
         char_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
                                   bias_initializer='he_normal',
@@ -212,6 +212,8 @@ class train_model(offensive_content_model):
         print(len(self._char_vocab.keys()) + 1)
         print('unk::', self._char_vocab['unk'])
 
+
+
         dh.write_vocab(self._vocab_file_path, self._vocab)
         dh.write_vocab(self._vocab_file_path + '.char', self._char_vocab)
 
@@ -231,14 +233,16 @@ class train_model(offensive_content_model):
         ctX, ctY, ctD, ctC, ctA = dh.vectorize_word_dimension(self.char_validation, self._char_vocab)
         ctX = dh.pad_sequence_1d(ctX, maxlen=self._line_char_maxlen)
 
+        print("X", X.shape, cX.shape)
+
         # hidden units
         hidden_units = 256
 
         # word2vec dimension
         dimension_size = 128
-        # W = []
+        W = []
         W = dh.get_word2vec_weight(self._vocab, n=300,
-                                   path='/home/striker/word2vec/GoogleNews-vectors-negative300.bin')
+        path='/home/striker/word2vec/GoogleNews-vectors-negative300.bin')
         # W = dh.get_glove_weights(self._vocab, n=200, path='/home/striker/word2vec/glove_model_200.txt.bin')
         print('Word2vec obtained....')
 
@@ -262,7 +266,7 @@ class train_model(offensive_content_model):
                                                 hidden_units=hidden_units, trainable=False)
         if (model_filename == 'offensive.json'):
             model = self._build_network(len(self._vocab.keys()) + 1, len(self._char_vocab.keys()) + 1, emb_weights=W,
-                                        hidden_units=hidden_units, trainable=False)
+                                        hidden_units=hidden_units, trainable=False,batch_size=8)
 
         open(self._model_file + self._model_filename, 'w').write(model.to_json())
         save_best = ModelCheckpoint(model_file + self._model_filename + '.hdf5', save_best_only=True)
@@ -271,22 +275,22 @@ class train_model(offensive_content_model):
                                      cooldown=0, min_lr=0.000001)
 
         # training
-        model.fit(X, Y, batch_size=16, epochs=150, validation_split=0.2, shuffle=True,
-                  callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio, verbose=1)
+        # model.fit([X,cX], Y, batch_size=16, epochs=150, validation_split=0.2, shuffle=True,
+        #           callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio, verbose=1)
 
-        # model.fit(X, Y, batch_size=8, epochs=100, validation_data=(tX,tY), shuffle=True,
-        #           callbacks=[save_best,early_stopping],class_weight=ratio)
+        model.fit([X, cX], Y, batch_size=8, epochs=100, validation_data=([tX, ctX], tY), shuffle=True,
+                  callbacks=[save_best, early_stopping], class_weight=ratio)
 
     def load_train_validation_data(self, lowercase=True, at_character=False):
         self.train = dh.loaddata(self._train_file, self._word_file_path, self._split_word_file_path,
                                  self._emoji_file_path, normalize_text=True,
-                                 split_hashtag=True, lowercase=lowercase,
+                                 split_hashtag=False, lowercase=lowercase,
                                  ignore_profiles=False, at_character=at_character)
 
         self.validation = dh.loaddata(self._validation_file, self._word_file_path, self._split_word_file_path,
                                       self._emoji_file_path,
                                       normalize_text=True,
-                                      split_hashtag=True, lowercase=lowercase,
+                                      split_hashtag=False, lowercase=lowercase,
                                       ignore_profiles=False, at_character=at_character)
 
     def get_maxlen(self):
@@ -346,7 +350,7 @@ class test_model(offensive_content_model):
             start = time.time()
             self.test = dh.loaddata(test_file, self._word_file_path, self._split_word_file_path, self._emoji_file_path,
                                     normalize_text=True,
-                                    split_hashtag=True,
+                                    split_hashtag=False,
                                     ignore_profiles=False)
             end = time.time()
             if (verbose == True):

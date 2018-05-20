@@ -358,7 +358,7 @@ if __name__ == "__main__":
     train_file = basepath + '/resource/train/hate_speech_kaggle_train.txt'
     validation_file = basepath + '/resource/test/onlineHarassmentDataset.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
-    word_file_path = basepath + '/resource/word_list.txt'
+    word_file_path = basepath + '/resource/word_list_freq.txt'
 
     split_word_path = basepath + '/resource/word_split.txt'
     emoji_file_path = basepath + '/resource/emoji_unicode_names_final.txt'

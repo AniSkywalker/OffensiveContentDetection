@@ -89,6 +89,7 @@ def parsedata(lines, word_list, normalize_text=False, split_hashtag=False, ignor
             # print(line)
 
             if(len(token)<3):
+                print('invalid input::',line)
                 continue
 
             label = int(token[1].strip())
@@ -117,6 +118,8 @@ def parsedata(lines, word_list, normalize_text=False, split_hashtag=False, ignor
             if(len(target_text)!=0):
                 # print((label, target_text, dimensions, context, author))
                 data.append((label, target_text, dimensions, context, author))
+            else:
+                print("Not added=======>", line)
         except:
             print('error', line)
             raise
@@ -338,6 +341,18 @@ def load_split_word(split_word_file_path):
             if (len(tokens) >= 2):
                 split_word_dictionary[tokens[0]] = tokens[1]
 
+    # loading local temp file
+    with open('../resource/hastash_split_dump.txt', 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            tokens = line.lower().strip().split('\t')
+            if (len(tokens) >= 2):
+                split_word_dictionary[tokens[0]] = tokens[1]
+
+
+
+
+
     print('split entry found:', len(split_word_dictionary.keys()))
     return split_word_dictionary
 
@@ -396,7 +411,17 @@ def split_hashtags(term, wordlist, split_word_list, dump_file=''):
                     words = line
                     max_coverage = score
 
-                    line_is_valid_word = [word.strip() in wordlist if not word.isnumeric() else True for word in line]
+                    ll = []
+
+                    for word in line:
+                        if(word in split_word_list):
+                            ll.extend(split_word_list.get(word))
+                        else:
+                            ll.append(word)
+
+                    # line = ll
+
+                    line_is_valid_word = [word.strip() in wordlist if not word.isnumeric() else True for word in ll]
 
                     if (all(line_is_valid_word)):
                         found_all_words = True
@@ -554,6 +579,8 @@ def parsedata(lines, word_list, split_word_list, emoji_dict, abbreviation_dict, 
             if (len(target_text) != 0):
                 # print((label, target_text, dimensions, context, author))
                 data.append((id, label, target_text, dimensions, context, author))
+            else:
+                print(line)
         except:
             raise
     print('')
@@ -579,11 +606,12 @@ def loaddata(filename, word_file_path, split_word_path, emoji_file_path, normali
     abbreviation_dict = load_abbreviation()
 
     lines = open(filename, 'r').readlines()
-
+    print('data size', len(lines))
     data = parsedata(lines, word_list, split_word_list, emoji_dict, abbreviation_dict, normalize_text=normalize_text,
                      split_hashtag=split_hashtag,
                      ignore_profiles=ignore_profiles, lowercase=lowercase, replace_emoji=replace_emoji,
                      n_grams=n_grams, at_character=at_character)
+    print('data size', len(data))
     return data
 
 
