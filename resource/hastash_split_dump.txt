@@ -1,0 +1,5838 @@
+#006	006	1
+#0- 5	0 -  5	6
+#08	08	1
+#100women	100 women	2
+#10- 1	1 0 -  1	6
+#102	102	1
+#1069th earrow	106 9th  ear row	4
+#12	12	1
+#131	131	1
+#13	13	1
+#138	138	1
+#14	14	1
+#1488	1488	1
+#14w	1 4 w	6
+#14word	14 word	2
+#14words	14 words	2
+#15th ingsilove	1 5th  ing si love	5
+#16	16	1
+#17andlovinit	17 and lovin it	4
+#1a	1 a	2
+#1d	1 d	6
+#1mvetmarch	1 mv et march	4
+#1ndiana	1 nd i an a	6
+#1percent	1 percent	2
+#1samuel 2	1 samuel  2	6
+#1st a	1st  a	2
+#1ubb	1 ubb	6
+#2013faves	2 0 1 3 f aves	6
+#2048	2048	1
+#21st century	2 1st  century	3
+#24hourstilfocus	2 4 hours ti lfoc us	6
+#26	26	1
+#27andcounting	27 and counting	3
+#296	296	1
+#297	297	1
+#2a	2 a	2
+#2for 5	2 for  5	6
+#2nd amendment	2nd  amendment	2
+#2y	2 y	6
+#300	300	1
+#307	307	1
+#31434	31434	1
+#37	37	1
+#38	38	1
+#3rd worldimmivasion	3rd  world immiv a si on	6
+#4195	4195	1
+#420	420	1
+#420yoloblazeitfaggot	420yo lo blaze it fag got	6
+#44271	44271	1
+#4455	4455	1
+#45	45	1
+#4718	4718	1
+#4chan	4 ch an	6
+#4dayuntilworkfromhome	4 day until work from home	6
+#4n	4 n	6
+#4reich	4 reich	2
+#4th ofjulyfly	4th  of july fly	4
+#50shadesofgrey	50 shades of grey	4
+#50shadesoflouisass	50 shades of louis ass	5
+#5142	5142	1
+#5sos	5 sos	2
+#___	___	6
+#__	__	6
+#6002	6002	1
+#60minutes	60 minutes	2
+#640	640	1
+#663399becca	6 6 3399 be cc a	6
+#666	666	1
+#6hcota	6 h cot a	6
+#71543	71543	1
+#76	76	1
+#8393	8393	1
+#84743	84743	1
+#88	88	1
+#8moreyears	8 more years	3
+#90	90	1
+#9103	9103	1
+#911	911	1
+#919gator	919 gator	2
+#9382	9382	1
+#9875	9875	1
+#aaronpersky	aaron per sky	3
+#aarpbitches	a arp bit ches	4
+#abvote	ab vote	2
+#aca	ac a	2
+#academyawards	academy awards	2
+#acdc	a cdc	2
+#adamwalsh	adam walsh	2
+#adlchat	a dlch at	6
+#admityourblackprivilege	admit your black privilege	4
+#admityourwhiteprivilege	admit your white privilege	4
+#adolfhitler	adolf hitler	2
+#adviceforyoungfeminists	advice for young fe min ists	6
+#advicefromhitl	ad vice from hit l	6
+#aerosmith	a e ro smith	6
+#afd	a fd	6
+#affectt	a ffec tt	6
+#affirmativeaction	affirmative action	2
+#afrikaners	a frik a ne rs	6
+#after 9	after  9	6
+#agentsofshield	agents of shield	3
+#agu 15	a gu  1 5	6
+#ahmedmohamed	a hmedm oh a me d	6
+#aipac 2015	a i pa c  2 015	6
+#aipac 2016	a i pa c  2 016	6
+#aipac	a i pa c	6
+#aip	a i p	6
+#airportslaw	airports law	2
+#ajagaza	a jag a z a	6
+#aktuellt	a ktuellt	6
+#alaskanbushpeople	alaskan bush people	3
+#aldubgettingready	al dub getting ready	4
+#ali	a li	2
+#alisonparker	alison parker	2
+#alivegoldchicago	alive gold chicago	3
+#allaboutthatcorn	all about that corn	4
+#allahblessedme	allah blessed me	3
+#allaliens	all aliens	2
+#allezwiggo	a llez wig go	6
+#allgenders	all genders	2
+#allhumans	all humans	2
+#alliesofisus	allies of is us	4
+#allivesmatter	al lives matter	3
+#alllifematters	all life matters	3
+#allliv	a lll i v	6
+#alllives	all lives	2
+#alllivesma	all lives ma	3
+#alllivesmatter 2016	all lives matter  2016	6
+#alllivesmatterperiod	all lives matter period	4
+#allmen	all men	2
+#alloutatl	all out a tl	6
+#alqaida	a lq a id a	6
+#alqasam	a lq a sam	6
+#alqudsday	a lquds day	6
+#alsonobeermoney	also no beer money	4
+#alternativenews	alternative news	2
+#alternativeright	alternative right	2
+#altonsterling	alton sterling	2
+#altright	alt right	2
+#altright_	alt right _	6
+#altrightgooglesearches	alt right google searches	4
+#altrightmeans	alt right means	3
+#alwaysinourheartszaynmalik	always in our he a rtszaynmalik	6
+#alwaystrump	always trump	2
+#amandablackburn	a manda blackburn	3
+#amandaknox	a manda knox	3
+#amazingtiming	amazing timing	2
+#americanlivesmatter	american lives matter	3
+#americanmasters	american masters	2
+#americanpharaoh	american pharaoh	2
+#americansniper	american sniper	2
+#americawasnevergreat	america was never great	4
+#ameshooting	ame shooting	2
+#amherst	a mh erst	6
+#amjoy	am joy	2
+#amnestyinternational	amnesty international	2
+#amnestyistreason	amnesty is treason	3
+#amodestproposal-style	a modest propos a l- style	6
+#amst 2001	a ms t  2 0 01	6
+#amyisraelchai	a my is raelch a i	6
+#amypoehler	a my po eh ler	6
+#anaheim	ana he im	3
+#andasitissuchsoalsoassuchisituntoyou	and as it is such so also as such is it unto you	6
+#andnowihaveebola	and now i have ebol a	6
+#andrewmarr 9	an drew marr  9	6
+#androidgames	android games	2
+#andthatswhenisaid	and thats when is aid	5
+#angelamerkel	angel a mer kel	4
+#anglinemckinney	a ngl i ne mckinney	6
+#anglosphere	a ng lo sp he re	6
+#angrywhiteandproud	angry white and proud	4
+#animallivesmatter	animal lives matter	3
+#animalslivesmatter	animals lives matter	3
+#annabelle	anna belle	2
+#anncoulter	a nncoul ter	6
+#anonymou	a no nymou	6
+#anotherfollowtrain	another follow train	3
+#antiamericans	anti americans	2
+#antiblankracisme	a nt i blankrac is me	6
+#anticoup	anti coup	2
+#antieuropean	anti european	2
+#antifa	ant if a	3
+#antifaheitopfersein	a nt if a heitopferse in	6
+#antifascist	anti fascist	2
+#antifeminazis	anti fe mi nazis	4
+#antifeminism	anti feminism	2
+#antifenism	a nt i fen is m	6
+#antiggargumenthaiku	a nt iggargumenth a i ku	6
+#antigun	anti gun	2
+#antijewishsyndrome	anti jewish syndrome	3
+#antijews	anti jews	2
+#antiman	anti man	2
+#antimanrape	anti man rape	3
+#antimasculinist	anti mas cul in ist	5
+#antimisandry	anti mis an dry	4
+#antimisogyny	anti misogyny	2
+#antimra	anti mr a	3
+#antipuppyhaters	a nt i puppy hat ers	6
+#antiracism	anti racism	2
+#antiracist	anti racist	2
+#antiradicalfeminist	anti radical feminist	3
+#anti-s	a nt i -s	6
+#antisemite	anti semite	2
+#antisemitic	anti semitic	2
+#antisemiticlunaticfringe	anti semitic lunatic fringe	4
+#antisemitism	a nt is emit is m	6
+#antisemitisme	anti semi tis me	4
+#antisjw	a nt is jw	6
+#antivaxx	a nt i va xx	6
+#antivaxxer	a nt i va xxer	6
+#antiweirdo	anti weir do	3
+#antiwh	a nt i wh	6
+#antiwhite	anti white	2
+#anti-white	a nt i - white	6
+#antiwhitecrime	anti white crime	3
+#antiwhiteism	a nt i white is m	6
+#antiwhitelogic	anti white logic	3
+#antiwhiteracism	anti white racism	3
+#antiwhites	anti whites	2
+#antiwhite's	anti white 's	3
+#antiwhtie	a nt i wh tie	6
+#antiwhties	a nt i wh ties	6
+#apartheidweek	apartheid week	2
+#apoemfordzhokhar	a po em for dzhokhar	6
+#applelive	apple live	2
+#applepay	apple pay	2
+#applynralogictoanything	apply nra logic to anything	5
+#appstore	app store	2
+#apracecall	ap race call	3
+#aqa	a q a	6
+#aquateenhungerforce	aqua teen hunger force	4
+#arabprivilege	arab privilege	2
+#arabspring	arab spring	2
+#archons	arch ons	2
+#ariacwfaw	a r i a cwf aw	6
+#arielsharon	ariel sharon	2
+#arizonabill	arizona bill	2
+#armenianprobs	arm en i a np robs	6
+#arminas	arm in as	3
+#armisticeday	armistice day	2
+#arrawailingwallst	a rr a wail in gwallst	6
+#arresteddevelopment	arrested development	2
+#arrestmerkel	arrest mer kel	3
+#arrestsoros	arrests or os	3
+#aryanpower	aryan power	2
+#ashkenazi	ash ke nazi	3
+#ashura	ashur a	2
+#asianlivesmatter	asian lives matter	3
+#asianpersuasion	asian persuasion	2
+#asianpower	asian power	2
+#asianprivilege	asian privilege	2
+#askaugust	ask august	2
+#askbroelithebib	a skbroeli the bib	6
+#askbroelithebibleanswers	a skbroel i the bible answers	6
+#askdems	ask de ms	3
+#askdrmann	ask dr mann	3
+#askhamas	ask ham as	3
+#askim 5	a skim  5	6
+#askjake	ask jake	2
+#askjesus	ask jesus	2
+#askjup	a skj up	6
+#askkevin	ask ke vin	3
+#askmodest	ask modest	2
+#asknetanyahu	ask net any a hu	6
+#askpatton	ask patton	2
+#askschama	a sksch am a	6
+#askthegays	ask the gays	6
+#asktk	a sktk	6
+#assaultatspringvalleyhigh	assault at spring valley high	5
+#assorgass	ass or ga ss	4
+#astros	a str os	3
+#astrosh	ast ro sh	3
+#ateam	a team	2
+#atheismplus	atheism plus	2
+#auctions	auc ti ons	3
+#auntpeg	aunt peg	2
+#aus	a us	2
+#auschwitz 70	auschwitz  70	6
+#ausnahmslos	a us na hms los	5
+#aussie	a us sie	3
+#austrianelection	austrian election	2
+#avengersageé	a vengers a ge é	6
+#avfc	a vfc	6
+#avignon	a vign on	6
+#awb	a wb	6
+#aylankurdi	a yl an kurd i	6
+#azabbgic 2016	a zabbgic  2 0 1 6	6
+#azflooding	a z flood ing	6
+#azmonsoon	a zm on so on	6
+#babieslivesmatter	babies lives matter	3
+#babyjesus	baby jesus	2
+#bachman	bach man	2
+#backtheblue	back the blue	3
+#backtoafghanistan	back to afghanistan	3
+#backtoafrica	back to africa	3
+#backtothekitchen	back to the kitchen	4
+#badbitch	bad bitch	2
+#badideain 5words	bad ide a in  5 words	6
+#badjeopardycategories	bad jeopardy categories	3
+#badloser	bad loser	2
+#baergida	ba erg ida	3
+#bakeon	bake on	2
+#balitmoreriots	bal it more riots	4
+#ballbegklaxon	ball beg klaxon	3
+#baltimoe 6	bal ti mo e  6	6
+#baltimoreriots	baltimore riots	2
+#banalljews	ban all jews	3
+#banbossy	ban bossy	2
+#banfathersday	ban fathers day	3
+#banislam	ban islam	2
+#banksters	banks ter s	6
+#banmosques	ban mosques	2
+#banthedeathcult	ban the death cult	4
+#barack	ba rack	2
+#barackobamaapproved	ba rack obama approved	4
+#barackobama	ba rack obama	3
+#barneypityana	barney pity ana	3
+#barrackobama	barrack obama	2
+#barrybonds	barry bonds	2
+#bastilleday	bastille day	2
+#bayer	ba ye r	6
+#bayernmunich	bay ern munich	3
+#bb 17	bb  1 7	6
+#bb 4sp	bb  4 sp	6
+#bbathechase	bb a the chase	6
+#bbcan 3	bbc an  3	6
+#bbcdiversity	bb cd i versity	6
+#bbcqt	bbcqt	6
+#bbcsml	bbcs ml	6
+#bbctbq	bbctbq	6
+#bbcwhitepaper	bbcwhitep a per	6
+#bbking	bb king	6
+#bbrt	bbrt	6
+#bbuk	bb uk	6
+#bbyoleads	b by ole ads	6
+#bccc 15	b ccc  1 5	6
+#bcschampionship	bcsch amp i on ship	6
+#bds	bds	6
+#beamthat	beam that	2
+#beaner	be a ne r	6
+#beanies	bean ies	2
+#bearbrother	bear brother	2
+#becausedick	because dick	2
+#becauseits 1984	bec a use its  1984	6
+#becauseits 2016	bec a use its  2016	6
+#beenalongday	been along day	3
+#beerbarrelforum	beer barrel forum	3
+#beerswith	beers with	2
+#beforemelodecides	before me lo decides	4
+#behaviouraleconomics	behaviour al economics	3
+#belfasthour	belfast hour	2
+#beliebitornot	belie bit or not	4
+#believeland	believe land	2
+#believethevictims	believe the victims	3
+#bendgate	bend gate	2
+#bengurion	ben gurion	2
+#bernbernie	bern bernie	2
+#bernieatthevatican	bernie at the vatican	4
+#berniemustdisavow	bernie must disavow	3
+#bernieorbust	bernie or bust	3
+#berniesoblack	bernie so black	3
+#beroyalkc	be royal kc	3
+#bestadvicefrommylawyer	best advice from my lawyer	5
+#bestfandom 2014	best fandom  2014	6
+#bestroommateever	best roommate ever	3
+#betawards	bet awards	2
+#bethiphopawards	bet hip hop awards	4
+#betterpolitics	better politics	2
+#betterret	bet terret	2
+#bewarned	be warned	2
+#beyonce	bey once	2
+#bf 4isdead	bf  4 is de ad	6
+#bf	bf	6
+#bgeeks 14	bg eeks  1 4	6
+#bhulu	bhulu	6
+#biafra	bi a fra	3
+#biblequizvol 16	bible quiz vol  16	6
+#biblereader	bible reader	2
+#biblestudies	bible studies	2
+#bicyclists	bi cyc lists	6
+#big 10	big  10	6
+#bigbird	big bird	2
+#bigbrother	big brother	2
+#bigchildren	big children	2
+#bigermany	bi germany	2
+#bigimmigrationrow	big immigration row	3
+#bigin 2015	big in  2015	6
+#bigwet	big wet	2
+#biketoworkday	bike to workday	3
+#bilderberg	b il der berg	6
+#billclintonserialrapist	bill clinton serial rap ist	5
+#billcosby	bill cos by	3
+#billgetsbuns	bill gets buns	3
+#billmaher	bill ma her	3
+#billoreilly	bill ore i lly	6
+#birdgang	bird gang	2
+#birdsofafeatherflocktogether	bird sofa feather flock together	5
+#bitchesloveloyalty	bit ches love loyalty	4
+#bitching	bit ching	2
+#bitchsplainin	bitch sp lain in	4
+#bjela	bj el a	6
+#blac	b lac	6
+#blackamerica	black america	2
+#blackcatday	black cat day	3
+#blackcrime	black crime	2
+#blackcrimematters	black crime matters	3
+#blackcrimesmatter	black crimes matter	3
+#blackfeelingsdontmatter	black feelings dont matter	4
+#blackgirlmagic	black girl magic	3
+#blackgirlsrock	black girls rock	3
+#blackhistory	black history	2
+#blackisbeautiful	black is beautiful	3
+#blackjesus	black jesus	2
+#blackli	black li	2
+#blackliebers	black lie be rs	6
+#blackliesmatter	black lies matter	3
+#blacklives	black lives	2
+#blacklivesdontmatter	black lives dont matter	4
+#blacklivesmatte	black lives ma tt e	6
+#blacklivesmatterlondon	black lives matter london	4
+#blacklivesmattermovement	black lives matter movement	4
+#blacklivesmatter's	black lives matter 's	4
+#blacklivesmatterto	black lives matter to	4
+#blacklivesmé	black live smé	6
+#blacklivresmatter	black livres matter	3
+#blackmonday	black monday	2
+#blackonblack	black on black	3
+#blackonwhite	black on white	3
+#blackonwhitecrime	black on white crime	4
+#blackoutday	blackout day	2
+#blackowned	black owned	2
+#blackpeople	black people	2
+#blackpeoplecandance	black people can dance	4
+#blackpower	black power	2
+#blackpowerisforblackmen	black power is for black men	6
+#blackpowerpuffgang	black power puff gang	4
+#blackpride	black pride	2
+#blackprivilege	black privilege	2
+#blackracist	black racist	2
+#blacksupremacist	black supremacist	2
+#blackthug	black thug	2
+#blacktwitter	black twitter	2
+#blackviolence	black violence	2
+#blackwatch	black watch	2
+#bladerunner	blade runner	2
+#bl	bl	6
+###bleedgreen	## bleed gre en	6
+#blessjesusair	bless jesus air	3
+#blessjesus	bless jesus	2
+#blessjesuslove	bless jesus love	3
+#blinnteam	bl inn team	6
+#blizzard 2016	blizzard  2016	6
+#blm	b lm	6
+#blmireland	bl mir el and	6
+#blmto	b lm to	6
+#blmtrutherproject	blmt rut her project	6
+#blockbot	block bot	2
+#blockheads	block heads	2
+#blondeproblems	blonde problems	2
+#bloodmoons	blood moons	2
+#bloodonmyeyes_emirat	blood on my eyes _emir at	6
+#bloomington	blooming ton	2
+#blubloods	blu bloods	6
+#bluebloods	blue bloods	2
+#blueeyes	blue eyes	2
+#bluehand	blue hand	2
+#bluehandnews	blue hand news	3
+#bluejays	blue jay s	6
+#bluelivesmatter	blue lives matter	3
+#bluelivesmattter	blue lives matt ter	4
+#bluemonday	blue monday	2
+#bluewaffle	blue waffle	2
+#blugolds	b lug old s	6
+#bmm	b mm	6
+#bmoviemaniacs	bmov i em a ni acs	6
+#bnp	bnp	6
+#bobwhitaker	bo bw hi taker	4
+#bodylife	body life	2
+#boers	bo ers	6
+#bohovibes	bo ho vibes	3
+#boltupdoe	bolt up doe	3
+#bond_age_	bond _ a ge _	6
+#bookbuzzr	bo ok buzz r	6
+#bookgeek	book geek	2
+#booksofgodwidom	books of go dw id om	6
+#boondocks	boon docks	2
+#booty 4ever	booty  4 ever	6
+#bordersecurity	border security	2
+#bordeux	b or deux	6
+#bornlivesmatter	born lives matter	3
+#boro	bo ro	2
+#bortleskombat	bo rtlesk om bat	6
+#borussiadortmund	bo russ i a do rtmund	6
+#bostonuniversity	boston university	2
+#botlivesmatter	bot lives matter	3
+#bowebergdahl	bo we berg da hl	6
+#boycottarkansas	boycott arkansas	2
+#boycottbeyonce	boycott bey once	3
+#boycottcocacola	boycott coca cola	3
+#boycottgodsofegypt	boycott gods of egypt	4
+#boycottgoogle	boycott google	2
+#boycotthatefuleight	boycott hateful eight	3
+#boycottisrael	boycott israel	2
+#boycottjockey	boycott jockey	2
+#boycottliberals	boycott liberals	2
+#boycottpepsi	boycott pepsi	2
+##boycottracistsamsclub	# boycott racists a ms club	6
+#boycottstarbucks	boycott star bucks	3
+#boycottstarwars 7	boy cott star wars  7	6
+#boycottstarwarsvii	boycott star wars vii	4
+#boycottwhitecastle	boycott white castle	3
+#brandonblake	brandon blake	2
+#brautklei	bra utkle i	6
+#braveheart	brave heart	2
+#brazil 2014	brazil  2014	6
+#brazilianbooty	brazilian booty	2
+#br	br	6
+#breadnews	bread news	2
+#breakfree	break free	2
+#breaktheinternet	break the internet	3
+#bré	bré	6
+#bremain	br em a in	6
+#brendantevlin	bren da nt evl in	6
+#brennanclay	brennan clay	2
+#bretten	brett en	2
+#brexi	b rex i	6
+#brexitornot	b rex it or not	6
+#brexitvote	b rex i tv ote	6
+#bridgeghazi	bridge ghaz i	6
+#bringbackfreedomofassociation	bring back freedom of association	5
+#bringbackfreedomofspeech	bring back freedom of speech	5
+#bringbackpublichanging	bring back public hanging	4
+#bringthehammerdown	bring the hammer down	4
+#britainfirst	britain first	2
+#britainsforgo	brit a ins forgo	4
+#britainsracistelection	brit a ins racist election	5
+#britishpeople	british people	2
+#broadcity	broad city	2
+#brockallen's	b rock all en 's	6
+#brockturner	b rock turner	6
+#bronertaylor	b ro ne rtayl or	6
+#brooksndunn	brooks n dunn	6
+#brownlivesmat	brown lives mat	3
+#brownlivesmatter	brown lives matter	3
+#browns 2014draft	brown s  2014 dr a ft	6
+#browns	brown s	6
+#brucejennerabc	bruce jen ne r abc	6
+#brucejenner	bruce jen ne r	6
+#bruinsagainstbds	bruin sag a in stbds	6
+#bruins	b ruins	6
+#brusselsattacks	brussels attacks	2
+#brusselsonfire	brussels on fire	3
+#brynhildrinthedarkness	brynhildr in the darkness	6
+#bslfe	b sl fe	6
+#btown	bt own	6
+#bucketlist	bucket list	2
+#bucklitsch	buck lit sch	6
+#buddhofascism	budd ho fascism	3
+#bufallo	buf al lo	6
+#bugout	bug out	2
+#bugsswarm	bugs swarm	2
+#buildawall	build a wall	3
+#buildthatwall	build that wall	3
+#buildthewall	build the wall	3
+#builtbyucf	built by ucf	6
+#bullshitalert	bullshit alert	2
+#bumpanelexceptforguy	bum panel except for guy	5
+#bundyranch	bundy ranch	2
+#bunga	bung a	2
+#burbs	bur bs	6
+#burndownthegop	burn down the gop	4
+#burnniggers	burn niggers	2
+#burritosnotbullets	burrito snot bullets	3
+#bushdid 911	bush did  911	6
+#businessopportunity	business opportunity	2
+#butrapperssayitallthetime	but rapperssay it all the time	6
+#butthurt	butt hurt	2
+#buyboomboxonitunes	buy boom box on i tunes	6
+#buyfoodlittleguy	buy food little guy	4
+#byeeee	by eeee	6
+#c 4news	c  4 news	6
+#ca	c a	6
+#cafeshaw	cafe shaw	2
+#cairdemands	c air dem and s	6
+#cajuncharm	cajun charm	2
+#calais	cal a is	3
+#california 4trump	california  4 trump	6
+#caliphate_	cal i ph a te_	6
+#calw	cal w	6
+#camerashy	camera shy	2
+#cameronmustgo	cameron must go	3
+#camh	cam h	6
+#canadianlivesmatter	canadian lives matter	3
+#cancelcolbert	cancel colbert	2
+#cancelpinkwashing	cancel pink washing	3
+#cancelplansin 5words	cancel plans in  5 words	6
+#cancelsuey_parktwitteraccount	can celsuey_parktw it ter ac count	6
+#candyass	candy ass	2
+#cantstanducunt	cant stan du cunt	4
+#canweagree	can we agree	3
+#carenandlarryarenotreal	car en and larry a renotreal	6
+#carnaval	car naval	2
+#cashinin	cash in in	3
+#catalunya	cat al un ya	4
+#catholicgospel	catholic gospel	2
+#catlivesmatter	cat lives matter	3
+#catskincoats	cat skin coats	3
+#caucasityatitsfinest	cauc as ity a tits finest	6
+#caucasity	c auc as ity	6
+#caucusfortrump	caucus for trump	3
+#caucusmountains	caucus mountains	2
+#cbsevenin	cbs even in	3
+#cco	c co	6
+#ccot	c cot	6
+#ccsudday 70	ccsud day  7 0	6
+#celebrityphotos	celebrity photos	2
+#celtics	celt i cs	6
+#ceo 2016	ceo  2 0 1 6	6
+#ces 2015	ces  2 0 1 5	6
+#cfr	cfr	6
+#chabad	ch a bad	6
+#chaliehebdo	ch a lie he b do	6
+#challengetofeminists	challenge to fe min is ts	6
+#chandlering	chandler ing	2
+#changethemascot	change the mascot	3
+#changethename	change the name	3
+#chapehillshooting	chap eh ill shooting	4
+#chapelhillshooting	chapel hill shooting	3
+#chappelleshow	chap p el les how	6
+#chargeon	charge on	2
+#charitytuesday	charity tuesday	2
+#charlestonshooting	charleston shooting	2
+#charliehebdo	char lie he b do	6
+#chasingdown	chasing down	2
+#chav	ch a v	6
+#ch	ch	6
+#cheaplabour	cheap labour	2
+#chemtrails	che mtr a ils	6
+#chickenfries	chic ken fr ies	6
+#childabuse	child abuse	2
+#children's	children 's	2
+#childsexualabuse	child sexual abuse	3
+#chillzone	chill zone	2
+#chimpout	c him pout	6
+#chimpouts	chi mp outs	6
+#chimps	chi mps	6
+#chinagate	china gate	2
+#china's	china 's	2
+#chosenite	chosen it e	6
+#christmaseve	christmas eve	2
+#chsnight 16	chs night  1 6	6
+#chuckstrong	chuck strong	2
+#cisisbeautiful	c is is beautiful	6
+#cislivesmatter	c is lives mat ter	6
+#cityofthegreatking	city of the great king	5
+#civilianlivesmatter	civilian lives matter	3
+#civilizationjihad	civilization jihad	2
+#civilwar	civil war	2
+#civitafrokost	civ it a fro kos t	6
+#cking	c king	6
+#clanrevived	clan revived	2
+#classdismissed	class dismissed	2
+#classwithnoelkelly	class with noel kelly	4
+#cleallday	cle all day	6
+#cleanthehouse	clean the house	3
+#cle	cle	6
+#clepets	cle pets	6
+#clevelan	c lev el an	6
+#clevelandbrowns	c lev el and brown s	6
+#clevelandfans	cleveland fans	2
+#clevelandpride	cleveland pride	2
+#clevelandsports	cleveland sports	2
+#clickbaitbooks	click bait books	3
+#cliffnotes	cliff notes	2
+#climaterefugees	climate refugees	2
+#clips 4sale	clips  4 sale	6
+#clubinsomnia	club insomnia	2
+#clubmetro	club metro	2
+#cmtawards	cm ta wards	3
+#cnbc	c nbc	6
+#cnndebate	cnn de bate	6
+#cnntonight	cnn to night	6
+#coatofmanycolors	coat of many colors	4
+#cock-roaches	co ck- ro a ches	6
+#codyzeller	cod yz el ler	6
+#cohencidence	co he nc i de nce	6
+#cokeboys	coke boys	2
+#collegegameday	college game day	3
+#collegehoops	college hoops	2
+#colo	co lo	2
+#cologneattacks	cologne attacks	2
+#coloradosprings	colorado springs	2
+#columbusday	columbus day	2
+#comeatmeut	co me a tmeut	6
+#comebacktomysidekimmy	come back to my sidekim my	6
+#cometlanding	comet landing	2
+#comeuphigher	come up higher	3
+#comeyhearing	co me y he a ring	6
+#commandermaddy	co mm an derm a ddy	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#commonquestioniget	common question i get	4
+#completethephrase	complete the phrase	3
+#computerscience	computer science	2
+#concentrationcamp	concentration camp	2
+#confederateflag	confederate flag	2
+#confederateflags	confederate flags	2
+#confusedperson	confused person	2
+#conmé	con mé	6
+#conservativesunited	conservatives united	2
+#conspiracyfacts	conspiracy facts	2
+#conspiracytheory	conspiracy theory	2
+#conversati	con versa ti	3
+#copenhagenshooting	copenhagen shooting	2
+#copkiller	cop killer	2
+#coplivesmatter	cop lives matter	3
+#copslivesmatter	cops lives matter	3
+#core 4	core  4	6
+#corruptcourts	corrupt courts	2
+#cosby	cos by	2
+#cosbymeme	cos by meme	3
+#coswig	co swig	2
+#cottagelife	cottage life	2
+#coultercaust	co ulterc a us t	6
+#courtoflaw	court of law	3
+#cousintoucher	co us in to uc her	6
+#covenantandcontroversy	covenant and controversy	3
+#cowx	cow x	6
+#cpac 2014	cp ac  2 0 1 4	6
+#cpac 2015	cp ac  2 0 1 5	6
+#cpac	cp ac	6
+#crashthepepsiipl	cr a sh the pepsiipl	6
+#crasstomouth	crass to mouth	3
+#crazyassholes	crazy ass holes	3
+#crazycats	crazy cats	2
+#crazyinlove	crazy in love	3
+#crc	cr c	6
+#creanandcrimson	cr ean and crimson	4
+#creationist	creation ist	2
+#creativealtright	creative alt right	3
+#credibilityshot	credibility shot	2
+#credit 0bama	credit  0 bam a	6
+#crenshaw	cr en shaw	3
+#crimingwhilewhite	crim ing while white	4
+#cromagnon	cr om a gn on	6
+#crushthejews	crush the jews	3
+#crushtrump	crush trump	2
+#cruz 2016	cruz  2016	6
+#cruzcarly 2016	cruz car ly  2 0 16	6
+#cspanchat	c sp a nc hat	6
+#ct	ct	6
+#ctl	ctl	6
+#ctot	c tot	6
+#cuckasoid	cu ck a so id	6
+#cuck	cu ck	6
+#cuckervative	cu ckerv a ti ve	6
+#cuckofeurope	cu ck of europe	6
+#cuckrogen	cu ck ro gen	6
+#cucks	cu cks	6
+#cuckservat	cu ck ser vat	6
+#cuckservative	cu ck ser vat i ve	6
+#cuckservatives	cu ck ser vat i ves	6
+#cufi	cu f i	6
+#culturalmarxism	cultural marx is m	6
+#culturalmarxist	cultural marxist	2
+#culturevultures	culture vultu res	3
+#cuntfusing	cunt fusing	2
+#cuntmustalwaysbehashtaged	cu nt must a lwaysbehasht aged	6
+#cunts	cu nt s	6
+#currenttv	current tv	2
+#cut 4zayn	cut  4 zayn	6
+#cutepalestinians	cute palest in i a ns	6
+#cybercaliphate	cyberc a li ph ate	6
+#cyberterrorism	cy bert err or is m	6
+#cyberviolence	cyberv i ol en ce	6
+#daddyshome	daddy sh ome	3
+#dahlen	d ah len	6
+#dailycommute	daily commute	2
+#dailydevotion	daily devotion	2
+#dailymail	daily mail	2
+#dailystormer	da i lyst or mer	6
+#daisleyfanmail	dais ley fan mail	4
+#dallaspoliceshootings	dallas police shootings	3
+#dalmationpuppies	dal mat ion puppies	4
+#dalvsno	dal vs no	3
+#dalvswas	dal vs was	3
+#dangerouswomantonight	dangerous woman tonight	3
+#danielholtzclaw	dan i el ho ltzc law	6
+#darkies	dark ies	2
+#darlenelove	darlene love	2
+#darrellwilson	darrell wilson	2
+#darrenwilson	da r re nw ils on	6
+#darthplagueis	da rth plague is	6
+#datingredflags	dating red flags	3
+#davechappel	dave chap p el	6
+#davechappelle	dave chap pe lle	6
+#davidduke	david duke	2
+#daytona 500	day to na  500	6
+#dbh	dbh	6
+#dcferguson	dc ferguson	2
+#dday 70	d day  7 0	6
+#deanblevins	dean blevins	2
+#dearfuturehusband	dear future husband	3
+#dearisis	dear isis	2
+#debtslave	debt slave	2
+#debtslavery	debt slavery	2
+#deé	de é	6
+#deerlivesmatter	deer lives matter	3
+#defendeurooe	de fen de urooe	6
+#defendeurope	defend europe	2
+#definegopin 3words	define gop in  3 words	6
+#defundcontractors	de fund contractors	3
+#defundhud	de fun dhu d	6
+#degenerateartist	degenerate artist	2
+#degenerates	de generates	2
+#delbrck	de lb rck	6
+#deleteyouraccount	de let ey our ac count	6
+#delimabringth	del im a bring th	6
+#demconvention	dem convention	2
+#demdebate	dem debate	2
+#democide	de mo c i de	6
+#democracyequalsjewishplutarchy	de mo cr a cyequalsjewishplutarchy	6
+#democracyontrial	democracy on trial	3
+#democraticwhores	democratic whores	2
+#dems	de ms	2
+#demsinphilly	dem sin philly	3
+#demsrdangerous	dem sr dangerous	3
+#demtownhall	dem town hall	3
+#denyconsent	deny consent	2
+#deportallmuslims	deport all muslims	3
+#deportations	deport at ions	3
+#deportmerkel	deport mer kel	3
+#deporttheilleglalien	deport the il leg la lien	6
+#derekjeter	de re k je ter	6
+#describeyourselfin 3words	describe yourself in  3 words	6
+#desi	des i	2
+#destroyhamas	destroy ham as	3
+#detvssea	de tv s se a	6
+#devenguilford	de vengu il ford	6
+#diacwfwg	d i a cwfwg	6
+#dickassman	dick ass man	3
+#dickscription	dick script ion	3
+#dicksoutforharamee	dicks out for ha ra mee	6
+#didigothere	didi go there	3
+#didyouknow	did you know	3
+#diealready	die already	2
+#dieselstation	diesel station	2
+#dietschmiet	die tschm i et	6
+#diettime	diet time	2
+#dieversity	die versity	2
+#differentlevels	different levels	2
+#dindunuffin	din du nuf fin	4
+#dindus	d ind us	6
+#diplife	dip life	2
+#dippernation	dipper nation	2
+#directioners	direct i on ers	6
+#disarmhate	disarm hate	2
+#diversi	divers i	2
+#diversit	divers it	2
+#diversityisourgreatestliability	diversity is our greatest liability	5
+#diversityisrape	diversity is rape	3
+#diversitykills	diversity kills	2
+#diversityrapeswhitechildren	diversity rapes white children	4
+#dkpol	dkp ol	6
+#dl_broken_lamboginny_clay	dl_broken_l am bog in ny_c lay	6
+#dl_sexynanabypojes 7	dl_sexyn an a by po jes 7	6
+#dmtbka	dmtbk a	6
+#dncchecklisth	d nc check list h	6
+#docog 1	do cog  1	6
+#doctorslivesmatter	doctors lives matter	3
+#dodgydave	do dgy dave	6
+#dogtvshows	dog tv shows	3
+#donalfresh	don al fresh	3
+#dontarguejustacceptit	dont argue just accept it	5
+#dontdatefeminists	dont date fe min is ts	6
+#dontdumbdown	dont dumb down	3
+#donthate	dont hate	2
+#donttreadonme	dont tread on me	4
+#doublestandard	double standard	2
+#doublestandardsmuch	double standards much	3
+#downtonabbey	down ton abbey	3
+#dragcbs	drag cbs	2
+#dragooncrossing	dragoon crossing	2
+#drdolittle	dr dolittle	2
+#driedupskank	dr ie du pskank	6
+#dropsmic	dr ops mi c	6
+#drudgeondroid	drudge on d ro id	6
+#drudgereport	drudge report	2
+#drumpf	drum pf	6
+#drunkjoke	drunk joke	2
+#drunkuncle	drunk uncle	2
+#dsn 50	dsn  5 0	6
+#dtla	dtl a	6
+#dualcitizens	dual citizens	2
+#duhhhhhh	du hhhhhh	6
+#dukevsunc	du ke vs un c	6
+#dumbto	dumb to	2
+#dumpreddit	dump red dit	3
+#dumpryan	dump ryan	2
+#dvrtime	dvrt i me	6
+#dwarvesrejectedbydisney	dwarves rejected by dis ne y	6
+#dylannroof	dylan n ro of	6
+#dylannstormroof	dylan n storm ro of	6
+#dyyyingg	dyyy in gg	6
+#e 32016	e  3 2 0 1 6	6
+#eacheverywoé	each every woé	6
+#eaglesnation	eagles nation	2
+#eaglesofdeathmetal	eagles of death metal	4
+#eastend	east end	2
+#eatshitcunt	eats hit cunt	3
+#eboo	e boo	6
+#ecoculture	e co culture	6
+#economicwhitegenocide	economic white genocide	3
+#economistreviews	economist reviews	2
+#ecowed	e co wed	6
+#edc	e dc	6
+#edcny	e dc ny	6
+#edcuation	ed cu a ti on	6
+#edfnews	edf news	6
+#edjamacation	edj a mac a ti on	6
+#edl	edl	6
+#edlgirls	edl girls	6
+#eff	eff	6
+#egoandpantsuitexpansion	ego and pant suit expansion	5
+#egyptiancopts	egypt i a nc opt s	6
+#eidldn	e id ld n	6
+#einreich	ein reich	2
+#elcaconfrontracism	el c a con front racism	6
+#elderlylivesmatter	elderly lives matter	3
+#election 2014	elect i on  2014	6
+#electronicintifada	electronic inti fad a	4
+#eliewiesel	el i ew ies el	6
+#elite 8	elite  8	6
+#ellrich	ell rich	2
+#elxn 42	el xn  4 2	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#emmasué	em ma sué	6
+#emmasulkowicz	em ma sulk ow i cz	6
+#emmasulkowitz	em ma sulk ow it z	6
+#emmawatson	emma watson	2
+#emm	e mm	6
+#emoji	em oj i	6
+#emulateisrael	emulate israel	2
+#endasianonjewracism	end asian on jew racism	5
+#endblackprivilege	end black privilege	3
+#endculturalcuckism	end cultural cu ckism	6
+#endculturalmarxism	end cultural marx is m	6
+#endkiwishaming	end kiwi sham ing	4
+#endlesslove	endless love	2
+#endracsm	en dr a csm	6
+#endtheinvasion	end the invasion	3
+#endtimes	end times	2
+#endviolenceagainstwomen	end violence against women	4
+#england's	england 's	2
+#englishonly	english only	2
+#enochpowell	enoch powell	2
+#enoughisenough	enough is enough	3
+#enoughoutsoon	enough out soon	3
+#epubbookonline	e pub bo ok on line	6
+#equalityforall	equality for all	3
+#erasingrf	erasing rf	2
+#erasingwomen	erasing women	2
+#eretzyisrael	ere tzy i sr a el	6
+#ericgarner	eric garner	2
+#espa	esp a	2
+#esurancesave 30	e sur ance save  3 0	6
+#ethniccleaning	ethnic cleaning	2
+#ethnictransparency	ethnic transparency	2
+#euco	eu co	6
+#eu	eu	6
+#euinorout	eu in or out	6
+#eunuchpower	eunuch power	2
+#eurabia	eur a bi a	6
+#eureferendum	eu re fer en dum	6
+#euref	eu re f	6
+#eurefresult	euref result	6
+#eurefresults	euref results	6
+#euro 2016final	eu ro  2 0 16 final	6
+#eurocide	eu roc i de	6
+#eurocidewatchlist	eu roc i de watch list	6
+#euro	eu ro	6
+#eurogroup	eurog ro up	6
+#europe 2015	europe  2015	6
+#europeangenocide	european genocide	2
+#europeaninvasion	european invasion	2
+#europeansuperheroes	european super heroes	3
+#europeanunion	european union	2
+#europeawake	europe awake	2
+#europeforeuropeans	europe for europeans	3
+#eurosceptic	eur os cep tic	6
+#eurotrash	eurotr a sh	6
+#eurovision	eu ro vis i on	6
+#evalion	eva lion	2
+#everclear	ever clear	2
+#everybodymatters	everybody matters	2
+#everybodyslifematters	everybody sl i fe matters	5
+#everydaysexism	everyday sexism	2
+#everylifematters	every life matters	3
+#everyonematters	everyone matters	2
+#everyoneslifematte	everyone sl if em a tte	6
+#everyoneslifematters	every ones life matters	4
+#everyoneslivesmatter	every ones lives matter	4
+#everyothercolorlivesmatter	every other color lives matter	5
+#eveytime	eve yt i me	6
+#evf	evf	6
+#exceptd	except d	6
+#excusemebut	excuse me but	3
+#excusesforthecrimein 5words	excuses for the crime in  5words	6
+#executiveaction	executive action	2
+#expeltheparasite	expel the parasite	3
+#explainananimeplotbadly	explain an anime plot badly	5
+#explainthemiddleeastin 6words	explain the middle east in  6words	6
+#expogate	ex po gate	3
+#extremelycareless	extremely careless	2
+#extremerules	extreme rules	2
+#ezidi	ez id i	6
+#fabians	f a bi a ns	6
+#facetoface	facet of ace	3
+#factaboutislam	fact about islam	3
+#factsarentracist	facts a rent racist	4
+#faggots	fag go ts	6
+#failstate	fail state	2
+#faithassemblyny	faith a ss em blyny	6
+#fakepartyfacts	fake party facts	3
+#fakerapeculture	fake rape culture	3
+#fakerape	fake rape	2
+#fakestats	f a k est a ts	6
+#fak	f a k	6
+#fallinginthedraft	falling in the draft	4
+#falloutbird	fallout bird	2
+#falseflag	false flag	2
+#falseflags	false flags	2
+#falserapeaccusations	false rape accusations	3
+#falserapeallegationprivilege	false rape allegation privilege	4
+#familycourt	family court	2
+#famousmelaniatrumpquotes	famous mel ani a trump quotes	6
+#fantasyfootballproblems	fantasy football problems	3
+#farewellcaptain	farewell captain	2
+#farmattack	farm attack	2
+#farmmurder	farm murder	2
+#farmmurders	farm murders	2
+#farrak	far rak	2
+#farrakhan	farr a khan	3
+#farrakhantwitterarmy	farr a khan twitter army	5
+#farrakh	farr a kh	6
+#farrakhnindy	farr a khnindy	6
+#fartrape	fart rape	2
+#fascisttrump	fascist trump	2
+#fashthenation	fash the nation	3
+#fatassesbreaktheinternet	fat asses break the internet	5
+#fatass	fat ass	2
+#fatbands	fat bands	2
+#fathersday	fathers day	2
+#fatshaming	fat sham ing	3
+#fattuesday	fat tuesday	2
+#favoritequote	favorite quote	2
+#favstartweets	f a vs tart we ets	6
+#fazeisgay	faze is gay	3
+#fbombsforfeminism	f bombs for feminism	6
+#fearandhate	fear and hate	3
+#feeltheb	feel the b	6
+#feelthetax	feel the tax	3
+#feggit	f egg it	6
+#felinistsarebeautiful	fe li nists a re beautiful	6
+#femalelivesmatter	female lives matter	3
+#femalelogic	female logic	2
+#femalerules	female rules	2
+#femalesupremacy	female supremacy	2
+#feminazi	fe mi nazi	3
+#femininitysofragile	femininity so fragile	3
+#feminismagainstjews	feminism against jews	3
+#feminismagainstwomen	feminism against women	3
+#feminismfeminist	feminism feminist	2
+#feminismisajoke	feminism is a joke	4
+#feminismiscancer	feminism is cancer	3
+#feminismishate	feminism is hate	3
+#feminismsofragile	feminism so fragile	3
+#feminismsucks	fe min is ms ucks	6
+#feministbullshit	feminist bullshit	2
+#feministfrequency	feminist frequency	2
+#feministfuckboypost	feminist fuck boy post	4
+#feministfutures	fe min is tf utu res	6
+#feministinternet	feminist internet	2
+#feministischen	feminist is chen	3
+#feministlogic	feminist logic	2
+#feministmales	feminist males	2
+#feministproblems	feminist problems	2
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#feministsarebullies	fe minists a re bull ies	6
+#feministsaregross	feminist sar eg ross	4
+#feministsarepigs	fe min ists a re pigs	6
+#feministsarestupid	feminist sar est up id	5
+#feministsaretheoppressors	feminists a re the oppressors	5
+#feminists	fe min is ts	6
+#feministsinthekitchen	feminist sin the kitchen	4
+#feministsloveislamists	fe min is tsloveisl a mists	6
+#feministspell	feminist spell	2
+#feministtwitter	feminist twitter	2
+#fergusonoctober	ferguson october	2
+#fergusonriot	ferguson riot	2
+#fergusonshooting	ferguson shooting	2
+#fergusontaughtme	ferguson taught me	3
+#fezbandname	fez band name	3
+#fgm	f gm	6
+#fifaworldcup	f if a world cup	6
+#fightawhite	fight a white	3
+#fightback	fight back	2
+#fightforparis	fight for paris	3
+#fightforwesterncivilization	fight for western civilization	4
+#fightpacquiao	fight pa cqu i a o	6
+#fightwhitegenocide	fight white genocide	3
+#filthylibel	filthy libel	2
+#finalfanatsyvii	final fan a tsyv i i	6
+#fireallred	fire all red	3
+#fireandreaquenette	fire and re a que nette	6
+#firebritt	fire br i tt	6
+#firecashman	fire cash man	3
+#firechoreli	fire chore li	3
+#firedup	fired up	2
+#fireemup	fire em up	3
+#firefighter	fire fighter	2
+#firegrundy	fire grundy	2
+#firemegynkelly	fir em eg yn kelly	6
+#firestarter	fire starter	2
+#firstballot	first ballot	2
+#firstdayofspring	first day of spring	4
+#firstdraftcartoons	first draft cartoons	3
+#fixitjesus	fix it jesus	3
+#fixwhatsbrokenin 5words	fix whats broken in  5 words	6
+#fjrderiket	fjrd erik et	6
+#flapol	flap ol	2
+#flappybirdisruiningmylife	flap pybirdisru in ing my life	6
+#flauntyourwhiteprivilege	flaunt your white privilege	4
+#flcrashintothefuckingoceananddrowntheresnothinghereworthsaving	flcr a shin to the fuckingoceananddrowntheresnothinghereworthsaving	6
+#fleetweeknyc	fleet we eknyc	6
+#flgov	fl go v	6
+#floridanightclub	florida nightclub	2
+#floridaprimary	florida primary	2
+#flowcity	flow city	2
+#fmbbiblestories	fm bb i blest or ies	6
+#folklorethursday	folklore thursday	2
+#followtrick	follow trick	2
+#fooya	fooy a	6
+#forawoman	for a woman	3
+#forcedassimilation	forced assimilation	2
+#foreignaid	foreign aid	2
+#foreignpolicy	foreign policy	2
+#fornationandglory	for nation and glory	4
+#forshame	for shame	2
+#forthebros	for the bros	6
+#fourthof	fourth of	2
+#fourthofjuly	fourth of july	3
+#fourthreich	fourth reich	2
+#fourthreichftw	fourth re ich ft w	6
+#foxnewsfacts	fox news facts	3
+#foxnews	fox news	2
+#fpc	fpc	6
+#fp	fp	6
+#frameacop	frame a cop	3
+#francia	franc i a	3
+#frankenstein	frank en stein	3
+#frankensteinmd	frank en stein md	6
+#frankfurtschool	frankfurt school	2
+#freaksandgeeks	freaks and gee ks	6
+#freddiegray	freddie gray	2
+#fredperry	fred perry	2
+#fredphelpslastwords	fred phelps last words	4
+#freead	free ad	2
+#freeamosyee	free a mo syee	6
+#freeanglin	free a ngl in	6
+#freechuck	free chuck	2
+#freedomofspeech	freedom of speech	3
+#freeelectre	free elect re	3
+#freeeurope	free europe	2
+#freega	free ga	2
+#freegarronhelm	free garron helm	3
+#freegaza	free ga z a	6
+#freeisrael	free israel	2
+#freejahar	free ja ha r	6
+#freejosh	free josh	2
+#freejudgybitch	free judgy bitch	6
+#freekesha	free ke sh a	4
+#freekriegsson	free kr i eg ss on	6
+#freemarket	free market	2
+#freemilo	free milo	2
+#freeneilturner	free neil turner	3
+#freepalest	free palest	2
+#freespeech	free speech	2
+#freethedelegates	free the delegates	3
+#freethenippple	free the nippple	6
+#freethunderf 00t	free thunder f 00t	6
+#freewhitepeople	free white people	3
+#freewhiteross	free white ross	3
+#frenchscally	french sc ally	6
+#fres	f res	6
+#freshfaces	fresh faces	2
+#freshofftheboat	fresh off the boat	4
+#frexit	f rex it	6
+#friendsday	friends day	2
+#friendsoneliners	friends one liners	3
+#frontnational	front national	2
+#fta	ft a	2
+#ftfy	ft fy	2
+#fuckasians	fuck asians	2
+#fuckatheismplus	fuck atheism plus	3
+#fuckblm	fuck b lm	6
+#fuckdimmy	fuck dim my	3
+#fuckfoxnews	fuck fox news	3
+#fuckgays	fuck gay s	6
+#fuckgoodell	fuck good ell	3
+#fuckhimtoo	fuck him too	3
+#fuckingwow	fucking wow	2
+#fuckislam	fuck islam	2
+#fuckisrael	fuck israel	2
+#fuckjews	fuck jews	2
+#fuckmacklemore	fuck mackle more	3
+#fuckniggers	fuck niggers	2
+#fuckniggersup	fuck niggers up	3
+#fuckoffwerefull	fuck off were full	4
+#fuckparis	fuck paris	2
+#fuckreligion	fuck religion	2
+#fucksake	fuck sake	2
+#fuckspicks	fucks picks	2
+#fucksummer	fuck summer	2
+#fucktard	fuck tar d	6
+#fucktefpoe	fuck tef poe	6
+#fuckthatannoyingcunt	fuck that annoying cunt	4
+#fucktrolls	fuck trolls	2
+#fucktrudeau	fuck tru deau	6
+#fuckwhitepeople	fuck white people	3
+#fuckwitme	fuck wit me	3
+#fuckyall	fuck y all	6
+#fuckyoumatteo	fuck you ma tt eo	6
+#fullmcintosh	full mcintosh	2
+#fullmoosa	full moos a	3
+#fulltait	full ta it	3
+#funfact	fun fact	2
+#funniestthingallday	funniest thing all day	4
+#furgeson	fur ge son	3
+#fwg	fwg	6
+#gaé	ga é	6
+#gagop	ga gop	2
+#game 7	ga me  7	6
+#gamé	ga mé	6
+#gamegate	game gate	2
+#gameofthronesasongorband	game of thrones a songorb and	6
+#gameofthronesrape	game of thrones rape	4
+#gamergaters	gam erg a ter s	6
+#gamergatetimetravel	ga mer gate time travel	5
+#gamessowhite	games so white	3
+#gangcrimes	gang crimes	2
+#gangraped	gang raped	2
+#gapol	gap ol	2
+#garbagepatchkids	garbage patch kids	3
+#garla	gar la	2
+#garlandshooting	garland shooting	2
+#gatornation	gator nation	2
+#gawker	g aw ke r	6
+#gaydadson	gay dad son	3
+#gayfornero	gay for nero	3
+#gaymarriage	gay marriage	2
+#gaypower	gay power	2
+#gayrights	gay rights	2
+#gaysagainstfeminism	gay sag a in st feminism	6
+#gaysbreaktheinternet	gaysbreak the in ter net	6
+#gays	gay s	6
+#gayviolence	gay violence	2
+#gayyyyyyyyyyyy	ga yyyy yyyy yyyy	4
+#gazaarmageddon	ga z a arm aged don	6
+#gaza	ga z a	6
+#gazaj 19	ga z aj  1 9	6
+#gazastrip	ga z a strip	6
+#gazau	ga z a u	6
+#gazaunderattack	ga z a under at tack	6
+#gb	gb	6
+#gchq	gchq	6
+#gcse	gc se	6
+#geale	ge ale	2
+#gealemundine 2	ge al em un dine  2	6
+#gelatocart	gel a to cart	4
+#geldof	geld of	2
+#genocidal	ge no c i dal	6
+#genocidefreezones	genocide free zones	3
+#genocideingaza	genocide ing a z a	6
+#genocideiswrong	genocide is wrong	3
+#genocideneutral	genocide neutral	2
+#genocidewatch	genocide watch	2
+#genophiles	ge no phi les	4
+#genophilia	ge no phil i a	5
+#genozid	ge no z id	6
+#geoengineering	ge oeng i nee ring	6
+#geoffhatespuppies	ge off hates puppies	4
+#georacial	ge or ac i al	5
+#gerarg	ge ra rg	6
+#ger	ge r	6
+#germangenocide	german genocide	2
+#germanpride	german pride	2
+#gerrard	ge rr a rd	6
+#gerryshalloweenparty	gerry shall owe en party	5
+#gerusa	ge rus a	3
+#geschiedenis	ge sch i eden is	6
+#getblockedin 5words	get blocked in  5 words	6
+#getmebanned	get me banned	3
+#getmesomejuicebitch	get me some juice bitch	5
+#getmillennialstovotein 5words	getmillennials to vote in  5 words	6
+#getoveryourself	get over yourself	3
+#getready	get ready	2
+#gettingfedup	getting fed up	3
+#gettingreal	getting real	2
+#gfile	g file	6
+#gh 2015	gh  2 0 1 5	6
+#ghavsusa	gh a vs us a	6
+#ghazaunderattack	ghaz a un der at tack	6
+#ghomeshi	g ho me sh i	6
+#ghostbusters	ghost bus ter s	6
+#giantduck	giant duck	2
+#gingerrevolution	ginger revolution	2
+#ginsmoothies	gin smooth ies	3
+#giornatadellamemoria	giornatadell a mem or i a	6
+#givebackthegold	give back the gold	4
+#givecaptainamericaaboyfriend	give captain america a boyfriend	5
+#givingup	giving up	2
+#glacebay	gl ace bay	6
+#gladicouldhelp	glad i could help	4
+#glennbeck	glenn beck	2
+#globalist	global ist	2
+#globalists	glob a lists	3
+#glofo	gl of o	6
+#glorydays	glory days	2
+#gnocidedesblancs	gnoc i de des blanc s	6
+#gnrationidentitaire	gnrationi dent it a i re	6
+#goauche	go auc he	3
+#goback 2africa	go back  2 afric a	6
+#gobrowns	go brown s	6
+#gocav	go cav	2
+#godblessputin	god bless put in	4
+#godfail	god fail	2
+#godisgood	god is good	3
+#godiswhitepower	god is white power	4
+#godslovechats	god sl ovec hats	6
+#godsnotdead 2	gods not dead  2	6
+#godtrolls	god trolls	2
+#gogetit	go get it	3
+#gohomederay	go home de ray	4
+#golden_calf	go ld en _ calf	6
+#goldengiobes	go ld en giobes	6
+#goldenglobes	golden globes	2
+#goldoutofhiding	gold out of hiding	4
+#goldswagger	gold swagger	2
+#gonetofar	gone to far	3
+#gooddeed	good deed	2
+#goodfriday	good friday	2
+#goodguygreg	good guy greg	3
+#goodshootdarrenwilson	good shoot da rrenw ils on	6
+#gopats	gop a ts	6
+#gopconvention	gop convention	2
+#gopneglectswhites	gop neglects whites	3
+#goprograndprix	go pro grand prix	4
+#goptownhall	gop town hall	3
+#gopwantswar	gop wants war	3
+#gosox	go sox	2
+#gostampsgo 84	go stamps go  84	6
+#gotjesus	got jesus	2
+#gottazayn	go tt a zayn	6
+#goyebiblestudy	go ye bible study	4
+#goyimdefenseleague	goy im defense league	4
+#goyimstrong	goy im strong	3
+#gpk	gpk	6
+#gqaw	gq aw	6
+#grammarburn	grammar burn	2
+#grammys	gram my s	6
+#grandremplacement	grand rem placement	3
+#grandreplacement	grand replacement	2
+#granskning	gran skn ing	6
+#greetthealiensin 5words	greet the aliens in  5 words	6
+#greta	gret a	2
+#griotonthego	griot on the go	4
+#groundhogday	groundhog day	2
+#groupofdeath	group of death	3
+#growingupgerman	growing up german	3
+#growingupwhite	growing up white	3
+#gruber	grub er	6
+#gruponeonazi	grup one on a z i	6
+#gtvt 1	g tv t  1	6
+#guala	gu a la	6
+#guncultural	gun cultural	2
+#h 102f 15	h 102f 15	0
+#haagendazs's	ha a gen da zs 's	6
+#hadith	had it h	6
+#hagida	hag ida	2
+#halp	ha lp	2
+#hamas	ham as	2
+#hamass	ha mass	2
+#handsupdontshoot	hands up dont shoot	4
+#hangtraitors	hang traitors	2
+#hankwilliams	hank williams	2
+#hannukah	han n uk ah	6
+#hansolo	han solo	2
+#hanukkahsongs	hanukkah songs	2
+#happinessmovesmyworld	happiness moves my world	4
+#happybirthdayedsheeran	happy birth day ed sheer an	6
+#happybirthdayjade	happy birthday jade	3
+#happybirthdaylauren	happy birthday lauren	3
+#happyboxingday	happy boxing day	3
+#happycolumbusday	happy columbus day	3
+#happyeaster	happy easter	2
+#happyhalloween	happy halloween	2
+#happymothersday	happy mothers day	3
+#happynewfear	happy new fear	3
+#happynewyear	happy new year	3
+#hardthings	hard things	2
+#hardtruths	hard truths	2
+#harmonyday	harmony day	2
+#harriettubman	harriet tubman	2
+#hashtagparadox	hash tag paradox	3
+#hashtagwars	hash tag wars	3
+#hashtagwhore	hash tag whore	3
+#hateblackpeople	hate black people	3
+#hatecrime	hate crime	2
+#hatelies	hate lies	2
+#haterzstayback	ha ter z stay back	6
+#hatespeech	hate speech	2
+#hatespooks	hates po oks	3
+#hatewatch	hate watch	2
+#hatredofgermanwomen	hatred of german women	4
+#hazratali	ha zr at a li	6
+#hcafc	hc a fc	6
+#hdl	hdl	6
+#heaé	he a é	6
+#hebrewmediareview	hebrew media review	3
+#hé	hé	6
+#helenbonhamcarter	helen bonham carter	3
+#hellobrookland	hello brook land	3
+#hellyeah	hell yeah	2
+#herkfacts	he rk facts	6
+#heroofbelgium	hero of belgium	3
+#hesgay	he s gay	6
+#hesgettingworse	he s ge tt ing worse	6
+#hesheated	he shea ted	3
+#heteropride	he ter opr i de	6
+#heterosexualprideday	heterosexual pride day	3
+#highered	hi g he red	6
+#highthoughts	high thoughts	2
+#hijabibarbie	hi jab i barb ie	5
+#hijrah	hi jr ah	6
+#hil	hi l	6
+#hillaryclinton	hillary clinton	2
+#hillaryclintonsearchterms	hillary clinton search terms	4
+#hillaryforamerica	hillary for america	3
+#hillarysbigannouncement	hill a rysbig an noun cement	6
+#hillaryslosers	hill a rys losers	6
+#hillarysoold	hillary so old	3
+#hillarysoqualified	hillary so qualified	3
+#hillno	hill no	2
+#hirenehlen	hir en eh len	4
+#hirsiali	hir si a li	4
+#hispaniclivesmatter	hispanic lives matter	3
+#historyforgotten	history forgotten	2
+#hitlerbible	hitler bible	2
+#hitlercitation	hitler citation	2
+#hitlerheart	hitler heart	2
+#hitlerobama	hitler obama	2
+#hitlersbday	hit lersb day	6
+#hitler's	hitler 's	2
+#hjalmarschacht	hj a lm a rschacht	6
+#holdthedoor	hold the door	3
+#holebag	hole bag	2
+#holidayhaiku	holiday haiku	2
+#holidayseasonlive	holiday season live	3
+#hollande	ho ll an de	6
+#hollyjones	holly jones	2
+#holocaustmemorialday	holocaust memorial day	3
+#holocaustremembranceday	holocaust remembrance day	3
+#holohoax	ho lo hoax	3
+#holoho	ho lo ho	3
+#holyspirit	holy spirit	2
+#holyweekmemories	holy week memories	3
+#homophobic	homo phobic	2
+#honda 200	hon da  200	6
+#honeybun	honey bun	2
+#honkeycaust	hon key c aust	6
+#honkie	honk ie	2
+#hoodrats	hood rats	2
+#hoodsoff	hoods off	2
+#hooliganradio	hooligan radio	2
+#hooligans	ho ol i ga ns	6
+#hoosierdaddy	hoosier daddy	2
+#hoosierhoops	hoosier hoops	2
+#hoosiernation	hoosier nation	2
+#hoosiers	ho os i ers	6
+#hoosierstate	hoosier state	2
+#hopehegetskilled	hope he get skilled	4
+#hotfeminists	hot fe min is ts	6
+#hotreadsnow	hot reads now	3
+#hottestwhite	hottest white	2
+#houseofcards	house of cards	3
+#howant	how ant	2
+#howantiwhiteareyou	how anti white are you	5
+#howtospotafeminist	how to spot a feminist	5
+#hsbc	hsbc	6
+#huffingtonpost	huffing ton post	3
+#humanityfirst	humanity first	2
+#humanlivesmatter	human lives matter	3
+#humanrightsday	human rights day	3
+#humorisaweapon	humor is a weapon	4
+#humplayproblems	hum play problems	3
+#huns	hun s	6
+#hurtfulspeech	hurtful speech	2
+#hushcrime	hush crime	2
+#hyod	hyod	6
+#hypocricy	hypo cr icy	3
+#i 2	i  2	6
+#ia	i a	2
+#iamawitness	i ama witness	3
+#iamgod	i am god	3
+#iamharrison	i am harrison	3
+#iam	i am	2
+#iamlegend	i am legend	3
+#iamtheresistance	i am the resistance	4
+#iamthesun	i am the sun	4
+#iamtrump	i am trump	3
+#iamwhitepower	i am white power	4
+#ibelieveblacklivesmatter	i believe black lives matter	5
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#icantbreathe	icantbre a the	3
+#icc 4israel	icc  4 i sr a el	6
+#iceprince_trashcan_ep	i ceprince_tr a sh can _ep	6
+#identifypolitics	identify politics	2
+#identitaire	i dent it aire	4
+#idesofmarch	ides of march	3
+#idontcare	i dont care	3
+#idontneedfeminism	i dont need feminism	4
+#idriselba	id rise lb a	4
+#iengage	i engage	2
+#ifhitlerwasalive	if hitler was alive	4
+#ifsantawasmuslim	if santa was muslim	4
+#iftheygunnedmedown	if the ygunned me down	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#iftwitterwereaman	if twitter were a man	5
+#ifviolenceisntworkingyourenotusingenough	i fviolenceisntworkingyourenotus in ge no ugh	6
+#ignorantfuck	ignorant fuck	2
+#igo	i go	2
+#iisrael	i israel	2
+#illegalaliens	illegal aliens	2
+#illegalmigrants	illegal migrants	2
+#illmissu	il lm i ss u	6
+#illridewithyou	ill ride with you	4
+#illuminare	i llum in a re	6
+#iloveobama	i love obama	3
+#iloveyou	i love you	3
+#imabadperson	im a bad person	4
+#imagineafeministinternet	imagine a feminist internet	4
+#imagineherface	imagine her face	3
+#imamali	im a mali	3
+#imatter	i matter	2
+#imax	i max	2
+#imf	i mf	2
+#immig	im mig	2
+#immigrat	im mig rat	3
+#immigrationaction	immigration action	2
+#immigrationreform	immigration reform	2
+#immigr	i mm i gr	6
+#immivasion	im mi va si on	5
+#imnotfunny	im not funny	3
+#imnotwhite	im not white	3
+#impeachmerkel	impeach mer kel	3
+#impeachobama	impeach obama	2
+#implodinggop	imp lo ding gop	4
+#improperuseofthewordcunt	improper use of the word cunt	6
+#imsosick	im so sick	3
+#imvotingfortrumpbecause	im voting for trump because	5
+#inclusivedominion	inclusive dominion	2
+#independenceday	independence day	2
+#indianabill	indiana bill	2
+#indianswithisrael	indians with israel	3
+#indiawithisrael	india with israel	3
+#indigenouspeoplesday	indigenous peoples day	3
+#indvspak	ind vs pak	3
+#indy 500	in dy  5 0 0	6
+#indyfest	in dyf est	6
+#ineedfeminismbecause	i need feminism because	4
+#ineedtherapybecause	i need therapy because	4
+#ineedyourpowerdavidotunga	in eedyourpowerdav i do tung a	6
+#infowars	in f ow ars	6
+#inktober	ink to be r	6
+#inorout	in or out	3
+#inourbritain	in our britain	3
+#inowownyoursoul	in ow own your soul	5
+#insectliv	in sect li v	6
+#insidejoke	inside joke	2
+#internationalnursesday	international nurses day	3
+#internationaloffendafeministday	international offend a feminist day	5
+#internationalwomensday	intern a ti on a lwomensday	6
+#interraciallove	interracial love	2
+#interracialmarriage	interracial marriage	2
+#interracism	inter racism	2
+#intersectionalfeminim	intersection al fe minim	4
+#intersex	inter sex	2
+#intimidationgame	intimidation game	2
+#invadersout	invaders out	2
+#invasoren	in v as or en	6
+#invisiblebird	invisible bird	2
+#ioc	i oc	6
+#ios 83	i os  83	6
+#iparis	i paris	2
+#irelandforall	ireland for all	3
+#irevsco	ire vs co	3
+#irishupamovieoractor	iris hupa movie or actor	5
+#irmovement	i r move me nt	6
+#ironhorse	iron horse	2
+#irvingkristol	irving krist ol	3
+#isalutepoc	is a lute po c	6
+#isalutewhitepeople	i salute white people	4
+#isbritainracist	is britain racist	3
+#ishitonisrael	is hit on israel	4
+#ishitonjewniggereu	i sh i to njewniggereu	6
+#ishitunot	i sh it u not	6
+#ishityounot	is hit you not	4
+#isisfeminism	isis feminism	2
+#isitok	is it ok	3
+#islamanazi	islam a nazi	3
+#islamhorsdeurope	islam hor sd europe	4
+#islamicarartheid	i sl a micarar the id	6
+#islamicquiz	islamic quiz	2
+#islamicstate	islamic state	2
+#islamicterrorism	islamic terrorism	2
+#islamicthoughts	islamic thoughts	2
+#islamicthoug	i sl a mi cthoug	6
+#islamicthou	islamic thou	2
+#islami	islam i	2
+#islamisation	islam is at ion	4
+#islamisawful	islam is awful	3
+#islamisbad	islam is bad	3
+#islamisevil	islam is evil	3
+#islammeanspeace	islam means peace	3
+#islamnation	islam nation	2
+#islamophobic	is la mo phobic	4
+#islamsofragile	islam so fragile	3
+#islamwatch	islam watch	2
+#israelelections	israel elections	2
+#israel-i	i sr a el - i	6
+#israelinside	israel inside	2
+#israelsolidarity	israel solidarity	2
+#israelterrorist	israel terrorist	2
+#israeltheregion	israel the region	3
+#israeltimes	israel times	2
+#israelunderfire	israel under fire	3
+#israhell	is ra hell	3
+#isral	i sr al	3
+#isreal	is real	2
+#istandwithann	ist and with a nn	6
+#istandwithbaharmustafa	ist and with baharmust af a	6
+#istandwitheurope	ist and with europe	4
+#istandwithgermany	ist and with germany	4
+#istandwithhatespeech	ist and with hate speech	5
+#istandwithislam	ist and with islam	4
+#istandwithisr	ist and with i sr	5
+#istandwith	ist and with	3
+#istandwithpalestine	ist and with palestine	4
+#istandwithrussia	ist and with russia	4
+#istandwithsweden	ist and with sweden	4
+#istandwit	ist and wit	3
+#isupk	is up k	6
+#isupportgaza	is up port ga z a	6
+#ita	it a	2
+#italianproblems	italian problems	2
+#ithinkislamhatesus	i think islam hates us	5
+#itrustahistorymajor	it rust a history major	5
+#itsawrap	its a wrap	3
+#itsfallbecause	its fall because	3
+#itsnotaboutland	it snot about land	4
+#itsnotradicaltosay	it snot radical to say	5
+#itsnotwrongwhenwedoit	it snot wrong when we doit	6
+#itsonlyracistifawhiteguydoesit	itsonlyracistif a white guy does it	6
+#itsonus	its onus	2
+#itsonusunlv	it so nu sun lv	6
+#itsthejew	its the jew	3
+#itwasrealinmymind	it was real in my mind	6
+#iubb	i ubb	6
+#iu	i u	6
+#ivg	i vg	6
+#iwantout	i want out	3
+#iwanttopunchpeoplewho	i want to punch people who	6
+#iwc	i wc	6
+#iwillonlydateyouif	i will only date you if	6
+#iwishotherparentswould	i wish other parents would	5
+#iyiyiyiyiyiyiyiyiyiyi	i yiyiyiyiyiyiyiyiyiy i	6
+#iziclovesyou	i z i cloves you	6
+#jackschwartz	jack schwartz	2
+#jadapose	ja da pose	3
+#jadehelm 15	jade he lm  15	6
+#jagdelar	jag del a r	6
+#japaneseculture	japanese culture	2
+#jaymohrsports	jay mo hr sports	4
+#jc	jc	6
+#jcot	j cot	6
+#jeremyrenner	je re my re nner	6
+#jerryreed	jerry reed	2
+#jerryseinfeld	jerry se in fe ld	5
+#jessejackson	jesse jackson	2
+#jessicachambers	jessica chambers	2
+#jesuisblanc	je suis blanc	3
+#jesuisbruxelles	je suis bruxelles	3
+#jesuischarlie	je suis charlie	3
+#jesuisjuif	je sui sju if	6
+#jesuismilo	je sui smilo	3
+#jesuismuslim	je suis muslim	3
+#jesuisrachel	je suis rachel	3
+#jesuschrist	jesus christ	2
+#jesusfinalhours	jesus final hours	3
+#jesusisthereasonfortheseason	jesus is the reasonfor the season	6
+#jesuspickuplines	jesus pickup lines	3
+#jesustweeters	je sus tweet ers	6
+#jeveuxdireacyril	jeveuxd i re a cyr il	6
+#jewcrew	jew crew	2
+#jewcriminal	jew criminal	2
+#jewfs	jew fs	6
+#jewhating	jew hating	2
+#jewishcontrolled	jewish controlled	2
+#jewishgenocide	jewish genocide	2
+#jewishhatespeech	jewish hate speech	3
+#jewishhistory 101	jew i shh is tory  101	6
+#jewishhistory	jewish history	2
+#jewishlivesmatter	jewish lives matter	3
+#jewishmedia	jewish media	2
+#jewishmuseum	jewish museum	2
+#jewishprivilege	jewish privilege	2
+#jewishracism	jewish racism	2
+#jewishs	jew i sh s	6
+#jewliesmatter	jew lies matter	3
+#jewproblems	jew problems	2
+#jewsabusechildren	jews abuse children	3
+#jewsarenationwreckers	jews a re nati on wreckers	6
+#jewsforjesus	jews for jesus	3
+#jewshatewhites	jews hate whites	3
+#jewsh	jew sh	2
+#jewsofcolor	jews of color	3
+#jewsunderattack	jews under attack	3
+#jewwave	jew wave	2
+#jfjaustralia	jfjau str a li a	6
+#jiggaboo	jig ga boo	3
+#jihadijohn	jihad i john	3
+#jihadwatch	jihad watch	2
+#ji	j i	6
+#jo 6pack	jo  6 pack	6
+#joanrivers	joan rivers	2
+#jobsforisis	jobs for isis	3
+#jocox	jo cox	2
+#jodendom	jo den do m	6
+#joetorreday	joe tor re day	4
+#joeyvotto	joe yvot to	6
+#john 18	john  18	6
+#johndeere	john de ere	3
+#johnfriend	john friend	2
+#johnsterling	john sterling	2
+#jollificate_bylargess	jo llificate_ by large ss	6
+#joniernst	jon i ernst	3
+#jonstewart	jon stewart	2
+#joodseomroep	jo odseo mr oep	6
+#jordy	jo rdy	6
+#josephepstein	joseph epstein	2
+#joshhomme	josh homme	2
+#journalisminvastuu	jo urn a lis min vastuu	6
+#journojobs	jour no jobs	3
+#joydebate	joy debate	2
+#js_terror	js_t err or	6
+#jubanos	jub a nos	6
+#judenhass	jude nh a ss	6
+#juden	jud en	6
+#judeoxianwhites	jude ox i an whites	5
+#juifs	ju i fs	6
+#jurassicworld	jurassic world	2
+#justcauseitsc	just cause it sc	6
+#justfeministthings	just feminist things	3
+#justhitlerthings	just hitler things	3
+#justice 4jamar	just ice  4 ja mar	6
+#justice 4mikebrown	just ice  4 mike brown	6
+#justicefordarrenwilson	just ice ford a rrenwils on	6
+#justicefordesirae	justice for des irae	4
+#justiceforjessica	justice for jessica	3
+#justicefortrayvon	justice for tray von	4
+#justiceforzemir	just ice for z emir	6
+#justiceorelse	justice or else	3
+#justin	just in	2
+#justintrudeau	just i nt rude a u	6
+#justwhorunsamerica	just who runs america	4
+#jwo	jwo	6
+#kalergi	kal erg i	3
+#kalergiplan	kal erg i plan	4
+#kandykane	kandyk a ne	6
+#kanyeisablackjackass	kanye is a blackjack a ss	6
+#kanyesbabiesarekonfusedmonkeys	kanyesbabiesarek on fused mon keys	6
+#kaposervatives	k a poser vat i ves	6
+#karlmarx	karl marx	2
+#karlmarxkill	karl marx kill	3
+#kasich	k a sich	6
+#katesteinle	kat est ein le	6
+#katrinapiersonhistory	katr in a piers on history	6
+#kazeemjaleel	k a zee mj al eel	6
+#kazeem	k a ze em	6
+#kdstreak	kdst re a k	6
+#keanuniversity	kean university	2
+#keenanwashere	keen an was here	4
+#keepcruzing	keep cruz ing	3
+#keepingitreal	keeping it real	3
+#keepingkidssafeonline	keeping kids safe on line	5
+#keepitrealsheep	keep it real sheep	4
+#keeppounding	keep pounding	2
+#kejr	ke jr	6
+#kentuckyderby	kentucky derby	2
+#kermitdonewith	ke rm it do ne with	6
+#khaibar	kh a i bar	6
+#khazars	kh a z ars	6
+#khilafah	kh il af ah	6
+#khumalo	k hum a lo	6
+#kickoff 2014	kick off  2014	6
+#kidsbookchat	kids book chat	3
+#kidslivesmatter	kids lives matter	3
+#kikme	ki k me	6
+#killalljews	kill all jews	3
+#killallmen	kill all men	3
+#killallniggers	kill all niggers	3
+#killallwhitemen	kill all white men	4
+#killcam	kill cam	2
+#killjewsforpeace	kill jews for peace	4
+#killniggers	kill niggers	2
+#killwhitey	kill whitey	2
+#kimdavis	ki md a vis	6
+#kingco	king co	2
+#kittenkebabs	ki tt en ke b abs	6
+#kittensonmydick	kittens on my dick	4
+#kiwirape	kiwi rape	2
+#klanlife	klan life	2
+#klausknows	klaus knows	2
+#kln	kln	6
+#knickstape	knickst a pe	6
+#knightsec	knight sec	2
+#knockoutgame	knockout game	2
+#koelnbhf	ko el nbhf	6
+#koelnhbf	ko el nhbf	6
+#koeln	ko el n	6
+#koibuintl	ko i bu i nt l	6
+#kominverzet	komi nverz et	6
+#kosherdelidenial	kosher del i denial	4
+#ksa	ks a	6
+#ksfo	ksfo	6
+#ks	ks	6
+#kukluxklan	kuklux klan	2
+#kuwtksunday	ku wt k sun day	6
+#laborday	labor day	2
+#labourc 4	lab our c  4	6
+#labourcrisis	labour crisis	2
+#labourpurge	labour purge	2
+#lacit	lac it	2
+#ladykimora	lady ki mora	3
+#lafrancebouge	la france bouge	3
+#lakeerie	lake erie	2
+#lanalokteff	l an al ok teff	6
+#landofthefree	land of the free	4
+#laphrasequimetdebonnehumeur	la phr a se qui metdebonnehumeur	6
+#lasthurrahthendietstarts	last hurrah then diet starts	5
+#latinjews	latin jews	2
+#latinkings	latin kings	2
+#latinlivesmatter	latin lives matter	3
+#latinolivesmatter	latino lives matter	3
+#latinpower	latin power	2
+#lattesalute	la tt es a lute	6
+#launching_into_the_deep	launch in g_into_ the _ deep	6
+#lawenforcement	law enforcement	2
+#lawfirm	law firm	2
+#lawyeslivesmattwe	law yes lives matt we	5
+#l'chaim	l'ch a im	6
+#leadersdebate	leaders debate	2
+#leanintogether	lean in together	3
+#learnyourplace	learn your place	3
+#leaveeu	leave eu	6
+#leavingeu	lea vin ge u	6
+#leb	leb	6
+#lebronjames	lebr on james	6
+#lebron	lebr on	6
+#lechaim	lech a im	6
+#ledzeppelin	led zeppelin	2
+#leftard	left a rd	6
+#lemonde	lemon de	2
+#lepenforeurope	le pen for europe	6
+#leprecha	leprech a	6
+#lesserfilms	lesser films	2
+#lessonoftheday	lesson of the day	4
+#lesupplement	les up ple me nt	6
+#letmehit	let me hit	3
+#letr 2jil	let r 2j il	6
+#letsgetchinesejews	lets get chinese jews	4
+#letsgoyankees	lets go yankees	3
+#letsmaketodaybetterby	lets make today better by	5
+#letthisdaybe	let this day be	4
+#leukophobia	leu kop hob i a	6
+#lfclegend	lfc leg end	6
+#lfcvsmufc	lf cv smu fc	6
+#lgbtlivesmatter	lgbt lives mat ter	6
+#lgbtqi	lgbtq i	6
+#lghtv	lgh tv	6
+#lhhny	lhhny	6
+#libcrib	li b crib	6
+#libdem	li bd em	6
+#libdems	li b de ms	6
+#liberalethics	liberal ethics	2
+#liberalfeminism	liberal feminism	2
+#liberallogic	liberal logic	2
+#liberalsunite	liberals unite	2
+#libertarian 4lyfe	liber tar i a n 4ly fe	6
+#liblabcon	li blab con	3
+#libs	li bs	6
+#libspill	li b sp ill	6
+#libtard	li bt a rd	6
+#liesaboutvinscully	lies a bou tv ins cully	6
+#lifechanging	life changing	2
+#lifecomplete	life complete	2
+#lifematters	life matters	2
+#lifeprotips	life pro tips	3
+#lightskingangorkillyourself	light skin gang or kill yourself	6
+#lightwriting	light writing	2
+#like 2	like  2	6
+#like 3mexicans	like  3 mexicans	6
+#likeaboy	like a boy	3
+#likeafeminist	like a feminist	3
+#likeagirl	like a girl	3
+#lilsmokey	lil smokey	2
+#littledebbie	li tt led ebb ie	5
+#littlelate	little late	2
+#livesmatter	lives matter	2
+#livesmatt	lives matt	2
+#livestream	live stream	2
+#livet	li vet	2
+#livingwage	living wage	2
+#livinthedream	li vin the dream	4
+#lizardtruth	lizard truth	2
+#lnyhbt	lnyhbt	6
+#lolitaexpress	lo lit a express	4
+#lolno	lo l no	6
+#lolrape	lo lr a pe	6
+#londonelects	london el ects	6
+#londonhasfallen	london has fallen	3
+#londonistan	london is tan	3
+#londonlife	london life	2
+#longexposure	long exposure	2
+#longlive	long live	2
+#longreads	long reads	2
+#lookingformore	looking for more	3
+#loosechange	loose change	2
+#lordknows	lord knows	2
+#lordwillin	lord will in	3
+#losangeles	los angeles	2
+#lovebelfast	love belfast	2
+#lovehim	love him	2
+#lovemycousin	love my cousin	3
+#lovesobama	loves obama	2
+#lovewins	love wins	2
+#loveyall	love y all	6
+#loveyourcommunity	love your community	3
+#loveyour	love your	2
+#loveyourrace	love your race	3
+#lpc	lp c	6
+#ludobojstwobialych	ludo bo jstwob i a lych	6
+#lviv	lv i v	6
+#lvy	lvy	6
+#lwc	lwc	6
+#lybia	lyb i a	6
+#lyntoncrosby	ly nt on cr os by	6
+#m 21	m  2 1	6
+#macedonia	macedon i a	3
+#machalnu	mac hal nu	3
+#macheteattacks	machete attacks	2
+#madmenmarathon	madmen marathon	2
+#maega	mae ga	2
+#mafiainblue	mafia in blue	3
+#magnotapp	mag not app	3
+#magov	ma go v	6
+#mahdithehope	mah dit he hope	4
+#majorleauge	major leau ge	3
+#makeamericarapeagain	make america rape again	4
+#makeamericasafeagain	make america safe again	4
+#makeamericawhiteagain	make america white again	4
+#makeamovieoffensive	make a movie offensive	4
+#makeamovieyummy	make a movie yum my	5
+#makeasongdepressing	make a song depressing	4
+#makedclisten	make dc listen	3
+#makedonalddrumpfagain	make don a lddrumpfag a in	6
+#makegermanygreatagain	make germany great again	4
+#makememoney	make me money	3
+#makepeacein 5words	makepeace in  5 words	6
+#makethempayinmay	make them pay in may	5
+#maketheworldgreatagain	make the world great again	5
+#makethwwhitehousewhiteagian	ma ke thwwhitehousewhiteag i an	6
+#makeuptransformation	makeup transformation	2
+#makewhitebabies	make white babies	3
+#makeyourownway	make your own way	4
+#malaysianlogic	malaysian logic	2
+#malefeministagenda	male feminist agenda	3
+#malefeminist	male feminist	2
+#malelivesmatter	male lives matter	3
+#maleviolence	male violence	2
+#mandela	mande la	2
+#manspreading	man spreading	2
+#marchagainstwhitegenocide	march against white genocide	4
+#marchforeurope	march for europe	3
+#marchforlife 2015	march for life  2015	6
+#marchmadness	march madness	2
+#mardiconseil	mardi conseil	2
+#marlins	marl ins	2
+#marlyrivera	ma rly river a	6
+#marrakesh 2016	marr a ke sh  2016	6
+#marseille	mar se ille	3
+#martialarts	martial arts	2
+#martinluther	martin luther	2
+#martinomalley	martin om alley	3
+#marvel's	marvel 's	2
+#marxism	marx is m	6
+#masculinitysofragile	masculinity so fragile	3
+#massimmigration	mass immigration	2
+#masterchefjunior	master chef junior	3
+#mattsbarmitzvah	ma tt sba rmitzv ah	6
+#matzoman	matzo man	2
+#mavtv 500	ma v tv  5 0 0	6
+#mawg	ma wg	6
+#maxracism	max racism	2
+#mayaangelou	maya an ge lou	4
+#maybeididntdoitright	maybe i did nt doit right	6
+#maypac	may pa c	6
+#mayweather	may weather	2
+#mazeltov	ma z el to v	6
+#mcgnews	mcg news	6
+#mdlny	mdlny	6
+#mechassskinner	me ch a ss skinner	6
+#mediabias	media bias	2
+#mediagate	media gate	2
+#mediaincontext	media in context	3
+#medusawhyyougottastareatmyfucks	medusawhyyougott a stare at my fucks	6
+#meettheukippers	meet the uk i ppers	6
+#meirl	me i rl	6
+#melaninmonday	melanin monday	2
+#melanoidempowerment	mel a no i de mpowerment	6
+#melgibsonwasright	mel gibson was right	4
+#melilla	mel illa	2
+#memehistory	meme history	2
+#mememe	me meme	2
+#memes	me me s	6
+#memesquad	meme squad	2
+#memorialday 2016	mem or i al day  2016	6
+#memoriesofidots	memories of i dots	4
+#memoryverse	memory verse	2
+#menalsomen	men also men	3
+#mencanberaped	men can be raped	4
+#meninism	men in is m	6
+#meninist	men in ist	3
+#mensrights	mens rights	2
+#mentalbint	mental bi nt	3
+#mentalretardation	mental retardation	2
+#mercedescarrera	mercedes carr era	3
+#merkel	mer kel	2
+#merkelmussweg	mer kel mus sw eg	5
+#merrychristmas	merry christmas	2
+#mesashooting	mesa shooting	2
+#messagetofeminists	me ss a get of eminists	6
+#messiahbyvemathompson_	me ss i a hbyvemathompson_	6
+#messupaquote	mess up a quote	4
+#metronorth	metro north	2
+#metsfan	mets fan	2
+#mewmew	mew mew	2
+#mexicanlivesmatter	mexican lives matter	3
+#mexicovsisrael	mexico vs israel	3
+#mh 17	mh  1 7	6
+#miakhalifa	mi a k hal if a	6
+#michaelbrown	michael brown	2
+#michaelsavage	michael savage	2
+#michelleobama	mich el leo bam a	5
+#michiganst	mich i ga nst	6
+#mightyno 9	mighty no  9	6
+#migpol	mi gp ol	6
+#migrantcrisi	migrant cris i	3
+#migrantcrisis	migrant crisis	2
+#mijikai	mij i kai	3
+#mikebrown	mike brown	2
+#mikopeled	mi ko pe led	6
+#milesthompson	miles thompson	2
+#mileycyrus	mi ley cyrus	3
+#militarymonday	military monday	2
+#milkywayfarm	milky way farm	3
+#millennialbillofrights	millennial bill of rights	4
+#milright	mil right	2
+#milwaukeeuprising	milwaukee uprising	2
+#minnosotans	min no sot a ns	6
+#minoritiescangotohell	minorities can go to hell	5
+#minoritydebate	minority debate	2
+#minvsaz	min vs a z	6
+#misandry	mis an dry	3
+#miscegenocide	misce genocide	2
+#misogyne	mi so gy ne	6
+#missou	mis sou	2
+#mixedbabies	mixed babies	2
+#mixedfamilies	mixed families	2
+#mixedlivesmatter	mixed lives matter	3
+#mizzou	mi zzou	6
+#mlbdraft	ml b dr a ft	6
+#mlb's	ml b 's	6
+#mlbtheshow 12	mlb the show  12	6
+#mlkday	ml k day	6
+#mmkay	mm kay	2
+#mngop	mn gop	6
+#mnleg	mn leg	6
+#mohammadbible	mohammad bible	2
+#moimocheetmechant 2	mo i mocheetmech a nt  2	6
+#mollymacauley	molly mac a u ley	6
+#mommymonday	mommy monday	2
+#momsdemand	mo ms demand	3
+#monacogp	mon a co gp	6
+#moncton	mo nc ton	3
+#mondaymotiva	monday mot i va	4
+#monsanto	mon santo	2
+#montlake	mont lake	2
+#moongod	moon god	2
+#moonman	moon man	2
+#morons	mor ons	2
+#moslemdeathcult	moslem death cult	3
+#mosquevisit	mosque visit	2
+#mossad	moss ad	2
+#motd	mot d	6
+#moulinyan	mo uliny an	6
+#mouthness	mouth ness	2
+#moveoutmyway	move out my way	4
+#mpaa	mp a a	6
+#mra	mr a	2
+#msftcloud	ms ft cloud	3
+#mt	mt	6
+#mtvhot	m tv hot	6
+#mtvhottestlanadelrey	mtvhottestl an a del rey	6
+#mtv	m tv	6
+#mudjuggin	mud jug gin	3
+#mudsharkmonday	mud shark monday	3
+#mudshark	mud shark	2
+#mudsharks	mud sharks	2
+#muhammadali	muhammad a li	3
+#muhammedali	m uh a mme dal i	6
+#muhammed	m uh a mm ed	6
+#muharram 10	muharram  10	6
+#muhholohoax	m uh ho lo ho ax	6
+#multicultifails	multi cult i fails	4
+#multiculturalismisntworking	multicultural is mis nt working	5
+#multikulti	multi ku lt i	6
+#murica	m uric a	6
+#musicismylife	music is my life	4
+#musicmatters	music matters	2
+#muslimapartment	muslim apartment	2
+#muslimarmies	muslim armies	2
+#muslimawarenessmonth	muslim awareness month	3
+#muslimban	muslim ban	2
+#muslimcrimes	muslim crimes	2
+#muslim_harbour	mus li m_harb our	6
+#musliminvaders	muslim invaders	2
+#musliminvasion	muslim invasion	2
+#muslimkillers	muslim killers	2
+#muslimlivesmatter	muslim lives matter	3
+#muslimlivesmatters	muslim lives matters	3
+#muslimsagainstisis	muslims against isis	3
+#muslimsarenotterorist	muslims are not ter or ist	6
+#muslimsarenotterrorists	muslims are not terrorists	4
+#muslimsareweak	muslims are weak	3
+#muslimsuccess	muslim success	2
+#musliumbrotherhood	mus li umb rot her hood	6
+#musloids	mus lo i ds	6
+#mustread	must read	2
+#mustsee	must see	2
+#my 2wordnightmare	my  2 word night mare	6
+#my 4wordmotto	my  4 word mot to	6
+#my 6wordopinion	my  6 word opinion	6
+#mybaby	my baby	2
+#mybestpickuplines	my best pickup lines	4
+#mybiblechat	my bible chat	3
+#myfuckingsides	my fucking sides	3
+#mygod	my god	2
+#myhubby	my hubby	2
+#myjihad	my jihad	2
+#mylifematter	my life matter	3
+#n 16	n  1 6	6
+#nabokov	nab ok ov	6
+#naiduniya	na idun i ya	4
+#nakbaday	na kb a day	6
+#nakba	na kb a	6
+#naldostakenyc	na ld os ta ken yc	6
+#nameobamaisisoperation	name obama isis operation	4
+#namethejew	name the jew	3
+#nametheproblem	name the problem	3
+#napow	nap ow	2
+#nasasocial	n as a soc i al	6
+#nasirmontana	na sir montana	3
+#nationalaction	national action	2
+#nationalbeerday	national beer day	3
+#nationalbookloversday	national book lovers day	4
+#nationalcleavageday	national cleavage day	3
+#nationaldayofprayer	national day of prayer	4
+#nationalistwomen	nationalist women	2
+#nationallimerickday	national limerick day	3
+#nationaloffendacollegestudentday	national offend a college student day	6
+#nationalsocialism	national socialism	2
+#nationalsocialist	national socialist	2
+#nativeamericanlivesmatter	native american lives matter	4
+#nativelivesmatter	native lives matter	3
+#naturelle	nature lle	6
+#nazifact	nazi fact	2
+#naziplaybook	nazi play book	3
+#nazisalute	nazi salute	2
+#nazisofcolor	nazis of color	3
+#nbafinals	nb a fin als	6
+#nbaplayoffs	nb a play of fs	6
+#nbasuperheroes	nb a super heroes	6
+#nbombs	n bombs	6
+#ncaa	nc aa	2
+#ndaa	nd a a	6
+#ndp	ndp	6
+#neandertrolls	ne an der trolls	4
+#ned	ne d	6
+#needlesdownforsue	needles down for sue	4
+#negronazi	negro nazi	2
+#nelsonmandela	nelson mande la	3
+#neonazism	neo nazism	2
+#neonazis	neo nazis	2
+#neonics	ne on i cs	6
+#netanyahu	net any a hu	6
+#netanyahuspeech	net any a hu speech	6
+#netanyahutheextremist	net any a hut he extremist	6
+#netany	net any	2
+#nevadahumpday	nevada hump day	3
+#neveragain	never again	2
+#neveraskablackperson	never ask a black person	5
+#neverdie	never die	2
+#neverforgetmytweets	never for get my tweet s	6
+#neversaiditwasabadthing	never said it was a badthing	6
+#neverwoulda	never woulda	2
+#newglasgow	new glasgow	2
+#newgopdebatequestions	new gop debate questions	4
+#newhampshire	new hampshire	2
+#new_hampshire	new _h amp sh i re	6
+#newmedia	new media	2
+#news 9	news  9	6
+#newslocker	news locker	2
+#newtrumptvshows	new trump tv shows	4
+#newworldorder	new world order	3
+#newyear	new year	2
+#newyearsresolution	new years resolution	3
+#new_york	new _ york	6
+#newyorkprimary	new york primary	3
+#nflger	nfl ge r	6
+#nf	nf	6
+#nhcaw	nhc aw	6
+#nice 06	nice  06	6
+#niceattack	nice attack	2
+#nicefrance	nice france	2
+#nigelfarage	ni gel far age	4
+#nigganetwork	ni gg a net work	6
+#nigga	ni gg a	6
+#niggerfood	nigger food	2
+#niggerperson	nigger person	2
+#niggerpower	nigger power	2
+#nightwillfall	night will fall	3
+#nisman	nis man	2
+#njdevils	nj de v ils	6
+#nj	nj	6
+#nkanla	nk an la	6
+#nlcs	nlcs	6
+#nlpoli	n lp ol i	6
+#nme	n me	6
+#nmmng	n mm ng	6
+#nn 15	nn  1 5	6
+#no 2antisemitism	no  2 a nt is emitism	6
+#noamnesty	no amnesty	2
+#nobillnobreak	no bill no break	4
+#noborders	no borders	2
+#nochillzone	no chill zone	3
+#noclue	no clue	2
+#nodiversity	no diversity	2
+#nodoors	no doors	2
+#nofliter	n of li ter	6
+#nofunallowed	no fun allowed	3
+#nogermswanted	no germs wanted	3
+#nogozones 4whites	no go zones  4 whites	6
+#nohomo	no homo	2
+#nohope	no hope	2
+#noislam	no islam	2
+#noisundays	no i sundays	3
+#noisu	no is u	6
+#noluck	no luck	2
+#nomercy	no mercy	2
+#nomoreguns	no more guns	3
+#nomoremigrants	no more migrants	3
+#nomorerefugees	no more refugees	3
+#nomuslims	no muslims	2
+#nonazileftbehind	no nazi left behind	4
+#nonces	no nc es	6
+#noniggersnocrime	no niggers no crime	4
+#nonwhites	non whites	2
+#nooneisillegal	no one is illegal	4
+#noonewillrapemeimtoofatandugly	noonewillrapemeim to of at and ugly	6
+#nopc	no pc	6
+#nopegida	no peg ida	3
+#noplansforyouguys	no plans for you guys	5
+#noragrets	nor a gret s	6
+#norefugees	no refugees	2
+#norhythm	no rhythm	2
+#norskrasisme	no rskr a sis me	6
+#north_carolina	no rth_c a ro lin a	6
+#northwestfront	northwest front	2
+#northwestimperative	northwest imperative	2
+#nosleepforme	no sleep for me	4
+#nostalgicfor	nostalgic for	2
+#notactuallyaracisttweet	not actually a racist tweet	5
+#notallbaldmen	not all bald men	4
+#notanothermonster	not another monster	3
+#notatmytable	not at my table	4
+#notfeeding	not feeding	2
+#notfun	not fun	2
+#notimeforyourminoritylanguage	no time for your minority language	6
+#notintexas	not in texas	3
+#notit	not it	2
+#notkook	not kook	2
+#notmyabuela	not my a bu el a	6
+#notomarroxas	no to marr ox as	5
+#notonbbcnews	no to nbbc news	6
+#notonemore	not one more	3
+#notoxenophobia	no to xenophobia	3
+#notracist	not racist	2
+#notrealsuffering	not real suffering	3
+#notwhiteprivilege	not white privilege	3
+#notyourasiansidekick	not your asian side kick	5
+##now	# now	6
+#nowomanever	no woman ever	3
+#nowornever	now or never	3
+#nowplayingontjc	now play in go nt jc	6
+#npd	npd	6
+#npo	n po	6
+#npr's	npr 's	6
+#nrawhore	nra whore	2
+#nrorevolt	n ro re volt	6
+#nrx	nrx	6
+#nsdap	n sd ap	6
+#nsf	nsf	6
+#nsjetzt	nsj et zt	6
+#nsm 88	nsm  8 8	6
+#nsm	nsm	6
+#nsnow	ns now	6
+#ns	ns	6
+#nspcc	n sp cc	6
+#nuclearmemes	nu clear me me s	6
+#nukejerusalem	nuke jerusalem	2
+#nutjobs	nut jobs	2
+#nvcaucus	nvc auc us	6
+#nwi	nw i	2
+#nwo 4fuckinglife	nw o  4 fuck ing life	6
+#nwo 4life	nw o  4 li fe	6
+#nwohoax	nw oh o ax	6
+#nycc	nycc	6
+#nyjb	nyjb	6
+#nympho	nymph o	6
+#nypdlivesmatter	nypd lives mat ter	6
+#nypd	nypd	6
+#nyy	nyy	6
+#nzvwi	nzvw i	6
+#nzwo	nzwo	6
+#obamafail	obama fail	2
+#obamahitler	obama hitler	2
+#obamasucks	ob am a suck s	6
+#occshooting	occ shoot ing	6
+#occupycnn	occupy cnn	6
+#occupynationalism	occupy nationalism	2
+#oc	oc	6
+#ocra	o cr a	6
+#odinbirthday	odin birthday	2
+#odinism	odin is m	6
+#offendchristians	offend christians	2
+#offendeveryonein 4words	of fend everyone in  4 words	6
+#offendsjws	of fe ndsjws	6
+#offline	off line	2
+#offtopic	off topic	2
+#ohhitler	oh hitler	2
+#ohiorape	ohio rape	2
+#oikophobia	oikop hob i a	6
+#ojsimpson	ojs imp son	6
+#okaykk	ok a ykk	6
+#okiecops	ok ie cops	3
+#oklahomaeducation	oklahoma education	2
+#oldesthatred	oldest hatred	2
+#oldpainting	old painting	2
+#oldschoolkev	old school ke v	6
+#oldtestament	old testament	2
+#olfactoryrape	olfactory rape	2
+#ollusions	ol l us i ons	6
+#olympictrials	olympic trials	2
+#ommorsi	om mors i	3
+#oneletterofffoods	one letter off foods	4
+#oneletteroffsongs	one letter off songs	4
+#onepeople	one people	2
+#onepiece 830	one piece  830	6
+#onetimeinconcentrationcamp	onetime in concentration camp	4
+#onlyhofstra	on lyh of str a	6
+#onlywhiteisright	only white is right	4
+#onthehill	on the hill	3
+#opboycottisrael	op boycott i sr a el	6
+#opdeateaters	op de at eaters	6
+#opdeatheaters	op de a the a ters	6
+#openbordersforisrael	open borders for israel	4
+#openborders	open borders	2
+#openfollow	open follow	2
+#openwide	open wide	2
+#operationchaos	operation chaos	2
+#opisrael	op i sr a el	6
+#oppedohunt	op pe do hunt	6
+#oprah	opr ah	6
+#oprollredroll	op roll red roll	6
+#opskynet	op sky net	6
+#opuv	opuv	6
+#orangelivesmatter	orange lives matter	3
+#oraniamustfall	oran i a must fall	5
+#ordures	or du res	3
+#oregonshooting	oregon shooting	2
+#oregonunderattack	oregon under attack	3
+#oreocookieballs	oreo cookie balls	3
+#oreolove	oreo love	2
+#oreos	or eos	2
+#orlandostrong	orlando strong	2
+#orpuw	or puw	6
+#oscars 2016	os cars  2016	6
+#otwolhero	otw ol he ro	6
+#ourcity	our city	2
+#ourislam	our islam	2
+#outboastkayne	out boast kay ne	4
+#outfront	out front	2
+#outlawislam	outlaw islam	2
+#outofeu	out of eu	6
+#overbreeding	over breeding	2
+#ownthegenome	own the genome	3
+#ozoemezina	ozoemez in a	6
+#pac 12championship	pa c 12ch amp i on ship	6
+#pacernation	pacer nation	2
+#paé	pa é	6
+#pakistanattack	pakistan attack	2
+#pakrememberspalestinecause	pak remembers palestine cause	4
+#palestea	pales tea	2
+#palestineresists	palestine resists	2
+#palestines	pales tines	2
+#palestineunderattack	palestine under attack	3
+#palestinianprivilege	palestinian privilege	2
+#palestinians	pa lest in i a ns	6
+#palmsunday	palm sunday	2
+#panafricanistcongress	pan african ist congress	4
+#panamapapers	panama papers	2
+#parenti	parent i	2
+#parisagreement	paris agreement	2
+#parisattack	paris attack	2
+#parismarch	paris march	2
+#parisshooting	paris shooting	2
+#parksandrec	parks and re c	6
+#pastorbiodun	past orb io dun	4
+#patriciaarquette	pat ric i a a rquette	6
+#patsgonnasubtweet	pat sgonn a sub tweet	6
+#paulgeorge	paul george	2
+#paulsheehan	paul she eh an	4
+#pauw	pa uw	6
+#paybackisabitch	pay back is a bitch	5
+#payporteorangesales	pay porte orange sales	4
+#pboh	pb oh	6
+#pc 2015	pc  2 0 1 5	6
+#pc	pc	6
+#pdplive	pdp live	6
+#peacesymposiumuk	peace symposium uk	3
+#peaktrans	peak trans	2
+#pearlharbor	pearl harbor	2
+#pegida	peg ida	2
+#pegidauk	peg ida uk	3
+#pei	pe i	2
+#pennsylvaniaprimary	pennsylvania primary	2
+#peoplelivesmatter	people lives matter	3
+#peta	pet a	2
+#petercoffinwasright	peter coffin was right	4
+#pffttt	pf ft tt	6
+#pgachampionship	pg a champ i on ship	6
+#philhughes	phil hughes	2
+#phoenixcodes	phoenix codes	2
+#piggate	pig gate	2
+#pillarsofeternity	pillars of eternity	3
+#pinklips	pink lips	2
+#pinsofinterview	pins of interview	3
+#pittsburghduck	pittsburgh duck	2
+#pizzahut	pizza hut	2
+#pjmbk 15	pjmbk  1 5	6
+#pjn	pjn	6
+#plaasmoorde	pl a as mo or de	6
+#planetisrael	planet israel	2
+#plannedparenthood's	planned parenthood 's	3
+#pleasegasme	please gas me	3
+#pleaseoptionthistweetnow	please option this tweet now	5
+#plm	p lm	6
+#plurnt	plur nt	6
+#plur	plur	6
+#pmqs	pm qs	6
+#pocsinelcalivescaredandangry	po csinelcalivesc a red and angry	6
+#podcaster	pod caster	2
+#polarbears	polar bears	2
+#policebrutality	police brutality	2
+#policelivesmatter	police lives matter	3
+#policestate	police state	2
+#politas	po lit as	3
+#politicalcorrectness	political correctness	2
+#politicalport	political port	2
+#pol	p ol	6
+#pooptweet	poop tweet	2
+#poorbetty	poor betty	2
+#poorimprovising	poor improvising	2
+#popcorntime	popcorn time	2
+#popeinus	pope in us	3
+#poptart	pop tart	2
+#poraut	p or aut	6
+#por	p or	6
+#porteouverte	port eou verte	6
+#portgal	port gal	2
+#porthawkesbury	port haw ke s bury	6
+#porthood	port hood	2
+#portlandia	portland i a	3
+#portlandshooting	portland shooting	2
+#portugeiselivesmatter	port uge i se lives matter	6
+#porvsea	po rv se a	6
+#postietweet	post ie tweet	3
+#postsonriserealizations	postsonrisere a liz a ti ons	6
+#potuscandidate	pot us candidate	3
+#potustownhall	pot us town hall	4
+#pouvoirblanc	pou voir blanc	3
+#powerranger	power ranger	2
+#ppshooting	pp shoot ing	6
+#pr 20chat	pr  2 0 chat	6
+#pray 4gaza	pray  4 ga z a	6
+#pray 4nicki	pray  4 nick i	6
+#prayerforparis	prayer for paris	3
+#prayersforbrussels	prayers for brussels	3
+#prayforboston	pray for boston	3
+#prayfordallaspd	pray ford all a sp d	6
+#prayforferguson	pray for ferguson	3
+#prayforgaza	pray for ga z a	6
+#prayfornice	pray for nice	3
+#prayfororã	pray for or ã	6
+#prayforpalestina	pray for palest in a	5
+#prayforpalestine	pray for palestine	3
+#prayfor	pray for	2
+#prayforstupidcunt	pray for stupid cunt	4
+#prayforworld	pray for world	3
+#prepper	prep per	2
+#preppers	prep per s	6
+#presidentsday	presidents day	2
+#pricklypear	prickly pear	2
+#pride 2016	pride  2016	6
+#prideto 100	pride to  100	6
+#primaryday	primary day	2
+#prkdr	prk dr	6
+#proasyl	pro a syl	6
+#problemasdeltercermundo	problem a sd el tercermun do	6
+#proequality	pro equality	2
+#profeminism	pro feminism	2
+#professionalvictim	professional victim	2
+#progrexit	prog rex it	3
+#projectnovaeuropa	project nova europa	3
+#promocave	pro mo cave	3
+#prophetkacouphilippe	prophetk a coup hi lip pe	6
+#protecteuropeanwomen	protect european women	3
+#protectmen	protect men	2
+#protecttheanimals	protect the animals	3
+#prote	pro te	6
+#protip	pro tip	2
+#proudhistorybrightfuture	proud history bright future	4
+#proudmom	proud mom	2
+#proudtobewhite	proud tobe white	3
+#prowhite	pro white	2
+#proxywars	proxy wars	2
+#psgscb	psgs cb	6
+#psyco	psy co	6
+#psyop	psyop	6
+#pulledpork	pulled pork	2
+#pumprules	pump rules	2
+#purplelivesmatter	purple lives matter	3
+#purplepenguins	purple pen gu ins	6
+#purposeworldtour	purpose world tour	3
+#putabirdonit	put a bird on it	5
+#putupongame	put upon game	3
+#pvdacongres	pvd a cong res	6
+#pvda	pvd a	6
+#pvv	pvv	6
+#qpq	q pq	6
+#queenat 90	queen at  90	6
+#queencunt	queen cunt	2
+#queens 90th birthday	queens 90th birthday	0
+#queensallday	queens all day	3
+#questionsforfeminists	questions for fe min is ts	6
+#questionsformen	questions for men	3
+#questionsonlyamanwouldask	questions only a man would ask	6
+#questionyouwontheartomorrowbecauseitsirrelevant	question you won the a rtomorrowbecauseitsirrelevant	6
+#quitfollowinghim	quit following him	3
+#qu	qu	6
+#rabbinozzi	rabb in ozz i	6
+#racebaiterlibs	race ba i ter li bs	6
+#racemixing	race mixing	2
+#racetogether	race together	2
+#racetraitor	race traitor	2
+#racetraitors	race traitors	2
+#racewar	race war	2
+#racheldolezal	ra che ld ole z al	6
+#racialark	racial ark	2
+#racialbanking	racial banking	2
+#racialcurrency	racial currency	2
+#racialmixing	racial mixing	2
+#racialmoney	racial money	2
+#racialsecurites	racial se cu rites	4
+#racialsorting	racial sorting	2
+#racialterrain	racial terrain	2
+#racisminamerica	racism in america	3
+#racismisaliveandwellbro	racism is a live and wellbro	6
+#racismistruth	racism is truth	3
+#racismmustfall	racism must fall	3
+#racistaf	racist af	2
+#racistamerica	racist america	2
+#racistcannibal	racist cannibal	2
+#racistflood	racist flood	2
+#racistlivesdontmatter	racist lives dont matter	4
+#racistmuthafuckers	racist mut ha fuck ers	6
+#racistnaziacknowledge	racist nazi acknowledge	3
+#rac	ra c	6
+#radfem	rad fe m	6
+#radfems	rad fe ms	3
+#radicalfeminist	radical feminist	2
+#radiofreenorthwest	radio free northwest	3
+#rafiafarook	raf i af a rook	5
+#rahowa	ra how a	3
+#rainbowhands	rainbow hands	2
+#rakusens	rak us ens	3
+#rallycap	rally cap	2
+#ramadan 2015	ram a dan  2015	6
+#rameshjadhav	ra me sh ja dhav	6
+#randpaul	rand paul	2
+#rannfl	ran nfl	6
+#rapeapologist	rape apologist	2
+#rapecultural	rape cultural	2
+#rapeculturedoesntexist	rape culture doesnt exist	4
+#rapeculture	rape culture	2
+#rapedbyspielberg	raped by spiel berg	4
+#rapefugee	ra pe fu gee	6
+#rapefugeesnotwelcome	ra pe fug ees not welcome	6
+#rapefugees	ra pe fug ees	6
+#rapehoax	rape hoax	2
+#rapeisrape	rape is rape	3
+#rapejihad	rape jihad	2
+#rapeji	ra pe j i	6
+#rapejokesarentfunny	rape jokes a rent funny	5
+#rapeofeurope	rape of europe	3
+#rapeofgermany	rape of germany	3
+#rapeofg	ra pe of g	6
+#rapeofusa	rape of us a	4
+#rapé	rap é	6
+#raperefugees	rape refugees	2
+#rapescam	rape scam	2
+#rapesec	rape sec	2
+#rapetalk	rape talk	2
+#rapeugee	ra peu gee	3
+#rapz	rap z	6
+#rasputin	r as put in	6
+#re 2pect	re  2 pe ct	6
+#readmyteeth	read my teeth	3
+#realdonaldtrump	real donald trump	3
+#realnigga	re a lnigg a	6
+#realthreat	real threat	2
+#realtime	real time	2
+#reasonrally	reason rally	2
+#reasonsforabortion	reasons for abortion	3
+#reasonswecantbetogether	reasons we cant be together	5
+#reasontoexitanobamaspeech	reason to exit an obama speech	6
+#rebelpride	rebel pride	2
+#rebelscience	rebel science	2
+#rebootliberty	re boot liberty	3
+#reclaimaustralia	reclaim australia	2
+#reclaimtheinternet	reclaim the internet	3
+#red 2blue	red  2 blue	6
+#redlivesmatter	red lives matter	3
+#redmeat	red meat	2
+#rednationrising	red nation rising	3
+#redneckagenda	redneck agenda	2
+#redneckasong	redneck a song	3
+#redneckcaliphate	redneck caliphate	2
+#rednecks	red necks	2
+#redoctober	red october	2
+#redskinsblow	red skins blow	3
+#redskins	red skins	2
+#redsox	red sox	2
+#reformislam	reform islam	2
+#refugeecrisis	refugee crisis	2
+#refugeescontribute	refugees contribute	2
+#refugeescri	refugees cr i	3
+#refugeescrisis	refugees crisis	2
+#refugeesnotwelcome	refugees not welcome	3
+#refugeeweek	refugee week	2
+#refundthefence	refund the fence	3
+#regressiveleft	regressive left	2
+#regressiveleft's	regressive left 's	3
+#reiki	reik i	2
+#rejectbds	re je ctbds	6
+#rejectedpeanutsspecials	rejected pe a nutsspec i als	6
+#rejectedtrumpcampaignslogans	rejected trump campaign slogans	4
+#releasejnigg	re lea se jnigg	6
+#relegalizecorporalpunishment	re legalize corporal punishment	4
+#religionandspirituality	religion and spirituality	3
+#religiones	re li g i ones	6
+#religionofpeace	religion of peace	3
+#reliogion	re li og i on	6
+#re-machined	re -m a chi ne d	6
+#rememberrotherham	remember rot her ham	4
+#removekebab	re move ke b ab	6
+#repealsecondamendment	repeal second amendment	3
+#replacealetterruinatvshow	replace a letterruin a tv show	6
+#resigndavidcameron	resign david cameron	3
+#resistanc	resist a nc	3
+#resistcapitalism	resist capitalism	2
+#respectthewhiteshoes	respect the white shoes	4
+#resurrectionsunday	resurrection sunday	2
+#retards	re tar ds	6
+#rethink 2014	re think  2014	6
+#returnofss	return of ss	3
+#reverseracismisreal	reverse racism is real	4
+#reverseracism	reverse racism	2
+#reversetorahrituals	reverse torah rituals	3
+#revolutionnow	revolution now	2
+#rfdemons	rf demons	2
+#rgforfarmers	rg for farmers	6
+#rhianna	rh i anna	3
+#rhoa	rho a	2
+#rhode_island	rho de _ i sl and	6
+#rhodesmustfall	rhodes must fall	3
+#richwhiteparty	rich white party	3
+#rickygervais	rick ygerv a is	6
+#rightsideofhistory	right side of history	4
+#rightwingdeathsquads	right wing death squads	4
+#rio 2016	rio  2016	6
+#rioolympic 2016	rio olympic  2016	6
+#ripali	ripa li	2
+#ripderay	rip de ray	3
+#ripdrmootson	rip dr moot son	4
+#riphitler	rip hitler	2
+#ripmichaeljackson	rip michael jackson	3
+#ripmuhammadali	rip muhammad a li	4
+#riprimary	rip rim a ry	6
+#riptwitter	rip twitter	2
+#risengrind	risen grind	2
+#rladvent	rl ad vent	6
+#rncconvention	r nc con vent i on	6
+#rncincle	r nc i nc le	6
+#roastbattle	roast battle	2
+#robotsarecoming	robots are coming	3
+#rofl	r of l	6
+#roleplayinggames	roleplaying games	2
+#rom 10	r om  1 0	6
+#rooseveltspbs	ro os eve lts pbs	6
+#rooté	root é	6
+#ropeculture	rope culture	2
+#roshhottakes	ro sh hot takes	4
+#rothchild	ro thc hi ld	4
+#rotherhamabuse	rot her ham abuse	4
+#rotherhamrapescandal	ro the rh am rape scandal	6
+#rotherham	rot her ham	3
+#rothschild	rot hsch i ld	6
+#rowyso	row y so	6
+#rrn	rrn	6
+#rr	rr	6
+#rubio	rub io	2
+#ruinaband	ruin ab and	3
+#ruinacomedian	ruin a comedian	3
+#ruinanoscarspeech	ruin an oscar speech	4
+#rwnj	rwnj	6
+#rwnjs	rwnjs	6
+#ryangiroix	ryan giro i x	6
+#ryanlochte	ryan loc hte	3
+#saa	s a a	6
+#sadiqkhan	sad iq khan	3
+#sadpuppies	sad puppies	2
+#safetyinpurity	safety in purity	3
+#sahabahnights	s ah a bah nights	6
+#sainteti	saint et i	3
+#salt 2014	salt  2014	6
+#salt 2015	salt  2015	6
+#salutetohitler	salute to hitler	3
+#samelove	same love	2
+#samipeople	sam i people	3
+#samizdat	sam i zd at	6
+#sanbernadino	san bern ad i no	5
+#sandniggasinparis	san dnigg as in par is	6
+#sandyhook	sandy hook	2
+#sarahsilverman	sarah silver man	3
+#sarkozy	sar kozy	6
+#satanists	sat a ni sts	6
+#saturday_sabbath	sat urd a y_s ab bath	6
+#satyagraha	sat ya gr ah a	6
+#saudi's	saudi 's	2
+#savagenation	savage nation	2
+#savealaqsa	save a la qs a	6
+#saveanimals-sign	save a nim a ls- sign	6
+#saveelvesslayorcs	save elves sl a yorcs	6
+#saveeuropenow	save europe now	3
+#saveeurope	save europe	2
+#save_gaza_children	save _gaza_ch il dr en	6
+#savegazafromhamas	save gaz a from ham as	6
+#savegaza	save ga z a	6
+#savegermany	save germany	2
+#savetheboer	save the boer	6
+#savethetroglodyte	save the troglodyte	3
+#savethewhiterace	save the white race	4
+#saveyouclicking	save you clicking	3
+#sayfie	say fie	2
+#sayhername	say her name	3
+#saystheman	says the man	3
+#sb 50	sb  5 0	6
+#sbseurovision	sbseu ro vis i on	6
+#scally	sc ally	6
+#scampaign	scamp a i gn	6
+#scenekidproblems	scene kid problems	3
+#schama's	sch am a 's	6
+#schauhin	sch a uh in	6
+#schlonged	schl on ge d	6
+#schoolshootings	school shootings	2
+#scoamf	s co a mf	6
+#scotlanddebate	scotland debate	2
+#scotsstandwithpalestine	scots stand with palestine	4
+#screwcivilized	screw civilized	2
+#sctop 10	sc top  1 0	6
+#sdl	sd l	6
+#seadoo	sea doo	2
+#searchingforexile	searching for exile	3
+#seasonfour	season four	2
+#seconda	second a	2
+#seeingthings	seeing things	2
+#seenitall	seen it all	3
+#seenitalltheautobiography	seen it all the autobiography	5
+#segregateforever	segregate forever	2
+#segregatenow	segregate now	2
+#segregatetoday	segregate today	2
+#selectionsunday	selection sunday	2
+#selectivememory	selective memory	2
+#selfdetermination	self determination	2
+#selfentitledelitists	self entitled el it is ts	6
+#selfhate	self hate	2
+#selfieforjo	self ie for jo	4
+#selfieolympics	self ie olympics	3
+#selfreflection	self reflection	2
+#sendthemback	send them back	3
+#seperatism	se per a ti sm	6
+#seriousproblem	serious problem	2
+#servicematters	service matters	2
+#sexisme	sex is me	3
+#sexualwednesday	sexual wednesday	2
+#sfvsstl	sf vs stl	6
+#shamers	sh a me rs	6
+#shanatova	shan at ova	3
+#shang	sh a ng	6
+#shannonmiles	shannon miles	2
+#shareacoke	share a coke	3
+#sharia	shari a	2
+#shaveballsfirst	shave balls first	3
+#shavuot	sh a vuot	6
+#shepardsmithisantiwhite	shepard smith is anti white	5
+#shesfunny	she s funny	6
+#shessomeone	she ss ome one	4
+#shia	sh i a	3
+#shias	sh i as	3
+#shincheonji	sh in che on j i	6
+#shinchonji	sh in chon j i	6
+#shirat_devorah	sh i rat _dev or ah	6
+#shirleyjackson's	shirley jackson 's	3
+#shirtstorm	shirt storm	2
+#shitallysays	shit ally says	3
+#shitemilysays	sh it em i ly says	6
+#shitjacksays	shit jack says	3
+#shitlordfirstdates	shit lord first dates	4
+#shitlord	shit lord	2
+#shitmybosssays	shit my boss says	4
+#shitpalestinianssay	shit palest in i a nssay	6
+#shittyfeminist	sh it tyf em in ist	6
+#shitwhistle	shit whistle	2
+#shivermetimbers	shiver me timbers	3
+#shoaed	sh o a ed	6
+#shortmemories	short memories	2
+#shortstorymonth	short story month	3
+#shortstory	short story	2
+#showerofcunts	shower of cu nt s	6
+#showofhands	show of hands	3
+#shufflegate	shuffle gate	2
+#shutemdown	shut em down	3
+#shutitdown	shut it down	3
+#shutthefuckuptotalbiscuit	shut the fuck up total biscuit	6
+#shutupandplay	shut up and play	4
+#sickipedia	sick i ped i a	5
+#siegheil	si eg heil	3
+#siel	si el	2
+#signedtothestreets 2	signed to the streets  2	6
+#signsonthepearlygates	signs on the pearly gates	5
+#silencednomore	silenced no more	3
+#sillyseason	silly season	2
+#simpsons	si mp sons	6
+#sims 3	sims  3	6
+#singlebecause	single because	2
+#singlelife	single life	2
+#sioa	s io a	6
+#sisterpatriots	sister patriots	2
+#sjwlogicª	sjw log i cª	6
+#sjwlogic	sjw log i c	6
+#sjwnazi	sjwn a z i	6
+#sjw	sjw	6
+#sjws	sjws	6
+#skeemsaam	skee ms a am	6
+#skiers	ski ers	6
+#skinheads	skin heads	2
+#skinnygirlappreciation	skinny girl appreciation	3
+#skiseason	ski season	2
+#skyscraperlive	skyscraper live	2
+#slaveowners	slave owners	2
+#slightlyadjusted	slightly adjusted	2
+#smackny	smack ny	6
+#smalltownproblems	small town problems	3
+#smartnews	smart news	2
+#smashculturalmarxism	smash cultural marx is m	6
+#smashjewry	smash je wry	3
+#smashthejews	smash the jews	3
+#smconvent	smc on vent	6
+#smilebecause	smile because	2
+#sneakyjews	sneaky jews	2
+#snl 40	snl  4 0	6
+#snowpatricksday	snow pa tricks day	4
+#sochi 2014	so chi  2014	6
+#socialissuesprobs	social issue sp robs	4
+#socialjustice	social justice	2
+#socialjusticewarriors	social justice warriors	3
+#socialmediaday	social media day	3
+#socialmediamarketing	social media marketing	3
+#sockfetish	sock fetish	2
+#s-o-f-t	s-o-f-t	6
+#soiknowitsreal	soi know its real	4
+#solidarityisforwhité	so lid a rit yisforwhité	6
+#solidarityisforwhitewomen	solidarity is for white women	5
+#solidsundayplan	solid sunday plan	3
+#solutrean	so lut re an	6
+#somean	some an	2
+#somecuntsneverlearn	so me cu nts never learn	6
+#somethingigetalot	somethin gig eta lot	4
+#somethough	some though	2
+#sonofgod	son of god	3
+#sonye 3	son ye  3	6
+#soros	s or os	6
+#sorryitsaboy	sorry its a boy	4
+#sorryitsacunt	sorry its a cunt	4
+#sorrylads	sorry lads	2
+#sortedfood	sorted food	2
+#sosvzla	so svzl a	6
+#sotloff	so tl off	6
+#sotu	so tu	6
+#sourgrapesparty	sour grapes party	3
+#soutgrapetweets	so utgr a pet we ets	6
+#southcarolinaprimary	south carolina primary	3
+#southcarolina	south carolina	2
+#south_carolina	so uth_c a ro lin a	6
+#southerncharm	southern charm	2
+#southernshirt	southern shirt	2
+#southpark	south park	2
+#spanishgp	sp a ni sh gp	6
+#spanishlivesmatter	spanish lives matter	3
+#speakbeautiful	speak beautiful	2
+#speakersstorytellers	speakers story tellers	3
+#speaktruth	speak truth	2
+#specialsnowflake	special snowflake	2
+#specialsnowflakes	special snowflakes	2
+#spellingbee	spelling bee	2
+#spendinyomoney	sp end in yo money	6
+#spiritweek	spirit week	2
+#spjairplay	sp ja i r play	6
+#spookybroadway	spooky broadway	2
+#spreadcheeksnotfear	spread cheeks not fear	4
+#springbreakin 4words	spring break in  4 words	6
+#springtraining	spring training	2
+#spygate	spy gate	2
+#squirrellivesmatter	squirrel lives matter	3
+#ssm	ss m	6
+#ssww 2	ss ww  2	6
+#stand 4israel	stand  4 i sr a el	6
+#standeithisrael	stan dei this ra el	5
+#standtall	stand tall	2
+#standup 4kids	stand up  4 kids	6
+#standupforeurope	stand up for europe	4
+#standup	stand up	2
+#standwithcruz	stand with cruz	3
+#standwithisrael	stand with israel	3
+#standwithkotaku	stand with kota ku	4
+#starerape	stare rape	2
+#starerrapeisstupid	star err ape is stupid	5
+#starofdavid	star of david	3
+#startmikevike	start mi ke v i ke	6
+#stateoftheunion	state of the union	4
+#statesrights	states rights	2
+#stayfrosty	stay frosty	2
+#staywhitesunday	stay white sunday	3
+#staywoke	stay woke	2
+#stealmygirl	steal my girl	3
+#stephencurry	stephen curry	2
+#stephenking	stephen king	2
+#stevehassett	steve has sett	3
+#steveking	steve king	2
+#steyr	steyr	6
+#sticksandstoneswillbreakmybonesbutnotshamers	sticks and stone sw i llbreakmybonesbutnotshamers	6
+#stillcle	still cle	6
+#stoneageblacks	stone age blacks	3
+#stoneipa	stone i pa	3
+#stoneroses	stone roses	2
+#stopallhate	stop all hate	3
+#stopbeaners 2014	stop be a ne rs  2014	6
+#stopblackcrime	stop black crime	3
+#stopdiversity	stop diversity	2
+#stopgamergate 2014	stop ga mer gate  2014	6
+#stopgunviolence	stop gun violence	3
+#stophating	stop hating	2
+#stophillary	stop hillary	2
+#stopislamism	stop islamism	2
+#stopislam	stop islam	2
+#stopisrael	stop israel	2
+#stopmuslimimmigration	stop muslim immigration	3
+#stoppolicebrutality	stop police brutality	3
+#stopracism	stop racism	2
+#stopsavinthesehoes	stops a vin these hoes	5
+#stopsharia	stop shari a	3
+#stopthehate	stop the hate	3
+#stopthemurders	stop the murders	3
+#stopthemusliminvasion	stop the muslim invasion	4
+#stopwhitegenocideinsa	stop white genocide ins a	5
+#stopwhitegenocide	stop white genocide	3
+#stopwhitehate	stop white hate	3
+#stopwhitepeople	stop white people	3
+#stopwhit	stop whit	2
+#stormabigail	storm abigail	2
+#stormwarning	storm warning	2
+#straightlivesmatter	straight lives matter	3
+#straightpride	straight pride	2
+#straightsbreaktheinternet	str a i ghtsbreak the internet	6
+#streetfashion	street fashion	2
+#streetfighterv	street fig hte rv	6
+#streetfightfortrump	street fight for trump	4
+#stribpol	str i bp ol	6
+#stufoflegend	stuf of leg end	6
+#stunngingandbrave	stun ng ing and brave	6
+#stupidbitches	stupid bit ches	3
+#stupidcunt	stupid cunt	2
+#stupidniggers	stupid niggers	2
+#stupidpeople	stupid people	2
+#subwayseries	subway series	2
+#suchaprick	such a prick	3
+#sundaytweet	sunday tweet	2
+#superbowlcommercials	super bowl commercials	3
+#superbowl	super bowl	2
+#supertuesday	super tuesday	2
+#supportgaza	sup port ga z a	6
+#supportisrael	support israel	2
+#susiya	sus i ya	3
+#svegliaitalia	svegli a it a li a	6
+#sverige	sver i ge	6
+#svtagenda	sv tag end a	6
+#svufinale	svuf in ale	6
+#svu	svu	6
+#swaagg	sw a a gg	6
+#swaggyshipley	sw a ggy ship ley	6
+#swedendemocrats	sweden democrats	2
+#swedishwelcome	swedish welcome	2
+#sweet 16	sweet  16	6
+#swerf	s we rf	6
+#swe	s we	6
+#swirltheworld	swirl the world	3
+#switchedatbirth	switched at birth	3
+#swordartonline	sword art on line	4
+#sxsw	sx sw	6
+#syc	syc	6
+#sydneysiege	sydney siege	2
+#synagogal	syn a go gal	6
+#syngenta	syn ge nt a	6
+#syriacrisis	syria crisis	2
+#taakstraf	ta a k str af	6
+#tagderbefreiung	tag der be freiung	6
+#tahmooressi's	t ah moore ss i 's	6
+#takecontrol	take control	2
+#takenotesbaltimore	take notes baltimore	3
+#takeusdown	take us down	3
+#talesofthetimes	tales of the times	4
+#talibanattacksschool	ta li ban attacks school	5
+#talklikeapirateday	talk like a pirate day	5
+#talltreeandshortrope	tall tree and short rope	5
+#tamirrice	ta mir rice	3
+#targeted	tar ge ted	3
+#tarptartdeals	tarp tart deals	3
+#tashfeenmalik	ta sh fe en ma lik	6
+#tattooaddiction	tattoo addiction	2
+#tautnedir	taut ne dir	6
+#tbpqa	tb pq a	6
+#tbtweets	tbt we et s	6
+#tc	tc	6
+#tdf 12	tdf  1 2	6
+#tdf	tdf	6
+#tdsb	tdsb	6
+#teabaggers	tea bag ge rs	6
+#teabagger	tea bag ge r	6
+#teachertuesday	teacher tuesday	2
+#teachingracism	teaching racism	2
+#teambbc	team bbc	6
+#teambillionaire	team billion aire	3
+#teamlift	team lift	2
+#teamtrump	team trump	2
+#teamwhitegirls	team white girls	3
+#teamwhiteordie	team white or die	4
+#teamwhite	team white	2
+#tedcruz	ted cruz	2
+#tedgibson	ted gibson	2
+#tehgodclan	t eh god clan	6
+#telaviv_life	tel a viv_l i fe	6
+#telefoot	tel e foot	6
+#telegraphfinance	telegraph finance	2
+#telford	tel ford	2
+#templarlegacy	templar legacy	2
+#templemount	temple mount	2
+#terfisaslur	te rf is a slur	6
+#terf	te rf	6
+#termites	term it es	6
+#terriblepeople	terrible people	2
+#terroistisrael	ter ro ist israel	4
+#terroristinchief	terrorist in chief	3
+#terroriststate	terrorist state	2
+#tftc	t ft c	6
+#tgdn	tgdn	6
+#thankafeminist	thank a feminist	3
+#thanksjews	thanks jews	2
+#thankyoudonaldtrump	thank you donald trump	4
+#thanxjews	than x jews	6
+#thatsracist	thats racist	2
+#theamericanokiedoke	the american ok ie do ke	6
+#theatre 2016	the at re  2016	6
+#thebachelor	the bachelor	2
+#thebible	the bible	2
+#thebird	the bird	2
+#theblaze	the blaze	2
+#theboltreport	the bolt report	3
+#theboondocks	the boon docks	3
+#theclintblack	the clint black	3
+#thecurrentyear	the current year	3
+#thedevildontloveyou	the devil dont love you	5
+#thedrum	the drum	2
+#theeditors	the editors	2
+#thefaultinourstars	the fault in our stars	5
+#thefeminismgap	the feminism gap	3
+#thefestival	the festival	2
+#thefuckingguy	the fucking guy	3
+#thegameawards	the game awards	3
+#thegaymafia	the gay mafia	3
+#theholocaust	the holocaust	2
+#theinterviewmovie	the interview movie	3
+#theinterview	the interview	2
+#theliesofdepression	the lies of depression	4
+#thelordiswhite	the lord is white	4
+#thelowiqfew	the low iq few	4
+#thememorialtournament	the memorial tournament	3
+#the_miracle_of_giving	the _miracle_of_ giving	6
+#themoreyouknow	the more you know	4
+#themugendacartel	the mug end a cartel	5
+#thenetherlands	the netherlands	2
+#thenewnazis	the new nazis	3
+#thenightof	the night of	3
+#theoscars 2014	the os cars  2014	6
+#theperfectanswer	the perfect answer	3
+#thereisalwaysroominmylifefor	the re is a lwaysroominmylife for	6
+#theresamay	theresa may	2
+#thesimpsons	the simp sons	6
+#thesouthwillriseagain	the south will rise again	5
+#thestrain	the strain	2
+#thesuniswhite	the sun is white	4
+#thesunisw	the sun i sw	4
+#thethingsshesays	the things she says	4
+#thetime	the time	2
+#thetim	the tim	2
+#thetriggering	the trigger ing	3
+#thetruthcaster	the truth caster	3
+#thewhiteholocaust	the white holocaust	3
+#theworldisbetterwithoutisrael	the world is better without israel	6
+#theworldisnotready	the world is not ready	5
+#thexfiles	the xf i les	6
+#thingshillarywillneverhave	things hillary will never have	5
+#thingsiwillteachmychild	things i will teach my child	6
+#thingsjesusneversaid	things jesus never said	4
+#thingspeoplesay	things people say	3
+#thingstrumpsay	things trump say	3
+#thingswealwayshate	things we always hate	4
+#thirdtimesthecharm	third times the charm	4
+#thirdwavefeminists	third wave fe min is ts	6
+#thisdayinhistory	this day in history	4
+#thisdoesntmeanyes	this doesnt mean yes	4
+#thisiseuropa	this is europa	3
+#thisisfeminism	this is feminism	3
+#thisisislam	this is islam	3
+#thisisnotthealbumonthursday	this is not the a lbumonthursday	6
+#thisisopression 86	this i so press ion  86	6
+#thisistorture	this is torture	3
+#thisiswhatafeministlookslike	this is what a feministlooks like	6
+#thornhillgirlproblems	thorn hill girl problems	4
+#thosepeskyjewseh	those pesky jews eh	4
+#thotgoals	t hot go als	6
+#throwthejewdownthewell	throw the jew down the well	6
+#thsiseuropa	ths is europa	6
+#thuglivesdontmatter	thug lives dont matter	4
+#thurmanmunson	thurman m uns on	6
+#tidyterrorist	tidy terrorist	2
+#tiki	ti ki	2
+#tikiti	ti kit i	3
+#timeisnow	time is now	3
+#tinaandamy	tin a and amy	4
+#tipsforyear 7s	tips for ye a r 7s	6
+#titilailai_charlesg_terryg	tit il a il a i_charlesg_terryg	6
+#titleix	title i x	6
+#titsorauschwitz	tits or auschwitz	3
+#titties	tit ties	2
+#tlc	tlc	6
+#tn 6	tn  6	6
+#tngseason 4finale	tng se a son  4 finale	6
+#tn	tn	6
+#tntweeters	tnt we et ers	6
+#tobias	to bias	2
+#tocouncil	to council	2
+#todaysnazis	to days nazis	3
+#tomyfacebro	to my fac ebro	4
+#tonibraxtonmovie	to nib ra xt on movie	6
+#toobad	too bad	2
+#toomanyblacks	too many blacks	3
+#toosoon	too soon	2
+#topboy	top boy	2
+#topoli	to po li	3
+#topper	top per	2
+#torontostar	toronto star	2
+#torreagbar	tor re a g bar	6
+#torturereport	torture report	2
+#totesawk	to tesawk	6
+#toughbreak	tough break	2
+#tpot	t pot	6
+#tpp	tpp	6
+#transformthursday	transform thursday	2
+#transgender	trans gender	2
+#transjudge	trans judge	2
+#transmarch	trans march	2
+#transmedia	trans media	2
+#transmisogyny	trans misogyny	2
+#transpregnancy	trans pregnancy	2
+#transraciallivesmatter	trans racial lives matter	4
+#transrights	trans rights	2
+#transviolence	trans violence	2
+#transwoman	trans woman	2
+#trappin	trapp in	2
+#trashed	tr a shed	6
+#tra	tr a	6
+#travelcuba	travel cuba	2
+#travelnevada	travel nevada	2
+#trayvonmartin	tray von martin	3
+#treasurersdebate	treasurer s de bate	6
+#treygowdy	trey go wdy	6
+#tribo	tr i bo	6
+#tribunalmv	tribunal mv	2
+#triggering	trigger ing	2
+#triggerwarning	trigger warning	2
+#trinityse	trinity se	2
+#troopthanks	troop thanks	2
+#troygoode	troy go ode	3
+#trudeau	tru de a u	6
+#truedetective	true detective	2
+#truehero	true hero	2
+#truereligion	true religion	2
+#truetho	true tho	2
+#trump 16	trump  16	6
+#trump 2016's	trump  2016 's	6
+#trump 20	trump  20	6
+#trumpalbumtitles	trump album titles	3
+#trumpcommunity	trump community	2
+#trumpfacts	trump facts	2
+#trumpfamily	trump family	2
+#trumpgirlsbreaktheinternet	trump girls break the internet	5
+#trumpisaloser	trump is a loser	4
+#trumpistrash	trump is trash	3
+#trumprally	trump rally	2
+#trumpsacrificies	trumps a cr if i cies	6
+#trumpsopoor	trump so poor	3
+#trumptoday	trump today	2
+#trum	t rum	6
+#truthforthefallen 44	truth for the fallen  44	6
+#truthrevolt	truth revolt	2
+#tru	tru	6
+#ttf	tt f	6
+#ttp	tt p	6
+#tumblrina	tumblr in a	6
+#tunisiaattack	tunisia attack	2
+#turnipforwhat	turnip for what	3
+#turnontheac	turn on the ac	4
+#tweetlikeafeminist	tweet like a feminist	4
+#tweetlikepontiacholmes	tweet like pontiac holmes	4
+#tweetliketyrese	tweet like tyre se	4
+#tweetlikezimmerman	tweet like zimmerman	3
+#twerking	t we r king	6
+#twerk	t we rk	6
+#twinfalls	twin falls	2
+#twinkies	t wink ies	6
+#twinkie	t wink ie	6
+#twisters	tw is ter s	6
+#twitchcon	twitch con	2
+#twitter 10k	twit ter  1 0 k	6
+#twitterawakens	twitter awakens	2
+#twitterhoney	twitter honey	2
+#twitterkurds	twit ter ku rds	6
+#twitterwari	twitter war i	3
+#twmk 1	twmk  1	6
+#twostatesolution	two state solution	3
+#twowordtrump	two word trump	3
+#tylerkost	tyler kos t	6
+#tyonews	tyo news	6
+#typeface	type face	2
+#uae	u a e	6
+#uakronwh	u a k ro nw h	6
+#uberauxantilles	uber aux a nt il les	6
+#uber	u be r	6
+#ubie 3	ub ie  3	6
+#uccshooting	ucc shoot ing	6
+#ucfpinkparty	ucf pink party	6
+#uclashooting	ucla shooting	2
+#ufc 194	ufc  1 9 4	6
+#ufc 198	ufc  1 9 8	6
+#ufclondon	ufcl on don	6
+#ufcmanila	uf cm a nil a	6
+#ufcvegas	uf cv eg as	6
+#ukineu	uk i ne u	6
+#ukip 100days	uk i p  1 00 days	6
+#ukip 15	uk i p  1 5	6
+#ukip	uk i p	6
+#ukouteu	uk out eu	6
+#ukr	uk r	6
+#Últimahora	úl tim a hor a	6
+#ultimatevictim	ultimate victim	2
+#umcgc	umcgc	6
+#ummah	umm ah	2
+#unbornlivesmat	unborn lives mat	3
+#unbreakablekimmyschmidt	un break a blekim my schmidt	6
+#uncletweet	uncle tweet	2
+#undergroundculture	underground culture	2
+#uneedadopting	u need ad opt ing	6
+#unfollowaman	un follow a man	4
+#unfollowó	un follow ó	6
+#unga	un ga	2
+#unicornlivesmatter	unicorn lives matter	3
+#unionmember	union member	2
+#uniquenessofisrael	uniqueness of israel	3
+#unitednations	united nations	2
+#unitedstates	united states	2
+#unity 4malaysia	unity  4 ma lays i a	6
+#universitychallenge	university challenge	2
+#unlessmadebymethentheyrefine	unless made by me the ntheyrefine	6
+#unminnesotan	un minnesotan	2
+#unresolution 260	un re sol uti on  260	6
+#unresolution 26	un re sol uti on  26	6
+#unsc	un sc	6
+#upforwhatever	up for whatever	3
+#usaã	us a ã	6
+#usavcol	us avc ol	3
+#usavsger	us a vs ge r	6
+#usrc	us rc	6
+#utaustin	uta us tin	3
+#utcoach	ut co a ch	6
+#ut	ut	6
+#uvahoax	uv a ho ax	6
+#uwec	u we c	6
+#v 4	v  4	6
+#vaalit 2015	va a lit  2015	6
+#valentinesday	va len tines day	4
+#valentines	va len tines	3
+#vanbreda	van bred a	3
+#vaw	va w	6
+#vaxxed	va xxed	6
+#vccamelraces	vcc a mel races	6
+#vddie	vd die	6
+#veday 70	ve day  7 0	6
+#vegasqueens	vegas queens	2
+#vegasshowgirls	vegas show girls	3
+#vermontgirlsbelike	vermont girls belike	3
+#vermontproblems	vermont problems	2
+#veryfaacinating	veryf a ac in a ting	6
+#vesterflanagan	vest erfl a nag an	6
+#veteransforkaepernick	veterans fork a e per nick	6
+#veteranstoday	veterans today	2
+#victimblaming	victim blaming	2
+#victoryday	victory day	2
+#videogames	video games	2
+#vielfalt	v i elf alt	6
+#vinitahegwood	vin it ah eg wood	5
+#vinnysnotmadon	vin nysnotm a don	6
+#vinylgasm	vinyl gas m	6
+#virginiashooting	virginia shooting	2
+#virgintonic	virgin tonic	2
+#visualethnicity	visual ethnicity	2
+#vivelafrance	vive la france	3
+#vlkermord	vl ke rm or d	6
+#vma's	vm a 's	6
+#vmas	vm as	6
+#voguet	vogu et	6
+#voicefinale	voice finale	2
+#vote 4david	vote  4 david	6
+#vote 5sos	vote  5 sos	6
+#votearianagrande	vote aria na grande	4
+#voteleave	vote leave	2
+#votersuppression	voter suppression	2
+#votestorey	votes to rey	3
+#votewendydavis	vote we ndyd a vis	6
+#votingmatters	voting matters	2
+#votoa 16anni	voto a  16 anni	6
+#vouli	voul i	6
+#vroomfroome	v ro om fro ome	6
+#waar	w a a r	6
+#wacothugs	waco thugs	2
+#wagegapisfalse	wage gap is false	4
+#wahine	w a hi ne	6
+#wakepeopleup	wake people up	3
+#wakeupameirca	wake up ame i rca	5
+#wakeupnow	wake up now	3
+#wakeupwomen	wake up women	3
+#wak	w a k	6
+#wantedtoletyouknow	wanted to let you know	5
+#wantmycountryback	want my country back	4
+#waprimary	w a primary	6
+#wardenofthenorth	warden of the north	4
+#warmachine	war machine	2
+#warongermany	war on germany	3
+#waronmen	war on men	3
+#waronthesouth	war on the south	4
+#waronwhites	war on whites	3
+#waronwhite	war on white	3
+#waronwomen	war on women	3
+#waronw	w a ro nw	6
+#waronxmas	war on xm as	6
+#warsawghetto	warsaw ghetto	2
+#washingtondc	washington dc	2
+#waspfacts	wasp facts	2
+#wastehistime 2016	waste his time  2016	6
+#watchingmama	watching mama	2
+#watchlikeaking	watch like a king	4
+#waterwalker	water walker	2
+#wavesliding	wave sliding	2
+#wayofwade	way of wade	3
+#waytoohigh	way too high	3
+#wbjd	wbjd	6
+#wcvbpoli	wcvbp ol i	6
+#wcvb	w cv b	6
+#wcw	wcw	6
+#wdbjshooting	wdbj shoot ing	6
+#wdbj	wdbj	6
+#wd	wd	6
+#weaintlosing	we a int losing	4
+#weakwhitemen	weak white men	3
+#weallmatter	we all matter	3
+#weareallkhabour	we a re a llkhab our	6
+#weareallmuslim	we are all muslim	4
+#weareatwar	wear eat war	3
+#wearebegging	we are begging	3
+#weareharrison	we are harrison	3
+#wearehumantoo	we are human too	4
+#weareincontrol	wear ein control	3
+#wearerepublicnotregime	we are republic not regime	5
+#wearethe 75percent	we a re the  75 percent	6
+#wearetipped	we are tipped	3
+#weareyourmasters	we are your masters	4
+#weaselzippers	we as el zip per s	6
+#weathermodification	weather modification	2
+#wecanlandonacometbutwecant	we can land on a cometbutwecant	6
+#wednesdaywisdom	wednesday wisdom	2
+#wedocare	we doc are	3
+#weedday	weed day	2
+#weepforparis	weep for paris	3
+#weirdtweets	we i rdtweets	6
+#welcomerefugees	welcome refugees	2
+#welcometocanada	welcome to canada	3
+#welcometoleith	welcome to lei th	6
+#wellplayed	well played	2
+#welovezayn	we love zayn	6
+#wels	we ls	6
+#wematter	we matter	2
+#wesleysnipes	wes ley snip es	6
+#wespeakenglish	we speak english	3
+#westbank	west bank	2
+#wetbacks	wet backs	2
+#wetback	wet back	2
+#wetheother	we the other	3
+#wewantourcountryback	we want our country back	5
+#wewontstop	we wont stop	3
+#whatcouldgowrong	what could go wrong	4
+#whatfeministssoundlike	what fe min is tssound like	6
+#whathamascharter	what ham as charter	4
+#whatibelievein 5words	what i believe in  5 words	6
+#whatifisay	what if i say	4
+#whatihatein 5words	what i hate in  5 words	6
+#whatilearnedtoday	what i learned today	4
+#whatimcraving	what im craving	3
+#whatislovein 4words	what is love in  4 words	6
+#whatjewssay	what jews say	3
+#whatreallybringsthemtogether	what really brings them together	5
+#whatsnext	whats next	2
+#whattheydontwantustoknow	what the ydontwantus to know	6
+#whatwashedoing	what was he doing	4
+#whenamericawasgreat	when america was great	4
+#whenthealienslandwe	when the aliens land we	5
+#wherescolman	w he res co lm an	6
+#whichteam	which team	2
+#whineytweet	whine yt we et	6
+#whiteandawesome	white and awesome	3
+#whiteandright	white and right	3
+#whitearmy	white army	2
+#whitebabiesaremagic	white babies are magic	4
+#whitebballsuccess	whit ebb all success	4
+#whitebeauty	white beauty	2
+#whiteboyprivilege	white boy privilege	3
+#whitebros	white br os	6
+#whitecatday	white cat day	3
+#whitechicksforwhitedicks	white chicks for white dicks	5
+#whitechildrenaremagic	white children are magic	4
+#whitechristmas	white christmas	2
+#whitecornerstone	white cornerstone	2
+#whitecountries	white countries	2
+#whitecouplesunite	white couples unite	3
+#whitecower	white cower	2
+#whitecrimes	white crimes	2
+#whiteculture	white culture	2
+#whitedelusions	white del us ions	4
+#whitedevilwednesday	white devil wednesday	3
+#whitediscrimination	white discrimination	2
+#whitefightback	white fight back	3
+#whiteflight	white flight	2
+#whitegen 0cide	white gen  0 c i de	6
+#whitegenocide 2016	white genocide  2016	6
+#whitegenocide-by-force-assimilation	whitegenocide-by-force-ass i mil a ti on	6
+#whitegenocided	white ge no c i ded	6
+#whitegenocidegetsmehard	white genocide gets me hard	5
+#whitegenocide__https	white ge no cide__https	6
+#whitegenocideinsouthafrica	white genocide in south africa	5
+#whitegenocide-in	white ge no cide- in	6
+#whitegenocideismagic	white genocide is magic	4
+#whitegenocideisrealbecause	white genocide is real because	5
+#whitegenocideisreal	white genocide is real	4
+#whitegenocidematters	white genocide matters	3
+#whitegenocider	white ge no cider	4
+#whitegenocidesa	white ge noc i des a	6
+#whitegenocidetm	white ge no cidetm	6
+#whitegenocide	white genocide	2
+#whitegenocid	white ge no c id	6
+#whitegenoci	white ge no c i	6
+#whitegenoc	white ge no c	6
+#whitegeno	white ge no	3
+#whitegen	white gen	2
+#whitege	white ge	2
+#whiteghazi	whit eg ha z i	6
+#whitegirlmagic	white girl magic	3
+#whitegirlproblems	white girl problems	3
+#whitegirlsaremagic	white girls are magic	4
+#whitegirlsblackguys	white girls black guys	4
+#whitegirlsbreaktheinternet	white girls break the internet	5
+#whitegirlsdoitbetter	white girls doit better	4
+#whitegirlstakeheed	white girls take heed	4
+#whitegirlsunited	white girls united	3
+#whitegirls	white girls	2
+#whitegirlteachers	white girl teachers	3
+#whitegirltears	white girl tears	3
+#whiteglobalunity	white global unity	3
+#whitegods	white gods	2
+#whiteguilt	white guilt	2
+#whiteg	whit eg	2
+#whitehand	white hand	2
+#whitehate	white hate	2
+#whitehistorymonth	white history month	3
+#whitehomelands	white home lands	3
+#whitehomeland	white homeland	2
+#whitehomicide	white homicide	2
+#whitehumor	white humor	2
+#whiteimmigration	white immigration	2
+#whiteisbeautiful	white is beautiful	3
+#whiteisright	white is right	3
+#whiteknight	white knight	2
+#whiteliesmatter	white lies matter	3
+#whitelivesmatter 2015	white lives matter  2015	6
+#whitelivesmatter 2	white lives matter  2	6
+#whitelivesmatterequally	white lives matter equally	4
+#whitelivesmattermoretocops	white lives matter more to cops	6
+#whitelivesmattermore	white lives matter more	4
+#whitelivesmatters	white lives matters	3
+#whitelivesmattertoo	white lives matter too	4
+#whitelivesmatter	white lives matter	3
+#whitelivesmatte	white lives ma tt e	6
+#whitelivesmatt	white lives matt	3
+#whitelivesma	white lives ma	3
+#whitelivesm	whit el i vesm	6
+#whitelives	white lives	2
+#whitelive	white live	2
+#whiteliv	whit el i v	6
+#whiteli	white li	2
+#whitelove	white love	2
+#whitel	whit el	2
+#whitemaleprivilege	white male privilege	3
+#whitemanmarchprotestsigns	whiteman march protest signs	4
+#whitemanmarch	whiteman march	2
+#whitemenaremagic	white men are magic	4
+#whitemenarethebest	white men are the best	5
+#whitemordor	white mor dor	3
+#whitemoses	white moses	2
+#whitemotivation	white motivation	2
+#whitenationalism	white nationalism	2
+#whitenationalist	white nationalist	2
+#whiteonwhitecrime	white on white crime	4
+#whiteoutday	whiteout day	2
+#whitepeoplearesupreme	white people are supreme	4
+#whitepeoplecanwin	white people can win	4
+#whitepeoplewednesday	white people wednesday	3
+#whitepeople	white people	2
+#whitepeopling	white pe op ling	6
+#whitepower 101muslim	white power  101 muslim	6
+#whitepoweratlstc	white power a tlstc	6
+#whitepowerbill	white power bill	3
+#whitepowerfamily	white power family	3
+#whitepowerfriday	white power friday	3
+#whitepowerisforwhitemen	white power is for white men	6
+#whitepowerisrising	white power is rising	4
+#whitepowerout	white power out	3
+#whitepowerpuffgang	white power puff gang	4
+#whitepowerranger	white power ranger	3
+#whitepowersuit	white power suit	3
+#whitepowersummertour	white power summer tour	4
+#whitepowertoo	white power too	3
+#whitepowertweets	white po wert we et s	6
+#whitepowerwednesday	white power wednesday	3
+#whitepowerwednsday	white power we dns day	6
+#whitepowerweidus	white power we id us	5
+#whitepowerwensday	white power wen sd a y	6
+#whitepowerwenseday	white power wen se day	5
+#whitepower	white power	2
+#whitepoweryes	white power yes	3
+#whitepowher	white pow her	3
+#whitepo	white po	2
+#whitepplrule	white ppl rule	6
+#whitepride	white pride	2
+#whiteprideworldwide	white pride worldwide	3
+#whiteprivilegemeans	white privilege means	3
+#whiteprivlege	white privle ge	6
+#whiterabbitradio	white rabbit radio	3
+#whiterace	white race	2
+#whiteranger	white ranger	2
+#whiteresistance	white resistance	2
+#whiterevolution	white revolution	2
+#whiterights	white rights	2
+#whiterussia	white russia	2
+#whitesagainsttrump	whites against trump	3
+#whitesaturday	white saturday	2
+#whitescantberaped	white scant be raped	4
+#whitescanté	whites can té	6
+#whitesisterhood	white sisterhood	2
+#whiteslavery	white slavery	2
+#whitesolution	white solution	2
+#whitesouthafrica	white south africa	3
+#whitestowinracewar	whites to win race war	5
+#whitesuicide	white suicide	2
+#whitesupremecy	whites up re me cy	6
+#whitesurvival	white survival	2
+#whitetears	white tears	2
+#whitetrash	white trash	2
+#whitetwitter	white twitter	2
+#whiteunity	white unity	2
+#whitewednesday	white wednesday	2
+#whitewomanwhitefuture	white woman white future	4
+#whitewomenarefedup	white women are fed up	5
+#whitewomendoitbetter	white women doit better	4
+#whitewomen's	white women 's	3
+#whitezion	white zion	2
+#whitley	whit ley	2
+#whi	wh i	6
+#whoami	whoa mi	2
+#whoisburningblackchurches	who is burning black churches	5
+#whoismuhammad	who is muhammad	3
+#whoismuhammed	who i smu ham me d	6
+#whokillswhomore	who kills who more	4
+#whowillspeakforengland	who will speak for england	5
+#whufc	whufc	6
+#wh	wh	6
+#whydidigoogle	why didi google	3
+#whyfeministspissesmeoff	why feministsp is ses me off	6
+#whyicouldneverbecanadian	why i could never be canadian	6
+#whyihatefeminism	why i hate feminism	4
+#whyimantifeminist	why im antifeminist	3
+#whyimnotafeminist	why im nota feminist	4
+#whynot	why not	2
+#whys	why s	6
+#whytrumpcanceledrallies	why trump canceled rallies	4
+#wifebeater	wife bea ter	3
+#wiggers	wig ge rs	6
+#wigger	wig ge r	6
+#willthisbeonthetest	will this be on the test	6
+#windturbines	wind turbines	2
+#winterclasic	win ter cl a sic	6
+#wiserswhiskeyquestionoftheday	wiserswhiskeyquestion of the day	6
+#wishiwasblack	wish i was black	4
+#withjewswelose	with jews we lose	4
+#wiunion	w i un i on	6
+#wi	w i	6
+#wmi	wm i	6
+#woé	woé	6
+#womenagaé	women a ga é	6
+#womenagainsfeminism	women agains feminism	3
+#womenagainstfeminism	women against feminism	3
+#womenrights	women rights	2
+#womensart	w om ens art	6
+#woolwich	wool w ich	6
+#wordbank	word bank	2
+#wordsmeanthings	words mean things	3
+#workplaceviolence	workplace violence	2
+#worldcup 2014	world cup  2014	6
+#worldfamous	world famous	2
+#worldhealthday	world health day	3
+#worldnews	world news	2
+#worldpenguinday	world penguin day	3
+#worldphotographyday	world photography day	3
+#worldrefugeeday	world refugee day	3
+#worldseriesgame 3	world series ga me  3	6
+#worldseriesgame 6	world series ga me  6	6
+#worldstarhiphopcup	world star hip hop cup	5
+#worldstarhiphop	world star hip hop	4
+#worldvision	world vision	2
+#worldwartwo	world war two	3
+#worstpeanutsspecialever	worst peanuts special ever	4
+#wor	w or	6
+#wotd	wot d	6
+#wouldmakealottasense	would make a lot ta sense	6
+#wprf 2016	wp rf  2 0 1 6	6
+#wpsg	wpsg	6
+#wp	wp	6
+#wpw	wpw	6
+#wpww	wpww	6
+#wpxi	wpx i	6
+#wrecreation 2017	wrec re a ti on  2017	6
+#writeapoemfortrump	write a poem for trump	5
+#writetip	write tip	2
+#wrongcontex	wrong con tex	3
+#wrongfullyconvicted	wrong fully convicted	3
+#wrongskin	wrong skin	2
+#wtfiswrongwithnebraska	wt f is wrong with nebraska	6
+#wtfu	wt fu	6
+#wtoremovekillertauqeershah	wt or em ovekillertauqeer sh ah	6
+#wurstbrotfilme	wu rstb rot fil me	6
+#wut	wu t	6
+#wvnextin 6	wv next in  6	6
+#wvu	wvu	6
+#ww 2	ww  2	6
+#ww 3	ww  3	6
+#wwc	wwc	6
+#wwdc 15	ww dc  1 5	6
+#wwesucks	wwe suck s	6
+#wwiimemorial	wwii memorial	6
+#wwii	ww i i	6
+#wwll	wwll	6
+#wy	wy	6
+#xbla	xbl a	6
+#xboxe 3	x box e  3	6
+#xboxorweriot	x box or we riot	6
+#xz 7	xz  7	6
+#yallknowthisalready	yall know this already	6
+#yankeestadium	yankee stadium	2
+#ycot	y cot	6
+#yc	yc	6
+#yee	ye e	6
+#yeé	ye é	6
+#yeeyee	ye eye e	6
+#yeezyseason 3	yeezy season  3	6
+#yellowlivesmatter	yellow lives matter	3
+#yesalé	yes a lé	6
+#yesallkiwis	yes all kiwis	4
+#yesallmen	yes all men	3
+#yesallniggers	yes all niggers	3
+#yesallwhitepeople	yes all white people	4
+#yesallwomen	yes all women	3
+#yeshua	ye shu a	3
+#yesmeansyes	yes means yes	3
+#yessallwomen	yess all women	4
+#yeswedid	yes we did	3
+#yeziden	ye z i den	6
+#yezidi	ye z id i	6
+#yohanan	y oh a nan	6
+#yok	y ok	6
+#yolocaust	yo loc a us t	6
+#yomhashoah	y om has ho ah	6
+#yomkippur	y om kip pur	6
+#yostknowsmost	yost knows most	6
+#youcansitwithus	you can sit with us	5
+#youcanthandlethetruth	you cant handle the truth	5
+#youfuckingwhatmate	you fucking what mate	4
+#yougov	you go v	6
+#youknowwhatimean	you know what i mean	5
+#youmatter	you matter	2
+#youmustbewhite	you must be white	4
+#youpeople	you people	2
+#yourejustracist	youre just racist	3
+#yourmusicsux	your music sux	6
+#yourwelcome	your welcome	2
+#yo	yo	6
+#yuge	yu ge	6
+#yungkaygalala	yung kay gal a la	6
+#zacharyhammond	z a chary hammond	6
+#zachsleglessgrandpa	zach sl eg less grand pa	6
+#zebras	zebr as	6
+#zemirbegic	z emir beg i c	6
+#zika	zik a	6
+#zionistconspiracy	zionist conspiracy	2
+#zionistscum	zionists cum	2
+#zioni	zion i	2
+#zoequinn	zo equ inn	6
+#zog	zog	6
+#zoneinterdite	zone interdit e	6
+#zuidafrika	zu id afrika	3
+#zum	zu m	6
+#zuwanderung	zu wan de rung	4#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#worldseriesgame 3	world series ga me  3	6
+#2for 5	2 for  5	6
+#vote 5sos	vote  5 sos	6
+#justice 4mikebrown	just ice  4 mike brown	6
+#elite 8	elite  8	6
+#sweet 16	sweet  16	6
+#askim 5	a skim  5	6
+#tdf 12	tdf  1 2	6
+#worldcup 2014	world cup  2014	6
+#tngseason 4finale	tng se a son  4 finale	6
+#pr 20chat	pr  2 0 chat	6
+#honda 200	hon da  200	6
+#big 10	big  10	6
+#election 2014	elect i on  2014	6
+#mavtv 500	ma v tv  5 0 0	6
+#worldseriesgame 6	world series ga me  6	6
+#4th ofjulyfly	4th  of july fly	4
+#gostampsgo 84	go stamps go  84	6
+#big 10	big  10	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#big 10	big  10	6
+#game 7	ga me  7	6
+#cpac 2014	cp ac  2 0 1 4	6
+#election 2014	elect i on  2014	6
+#election 2014	elect i on  2014	6
+#dsn 50	dsn  5 0	6
+#tn 6	tn  6	6
+#red 2blue	red  2 blue	6
+#15th ingsilove	1 5th  ing si love	5
+#gtvt 1	g tv t  1	6
+#theoscars 2014	the os cars  2014	6
+#signedtothestreets 2	signed to the streets  2	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#core 4	core  4	6
+#wvnextin 6	wv next in  6	6
+#mlbtheshow 12	mlb the show  12	6
+#booty 4ever	booty  4 ever	6
+#esurancesave 30	e sur ance save  3 0	6
+#re 2pect	re  2 pe ct	6
+#browns 2014draft	brown s  2014 dr a ft	6
+#worldcup 2014	world cup  2014	6
+#gealemundine 2	ge al em un dine  2	6
+#big 10	big  10	6
+#nwo 4fuckinglife	nw o  4 fuck ing life	6
+#nwo 4life	nw o  4 li fe	6
+#nwo 4life	nw o  4 li fe	6
+#n 16	n  1 6	6
+#docog 1	do cog  1	6
+#aipac 2016	a i pa c  2 016	6
+#indy 500	in dy  5 0 0	6
+#m 21	m  2 1	6
+#memorialday 2016	mem or i al day  2016	6
+#libertarian 4lyfe	liber tar i a n 4ly fe	6
+#icc 4israel	icc  4 i sr a el	6
+#baltimoe 6	bal ti mo e  6	6
+#ramadan 2015	ram a dan  2015	6
+#ic 1	i c  1	6
+#moimocheetmechant 2	mo i mocheetmech a nt  2	6
+#godsnotdead 2	gods not dead  2	6
+#rio 2016	rio  2016	6
+#cruz 2016	cruz  2016	6
+#offendeveryonein 4words	of fend everyone in  4 words	6
+#ic 1	i c  1	6
+#ukip 100days	uk i p  1 00 days	6
+#marchforlife 2015	march for life  2015	6
+#whatislovein 4words	what is love in  4 words	6
+#andrewmarr 9	an drew marr  9	6
+#m 21	m  2 1	6
+#trump 16	trump  16	6
+#3rd worldimmivasion	3rd  world immiv a si on	6
+#nogozones 4whites	no go zones  4 whites	6
+#dday 70	d day  7 0	6
+#ccsudday 70	ccsud day  7 0	6
+#salt 2014	salt  2014	6
+#unresolution 260	un re sol uti on  260	6
+#unresolution 260	un re sol uti on  260	6
+#m 21	m  2 1	6
+#cpac 2015	cp ac  2 0 1 5	6
+#bbcan 3	bbc an  3	6
+#springbreakin 4words	spring break in  4 words	6
+#my 2wordnightmare	my  2 word night mare	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#tipsforyear 7s	tips for ye a r 7s	6
+#fixwhatsbrokenin 5words	fix whats broken in  5 words	6
+#labourc 4	lab our c  4	6
+#m 21	m  2 1	6
+#my 4wordmotto	my  4 word mot to	6
+#california 4trump	california  4 trump	6
+#cruz 2016	cruz  2016	6
+#trump 20	trump  20	6
+#cruzcarly 2016	cruz car ly  2 0 16	6
+#2nd amendment	2nd  amendment	2
+#aipac 2016	a i pa c  2 016	6
+#unresolution 26	un re sol uti on  26	6
+#cancelplansin 5words	cancel plans in  5 words	6
+#whatihatein 5words	what i hate in  5 words	6
+#whitegen 0cide	white gen  0 c i de	6
+#prideto 100	pride to  100	6
+#ic 1	i c  1	6
+#rioolympic 2016	rio olympic  2016	6
+#mh 17	mh  1 7	6
+#pride 2016	pride  2016	6
+#1st a	1st  a	2
+#c 4news	c  4 news	6
+#kickoff 2014	kick off  2014	6
+#auschwitz 70	auschwitz  70	6
+#cut 4zayn	cut  4 zayn	6
+#becauseits 1984	bec a use its  1984	6
+#freethunderf 00t	free thunder f 00t	6
+#nice 06	nice  06	6
+#ww 2	ww  2	6
+#justice 4jamar	just ice  4 ja mar	6
+#pjmbk 15	pjmbk  1 5	6
+#ufc 198	ufc  1 9 8	6
+#ios 83	i os  83	6
+#queenat 90	queen at  90	6
+#stopgamergate 2014	stop ga mer gate  2014	6
+#queens 90th birthday	queens 90th birthday	0
+#definegopin 3words	define gop in  3 words	6
+#wastehistime 2016	waste his time  2016	6
+#cpac 2015	cp ac  2 0 1 5	6
+#brazil 2014	brazil  2014	6
+#europe 2015	europe  2015	6
+#standup 4kids	stand up  4 kids	6
+#ukip 15	uk i p  1 5	6
+#1samuel 2	1 samuel  2	6
+#ceo 2016	ceo  2 0 1 6	6
+#n 16	n  1 6	6
+#bushdid 911	bush did  911	6
+#c 4news	c  4 news	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#e 32016	e  3 2 0 1 6	6
+#my 6wordopinion	my  6 word opinion	6
+#dl_sexynanabypojes 7	dl_sexyn an a by po jes 7	6
+#e 32016	e  3 2 0 1 6	6
+#xboxe 3	x box e  3	6
+#e 32016	e  3 2 0 1 6	6
+#sonye 3	son ye  3	6
+#v 4	v  4	6
+#unresolution 260	un re sol uti on  260	6
+#getblockedin 5words	get blocked in  5 words	6
+#icc 4israel	icc  4 i sr a el	6
+#bestfandom 2014	best fandom  2014	6
+#wearethe 75percent	we a re the  75 percent	6
+#goback 2africa	go back  2 afric a	6
+#ww 3	ww  3	6
+#10- 1	1 0 -  1	6
+#0- 5	0 -  5	6
+#whitelivesmatter 2015	white lives matter  2015	6
+#ssww 2	ss ww  2	6
+#ww 2	ww  2	6
+#bigin 2015	big in  2015	6
+#whitegenocide 2016	white genocide  2016	6
+#nsm 88	nsm  8 8	6
+#news 9	news  9	6
+#mightyno 9	mighty no  9	6
+#blizzard 2016	blizzard  2016	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#getmillennialstovotein 5words	getmillennials to vote in  5 words	6
+#agu 15	a gu  1 5	6
+#h 102f 15	h 102f 15	0
+#oscars 2016	os cars  2016	6
+#theatre 2016	the at re  2016	6
+#jewishhistory 101	jew i shh is tory  101	6
+#marrakesh 2016	marr a ke sh  2016	6
+#onepiece 830	one piece  830	6
+#ww 2	ww  2	6
+#truthforthefallen 44	truth for the fallen  44	6
+#daytona 500	day to na  500	6
+#clips 4sale	clips  4 sale	6
+#21st century	2 1st  century	3
+#twitter 10k	twit ter  1 0 k	6
+#ubie 3	ub ie  3	6
+#unity 4malaysia	unity  4 ma lays i a	6
+#unresolution 260	un re sol uti on  260	6
+#excusesforthecrimein 5words	excuses for the crime in  5words	6
+#amst 2001	a ms t  2 0 01	6
+#euro 2016final	eu ro  2 0 16 final	6
+#unresolution 260	un re sol uti on  260	6
+#xz 7	xz  7	6
+#2nd amendment	2nd  amendment	2
+#credit 0bama	credit  0 bam a	6
+#vaalit 2015	va a lit  2015	6
+#makepeacein 5words	makepeace in  5 words	6
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#sochi 2014	so chi  2014	6
+#pac 12championship	pa c 12ch amp i on ship	6
+#bf 4isdead	bf  4 is de ad	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#ww 2	ww  2	6
+#chsnight 16	chs night  1 6	6
+#stand 4israel	stand  4 i sr a el	6
+#salt 2015	salt  2015	6
+#m 21	m  2 1	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#after 9	after  9	6
+#cruz 2016	cruz  2016	6
+#trump 16	trump  16	6
+#greetthealiensin 5words	greet the aliens in  5 words	6
+#ukip 100days	uk i p  1 00 days	6
+#sctop 10	sc top  1 0	6
+#ww 2	ww  2	6
+#m 21	m  2 1	6
+#pray 4nicki	pray  4 nick i	6
+#trump 2016's	trump  2016 's	6
+#pray 4gaza	pray  4 ga z a	6
+#2nd amendment	2nd  amendment	2
+#mightyno 9	mighty no  9	6
+#like 2	like  2	6
+#gazaj 19	ga z aj  1 9	6
+#muharram 10	muharram  10	6
+#rethink 2014	re think  2014	6
+#becauseits 2016	bec a use its  2016	6
+#stopbeaners 2014	stop be a ne rs  2014	6
+#nn 15	nn  1 5	6
+#wwdc 15	ww dc  1 5	6
+#bb 17	bb  1 7	6
+#gh 2015	gh  2 0 1 5	6
+#ceo 2016	ceo  2 0 1 6	6
+#aipac 2016	a i pa c  2 016	6
+#bccc 15	b ccc  1 5	6
+#icc 4israel	icc  4 i sr a el	6
+#alllivesmatter 2016	all lives matter  2016	6
+#makepeacein 5words	makepeace in  5 words	6
+#bb 4sp	bb  4 sp	6
+#letr 2jil	let r 2j il	6
+#boycottstarwars 7	boy cott star wars  7	6
+#ww 2	ww  2	6
+#veday 70	ve day  7 0	6
+#ces 2015	ces  2 0 1 5	6
+#stopgamergate 2014	stop ga mer gate  2014	6
+#auschwitz 70	auschwitz  70	6
+#sb 50	sb  5 0	6
+#whitepower 101muslim	white power  101 muslim	6
+#vote 4david	vote  4 david	6
+#sb 50	sb  5 0	6
+#no 2antisemitism	no  2 a nt is emitism	6
+#thisisopression 86	this i so press ion  86	6
+#elxn 42	el xn  4 2	6
+#jadehelm 15	jade he lm  15	6
+#aipac 2015	a i pa c  2 015	6
+#pc 2015	pc  2 0 1 5	6
+#ces 2015	ces  2 0 1 5	6
+#ufc 194	ufc  1 9 4	6
+#yeezyseason 3	ye ezy se a son  3	6
+#ces 2015	ces  2 0 1 5	6
+#snl 40	snl  4 0	6
+#john 18	john  18	6
+#jo 6pack	jo  6 pack	6
+#unresolution 260	un re sol uti on  260	6
+#ic 1	i c  1	6
+#i 2	i  2	6
+#twmk 1	twmk  1	6
+#whatibelievein 5words	what i believe in  5 words	6
+#bgeeks 14	bg eeks  1 4	6
+#rom 10	r om  1 0	6
+#wastehistime 2016	waste his time  2016	6
+#sims 3	sims  3	6
+#votoa 16anni	voto a  16 anni	6
+#icc 4israel	icc  4 i sr a el	6
+#azabbgic 2016	a zabbgic  2 0 1 6	6
+#wprf 2016	wp rf  2 0 1 6	6
+#unresolution 260	un re sol uti on  260	6
+#biblequizvol 16	bible quiz vol  16	6
+#ic 1	i c  1	6
+#wrecreation 2017	wrec re a ti on  2017	6
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#whitelivesmatter 2	white lives matter  2	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#jewishhistory 101	jew i shh is tory  101	6
+#muharram 10	muharram  10	6
+#springbreakin 4words	spring break in  4 words	6
+#badideain 5words	bad ide a in  5 words	6
+#oscars 2016	os cars  2016	6
+#describeyourselfin 3words	describe yourself in  3 words	6
+#bushdid 911	bush did  911	6
+#like 3mexicans	like  3 mexicans	6
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#World Series Game 3	World Series Game 3	0
+#2for 5	2 for  5	6
+#vote 5sos	vote  5 sos	6
+#Justice 4 Mike Brown	Justice 4 Mike Brown	0
+#Elite 8	 elite  8	6
+#Sweet 16	 sweet  16	6
+#askim 5	a skim  5	6
+#TDF 12	 tdf  1 2	6
+#World Cup 2014	World Cup 2014	0
+#TNG Season 4 Finale	TNG Season 4 Finale	0
+#pr 20chat	pr  2 0 chat	6
+#Honda 200	 hon da  200	6
+#big 10	big  10	6
+#Election 2014	 elect i on  2014	6
+#MAVTV 500	 ma v tv  5 0 0	6
+#World Series Game 6	World Series Game 6	0
+#4th of July Fly	4th of July Fly	0
+#Go Stamps Go 84	Go Stamps Go 84	0
+#big 10	big  10	6
+#EMA Biggest Fans 1D	EMA Biggest Fans 1D	0
+#big 10	big  10	6
+#game 7	ga me  7	6
+#CPAC 2014	 cp ac  2 0 1 4	6
+#Election 2014	 elect i on  2014	6
+#Election 2014	 elect i on  2014	6
+#DSN 50	 dsn  5 0	6
+#TN 6	 tn  6	6
+#Red 2 Blue	Red 2 Blue	0
+#15 ThingsI Love	15 ThingsI Love	0
+#GTVT 1	 g tv t  1	6
+#The Oscars 2014	The Oscars 2014	0
+#signedtothestreets 2	signed to the streets  2	6
+#EMA Biggest Fans 1D	EMA Biggest Fans 1D	0
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#CORE 4	 core  4	6
+#wvnextin 6	wv next in  6	6
+#ML Bthe Show 12	ML Bthe Show 12	0
+#booty 4ever	booty  4 ever	6
+#Esurance Save 30	Esurance Save 30	0
+#RE 2 PECT	RE 2 PECT	0
+#Browns 2014 Draft	Browns 2014 Draft	0
+#worldcup 2014	world cup  2014	6
+#Geale Mundine 2	Geale Mundine 2	0
+#big 10	big  10	6
+#n Wo 4 Fucking Life	n Wo 4 Fucking Life	0
+#n Wo 4 Life	n Wo 4 Life	0
+#n Wo 4 Life	n Wo 4 Life	0
+#N 16	n  1 6	6
+#docog 1	do cog  1	6
+#AIPAC 2016	 a i pa c  2 016	6
+#Indy 500	 in dy  5 0 0	6
+#m 21	m  2 1	6
+#Memorial Day 2016	Memorial Day 2016	0
+#libertarian 4lyfe	liber tar i a n 4ly fe	6
+#ICC 4 Israel	ICC 4 Israel	0
+#Baltimoe 6	 bal ti mo e  6	6
+#Ramadan 2015	 ram a dan  2015	6
+#IC 1	 i c  1	6
+#Moi Moche Et Mechant 2	Moi Moche Et Mechant 2	0
+#Gods Not Dead 2	Gods Not Dead 2	0
+#Rio 2016	 rio  2016	6
+#cruz 2016	cruz  2016	6
+#Offend Everyone In 4 Words	Offend Everyone In 4 Words	0
+#IC 1	 i c  1	6
+#UKIP 100 Days	UKIP 100 Days	0
+#Marchfor Life 2015	Marchfor Life 2015	0
+#What Is Love In 4 Words	What Is Love In 4 Words	0
+#Andrew Marr 9	Andrew Marr 9	0
+#M 21	m  2 1	6
+#Trump 16	 trump  16	6
+#3rd  World Immivasion	3rd  World Immivasion	0
+#No Go Zones 4 Whites	No Go Zones 4 Whites	0
+#D Day 70	D Day 70	0
+#CCSUD Day 70	CCSUD Day 70	0
+#SALT 2014	 salt  2014	6
+#U Nresolution 260	U Nresolution 260	0
+#Unresolution 260	 un re sol uti on  260	6
+#M 21	m  2 1	6
+#cpac 2015	cp ac  2 0 1 5	6
+#BBCAN 3	 bbc an  3	6
+#Spring Break In 4 Words	Spring Break In 4 Words	0
+#My 2 Word Nightmare	My 2 Word Nightmare	0
+#CommitA Crime In 5 Words	CommitA Crime In 5 Words	0
+#Tips For Year 7s	Tips For Year 7s	0
+#Fix Whats Broken In 5 Words	Fix Whats Broken In 5 Words	0
+#LabourC 4	 lab our c  4	6
+#M 21	m  2 1	6
+#My 4 Word Motto	My 4 Word Motto	0
+#California 4 Trump	California 4 Trump	0
+#cruz 2016	cruz  2016	6
+#trump 20	trump  20	6
+#Cruz Carly 2016	Cruz Carly 2016	0
+#2nd amendment	2nd  amendment	2
+#AIPAC 2016	 a i pa c  2 016	6
+#U Nresolution 26	U Nresolution 26	0
+#Cancel Plans In 5 Words	Cancel Plans In 5 Words	0
+#WhatI Hate In 5 Words	WhatI Hate In 5 Words	0
+#White GeN 0cide	White GeN 0cide	0
+#pride TO 100	pride TO 100	0
+#IC 1	 i c  1	6
+#Rio Olympic 2016	Rio Olympic 2016	0
+#MH 17	 mh  1 7	6
+#Pride 2016	 pride  2016	6
+#1st A	1st  a	2
+#C 4news	c  4 news	6
+#kickoff 2014	kick off  2014	6
+#Auschwitz 70	 auschwitz  70	6
+#cut 4zayn	cut  4 zayn	6
+#becauseits 1984	bec a use its  1984	6
+#freethunderf 00t	free thunder f 00t	6
+#Nice 06	 nice  06	6
+#WW 2	 ww  2	6
+#Justice 4 Jamar	Justice 4 Jamar	0
+#pjmbk 15	pjmbk  1 5	6
+#UFC 198	 ufc  1 9 8	6
+#i OS 83	i OS 83	0
+#Queenat 90	 queen at  90	6
+#Stop Gamer Gate 2014	Stop Gamer Gate 2014	0
+#Queens 90th  Birthday	Queens 90th  Birthday	0
+#Define GO Pin 3words	Define GO Pin 3words	0
+#Waste His Time 2016	Waste His Time 2016	0
+#CPAC 2015	 cp ac  2 0 1 5	6
+#Brazil 2014	 brazil  2014	6
+#europe 2015	europe  2015	6
+#standup 4kids	stand up  4 kids	6
+#UKIP 15	 uk i p  1 5	6
+#1 Samuel 2	1 Samuel 2	0
+#CEO 2016	 ceo  2 0 1 6	6
+#N 16	n  1 6	6
+#Bush Did 911	Bush Did 911	0
+#c 4news	c  4 news	6
+#Feminists 4 Gamer Gate	Feminists 4 Gamer Gate	0
+#E 32016	e  3 2 0 1 6	6
+#My 6 Word Opinion	My 6 Word Opinion	0
+#D L_ Sexy Nana By Pojes 7	D L_ Sexy Nana By Pojes 7	0
+#E 32016	e  3 2 0 1 6	6
+#XboxE 3	 x box e  3	6
+#E 32016	e  3 2 0 1 6	6
+#SonyE 3	 son ye  3	6
+#V 4	v  4	6
+#U Nresolution 260	U Nresolution 260	0
+#getblockedin 5words	get blocked in  5 words	6
+#ICC 4 Israel	ICC 4 Israel	0
+#Best Fandom 2014	Best Fandom 2014	0
+#We Are The 75 Percent	We Are The 75 Percent	0
+#goback 2africa	go back  2 afric a	6
+#WW 3	 ww  3	6
+#10- 1	1 0 -  1	6
+#0- 5	0 -  5	6
+#whitelivesmatter 2015	white lives matter  2015	6
+#ssww 2	ss ww  2	6
+#WW 2	 ww  2	6
+#BI Gin 2015	BI Gin 2015	0
+#White Genocide 2016	White Genocide 2016	0
+#NSM 88	 nsm  8 8	6
+#news 9	news  9	6
+#Mighty No 9	Mighty No 9	0
+#blizzard 2016	blizzard  2016	6
+#Feminists 4 Gamer Gate	Feminists 4 Gamer Gate	0
+#Get Millennials To Vote In 5 Words	Get Millennials To Vote In 5 Words	0
+#AGU 15	 a gu  1 5	6
+#h 102f 15	h 102f 15	0
+#Oscars 2016	 os cars  2016	6
+#Theatre 2016	 the at re  2016	6
+#Jewish History 101	Jewish History 101	0
+#Marrakesh 2016	 marr a ke sh  2016	6
+#One Piece 830	One Piece 830	0
+#WW 2	 ww  2	6
+#Truth For The Fallen 44	Truth For The Fallen 44	0
+#Daytona 500	 day to na  500	6
+#clips 4sale	clips  4 sale	6
+#21st  Century	21st  Century	0
+#Twitter 10k	 twit ter  1 0 k	6
+#UbiE 3	 ub ie  3	6
+#Unity 4 Malaysia	Unity 4 Malaysia	0
+#U Nresolution 260	U Nresolution 260	0
+#Excuses For The Crime In 5 Words	Excuses For The Crime In 5 Words	0
+#amst 2001	a ms t  2 0 01	6
+#Euro 2016 Final	Euro 2016 Final	0
+#U Nresolution 260	U Nresolution 260	0
+#xz 7	xz  7	6
+#2nd  Amendment	2nd  Amendment	0
+#Credit 0bama	 credit  0 bam a	6
+#vaalit 2015	va a lit  2015	6
+#Make Peace In 5 Words	Make Peace In 5 Words	0
+#IC 1	 i c  1	6
+#IC 2	 i c  2	6
+#Sochi 2014	 so chi  2014	6
+#PAC 12 Championship	PAC 12 Championship	0
+#BF 4 Is Dead	BF 4 Is Dead	0
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#ww 2	ww  2	6
+#chsnight 16	chs night  1 6	6
+#Stand 4 Israel	Stand 4 Israel	0
+#SALT 2015	 salt  2015	6
+#M 21	m  2 1	6
+#If Twitter Only Had 50 Year Olds	If Twitter Only Had 50 Year Olds	0
+#CommitA Crime In 5 Words	CommitA Crime In 5 Words	0
+#after 9	after  9	6
+#cruz 2016	cruz  2016	6
+#Trump 16	 trump  16	6
+#Greet The Aliens In 5 Words	Greet The Aliens In 5 Words	0
+#UKIP 100 Days	UKIP 100 Days	0
+#S Ctop 10	S Ctop 10	0
+#WW 2	 ww  2	6
+#m 21	m  2 1	6
+#pray 4nicki	pray  4 nick i	6
+#Trump 2016's	 trump  2016 's	6
+#Pray 4 Gaza	Pray 4 Gaza	0
+#2nd  Amendment	2nd  Amendment	0
+#Mighty No 9	Mighty No 9	0
+#like 2	like  2	6
+#GazaJ 19	 ga z aj  1 9	6
+#Muharram 10	 muharram  10	6
+#rethink 2014	re think  2014	6
+#Because Its 2016	Because Its 2016	0
+#STOPBEANERS 2014	 stop be a ne rs  2014	6
+#NN 15	 nn  1 5	6
+#WWDC 15	 ww dc  1 5	6
+#BB 17	 bb  1 7	6
+#GH 2015	 gh  2 0 1 5	6
+#CEO 2016	 ceo  2 0 1 6	6
+#AIPAC 2016	 a i pa c  2 016	6
+#BCCC 15	 b ccc  1 5	6
+#ICC 4 Israel	ICC 4 Israel	0
+#ALLLIVESMATTER 2016	 all lives matter  2016	6
+#Make Peace In 5 Words	Make Peace In 5 Words	0
+#BB 4 SP	BB 4 SP	0
+#Letr 2 Jil	Letr 2 Jil	0
+#Boycott Star Wars 7	Boycott Star Wars 7	0
+#ww 2	ww  2	6
+#VE Day 70	VE Day 70	0
+#CES 2015	 ces  2 0 1 5	6
+#Stop Gamer Gate 2014	Stop Gamer Gate 2014	0
+#Auschwitz 70	 auschwitz  70	6
+#SB 50	 sb  5 0	6
+#whitepower 101 Muslim	whitepower 101 Muslim	0
+#Vote 4 David	Vote 4 David	0
+#SB 50	 sb  5 0	6
+#No 2 Antisemitism	No 2 Antisemitism	0
+#This Is Opression 86	This Is Opression 86	0
+#elxn 42	el xn  4 2	6
+#Jade Helm 15	Jade Helm 15	0
+#AIPAC 2015	 a i pa c  2 015	6
+#PC 2015	 pc  2 0 1 5	6
+#CES 2015	 ces  2 0 1 5	6
+#UFC 194	 ufc  1 9 4	6
+#Yeezy Season 3	Yeezy Season 3	0
+#CES 2015	 ces  2 0 1 5	6
+#SNL 40	 snl  4 0	6
+#John 18	 john  18	6
+#jo 6 Pack	jo 6 Pack	0
+#U Nresolution 260	U Nresolution 260	0
+#IC 1	 i c  1	6
+#i 2	i  2	6
+#twmk 1	twmk  1	6
+#WhatI Believe In 5 Words	WhatI Believe In 5 Words	0
+#bgeeks 14	bg eeks  1 4	6
+#Rom 10	 r om  1 0	6
+#Waste His Time 2016	Waste His Time 2016	0
+#sims 3	sims  3	6
+#votoa 16anni	voto a  16 anni	6
+#ICC 4 Israel	ICC 4 Israel	0
+#AZABBGIC 2016	 a zabbgic  2 0 1 6	6
+#WPRF 2016	 wp rf  2 0 1 6	6
+#U Nresolution 260	U Nresolution 260	0
+#BIBLEQUIZVOL 16	 bible quiz vol  16	6
+#IC 1	 i c  1	6
+#WRE Creation 2017	WRE Creation 2017	0
+#IC 1	 i c  1	6
+#IC 2	 i c  2	6
+#whitelivesmatter 2	white lives matter  2	6
+#If Twitter Only Had 50 Year Olds	If Twitter Only Had 50 Year Olds	0
+#Jewish History 101	Jewish History 101	0
+#Muharram 10	 muharram  10	6
+#Spring Break In 4 Words	Spring Break In 4 Words	0
+#Bad Idea In 5 Words	Bad Idea In 5 Words	0
+#Oscars 2016	 os cars  2016	6
+#Describe Yourself In 3 Words	Describe Yourself In 3 Words	0
+#Bush Did 911	Bush Did 911	0
+#like 3mexicans	like  3 mexicans	6
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#worldseriesgame 3	world series ga me  3	6
+#2for 5	2 for  5	6
+#vote 5sos	vote  5 sos	6
+#justice 4mikebrown	just ice  4 mike brown	6
+#elite 8	elite  8	6
+#sweet 16	sweet  16	6
+#askim 5	a skim  5	6
+#tdf 12	tdf  1 2	6
+#worldcup 2014	world cup  2014	6
+#tngseason 4finale	tng se a son  4 finale	6
+#pr 20chat	pr  2 0 chat	6
+#honda 200	hon da  200	6
+#big 10	big  10	6
+#election 2014	elect i on  2014	6
+#mavtv 500	ma v tv  5 0 0	6
+#worldseriesgame 6	world series ga me  6	6
+#4th ofjulyfly	4th  of july fly	4
+#gostampsgo 84	go stamps go  84	6
+#big 10	big  10	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#big 10	big  10	6
+#game 7	ga me  7	6
+#cpac 2014	cp ac  2 0 1 4	6
+#election 2014	elect i on  2014	6
+#election 2014	elect i on  2014	6
+#dsn 50	dsn  5 0	6
+#tn 6	tn  6	6
+#red 2blue	red  2 blue	6
+#15th ingsilove	1 5th  ing si love	5
+#gtvt 1	g tv t  1	6
+#theoscars 2014	the os cars  2014	6
+#signedtothestreets 2	signed to the streets  2	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#core 4	core  4	6
+#wvnextin 6	wv next in  6	6
+#mlbtheshow 12	mlb the show  12	6
+#booty 4ever	booty  4 ever	6
+#esurancesave 30	e sur ance save  3 0	6
+#re 2pect	re  2 pe ct	6
+#browns 2014draft	brown s  2014 dr a ft	6
+#worldcup 2014	world cup  2014	6
+#gealemundine 2	ge al em un dine  2	6
+#big 10	big  10	6
+#nwo 4fuckinglife	nw o  4 fuck ing life	6
+#nwo 4life	nw o  4 li fe	6
+#nwo 4life	nw o  4 li fe	6
+#n 16	n  1 6	6
+#docog 1	do cog  1	6
+#aipac 2016	a i pa c  2 016	6
+#indy 500	in dy  5 0 0	6
+#m 21	m  2 1	6
+#memorialday 2016	mem or i al day  2016	6
+#libertarian 4lyfe	liber tar i a n 4ly fe	6
+#icc 4israel	icc  4 i sr a el	6
+#baltimoe 6	bal ti mo e  6	6
+#ramadan 2015	ram a dan  2015	6
+#ic 1	i c  1	6
+#moimocheetmechant 2	mo i mocheetmech a nt  2	6
+#godsnotdead 2	gods not dead  2	6
+#rio 2016	rio  2016	6
+#cruz 2016	cruz  2016	6
+#offendeveryonein 4words	of fend everyone in  4 words	6
+#ic 1	i c  1	6
+#ukip 100days	uk i p  1 00 days	6
+#marchforlife 2015	march for life  2015	6
+#whatislovein 4words	what is love in  4 words	6
+#andrewmarr 9	an drew marr  9	6
+#m 21	m  2 1	6
+#trump 16	trump  16	6
+#3rd worldimmivasion	3rd  world immiv a si on	6
+#nogozones 4whites	no go zones  4 whites	6
+#dday 70	d day  7 0	6
+#ccsudday 70	ccsud day  7 0	6
+#salt 2014	salt  2014	6
+#unresolution 260	un re sol uti on  260	6
+#unresolution 260	un re sol uti on  260	6
+#m 21	m  2 1	6
+#cpac 2015	cp ac  2 0 1 5	6
+#bbcan 3	bbc an  3	6
+#springbreakin 4words	spring break in  4 words	6
+#my 2wordnightmare	my  2 word night mare	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#tipsforyear 7s	tips for ye a r 7s	6
+#fixwhatsbrokenin 5words	fix whats broken in  5 words	6
+#labourc 4	lab our c  4	6
+#m 21	m  2 1	6
+#my 4wordmotto	my  4 word mot to	6
+#california 4trump	california  4 trump	6
+#cruz 2016	cruz  2016	6
+#trump 20	trump  20	6
+#cruzcarly 2016	cruz car ly  2 0 16	6
+#2nd amendment	2nd  amendment	2
+#aipac 2016	a i pa c  2 016	6
+#unresolution 26	un re sol uti on  26	6
+#cancelplansin 5words	cancel plans in  5 words	6
+#whatihatein 5words	what i hate in  5 words	6
+#whitegen 0cide	white gen  0 c i de	6
+#prideto 100	pride to  100	6
+#ic 1	i c  1	6
+#rioolympic 2016	rio olympic  2016	6
+#mh 17	mh  1 7	6
+#pride 2016	pride  2016	6
+#1st a	1st  a	2
+#c 4news	c  4 news	6
+#kickoff 2014	kick off  2014	6
+#auschwitz 70	auschwitz  70	6
+#cut 4zayn	cut  4 zayn	6
+#becauseits 1984	bec a use its  1984	6
+#freethunderf 00t	free thunder f 00t	6
+#nice 06	nice  06	6
+#ww 2	ww  2	6
+#justice 4jamar	just ice  4 ja mar	6
+#pjmbk 15	pjmbk  1 5	6
+#ufc 198	ufc  1 9 8	6
+#ios 83	i os  83	6
+#queenat 90	queen at  90	6
+#stopgamergate 2014	stop ga mer gate  2014	6
+#queens 90th birthday	queens 90th birthday	0
+#definegopin 3words	define gop in  3 words	6
+#wastehistime 2016	waste his time  2016	6
+#cpac 2015	cp ac  2 0 1 5	6
+#brazil 2014	brazil  2014	6
+#europe 2015	europe  2015	6
+#standup 4kids	stand up  4 kids	6
+#ukip 15	uk i p  1 5	6
+#1samuel 2	1 samuel  2	6
+#ceo 2016	ceo  2 0 1 6	6
+#n 16	n  1 6	6
+#bushdid 911	bush did  911	6
+#c 4news	c  4 news	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#e 32016	e  3 2 0 1 6	6
+#my 6wordopinion	my  6 word opinion	6
+#dl_sexynanabypojes 7	dl_sexyn an a by po jes 7	6
+#e 32016	e  3 2 0 1 6	6
+#xboxe 3	x box e  3	6
+#e 32016	e  3 2 0 1 6	6
+#sonye 3	son ye  3	6
+#v 4	v  4	6
+#unresolution 260	un re sol uti on  260	6
+#getblockedin 5words	get blocked in  5 words	6
+#icc 4israel	icc  4 i sr a el	6
+#bestfandom 2014	best fandom  2014	6
+#wearethe 75percent	we a re the  75 percent	6
+#goback 2africa	go back  2 afric a	6
+#ww 3	ww  3	6
+#10- 1	1 0 -  1	6
+#0- 5	0 -  5	6
+#whitelivesmatter 2015	white lives matter  2015	6
+#ssww 2	ss ww  2	6
+#ww 2	ww  2	6
+#bigin 2015	big in  2015	6
+#whitegenocide 2016	white genocide  2016	6
+#nsm 88	nsm  8 8	6
+#news 9	news  9	6
+#mightyno 9	mighty no  9	6
+#blizzard 2016	blizzard  2016	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#getmillennialstovotein 5words	getmillennials to vote in  5 words	6
+#agu 15	a gu  1 5	6
+#h 102f 15	h 102f 15	0
+#oscars 2016	os cars  2016	6
+#theatre 2016	the at re  2016	6
+#jewishhistory 101	jew i shh is tory  101	6
+#marrakesh 2016	marr a ke sh  2016	6
+#onepiece 830	one piece  830	6
+#ww 2	ww  2	6
+#truthforthefallen 44	truth for the fallen  44	6
+#daytona 500	day to na  500	6
+#clips 4sale	clips  4 sale	6
+#21st century	2 1st  century	3
+#twitter 10k	twit ter  1 0 k	6
+#ubie 3	ub ie  3	6
+#unity 4malaysia	unity  4 ma lays i a	6
+#unresolution 260	un re sol uti on  260	6
+#excusesforthecrimein 5words	excuses for the crime in  5words	6
+#amst 2001	a ms t  2 0 01	6
+#euro 2016final	eu ro  2 0 16 final	6
+#unresolution 260	un re sol uti on  260	6
+#xz 7	xz  7	6
+#2nd amendment	2nd  amendment	2
+#credit 0bama	credit  0 bam a	6
+#vaalit 2015	va a lit  2015	6
+#makepeacein 5words	makepeace in  5 words	6
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#sochi 2014	so chi  2014	6
+#pac 12championship	pa c 12ch amp i on ship	6
+#bf 4isdead	bf  4 is de ad	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#ww 2	ww  2	6
+#chsnight 16	chs night  1 6	6
+#stand 4israel	stand  4 i sr a el	6
+#salt 2015	salt  2015	6
+#m 21	m  2 1	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#after 9	after  9	6
+#cruz 2016	cruz  2016	6
+#trump 16	trump  16	6
+#greetthealiensin 5words	greet the aliens in  5 words	6
+#ukip 100days	uk i p  1 00 days	6
+#sctop 10	sc top  1 0	6
+#ww 2	ww  2	6
+#m 21	m  2 1	6
+#pray 4nicki	pray  4 nick i	6
+#trump 2016's	trump  2016 's	6
+#pray 4gaza	pray  4 ga z a	6
+#2nd amendment	2nd  amendment	2
+#mightyno 9	mighty no  9	6
+#like 2	like  2	6
+#gazaj 19	ga z aj  1 9	6
+#muharram 10	muharram  10	6
+#rethink 2014	re think  2014	6
+#becauseits 2016	bec a use its  2016	6
+#stopbeaners 2014	stop be a ne rs  2014	6
+#nn 15	nn  1 5	6
+#wwdc 15	ww dc  1 5	6
+#bb 17	bb  1 7	6
+#gh 2015	gh  2 0 1 5	6
+#ceo 2016	ceo  2 0 1 6	6
+#aipac 2016	a i pa c  2 016	6
+#bccc 15	b ccc  1 5	6
+#icc 4israel	icc  4 i sr a el	6
+#alllivesmatter 2016	all lives matter  2016	6
+#makepeacein 5words	makepeace in  5 words	6
+#bb 4sp	bb  4 sp	6
+#letr 2jil	let r 2j il	6
+#boycottstarwars 7	boy cott star wars  7	6
+#ww 2	ww  2	6
+#veday 70	ve day  7 0	6
+#ces 2015	ces  2 0 1 5	6
+#stopgamergate 2014	stop ga mer gate  2014	6
+#auschwitz 70	auschwitz  70	6
+#sb 50	sb  5 0	6
+#whitepower 101muslim	white power  101 muslim	6
+#vote 4david	vote  4 david	6
+#sb 50	sb  5 0	6
+#no 2antisemitism	no  2 a nt is emitism	6
+#thisisopression 86	this i so press ion  86	6
+#elxn 42	el xn  4 2	6
+#jadehelm 15	jade he lm  15	6
+#aipac 2015	a i pa c  2 015	6
+#pc 2015	pc  2 0 1 5	6
+#ces 2015	ces  2 0 1 5	6
+#ufc 194	ufc  1 9 4	6
+#yeezyseason 3	ye ezy se a son  3	6
+#ces 2015	ces  2 0 1 5	6
+#snl 40	snl  4 0	6
+#john 18	john  18	6
+#jo 6pack	jo  6 pack	6
+#unresolution 260	un re sol uti on  260	6
+#ic 1	i c  1	6
+#i 2	i  2	6
+#twmk 1	twmk  1	6
+#whatibelievein 5words	what i believe in  5 words	6
+#bgeeks 14	bg eeks  1 4	6
+#rom 10	r om  1 0	6
+#wastehistime 2016	waste his time  2016	6
+#sims 3	sims  3	6
+#votoa 16anni	voto a  16 anni	6
+#icc 4israel	icc  4 i sr a el	6
+#azabbgic 2016	a zabbgic  2 0 1 6	6
+#wprf 2016	wp rf  2 0 1 6	6
+#unresolution 260	un re sol uti on  260	6
+#biblequizvol 16	bible quiz vol  16	6
+#ic 1	i c  1	6
+#wrecreation 2017	wrec re a ti on  2017	6
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#whitelivesmatter 2	white lives matter  2	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#jewishhistory 101	jew i shh is tory  101	6
+#muharram 10	muharram  10	6
+#springbreakin 4words	spring break in  4 words	6
+#badideain 5words	bad ide a in  5 words	6
+#oscars 2016	os cars  2016	6
+#describeyourselfin 3words	describe yourself in  3 words	6
+#bushdid 911	bush did  911	6
+#like 3mexicans	like  3 mexicans	6
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#World Series Game 3	World Series Game 3	0
+#2for 5	2 for  5	6
+#vote 5sos	vote  5 sos	6
+#Justice 4 Mike Brown	Justice 4 Mike Brown	0
+#Elite 8	 elite  8	6
+#Sweet 16	 sweet  16	6
+#askim 5	a skim  5	6
+#TDF 12	 tdf  1 2	6
+#World Cup 2014	World Cup 2014	0
+#TNG Season 4 Finale	TNG Season 4 Finale	0
+#pr 20chat	pr  2 0 chat	6
+#Honda 200	 hon da  200	6
+#big 10	big  10	6
+#Election 2014	 elect i on  2014	6
+#MAVTV 500	 ma v tv  5 0 0	6
+#World Series Game 6	World Series Game 6	0
+#4th of July Fly	4th of July Fly	0
+#Go Stamps Go 84	Go Stamps Go 84	0
+#big 10	big  10	6
+#EMA Biggest Fans 1D	EMA Biggest Fans 1D	0
+#big 10	big  10	6
+#game 7	ga me  7	6
+#CPAC 2014	 cp ac  2 0 1 4	6
+#Election 2014	 elect i on  2014	6
+#Election 2014	 elect i on  2014	6
+#DSN 50	 dsn  5 0	6
+#TN 6	 tn  6	6
+#Red 2 Blue	Red 2 Blue	0
+#15 ThingsI Love	15 ThingsI Love	0
+#GTVT 1	 g tv t  1	6
+#The Oscars 2014	The Oscars 2014	0
+#signedtothestreets 2	signed to the streets  2	6
+#EMA Biggest Fans 1D	EMA Biggest Fans 1D	0
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#CORE 4	 core  4	6
+#wvnextin 6	wv next in  6	6
+#ML Bthe Show 12	ML Bthe Show 12	0
+#booty 4ever	booty  4 ever	6
+#Esurance Save 30	Esurance Save 30	0
+#RE 2 PECT	RE 2 PECT	0
+#Browns 2014 Draft	Browns 2014 Draft	0
+#worldcup 2014	world cup  2014	6
+#Geale Mundine 2	Geale Mundine 2	0
+#big 10	big  10	6
+#n Wo 4 Fucking Life	n Wo 4 Fucking Life	0
+#n Wo 4 Life	n Wo 4 Life	0
+#n Wo 4 Life	n Wo 4 Life	0
+#N 16	n  1 6	6
+#docog 1	do cog  1	6
+#AIPAC 2016	 a i pa c  2 016	6
+#Indy 500	 in dy  5 0 0	6
+#m 21	m  2 1	6
+#Memorial Day 2016	Memorial Day 2016	0
+#libertarian 4lyfe	liber tar i a n 4ly fe	6
+#ICC 4 Israel	ICC 4 Israel	0
+#Baltimoe 6	 bal ti mo e  6	6
+#Ramadan 2015	 ram a dan  2015	6
+#IC 1	 i c  1	6
+#Moi Moche Et Mechant 2	Moi Moche Et Mechant 2	0
+#Gods Not Dead 2	Gods Not Dead 2	0
+#Rio 2016	 rio  2016	6
+#cruz 2016	cruz  2016	6
+#Offend Everyone In 4 Words	Offend Everyone In 4 Words	0
+#IC 1	 i c  1	6
+#UKIP 100 Days	UKIP 100 Days	0
+#Marchfor Life 2015	Marchfor Life 2015	0
+#What Is Love In 4 Words	What Is Love In 4 Words	0
+#Andrew Marr 9	Andrew Marr 9	0
+#M 21	m  2 1	6
+#Trump 16	 trump  16	6
+#3rd  World Immivasion	3rd  World Immivasion	0
+#No Go Zones 4 Whites	No Go Zones 4 Whites	0
+#D Day 70	D Day 70	0
+#CCSUD Day 70	CCSUD Day 70	0
+#SALT 2014	 salt  2014	6
+#U Nresolution 260	U Nresolution 260	0
+#Unresolution 260	 un re sol uti on  260	6
+#M 21	m  2 1	6
+#cpac 2015	cp ac  2 0 1 5	6
+#BBCAN 3	 bbc an  3	6
+#Spring Break In 4 Words	Spring Break In 4 Words	0
+#My 2 Word Nightmare	My 2 Word Nightmare	0
+#CommitA Crime In 5 Words	CommitA Crime In 5 Words	0
+#Tips For Year 7s	Tips For Year 7s	0
+#Fix Whats Broken In 5 Words	Fix Whats Broken In 5 Words	0
+#LabourC 4	 lab our c  4	6
+#M 21	m  2 1	6
+#My 4 Word Motto	My 4 Word Motto	0
+#California 4 Trump	California 4 Trump	0
+#cruz 2016	cruz  2016	6
+#trump 20	trump  20	6
+#Cruz Carly 2016	Cruz Carly 2016	0
+#2nd amendment	2nd  amendment	2
+#AIPAC 2016	 a i pa c  2 016	6
+#U Nresolution 26	U Nresolution 26	0
+#Cancel Plans In 5 Words	Cancel Plans In 5 Words	0
+#WhatI Hate In 5 Words	WhatI Hate In 5 Words	0
+#White GeN 0cide	White GeN 0cide	0
+#pride TO 100	pride TO 100	0
+#IC 1	 i c  1	6
+#Rio Olympic 2016	Rio Olympic 2016	0
+#MH 17	 mh  1 7	6
+#Pride 2016	 pride  2016	6
+#1st A	1st  a	2
+#C 4news	c  4 news	6
+#kickoff 2014	kick off  2014	6
+#Auschwitz 70	 auschwitz  70	6
+#cut 4zayn	cut  4 zayn	6
+#becauseits 1984	bec a use its  1984	6
+#freethunderf 00t	free thunder f 00t	6
+#Nice 06	 nice  06	6
+#WW 2	 ww  2	6
+#Justice 4 Jamar	Justice 4 Jamar	0
+#pjmbk 15	pjmbk  1 5	6
+#UFC 198	 ufc  1 9 8	6
+#i OS 83	i OS 83	0
+#Queenat 90	 queen at  90	6
+#Stop Gamer Gate 2014	Stop Gamer Gate 2014	0
+#Queens 90th  Birthday	Queens 90th  Birthday	0
+#Define GO Pin 3words	Define GO Pin 3words	0
+#Waste His Time 2016	Waste His Time 2016	0
+#CPAC 2015	 cp ac  2 0 1 5	6
+#Brazil 2014	 brazil  2014	6
+#europe 2015	europe  2015	6
+#standup 4kids	stand up  4 kids	6
+#UKIP 15	 uk i p  1 5	6
+#1 Samuel 2	1 Samuel 2	0
+#CEO 2016	 ceo  2 0 1 6	6
+#N 16	n  1 6	6
+#Bush Did 911	Bush Did 911	0
+#c 4news	c  4 news	6
+#Feminists 4 Gamer Gate	Feminists 4 Gamer Gate	0
+#E 32016	e  3 2 0 1 6	6
+#My 6 Word Opinion	My 6 Word Opinion	0
+#D L_ Sexy Nana By Pojes 7	D L_ Sexy Nana By Pojes 7	0
+#E 32016	e  3 2 0 1 6	6
+#XboxE 3	 x box e  3	6
+#E 32016	e  3 2 0 1 6	6
+#SonyE 3	 son ye  3	6
+#V 4	v  4	6
+#U Nresolution 260	U Nresolution 260	0
+#getblockedin 5words	get blocked in  5 words	6
+#ICC 4 Israel	ICC 4 Israel	0
+#Best Fandom 2014	Best Fandom 2014	0
+#We Are The 75 Percent	We Are The 75 Percent	0
+#goback 2africa	go back  2 afric a	6
+#WW 3	 ww  3	6
+#10- 1	1 0 -  1	6
+#0- 5	0 -  5	6
+#whitelivesmatter 2015	white lives matter  2015	6
+#ssww 2	ss ww  2	6
+#WW 2	 ww  2	6
+#BI Gin 2015	BI Gin 2015	0
+#White Genocide 2016	White Genocide 2016	0
+#NSM 88	 nsm  8 8	6
+#news 9	news  9	6
+#Mighty No 9	Mighty No 9	0
+#blizzard 2016	blizzard  2016	6
+#Feminists 4 Gamer Gate	Feminists 4 Gamer Gate	0
+#Get Millennials To Vote In 5 Words	Get Millennials To Vote In 5 Words	0
+#AGU 15	 a gu  1 5	6
+#h 102f 15	h 102f 15	0
+#Oscars 2016	 os cars  2016	6
+#Theatre 2016	 the at re  2016	6
+#Jewish History 101	Jewish History 101	0
+#Marrakesh 2016	 marr a ke sh  2016	6
+#One Piece 830	One Piece 830	0
+#WW 2	 ww  2	6
+#Truth For The Fallen 44	Truth For The Fallen 44	0
+#Daytona 500	 day to na  500	6
+#clips 4sale	clips  4 sale	6
+#21st  Century	21st  Century	0
+#Twitter 10k	 twit ter  1 0 k	6
+#UbiE 3	 ub ie  3	6
+#Unity 4 Malaysia	Unity 4 Malaysia	0
+#U Nresolution 260	U Nresolution 260	0
+#Excuses For The Crime In 5 Words	Excuses For The Crime In 5 Words	0
+#amst 2001	a ms t  2 0 01	6
+#Euro 2016 Final	Euro 2016 Final	0
+#U Nresolution 260	U Nresolution 260	0
+#xz 7	xz  7	6
+#2nd  Amendment	2nd  Amendment	0
+#Credit 0bama	 credit  0 bam a	6
+#vaalit 2015	va a lit  2015	6
+#Make Peace In 5 Words	Make Peace In 5 Words	0
+#IC 1	 i c  1	6
+#IC 2	 i c  2	6
+#Sochi 2014	 so chi  2014	6
+#PAC 12 Championship	PAC 12 Championship	0
+#BF 4 Is Dead	BF 4 Is Dead	0
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#ww 2	ww  2	6
+#chsnight 16	chs night  1 6	6
+#Stand 4 Israel	Stand 4 Israel	0
+#SALT 2015	 salt  2015	6
+#M 21	m  2 1	6
+#If Twitter Only Had 50 Year Olds	If Twitter Only Had 50 Year Olds	0
+#CommitA Crime In 5 Words	CommitA Crime In 5 Words	0
+#after 9	after  9	6
+#cruz 2016	cruz  2016	6
+#Trump 16	 trump  16	6
+#Greet The Aliens In 5 Words	Greet The Aliens In 5 Words	0
+#UKIP 100 Days	UKIP 100 Days	0
+#S Ctop 10	S Ctop 10	0
+#WW 2	 ww  2	6
+#m 21	m  2 1	6
+#pray 4nicki	pray  4 nick i	6
+#Trump 2016's	 trump  2016 's	6
+#Pray 4 Gaza	Pray 4 Gaza	0
+#2nd  Amendment	2nd  Amendment	0
+#Mighty No 9	Mighty No 9	0
+#like 2	like  2	6
+#GazaJ 19	 ga z aj  1 9	6
+#Muharram 10	 muharram  10	6
+#rethink 2014	re think  2014	6
+#Because Its 2016	Because Its 2016	0
+#STOPBEANERS 2014	 stop be a ne rs  2014	6
+#NN 15	 nn  1 5	6
+#WWDC 15	 ww dc  1 5	6
+#BB 17	 bb  1 7	6
+#GH 2015	 gh  2 0 1 5	6
+#CEO 2016	 ceo  2 0 1 6	6
+#AIPAC 2016	 a i pa c  2 016	6
+#BCCC 15	 b ccc  1 5	6
+#ICC 4 Israel	ICC 4 Israel	0
+#ALLLIVESMATTER 2016	 all lives matter  2016	6
+#Make Peace In 5 Words	Make Peace In 5 Words	0
+#BB 4 SP	BB 4 SP	0
+#Letr 2 Jil	Letr 2 Jil	0
+#Boycott Star Wars 7	Boycott Star Wars 7	0
+#ww 2	ww  2	6
+#VE Day 70	VE Day 70	0
+#CES 2015	 ces  2 0 1 5	6
+#Stop Gamer Gate 2014	Stop Gamer Gate 2014	0
+#Auschwitz 70	 auschwitz  70	6
+#SB 50	 sb  5 0	6
+#whitepower 101 Muslim	whitepower 101 Muslim	0
+#Vote 4 David	Vote 4 David	0
+#SB 50	 sb  5 0	6
+#No 2 Antisemitism	No 2 Antisemitism	0
+#This Is Opression 86	This Is Opression 86	0
+#elxn 42	el xn  4 2	6
+#Jade Helm 15	Jade Helm 15	0
+#AIPAC 2015	 a i pa c  2 015	6
+#PC 2015	 pc  2 0 1 5	6
+#CES 2015	 ces  2 0 1 5	6
+#UFC 194	 ufc  1 9 4	6
+#Yeezy Season 3	Yeezy Season 3	0
+#CES 2015	 ces  2 0 1 5	6
+#SNL 40	 snl  4 0	6
+#John 18	 john  18	6
+#jo 6 Pack	jo 6 Pack	0
+#U Nresolution 260	U Nresolution 260	0
+#IC 1	 i c  1	6
+#i 2	i  2	6
+#twmk 1	twmk  1	6
+#WhatI Believe In 5 Words	WhatI Believe In 5 Words	0
+#bgeeks 14	bg eeks  1 4	6
+#Rom 10	 r om  1 0	6
+#Waste His Time 2016	Waste His Time 2016	0
+#sims 3	sims  3	6
+#votoa 16anni	voto a  16 anni	6
+#ICC 4 Israel	ICC 4 Israel	0
+#AZABBGIC 2016	 a zabbgic  2 0 1 6	6
+#WPRF 2016	 wp rf  2 0 1 6	6
+#U Nresolution 260	U Nresolution 260	0
+#BIBLEQUIZVOL 16	 bible quiz vol  16	6
+#IC 1	 i c  1	6
+#WRE Creation 2017	WRE Creation 2017	0
+#IC 1	 i c  1	6
+#IC 2	 i c  2	6
+#whitelivesmatter 2	white lives matter  2	6
+#If Twitter Only Had 50 Year Olds	If Twitter Only Had 50 Year Olds	0
+#Jewish History 101	Jewish History 101	0
+#Muharram 10	 muharram  10	6
+#Spring Break In 4 Words	Spring Break In 4 Words	0
+#Bad Idea In 5 Words	Bad Idea In 5 Words	0
+#Oscars 2016	 os cars  2016	6
+#Describe Yourself In 3 Words	Describe Yourself In 3 Words	0
+#Bush Did 911	Bush Did 911	0
+#like 3mexicans	like  3 mexicans	6
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#worldseriesgame 3	world series ga me  3	6
+#2for 5	2 for  5	6
+#vote 5sos	vote  5 sos	6
+#justice 4mikebrown	just ice  4 mike brown	6
+#elite 8	elite  8	6
+#sweet 16	sweet  16	6
+#askim 5	a skim  5	6
+#tdf 12	tdf  1 2	6
+#worldcup 2014	world cup  2014	6
+#tngseason 4finale	tng se a son  4 finale	6
+#pr 20chat	pr  2 0 chat	6
+#honda 200	hon da  200	6
+#big 10	big  10	6
+#election 2014	elect i on  2014	6
+#mavtv 500	ma v tv  5 0 0	6
+#worldseriesgame 6	world series ga me  6	6
+#4th ofjulyfly	4th  of july fly	4
+#gostampsgo 84	go stamps go  84	6
+#big 10	big  10	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#big 10	big  10	6
+#game 7	ga me  7	6
+#cpac 2014	cp ac  2 0 1 4	6
+#election 2014	elect i on  2014	6
+#election 2014	elect i on  2014	6
+#dsn 50	dsn  5 0	6
+#tn 6	tn  6	6
+#red 2blue	red  2 blue	6
+#15th ingsilove	1 5th  ing si love	5
+#gtvt 1	g tv t  1	6
+#theoscars 2014	the os cars  2014	6
+#signedtothestreets 2	signed to the streets  2	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#core 4	core  4	6
+#wvnextin 6	wv next in  6	6
+#mlbtheshow 12	mlb the show  12	6
+#booty 4ever	booty  4 ever	6
+#esurancesave 30	e sur ance save  3 0	6
+#re 2pect	re  2 pe ct	6
+#browns 2014draft	brown s  2014 dr a ft	6
+#worldcup 2014	world cup  2014	6
+#gealemundine 2	ge al em un dine  2	6
+#big 10	big  10	6
+#nwo 4fuckinglife	nw o  4 fuck ing life	6
+#nwo 4life	nw o  4 li fe	6
+#nwo 4life	nw o  4 li fe	6
+#n 16	n  1 6	6
+#docog 1	do cog  1	6
+#aipac 2016	a i pa c  2 016	6
+#indy 500	in dy  5 0 0	6
+#m 21	m  2 1	6
+#memorialday 2016	mem or i al day  2016	6
+#libertarian 4lyfe	liber tar i a n 4ly fe	6
+#icc 4israel	icc  4 i sr a el	6
+#baltimoe 6	bal ti mo e  6	6
+#ramadan 2015	ram a dan  2015	6
+#ic 1	i c  1	6
+#moimocheetmechant 2	mo i mocheetmech a nt  2	6
+#godsnotdead 2	gods not dead  2	6
+#rio 2016	rio  2016	6
+#cruz 2016	cruz  2016	6
+#offendeveryonein 4words	of fend everyone in  4 words	6
+#ic 1	i c  1	6
+#ukip 100days	uk i p  1 00 days	6
+#marchforlife 2015	march for life  2015	6
+#whatislovein 4words	what is love in  4 words	6
+#andrewmarr 9	an drew marr  9	6
+#m 21	m  2 1	6
+#trump 16	trump  16	6
+#3rd worldimmivasion	3rd  world immiv a si on	6
+#nogozones 4whites	no go zones  4 whites	6
+#dday 70	d day  7 0	6
+#ccsudday 70	ccsud day  7 0	6
+#salt 2014	salt  2014	6
+#unresolution 260	un re sol uti on  260	6
+#unresolution 260	un re sol uti on  260	6
+#m 21	m  2 1	6
+#cpac 2015	cp ac  2 0 1 5	6
+#bbcan 3	bbc an  3	6
+#springbreakin 4words	spring break in  4 words	6
+#my 2wordnightmare	my  2 word night mare	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#tipsforyear 7s	tips for ye a r 7s	6
+#fixwhatsbrokenin 5words	fix whats broken in  5 words	6
+#labourc 4	lab our c  4	6
+#m 21	m  2 1	6
+#my 4wordmotto	my  4 word mot to	6
+#california 4trump	california  4 trump	6
+#cruz 2016	cruz  2016	6
+#trump 20	trump  20	6
+#cruzcarly 2016	cruz car ly  2 0 16	6
+#2nd amendment	2nd  amendment	2
+#aipac 2016	a i pa c  2 016	6
+#unresolution 26	un re sol uti on  26	6
+#cancelplansin 5words	cancel plans in  5 words	6
+#whatihatein 5words	what i hate in  5 words	6
+#whitegen 0cide	white gen  0 c i de	6
+#prideto 100	pride to  100	6
+#ic 1	i c  1	6
+#rioolympic 2016	rio olympic  2016	6
+#mh 17	mh  1 7	6
+#pride 2016	pride  2016	6
+#1st a	1st  a	2
+#c 4news	c  4 news	6
+#kickoff 2014	kick off  2014	6
+#auschwitz 70	auschwitz  70	6
+#cut 4zayn	cut  4 zayn	6
+#becauseits 1984	bec a use its  1984	6
+#freethunderf 00t	free thunder f 00t	6
+#nice 06	nice  06	6
+#ww 2	ww  2	6
+#justice 4jamar	just ice  4 ja mar	6
+#pjmbk 15	pjmbk  1 5	6
+#ufc 198	ufc  1 9 8	6
+#ios 83	i os  83	6
+#queenat 90	queen at  90	6
+#stopgamergate 2014	stop ga mer gate  2014	6
+#queens 90th birthday	queens 90th birthday	0
+#definegopin 3words	define gop in  3 words	6
+#wastehistime 2016	waste his time  2016	6
+#cpac 2015	cp ac  2 0 1 5	6
+#brazil 2014	brazil  2014	6
+#europe 2015	europe  2015	6
+#standup 4kids	stand up  4 kids	6
+#ukip 15	uk i p  1 5	6
+#1samuel 2	1 samuel  2	6
+#ceo 2016	ceo  2 0 1 6	6
+#n 16	n  1 6	6
+#bushdid 911	bush did  911	6
+#c 4news	c  4 news	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#e 32016	e  3 2 0 1 6	6
+#my 6wordopinion	my  6 word opinion	6
+#dl_sexynanabypojes 7	dl_sexyn an a by po jes 7	6
+#e 32016	e  3 2 0 1 6	6
+#xboxe 3	x box e  3	6
+#e 32016	e  3 2 0 1 6	6
+#sonye 3	son ye  3	6
+#v 4	v  4	6
+#unresolution 260	un re sol uti on  260	6
+#getblockedin 5words	get blocked in  5 words	6
+#icc 4israel	icc  4 i sr a el	6
+#bestfandom 2014	best fandom  2014	6
+#wearethe 75percent	we a re the  75 percent	6
+#goback 2africa	go back  2 afric a	6
+#ww 3	ww  3	6
+#10- 1	1 0 -  1	6
+#0- 5	0 -  5	6
+#whitelivesmatter 2015	white lives matter  2015	6
+#ssww 2	ss ww  2	6
+#ww 2	ww  2	6
+#bigin 2015	big in  2015	6
+#whitegenocide 2016	white genocide  2016	6
+#nsm 88	nsm  8 8	6
+#news 9	news  9	6
+#mightyno 9	mighty no  9	6
+#blizzard 2016	blizzard  2016	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#getmillennialstovotein 5words	getmillennials to vote in  5 words	6
+#agu 15	a gu  1 5	6
+#h 102f 15	h 102f 15	0
+#oscars 2016	os cars  2016	6
+#theatre 2016	the at re  2016	6
+#jewishhistory 101	jew i shh is tory  101	6
+#marrakesh 2016	marr a ke sh  2016	6
+#onepiece 830	one piece  830	6
+#ww 2	ww  2	6
+#truthforthefallen 44	truth for the fallen  44	6
+#daytona 500	day to na  500	6
+#clips 4sale	clips  4 sale	6
+#21st century	2 1st  century	3
+#twitter 10k	twit ter  1 0 k	6
+#ubie 3	ub ie  3	6
+#unity 4malaysia	unity  4 ma lays i a	6
+#unresolution 260	un re sol uti on  260	6
+#excusesforthecrimein 5words	excuses for the crime in  5words	6
+#amst 2001	a ms t  2 0 01	6
+#euro 2016final	eu ro  2 0 16 final	6
+#unresolution 260	un re sol uti on  260	6
+#xz 7	xz  7	6
+#2nd amendment	2nd  amendment	2
+#credit 0bama	credit  0 bam a	6
+#vaalit 2015	va a lit  2015	6
+#makepeacein 5words	makepeace in  5 words	6
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#sochi 2014	so chi  2014	6
+#pac 12championship	pa c 12ch amp i on ship	6
+#bf 4isdead	bf  4 is de ad	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#ww 2	ww  2	6
+#chsnight 16	chs night  1 6	6
+#stand 4israel	stand  4 i sr a el	6
+#salt 2015	salt  2015	6
+#m 21	m  2 1	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#after 9	after  9	6
+#cruz 2016	cruz  2016	6
+#trump 16	trump  16	6
+#greetthealiensin 5words	greet the aliens in  5 words	6
+#ukip 100days	uk i p  1 00 days	6
+#sctop 10	sc top  1 0	6
+#ww 2	ww  2	6
+#m 21	m  2 1	6
+#pray 4nicki	pray  4 nick i	6
+#trump 2016's	trump  2016 's	6
+#pray 4gaza	pray  4 ga z a	6
+#2nd amendment	2nd  amendment	2
+#mightyno 9	mighty no  9	6
+#like 2	like  2	6
+#gazaj 19	ga z aj  1 9	6
+#muharram 10	muharram  10	6
+#rethink 2014	re think  2014	6
+#becauseits 2016	bec a use its  2016	6
+#stopbeaners 2014	stop be a ne rs  2014	6
+#nn 15	nn  1 5	6
+#wwdc 15	ww dc  1 5	6
+#bb 17	bb  1 7	6
+#gh 2015	gh  2 0 1 5	6
+#ceo 2016	ceo  2 0 1 6	6
+#aipac 2016	a i pa c  2 016	6
+#bccc 15	b ccc  1 5	6
+#icc 4israel	icc  4 i sr a el	6
+#alllivesmatter 2016	all lives matter  2016	6
+#makepeacein 5words	makepeace in  5 words	6
+#bb 4sp	bb  4 sp	6
+#letr 2jil	let r 2j il	6
+#boycottstarwars 7	boy cott star wars  7	6
+#ww 2	ww  2	6
+#veday 70	ve day  7 0	6
+#ces 2015	ces  2 0 1 5	6
+#stopgamergate 2014	stop ga mer gate  2014	6
+#auschwitz 70	auschwitz  70	6
+#sb 50	sb  5 0	6
+#whitepower 101muslim	white power  101 muslim	6
+#vote 4david	vote  4 david	6
+#sb 50	sb  5 0	6
+#no 2antisemitism	no  2 a nt is emitism	6
+#thisisopression 86	this i so press ion  86	6
+#elxn 42	el xn  4 2	6
+#jadehelm 15	jade he lm  15	6
+#aipac 2015	a i pa c  2 015	6
+#pc 2015	pc  2 0 1 5	6
+#ces 2015	ces  2 0 1 5	6
+#ufc 194	ufc  1 9 4	6
+#yeezyseason 3	ye ezy se a son  3	6
+#ces 2015	ces  2 0 1 5	6
+#snl 40	snl  4 0	6
+#john 18	john  18	6
+#jo 6pack	jo  6 pack	6
+#unresolution 260	un re sol uti on  260	6
+#ic 1	i c  1	6
+#i 2	i  2	6
+#twmk 1	twmk  1	6
+#whatibelievein 5words	what i believe in  5 words	6
+#bgeeks 14	bg eeks  1 4	6
+#rom 10	r om  1 0	6
+#wastehistime 2016	waste his time  2016	6
+#sims 3	sims  3	6
+#votoa 16anni	voto a  16 anni	6
+#icc 4israel	icc  4 i sr a el	6
+#azabbgic 2016	a zabbgic  2 0 1 6	6
+#wprf 2016	wp rf  2 0 1 6	6
+#unresolution 260	un re sol uti on  260	6
+#biblequizvol 16	bible quiz vol  16	6
+#ic 1	i c  1	6
+#wrecreation 2017	wrec re a ti on  2017	6
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#whitelivesmatter 2	white lives matter  2	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#jewishhistory 101	jew i shh is tory  101	6
+#muharram 10	muharram  10	6
+#springbreakin 4words	spring break in  4 words	6
+#badideain 5words	bad ide a in  5 words	6
+#oscars 2016	os cars  2016	6
+#describeyourselfin 3words	describe yourself in  3 words	6
+#bushdid 911	bush did  911	6
+#like 3mexicans	like  3 mexicans	6
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#1069 The Arrow	1069 The Arrow	0
+#World Series Game 3	World Series Game 3	0
+#2for 5	2 for  5	6
+#vote 5sos	vote  5 sos	6
+#Justice 4 Mike Brown	Justice 4 Mike Brown	0
+#Elite 8	 elite  8	6
+#Sweet 16	 sweet  16	6
+#askim 5	a skim  5	6
+#TDF 12	 tdf  1 2	6
+#World Cup 2014	World Cup 2014	0
+#TNG Season 4 Finale	TNG Season 4 Finale	0
+#pr 20chat	pr  2 0 chat	6
+#Honda 200	 hon da  200	6
+#big 10	big  10	6
+#Election 2014	 elect i on  2014	6
+#MAVTV 500	 ma v tv  5 0 0	6
+#World Series Game 6	World Series Game 6	0
+#4th of July Fly	4th of July Fly	0
+#Go Stamps Go 84	Go Stamps Go 84	0
+#big 10	big  10	6
+#EMA Biggest Fans 1D	EMA Biggest Fans 1D	0
+#big 10	big  10	6
+#game 7	ga me  7	6
+#CPAC 2014	 cp ac  2 0 1 4	6
+#Election 2014	 elect i on  2014	6
+#Election 2014	 elect i on  2014	6
+#DSN 50	 dsn  5 0	6
+#TN 6	 tn  6	6
+#Red 2 Blue	Red 2 Blue	0
+#15 ThingsI Love	15 ThingsI Love	0
+#GTVT 1	 g tv t  1	6
+#The Oscars 2014	The Oscars 2014	0
+#signedtothestreets 2	signed to the streets  2	6
+#EMA Biggest Fans 1D	EMA Biggest Fans 1D	0
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#CORE 4	 core  4	6
+#wvnextin 6	wv next in  6	6
+#ML Bthe Show 12	ML Bthe Show 12	0
+#booty 4ever	booty  4 ever	6
+#Esurance Save 30	Esurance Save 30	0
+#RE 2 PECT	RE 2 PECT	0
+#Browns 2014 Draft	Browns 2014 Draft	0
+#worldcup 2014	world cup  2014	6
+#Geale Mundine 2	Geale Mundine 2	0
+#big 10	big  10	6
+#n Wo 4 Fucking Life	n Wo 4 Fucking Life	0
+#n Wo 4 Life	n Wo 4 Life	0
+#n Wo 4 Life	n Wo 4 Life	0
+#N 16	n  1 6	6
+#docog 1	do cog  1	6
+#AIPAC 2016	 a i pa c  2 016	6
+#Indy 500	 in dy  5 0 0	6
+#m 21	m  2 1	6
+#Memorial Day 2016	Memorial Day 2016	0
+#libertarian 4lyfe	liber tar i a n 4ly fe	6
+#ICC 4 Israel	ICC 4 Israel	0
+#Baltimoe 6	 bal ti mo e  6	6
+#Ramadan 2015	 ram a dan  2015	6
+#IC 1	 i c  1	6
+#Moi Moche Et Mechant 2	Moi Moche Et Mechant 2	0
+#Gods Not Dead 2	Gods Not Dead 2	0
+#Rio 2016	 rio  2016	6
+#cruz 2016	cruz  2016	6
+#Offend Everyone In 4 Words	Offend Everyone In 4 Words	0
+#IC 1	 i c  1	6
+#UKIP 100 Days	UKIP 100 Days	0
+#Marchfor Life 2015	Marchfor Life 2015	0
+#What Is Love In 4 Words	What Is Love In 4 Words	0
+#Andrew Marr 9	Andrew Marr 9	0
+#M 21	m  2 1	6
+#Trump 16	 trump  16	6
+#3rd  World Immivasion	3rd  World Immivasion	0
+#No Go Zones 4 Whites	No Go Zones 4 Whites	0
+#D Day 70	D Day 70	0
+#CCSUD Day 70	CCSUD Day 70	0
+#SALT 2014	 salt  2014	6
+#U Nresolution 260	U Nresolution 260	0
+#Unresolution 260	 un re sol uti on  260	6
+#M 21	m  2 1	6
+#cpac 2015	cp ac  2 0 1 5	6
+#BBCAN 3	 bbc an  3	6
+#Spring Break In 4 Words	Spring Break In 4 Words	0
+#My 2 Word Nightmare	My 2 Word Nightmare	0
+#CommitA Crime In 5 Words	CommitA Crime In 5 Words	0
+#Tips For Year 7s	Tips For Year 7s	0
+#Fix Whats Broken In 5 Words	Fix Whats Broken In 5 Words	0
+#LabourC 4	 lab our c  4	6
+#M 21	m  2 1	6
+#My 4 Word Motto	My 4 Word Motto	0
+#California 4 Trump	California 4 Trump	0
+#cruz 2016	cruz  2016	6
+#trump 20	trump  20	6
+#Cruz Carly 2016	Cruz Carly 2016	0
+#2nd amendment	2nd  amendment	2
+#AIPAC 2016	 a i pa c  2 016	6
+#U Nresolution 26	U Nresolution 26	0
+#Cancel Plans In 5 Words	Cancel Plans In 5 Words	0
+#WhatI Hate In 5 Words	WhatI Hate In 5 Words	0
+#White GeN 0cide	White GeN 0cide	0
+#pride TO 100	pride TO 100	0
+#IC 1	 i c  1	6
+#Rio Olympic 2016	Rio Olympic 2016	0
+#MH 17	 mh  1 7	6
+#Pride 2016	 pride  2016	6
+#1st A	1st  a	2
+#C 4news	c  4 news	6
+#kickoff 2014	kick off  2014	6
+#Auschwitz 70	 auschwitz  70	6
+#cut 4zayn	cut  4 zayn	6
+#becauseits 1984	bec a use its  1984	6
+#freethunderf 00t	free thunder f 00t	6
+#Nice 06	 nice  06	6
+#WW 2	 ww  2	6
+#Justice 4 Jamar	Justice 4 Jamar	0
+#pjmbk 15	pjmbk  1 5	6
+#UFC 198	 ufc  1 9 8	6
+#i OS 83	i OS 83	0
+#Queenat 90	 queen at  90	6
+#Stop Gamer Gate 2014	Stop Gamer Gate 2014	0
+#Queens 90th  Birthday	Queens 90th  Birthday	0
+#Define GO Pin 3words	Define GO Pin 3words	0
+#Waste His Time 2016	Waste His Time 2016	0
+#CPAC 2015	 cp ac  2 0 1 5	6
+#Brazil 2014	 brazil  2014	6
+#europe 2015	europe  2015	6
+#standup 4kids	stand up  4 kids	6
+#UKIP 15	 uk i p  1 5	6
+#1 Samuel 2	1 Samuel 2	0
+#CEO 2016	 ceo  2 0 1 6	6
+#N 16	n  1 6	6
+#Bush Did 911	Bush Did 911	0
+#c 4news	c  4 news	6
+#Feminists 4 Gamer Gate	Feminists 4 Gamer Gate	0
+#E 32016	e  3 2 0 1 6	6
+#My 6 Word Opinion	My 6 Word Opinion	0
+#D L_ Sexy Nana By Pojes 7	D L_ Sexy Nana By Pojes 7	0
+#E 32016	e  3 2 0 1 6	6
+#XboxE 3	 x box e  3	6
+#E 32016	e  3 2 0 1 6	6
+#SonyE 3	 son ye  3	6
+#V 4	v  4	6
+#U Nresolution 260	U Nresolution 260	0
+#getblockedin 5words	get blocked in  5 words	6
+#ICC 4 Israel	ICC 4 Israel	0
+#Best Fandom 2014	Best Fandom 2014	0
+#We Are The 75 Percent	We Are The 75 Percent	0
+#goback 2africa	go back  2 afric a	6
+#WW 3	 ww  3	6
+#10- 1	1 0 -  1	6
+#0- 5	0 -  5	6
+#whitelivesmatter 2015	white lives matter  2015	6
+#ssww 2	ss ww  2	6
+#WW 2	 ww  2	6
+#BI Gin 2015	BI Gin 2015	0
+#White Genocide 2016	White Genocide 2016	0
+#NSM 88	 nsm  8 8	6
+#news 9	news  9	6
+#Mighty No 9	Mighty No 9	0
+#blizzard 2016	blizzard  2016	6
+#Feminists 4 Gamer Gate	Feminists 4 Gamer Gate	0
+#Get Millennials To Vote In 5 Words	Get Millennials To Vote In 5 Words	0
+#AGU 15	 a gu  1 5	6
+#h 102f 15	h 102f 15	0
+#Oscars 2016	 os cars  2016	6
+#Theatre 2016	 the at re  2016	6
+#Jewish History 101	Jewish History 101	0
+#Marrakesh 2016	 marr a ke sh  2016	6
+#One Piece 830	One Piece 830	0
+#WW 2	 ww  2	6
+#Truth For The Fallen 44	Truth For The Fallen 44	0
+#Daytona 500	 day to na  500	6
+#clips 4sale	clips  4 sale	6
+#21st  Century	21st  Century	0
+#Twitter 10k	 twit ter  1 0 k	6
+#UbiE 3	 ub ie  3	6
+#Unity 4 Malaysia	Unity 4 Malaysia	0
+#U Nresolution 260	U Nresolution 260	0
+#Excuses For The Crime In 5 Words	Excuses For The Crime In 5 Words	0
+#amst 2001	a ms t  2 0 01	6
+#Euro 2016 Final	Euro 2016 Final	0
+#U Nresolution 260	U Nresolution 260	0
+#xz 7	xz  7	6
+#2nd  Amendment	2nd  Amendment	0
+#Credit 0bama	 credit  0 bam a	6
+#vaalit 2015	va a lit  2015	6
+#Make Peace In 5 Words	Make Peace In 5 Words	0
+#IC 1	 i c  1	6
+#IC 2	 i c  2	6
+#Sochi 2014	 so chi  2014	6
+#PAC 12 Championship	PAC 12 Championship	0
+#BF 4 Is Dead	BF 4 Is Dead	0
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#ww 2	ww  2	6
+#chsnight 16	chs night  1 6	6
+#Stand 4 Israel	Stand 4 Israel	0
+#SALT 2015	 salt  2015	6
+#M 21	m  2 1	6
+#If Twitter Only Had 50 Year Olds	If Twitter Only Had 50 Year Olds	0
+#CommitA Crime In 5 Words	CommitA Crime In 5 Words	0
+#after 9	after  9	6
+#cruz 2016	cruz  2016	6
+#Trump 16	 trump  16	6
+#Greet The Aliens In 5 Words	Greet The Aliens In 5 Words	0
+#UKIP 100 Days	UKIP 100 Days	0
+#S Ctop 10	S Ctop 10	0
+#WW 2	 ww  2	6
+#m 21	m  2 1	6
+#pray 4nicki	pray  4 nick i	6
+#Trump 2016's	 trump  2016 's	6
+#Pray 4 Gaza	Pray 4 Gaza	0
+#2nd  Amendment	2nd  Amendment	0
+#Mighty No 9	Mighty No 9	0
+#like 2	like  2	6
+#GazaJ 19	 ga z aj  1 9	6
+#Muharram 10	 muharram  10	6
+#rethink 2014	re think  2014	6
+#Because Its 2016	Because Its 2016	0
+#STOPBEANERS 2014	 stop be a ne rs  2014	6
+#NN 15	 nn  1 5	6
+#WWDC 15	 ww dc  1 5	6
+#BB 17	 bb  1 7	6
+#GH 2015	 gh  2 0 1 5	6
+#CEO 2016	 ceo  2 0 1 6	6
+#AIPAC 2016	 a i pa c  2 016	6
+#BCCC 15	 b ccc  1 5	6
+#ICC 4 Israel	ICC 4 Israel	0
+#ALLLIVESMATTER 2016	 all lives matter  2016	6
+#Make Peace In 5 Words	Make Peace In 5 Words	0
+#BB 4 SP	BB 4 SP	0
+#Letr 2 Jil	Letr 2 Jil	0
+#Boycott Star Wars 7	Boycott Star Wars 7	0
+#ww 2	ww  2	6
+#VE Day 70	VE Day 70	0
+#CES 2015	 ces  2 0 1 5	6
+#Stop Gamer Gate 2014	Stop Gamer Gate 2014	0
+#Auschwitz 70	 auschwitz  70	6
+#SB 50	 sb  5 0	6
+#whitepower 101 Muslim	whitepower 101 Muslim	0
+#Vote 4 David	Vote 4 David	0
+#SB 50	 sb  5 0	6
+#No 2 Antisemitism	No 2 Antisemitism	0
+#This Is Opression 86	This Is Opression 86	0
+#elxn 42	el xn  4 2	6
+#Jade Helm 15	Jade Helm 15	0
+#AIPAC 2015	 a i pa c  2 015	6
+#PC 2015	 pc  2 0 1 5	6
+#CES 2015	 ces  2 0 1 5	6
+#UFC 194	 ufc  1 9 4	6
+#Yeezy Season 3	Yeezy Season 3	0
+#CES 2015	 ces  2 0 1 5	6
+#SNL 40	 snl  4 0	6
+#John 18	 john  18	6
+#jo 6 Pack	jo 6 Pack	0
+#U Nresolution 260	U Nresolution 260	0
+#IC 1	 i c  1	6
+#i 2	i  2	6
+#twmk 1	twmk  1	6
+#WhatI Believe In 5 Words	WhatI Believe In 5 Words	0
+#bgeeks 14	bg eeks  1 4	6
+#Rom 10	 r om  1 0	6
+#Waste His Time 2016	Waste His Time 2016	0
+#sims 3	sims  3	6
+#votoa 16anni	voto a  16 anni	6
+#ICC 4 Israel	ICC 4 Israel	0
+#AZABBGIC 2016	 a zabbgic  2 0 1 6	6
+#WPRF 2016	 wp rf  2 0 1 6	6
+#U Nresolution 260	U Nresolution 260	0
+#BIBLEQUIZVOL 16	 bible quiz vol  16	6
+#IC 1	 i c  1	6
+#WRE Creation 2017	WRE Creation 2017	0
+#IC 1	 i c  1	6
+#IC 2	 i c  2	6
+#whitelivesmatter 2	white lives matter  2	6
+#If Twitter Only Had 50 Year Olds	If Twitter Only Had 50 Year Olds	0
+#Jewish History 101	Jewish History 101	0
+#Muharram 10	 muharram  10	6
+#Spring Break In 4 Words	Spring Break In 4 Words	0
+#Bad Idea In 5 Words	Bad Idea In 5 Words	0
+#Oscars 2016	 os cars  2016	6
+#Describe Yourself In 3 Words	Describe Yourself In 3 Words	0
+#Bush Did 911	Bush Did 911	0
+#like 3mexicans	like  3 mexicans	6
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#1069th earrow	106 9th  ear row	4
+#worldseriesgame 3	world series ga me  3	6
+#2for 5	2 for  5	6
+#vote 5sos	vote  5 sos	6
+#justice 4mikebrown	just ice  4 mike brown	6
+#elite 8	elite  8	6
+#sweet 16	sweet  16	6
+#askim 5	a skim  5	6
+#tdf 12	tdf  1 2	6
+#worldcup 2014	world cup  2014	6
+#tngseason 4finale	tng se a son  4 finale	6
+#pr 20chat	pr  2 0 chat	6
+#honda 200	hon da  200	6
+#big 10	big  10	6
+#election 2014	elect i on  2014	6
+#mavtv 500	ma v tv  5 0 0	6
+#worldseriesgame 6	world series ga me  6	6
+#4th ofjulyfly	4th  of july fly	4
+#gostampsgo 84	go stamps go  84	6
+#big 10	big  10	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#big 10	big  10	6
+#game 7	ga me  7	6
+#cpac 2014	cp ac  2 0 1 4	6
+#election 2014	elect i on  2014	6
+#election 2014	elect i on  2014	6
+#dsn 50	dsn  5 0	6
+#tn 6	tn  6	6
+#red 2blue	red  2 blue	6
+#15th ingsilove	1 5th  ing si love	5
+#gtvt 1	g tv t  1	6
+#theoscars 2014	the os cars  2014	6
+#signedtothestreets 2	signed to the streets  2	6
+#emabiggestfans 1d	em a big gest fans  1d	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#vote 5sos	vote  5 sos	6
+#core 4	core  4	6
+#wvnextin 6	wv next in  6	6
+#mlbtheshow 12	mlb the show  12	6
+#booty 4ever	booty  4 ever	6
+#esurancesave 30	e sur ance save  3 0	6
+#re 2pect	re  2 pe ct	6
+#browns 2014draft	brown s  2014 dr a ft	6
+#worldcup 2014	world cup  2014	6
+#gealemundine 2	ge al em un dine  2	6
+#big 10	big  10	6
+#nwo 4fuckinglife	nw o  4 fuck ing life	6
+#nwo 4life	nw o  4 li fe	6
+#nwo 4life	nw o  4 li fe	6
+#n 16	n  1 6	6
+#docog 1	do cog  1	6
+#aipac 2016	a i pa c  2 016	6
+#indy 500	in dy  5 0 0	6
+#m 21	m  2 1	6
+#memorialday 2016	mem or i al day  2016	6
+#libertarian 4lyfe	liber tar i a n 4ly fe	6
+#icc 4israel	icc  4 i sr a el	6
+#baltimoe 6	bal ti mo e  6	6
+#ramadan 2015	ram a dan  2015	6
+#ic 1	i c  1	6
+#moimocheetmechant 2	mo i mocheetmech a nt  2	6
+#godsnotdead 2	gods not dead  2	6
+#rio 2016	rio  2016	6
+#cruz 2016	cruz  2016	6
+#offendeveryonein 4words	of fend everyone in  4 words	6
+#ic 1	i c  1	6
+#ukip 100days	uk i p  1 00 days	6
+#marchforlife 2015	march for life  2015	6
+#whatislovein 4words	what is love in  4 words	6
+#andrewmarr 9	an drew marr  9	6
+#m 21	m  2 1	6
+#trump 16	trump  16	6
+#3rd worldimmivasion	3rd  world immiv a si on	6
+#nogozones 4whites	no go zones  4 whites	6
+#dday 70	d day  7 0	6
+#ccsudday 70	ccsud day  7 0	6
+#salt 2014	salt  2014	6
+#unresolution 260	un re sol uti on  260	6
+#unresolution 260	un re sol uti on  260	6
+#m 21	m  2 1	6
+#cpac 2015	cp ac  2 0 1 5	6
+#bbcan 3	bbc an  3	6
+#springbreakin 4words	spring break in  4 words	6
+#my 2wordnightmare	my  2 word night mare	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#tipsforyear 7s	tips for ye a r 7s	6
+#fixwhatsbrokenin 5words	fix whats broken in  5 words	6
+#labourc 4	lab our c  4	6
+#m 21	m  2 1	6
+#my 4wordmotto	my  4 word mot to	6
+#california 4trump	california  4 trump	6
+#cruz 2016	cruz  2016	6
+#trump 20	trump  20	6
+#cruzcarly 2016	cruz car ly  2 0 16	6
+#2nd amendment	2nd  amendment	2
+#aipac 2016	a i pa c  2 016	6
+#unresolution 26	un re sol uti on  26	6
+#cancelplansin 5words	cancel plans in  5 words	6
+#whatihatein 5words	what i hate in  5 words	6
+#whitegen 0cide	white gen  0 c i de	6
+#prideto 100	pride to  100	6
+#ic 1	i c  1	6
+#rioolympic 2016	rio olympic  2016	6
+#mh 17	mh  1 7	6
+#pride 2016	pride  2016	6
+#1st a	1st  a	2
+#c 4news	c  4 news	6
+#kickoff 2014	kick off  2014	6
+#auschwitz 70	auschwitz  70	6
+#cut 4zayn	cut  4 zayn	6
+#becauseits 1984	bec a use its  1984	6
+#freethunderf 00t	free thunder f 00t	6
+#nice 06	nice  06	6
+#ww 2	ww  2	6
+#justice 4jamar	just ice  4 ja mar	6
+#pjmbk 15	pjmbk  1 5	6
+#ufc 198	ufc  1 9 8	6
+#ios 83	i os  83	6
+#queenat 90	queen at  90	6
+#stopgamergate 2014	stop ga mer gate  2014	6
+#queens 90th birthday	queens 90th birthday	0
+#definegopin 3words	define gop in  3 words	6
+#wastehistime 2016	waste his time  2016	6
+#cpac 2015	cp ac  2 0 1 5	6
+#brazil 2014	brazil  2014	6
+#europe 2015	europe  2015	6
+#standup 4kids	stand up  4 kids	6
+#ukip 15	uk i p  1 5	6
+#1samuel 2	1 samuel  2	6
+#ceo 2016	ceo  2 0 1 6	6
+#n 16	n  1 6	6
+#bushdid 911	bush did  911	6
+#c 4news	c  4 news	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#e 32016	e  3 2 0 1 6	6
+#my 6wordopinion	my  6 word opinion	6
+#dl_sexynanabypojes 7	dl_sexyn an a by po jes 7	6
+#e 32016	e  3 2 0 1 6	6
+#xboxe 3	x box e  3	6
+#e 32016	e  3 2 0 1 6	6
+#sonye 3	son ye  3	6
+#v 4	v  4	6
+#unresolution 260	un re sol uti on  260	6
+#getblockedin 5words	get blocked in  5 words	6
+#icc 4israel	icc  4 i sr a el	6
+#bestfandom 2014	best fandom  2014	6
+#wearethe 75percent	we a re the  75 percent	6
+#goback 2africa	go back  2 afric a	6
+#ww 3	ww  3	6
+#10- 1	1 0 -  1	6
+#0- 5	0 -  5	6
+#whitelivesmatter 2015	white lives matter  2015	6
+#ssww 2	ss ww  2	6
+#ww 2	ww  2	6
+#bigin 2015	big in  2015	6
+#whitegenocide 2016	white genocide  2016	6
+#nsm 88	nsm  8 8	6
+#news 9	news  9	6
+#mightyno 9	mighty no  9	6
+#blizzard 2016	blizzard  2016	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#getmillennialstovotein 5words	getmillennials to vote in  5 words	6
+#agu 15	a gu  1 5	6
+#h 102f 15	h 102f 15	0
+#oscars 2016	os cars  2016	6
+#theatre 2016	the at re  2016	6
+#jewishhistory 101	jew i shh is tory  101	6
+#marrakesh 2016	marr a ke sh  2016	6
+#onepiece 830	one piece  830	6
+#ww 2	ww  2	6
+#truthforthefallen 44	truth for the fallen  44	6
+#daytona 500	day to na  500	6
+#clips 4sale	clips  4 sale	6
+#21st century	2 1st  century	3
+#twitter 10k	twit ter  1 0 k	6
+#ubie 3	ub ie  3	6
+#unity 4malaysia	unity  4 ma lays i a	6
+#unresolution 260	un re sol uti on  260	6
+#excusesforthecrimein 5words	excuses for the crime in  5words	6
+#amst 2001	a ms t  2 0 01	6
+#euro 2016final	eu ro  2 0 16 final	6
+#unresolution 260	un re sol uti on  260	6
+#xz 7	xz  7	6
+#2nd amendment	2nd  amendment	2
+#credit 0bama	credit  0 bam a	6
+#vaalit 2015	va a lit  2015	6
+#makepeacein 5words	makepeace in  5 words	6
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#sochi 2014	so chi  2014	6
+#pac 12championship	pa c 12ch amp i on ship	6
+#bf 4isdead	bf  4 is de ad	6
+#feminists 4gamergate	fe min ists 4g a mer gate	6
+#ww 2	ww  2	6
+#chsnight 16	chs night  1 6	6
+#stand 4israel	stand  4 i sr a el	6
+#salt 2015	salt  2015	6
+#m 21	m  2 1	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#commitacrimein 5words	commit a crime in  5 words	6
+#after 9	after  9	6
+#cruz 2016	cruz  2016	6
+#trump 16	trump  16	6
+#greetthealiensin 5words	greet the aliens in  5 words	6
+#ukip 100days	uk i p  1 00 days	6
+#sctop 10	sc top  1 0	6
+#ww 2	ww  2	6
+#m 21	m  2 1	6
+#pray 4nicki	pray  4 nick i	6
+#trump 2016's	trump  2016 's	6
+#pray 4gaza	pray  4 ga z a	6
+#2nd amendment	2nd  amendment	2
+#mightyno 9	mighty no  9	6
+#like 2	like  2	6
+#gazaj 19	ga z aj  1 9	6
+#muharram 10	muharram  10	6
+#rethink 2014	re think  2014	6
+#becauseits 2016	bec a use its  2016	6
+#stopbeaners 2014	stop be a ne rs  2014	6
+#nn 15	nn  1 5	6
+#wwdc 15	ww dc  1 5	6
+#bb 17	bb  1 7	6
+#gh 2015	gh  2 0 1 5	6
+#ceo 2016	ceo  2 0 1 6	6
+#aipac 2016	a i pa c  2 016	6
+#bccc 15	b ccc  1 5	6
+#icc 4israel	icc  4 i sr a el	6
+#alllivesmatter 2016	all lives matter  2016	6
+#makepeacein 5words	makepeace in  5 words	6
+#bb 4sp	bb  4 sp	6
+#letr 2jil	let r 2j il	6
+#boycottstarwars 7	boy cott star wars  7	6
+#ww 2	ww  2	6
+#veday 70	ve day  7 0	6
+#ces 2015	ces  2 0 1 5	6
+#stopgamergate 2014	stop ga mer gate  2014	6
+#auschwitz 70	auschwitz  70	6
+#sb 50	sb  5 0	6
+#whitepower 101muslim	white power  101 muslim	6
+#vote 4david	vote  4 david	6
+#sb 50	sb  5 0	6
+#no 2antisemitism	no  2 a nt is emitism	6
+#thisisopression 86	this i so press ion  86	6
+#elxn 42	el xn  4 2	6
+#jadehelm 15	jade he lm  15	6
+#aipac 2015	a i pa c  2 015	6
+#pc 2015	pc  2 0 1 5	6
+#ces 2015	ces  2 0 1 5	6
+#ufc 194	ufc  1 9 4	6
+#yeezyseason 3	ye ezy se a son  3	6
+#ces 2015	ces  2 0 1 5	6
+#snl 40	snl  4 0	6
+#john 18	john  18	6
+#jo 6pack	jo  6 pack	6
+#unresolution 260	un re sol uti on  260	6
+#ic 1	i c  1	6
+#i 2	i  2	6
+#twmk 1	twmk  1	6
+#whatibelievein 5words	what i believe in  5 words	6
+#bgeeks 14	bg eeks  1 4	6
+#rom 10	r om  1 0	6
+#wastehistime 2016	waste his time  2016	6
+#sims 3	sims  3	6
+#votoa 16anni	voto a  16 anni	6
+#icc 4israel	icc  4 i sr a el	6
+#azabbgic 2016	a zabbgic  2 0 1 6	6
+#wprf 2016	wp rf  2 0 1 6	6
+#unresolution 260	un re sol uti on  260	6
+#biblequizvol 16	bible quiz vol  16	6
+#ic 1	i c  1	6
+#wrecreation 2017	wrec re a ti on  2017	6
+#ic 1	i c  1	6
+#ic 2	i c  2	6
+#whitelivesmatter 2	white lives matter  2	6
+#iftwitteronlyhad 50yearolds	i ft witter only had  50yearolds	6
+#jewishhistory 101	jew i shh is tory  101	6
+#muharram 10	muharram  10	6
+#springbreakin 4words	spring break in  4 words	6
+#badideain 5words	bad ide a in  5 words	6
+#oscars 2016	os cars  2016	6
+#describeyourselfin 3words	describe yourself in  3 words	6
+#bushdid 911	bush did  911	6
+#like 3mexicans	like  3 mexicans	6
