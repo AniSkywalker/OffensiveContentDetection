@@ -543,8 +543,7 @@ def parsedata(lines, word_list, split_word_list, emoji_dict, abbreviation_dict, 
 
             # tweet text
             target_text = TweetTokenizer().tokenize(token[2].strip())
-            if (at_character):
-                target_text = [c for c in token[2].strip()]
+
 
             if (n_grams != None):
                 n_grams_list = list(create_ngram_set(target_text, ngram_value=n_grams))
@@ -555,6 +554,9 @@ def parsedata(lines, word_list, split_word_list, emoji_dict, abbreviation_dict, 
                                       normalize_text,
                                       split_hashtag,
                                       ignore_profiles, replace_emoji=replace_emoji)
+            # split at character
+            if (at_character):
+                target_text = [c for c in ' '.join(target_text)]
 
             # awc dimensions
             dimensions = []
