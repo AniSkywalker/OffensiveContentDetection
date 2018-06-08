@@ -1,4 +1,5 @@
 import sys
+
 sys.path.append('../')
 
 import gensim
@@ -10,23 +11,18 @@ import numpy
 from nltk.tokenize import TweetTokenizer
 import src.data_processing.glove2Word2vecLoader as glove
 import itertools
+import pandas
 
 
-
-def load_word2vec(lang = 'en',path='/home/word2vec/GoogleNews-vectors-negative300.bin'):
+def load_word2vec(lang='en', path='/home/word2vec/GoogleNews-vectors-negative300.bin'):
     word2vecmodel = None
-    if(lang=='en'):
+    if (lang == 'en'):
         word2vecmodel = KeyedVectors.load_word2vec_format(path, binary=True)
-    if(lang=='de'):
+    if (lang == 'de'):
         word2vecmodel = KeyedVectors.load_word2vec_format('/home/word2vec/german_word2vec.bin', binary=True)
 
     return word2vecmodel
 
-def InitializeWords(word_file_path):
-    words=set()
-    content = open(word_file_path).readlines()
-    words.update([word for word in content])
-    return words
 
 def normalize_word(word):
     temp = word
@@ -37,6 +33,7 @@ def normalize_word(word):
         else:
             temp = w
     return w
+
 
 def split_ht(term, wordlist):
     words = []
@@ -57,399 +54,6 @@ def split_ht(term, wordlist):
                 j = loc
     words = ["#" + str(s) for s in words]
     return words
-
-def filter_text(text, word_list, normalize_text=False, split_hashtag=False, ignore_profiles=False):
-    filtered_text = []
-    # print(text)
-    for t in text:
-        splits=None
-        if(ignore_profiles and str(t).startswith("@")):
-            continue
-        if(str(t).startswith('http')):
-            continue
-        if (str(t).lower() == '#sarcasm'):
-            continue
-        #removes repeatation of letters
-        if (normalize_text):
-            t = normalize_word(t)
-        if (split_hashtag and str(t).startswith("#")):
-            splits = split_ht(t, word_list)
-
-        #appends the text
-        filtered_text.append(t)
-        if (splits != None):
-            filtered_text.extend([s for s in splits if (not filtered_text.__contains__(s))])
-    return filtered_text
-
-def parsedata(lines, word_list, normalize_text=False, split_hashtag=False, ignore_profiles=False):
-    data = []
-    for line in lines:
-        try:
-            token = line.split('\t')
-            # print(line)
-
-            if(len(token)<3):
-                print('invalid input::',line)
-                continue
-
-            label = int(token[1].strip())
-
-            target_text = TweetTokenizer().tokenize(token[2].strip())
-
-            # filter text
-            target_text = filter_text(target_text, word_list, normalize_text, split_hashtag, ignore_profiles)
-            # print(filtered_text)
-
-
-            dimensions= []
-            if(len(token)>3 and token[3].strip()!='NA'):
-                dimensions = [dimension.split('@@')[1] for dimension in token[3].strip().split('|')]
-
-            context = []
-            if(len(token)>4):
-                if(token[4]!='NA'):
-                    context = TweetTokenizer().tokenize(token[4].strip())
-                    context = filter_text(context, word_list, normalize_text, split_hashtag, ignore_profiles)
-
-            author = 'NA'
-            if(len(token)>5):
-                author=token[5]
-
-            if(len(target_text)!=0):
-                # print((label, target_text, dimensions, context, author))
-                data.append((label, target_text, dimensions, context, author))
-            else:
-                print("Not added=======>", line)
-        except:
-            print('error', line)
-            raise
-
-    return data
-
-def loaddata(filename, word_file_path, normalize_text=False, split_hashtag=False, ignore_profiles=False):
-    word_list = None
-    if (split_hashtag):
-        word_list = InitializeWords(word_file_path)
-
-    print(filename)
-    lines = open(filename,'r').readlines()
-    data = parsedata(lines, word_list, normalize_text=normalize_text, split_hashtag=split_hashtag, ignore_profiles=ignore_profiles)
-    return data
-
-def build_vocab(data):
-    #keep total words for speed
-    vocab = defaultdict(int)
-
-    total_words = 1
-    for i in range(1,101):
-        vocab[str(i)] = total_words
-        total_words = total_words + 1
-
-    for sentence_no, token in enumerate(data):
-        for word in token[1]:
-            if(not word in vocab):
-                vocab[word] = total_words
-                total_words = total_words + 1
-
-        for word in token[2]:
-            if(not word in vocab):
-                vocab[word] = total_words
-                total_words = total_words + 1
-
-        for word in token[3]:
-            if(not word in vocab):
-                vocab[word] = total_words
-                total_words = total_words + 1
-    return vocab
-
-def vectorize_word_dimension(data, vocab, drop_dimension_index = None):
-    X = []
-    Y = []
-    D = []
-    C = []
-    A = []
-
-    for label, line, dimensions, context, author in data:
-        vec=[]
-        context_vec=[]
-        if(len(dimensions)!=0):
-            dvec = [vocab.get(d) for d in dimensions]
-        else:
-            dvec = [vocab.get('unk')]*11
-
-        if drop_dimension_index!=None:
-            for dd in drop_dimension_index:
-                dvec.pop(dd)
-
-        for words in line:
-            if(words in vocab):
-                vec.append(vocab[words])
-            else:
-                vec.append(vocab['unk'])
-        if(len(context)!=0):
-            for words in line:
-                if(words in vocab):
-                    context_vec.append(vocab[words])
-                else:
-                    context_vec.append(vocab['unk'])
-        else:
-            context_vec = [vocab['unk']]
-
-        X.append(vec)
-        Y.append(label)
-        D.append(dvec)
-        C.append(context_vec)
-        A.append(author)
-
-    return numpy.asarray(X), numpy.asarray(Y), numpy.asarray(D), numpy.asarray(C), numpy.asarray(A)
-
-def pad_sequence_1d(sequences, maxlen=None, dtype='float32', padding='pre', truncating='pre', value=0.):
-    X = [vectors for vectors in sequences]
-
-    nb_samples = len(X)
-
-
-    x = (numpy.ones((nb_samples, maxlen)) * value).astype(dtype)
-
-    for idx, s in enumerate(X):
-        if truncating == 'pre':
-            trunc = s[-maxlen:]
-        elif truncating == 'post':
-            trunc = s[:maxlen]
-        else:
-            raise ValueError("Truncating type '%s' not understood" % padding)
-
-        if padding == 'post':
-            x[idx, :len(trunc)] = trunc
-        elif padding == 'pre':
-            x[idx, -len(trunc):] = trunc
-        else:
-            raise ValueError("Padding type '%s' not understood" % padding)
-
-    return x
-
-def write_vocab(filepath,vocab):
-    with open(filepath, 'w') as fw:
-        for key, value in vocab.items():
-            fw.write(str(key) + '\t' + str(value) + '\n')
-
-def get_word2vec_weight(vocab,n=300,lang = 'en', path='/home/word2vec/GoogleNews-vectors-negative300.bin'):
-    word2vecmodel = load_word2vec(lang=lang, path=path)
-    emb_weights= numpy.zeros((len(vocab.keys())+1,n))
-    for k,v in vocab.items():
-        if(word2vecmodel.__contains__(k)):
-            emb_weights[v,:]=word2vecmodel[k][:n]
-
-    return emb_weights
-
-
-def prepare_glove_model(vocab,n=200,path = '/home/glove/glove.twitter.27B/glove.twitter.27B.200d.txt'):
-    word2vecmodel = glove.load_glove_word2vec(path)
-
-    emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
-    for k, v in vocab.items():
-        if (word2vecmodel.__contains__(k)):
-            emb_weights[v, :] = word2vecmodel[k][:n]
-
-    return emb_weights
-
-def get_glove_weights(vocab,n=200,path = '/home/glove/glove.twitter.27B/glove.twitter.27B.200d.txt'):
-    word2vecmodel = gensim.models.KeyedVectors.load_word2vec_format(path, binary=False)
-
-    emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
-    for k, v in vocab.items():
-        if (word2vecmodel.__contains__(k)):
-            emb_weights[v, :] = word2vecmodel[k][:n]
-
-    return emb_weights
-
-
-
-
-
-# loading the emoji dataset
-def load_unicode_mapping(path):
-    emoji_dict = defaultdict()
-    with open(path, 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            tokens = line.strip().split('\t')
-            emoji_dict[tokens[0]] = tokens[1]
-    return emoji_dict
-
-
-def load_word2vec(path=None):
-    word2vecmodel = KeyedVectors.load_word2vec_format(path, binary=True)
-    return word2vecmodel
-
-
-def load_fasttext(path=None):
-    word2vecmodel = FastText.load_fasttext_format(path)
-    return word2vecmodel
-
-
-def InitializeWords(word_file_path):
-    word_dictionary = defaultdict()
-
-    with open(word_file_path, 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            tokens = line.lower().strip().split('\t')
-            word_dictionary[tokens[0]] = int(tokens[1])
-
-    for alphabet in "bcdefghjklmnopqrstuvwxyz":
-        if (alphabet in word_dictionary):
-            word_dictionary.__delitem__(alphabet)
-
-    for word in ['ann', 'assis',
-                 'bz',
-                 'ch', 'cre', 'ct',
-                 'di',
-                 'ed', 'ee',
-                 'ic',
-                 'le',
-                 'ng', 'ns',
-                 'pr', 'picon',
-                 'th', 'tle', 'tl', 'tr',
-                 'um',
-                 've',
-                 'yi'
-                 ]:
-        if (word in word_dictionary):
-            word_dictionary.__delitem__(word)
-
-    return word_dictionary
-
-
-def normalize_word(word):
-    temp = word
-    while True:
-        w = re.sub(r"([a-zA-Z])\1\1", r"\1\1", temp)
-        if (w == temp):
-            break
-        else:
-            temp = w
-    return w
-
-
-def load_split_word(split_word_file_path):
-    split_word_dictionary = defaultdict()
-    with open(split_word_file_path, 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            tokens = line.lower().strip().split('\t')
-            if (len(tokens) >= 2):
-                split_word_dictionary[tokens[0]] = tokens[1]
-
-    # loading local temp file
-    with open('../resource/hastash_split_dump.txt', 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            tokens = line.lower().strip().split('\t')
-            if (len(tokens) >= 2):
-                split_word_dictionary[tokens[0]] = tokens[1]
-
-
-
-
-
-    print('split entry found:', len(split_word_dictionary.keys()))
-    return split_word_dictionary
-
-
-def split_hashtags(term, wordlist, split_word_list, dump_file=''):
-    # print('term::',term)
-
-    if (len(term.strip()) == 1):
-        return ['']
-
-    if (split_word_list != None and term.lower() in split_word_list):
-        # print('found')
-        return split_word_list.get(term.lower()).split(' ')
-    else:
-        print(term)
-
-    # discarding # if exists
-    if (term.startswith('#')):
-        term = term[1:]
-
-    if (wordlist != None and term.lower() in wordlist):
-        return [term.lower()]
-
-    words = []
-    # max freq
-    penalty = -69971
-    max_coverage = penalty
-
-    split_words_count = 6
-    # checking camel cases
-    term = re.sub(r'([0-9]+)', r' \1', term)
-    term = re.sub(r'(1st|2nd|3rd|4th|5th|6th|7th|8th|9th|0th)', r'\1 ', term)
-    term = re.sub(r'([A-Z][^A-Z ]+)', r' \1', term.strip())
-    term = re.sub(r'([A-Z]{2,})+', r' \1', term)
-    words = term.strip().split(' ')
-
-    n_splits = 0
-
-    if (len(words) < 3):
-        # splitting lower case and uppercase words upto 5 words
-        chars = [c for c in term.lower()]
-
-        found_all_words = False
-
-        while (n_splits < split_words_count and not found_all_words):
-            for idx in itertools.combinations(range(0, len(chars)), n_splits):
-                output = numpy.split(chars, idx)
-                line = [''.join(o) for o in output]
-
-                score = (1. / len(line)) * sum(
-                    [wordlist.get(
-                        word.strip()) if word.strip() in wordlist else 0. if word.strip().isnumeric() else penalty for
-                     word in line])
-
-                if (score > max_coverage):
-                    words = line
-                    max_coverage = score
-
-                    ll = []
-
-                    for word in line:
-                        if(word in split_word_list):
-                            ll.extend(split_word_list.get(word))
-                        else:
-                            ll.append(word)
-
-                    # line = ll
-
-                    line_is_valid_word = [word.strip() in wordlist if not word.isnumeric() else True for word in ll]
-
-                    if (all(line_is_valid_word)):
-                        found_all_words = True
-
-                    # uncomment to debug hashtag splitting
-                    # print(line, score, line_is_valid_word)
-
-            n_splits = n_splits + 1
-
-    # removing hashtag sign
-    words = [str(s) for s in words]
-
-    # dumping splits for debug
-    with open(dump_file, 'a') as f:
-        if (term != '' and len(words) > 0):
-            f.write('#'+str(term).strip() + '\t' + ' '.join(words) + '\t' + str(n_splits) + '\n')
-
-    return words
-
-
-def load_abbreviation(path='../resource/abbreviations.txt'):
-    abbreviation_dict = defaultdict()
-    with open(path) as f:
-        lines = f.readlines()
-        for line in lines:
-            token = line.lower().strip().split('\t')
-            abbreviation_dict[token[0]] = token[1]
-    return abbreviation_dict
 
 
 def filter_text(text, word_list, split_word_list, emoji_dict, abbreviation_dict, normalize_text=False,
@@ -516,107 +120,6 @@ def filter_text(text, word_list, split_word_list, emoji_dict, abbreviation_dict,
     return filtered_text
 
 
-def parsedata(lines, word_list, split_word_list, emoji_dict, abbreviation_dict, normalize_text=False,
-              split_hashtag=False,
-              ignore_profiles=False,
-              lowercase=False, replace_emoji=True, n_grams=None, at_character=False):
-    data = []
-    for i, line in enumerate(lines):
-        if (i % 100 == 0):
-            print(str(i) + '...', end='', flush=True)
-
-        try:
-
-            # convert the line to lowercase
-            if (lowercase):
-                line = line.lower()
-
-            # split into token
-            token = line.split('\t')
-            # print(token)
-
-            # ID
-            id = token[0]
-
-            # label
-            label = int(token[1].strip())
-
-            # tweet text
-            target_text = TweetTokenizer().tokenize(token[2].strip())
-
-
-            if (n_grams != None):
-                n_grams_list = list(create_ngram_set(target_text, ngram_value=n_grams))
-                target_text.extend(['_'.join(n) for n in n_grams_list])
-
-            # filter text
-            target_text = filter_text(target_text, word_list, split_word_list, emoji_dict, abbreviation_dict,
-                                      normalize_text,
-                                      split_hashtag,
-                                      ignore_profiles, replace_emoji=replace_emoji)
-            # split at character
-            if (at_character):
-                target_text = [c for c in ' '.join(target_text)]
-
-            # awc dimensions
-            dimensions = []
-            if (len(token) > 3 and token[3].strip() != 'NA'):
-                dimensions = [dimension.split('@@')[1] for dimension in token[3].strip().split('|')]
-
-            # context tweet
-            context = []
-            if (len(token) > 4):
-                if (token[4] != 'NA'):
-                    context = TweetTokenizer().tokenize(token[4].strip())
-                    context = filter_text(context, word_list, split_word_list, emoji_dict, abbreviation_dict,
-                                      normalize_text,
-                                      split_hashtag,
-                                      ignore_profiles, replace_emoji=replace_emoji)
-
-            # author
-            author = 'NA'
-            if (len(token) > 5):
-                author = token[5]
-
-            if (len(target_text) != 0):
-                # print((label, target_text, dimensions, context, author))
-                data.append((id, label, target_text, dimensions, context, author))
-            else:
-                print(line)
-        except:
-            raise
-    print('')
-    return data
-
-
-def loaddata(filename, word_file_path, split_word_path, emoji_file_path, normalize_text=False, split_hashtag=False,
-             ignore_profiles=False,
-             lowercase=True, replace_emoji=True, n_grams=None, at_character=False):
-    word_list = None
-    emoji_dict = None
-
-    # load split files
-    split_word_list = load_split_word(split_word_path)
-
-    # load word dictionary
-    if (split_hashtag):
-        word_list = InitializeWords(word_file_path)
-
-    if (replace_emoji):
-        emoji_dict = load_unicode_mapping(emoji_file_path)
-
-    abbreviation_dict = load_abbreviation()
-
-    lines = open(filename, 'r').readlines()
-    print('data size', len(lines))
-    data = parsedata(lines, word_list, split_word_list, emoji_dict, abbreviation_dict, normalize_text=normalize_text,
-                     split_hashtag=split_hashtag,
-                     ignore_profiles=ignore_profiles, lowercase=lowercase, replace_emoji=replace_emoji,
-                     n_grams=n_grams, at_character=at_character)
-    print('data size', len(data))
-    return data
-
-
 def build_vocab(data, without_dimension=True, ignore_context=False, min_freq=0):
     vocab = defaultdict(int)
     vocab_freq = defaultdict(int)
@@ -625,29 +128,20 @@ def build_vocab(data, without_dimension=True, ignore_context=False, min_freq=0):
     if (not without_dimension):
         for i in range(1, 101):
             vocab_freq[str(i)] = 0
-            # vocab[str(i)] = total_words
-            # total_words = total_words + 1
 
     for sentence_no, token in enumerate(data):
         for word in token[2]:
             if (word not in vocab_freq):
-                # vocab[word] = total_words
-                # total_words = total_words + 1
                 vocab_freq[word] = 0
             vocab_freq[word] = vocab_freq.get(word) + 1
 
         if (not without_dimension):
             for word in token[3]:
-                # if (word not in vocab_freq):
-                #     vocab[word] = total_words
-                #     total_words = total_words + 1
                 vocab_freq[word] = vocab_freq.get(word) + 1
 
         if (ignore_context == False):
             for word in token[4]:
                 if (not word in vocab):
-                    # vocab[word] = total_words
-                    # total_words = total_words + 1
                     vocab_freq[word] = 0
                 vocab_freq[word] = vocab_freq.get(word) + 1
 
@@ -657,13 +151,6 @@ def build_vocab(data, without_dimension=True, ignore_context=False, min_freq=0):
             total_words = total_words + 1
 
     return vocab
-
-
-def build_reverse_vocab(vocab):
-    rev_vocab = defaultdict(str)
-    for k, v in vocab.items():
-        rev_vocab[v] = k
-    return rev_vocab
 
 
 def vectorize_word_dimension(data, vocab, drop_dimension_index=None):
@@ -720,6 +207,7 @@ def vectorize_word_dimension(data, vocab, drop_dimension_index=None):
         C.append(context_vec)
         A.append(author)
 
+
     print('Token coverage:', token_coverage / float(tokens))
     print('Word coverage:', len(known_words_set) / float(len(vocab.keys())))
 
@@ -757,8 +245,8 @@ def write_vocab(filepath, vocab):
             fw.write(str(key) + '\t' + str(value) + '\n')
 
 
-def get_fasttext_weight(vocab, n=300, path=None):
-    word2vecmodel = load_word2vec(path=path)
+def get_word2vec_weight(vocab, n=300, lang='en', path='/home/word2vec/GoogleNews-vectors-negative300.bin'):
+    word2vecmodel = load_word2vec(lang=lang, path=path)
     emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
     for k, v in vocab.items():
         if (word2vecmodel.__contains__(k)):
@@ -767,7 +255,202 @@ def get_fasttext_weight(vocab, n=300, path=None):
     return emb_weights
 
 
-def get_word2vec_weight(vocab, n=300, path=None):
+def prepare_glove_model(vocab, n=200, path='/home/glove/glove.twitter.27B/glove.twitter.27B.200d.txt'):
+    word2vecmodel = glove.load_glove_word2vec(path)
+
+    emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
+    for k, v in vocab.items():
+        if (word2vecmodel.__contains__(k)):
+            emb_weights[v, :] = word2vecmodel[k][:n]
+
+    return emb_weights
+
+
+def get_glove_weights(vocab, n=200, path='/home/glove/glove.twitter.27B/glove.twitter.27B.200d.txt'):
+    word2vecmodel = gensim.models.KeyedVectors.load_word2vec_format(path, binary=False)
+
+    emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
+    for k, v in vocab.items():
+        if (word2vecmodel.__contains__(k)):
+            emb_weights[v, :] = word2vecmodel[k][:n]
+
+    return emb_weights
+
+
+# loading the emoji dataset
+def load_unicode_mapping(path):
+    emoji_dict = defaultdict()
+    with open(path, 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            tokens = line.strip().split('\t')
+            emoji_dict[tokens[0]] = tokens[1]
+    return emoji_dict
+
+
+def load_fasttext(path=None):
+    word2vecmodel = FastText.load_fasttext_format(path)
+    return word2vecmodel
+
+
+def InitializeWords(word_file_path):
+    word_dictionary = defaultdict()
+
+    with open(word_file_path, 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            tokens = line.lower().strip().split('\t')
+            word_dictionary[tokens[0]] = int(tokens[1])
+
+    for alphabet in "bcdefghjklmnopqrstuvwxyz":
+        if (alphabet in word_dictionary):
+            word_dictionary.__delitem__(alphabet)
+
+    for word in ['ann', 'assis',
+                 'bz',
+                 'ch', 'cre', 'ct',
+                 'di',
+                 'ed', 'ee',
+                 'ic',
+                 'le',
+                 'ng', 'ns',
+                 'pr', 'picon',
+                 'th', 'tle', 'tl', 'tr',
+                 'um',
+                 've',
+                 'yi'
+                 ]:
+        if (word in word_dictionary):
+            word_dictionary.__delitem__(word)
+
+    return word_dictionary
+
+
+def load_split_word(split_word_file_path):
+    split_word_dictionary = defaultdict()
+    with open(split_word_file_path, 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            tokens = line.lower().strip().split('\t')
+            if (len(tokens) >= 2):
+                split_word_dictionary[tokens[0]] = tokens[1]
+
+    # loading local temp file
+    with open('../resource/hastash_split_dump.txt', 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            tokens = line.lower().strip().split('\t')
+            if (len(tokens) >= 2):
+                split_word_dictionary[tokens[0]] = tokens[1]
+
+    print('split entry found:', len(split_word_dictionary.keys()))
+    return split_word_dictionary
+
+
+def split_hashtags(term, wordlist, split_word_list, dump_file=''):
+    # print('term::',term)
+
+    if (len(term.strip()) == 1):
+        return ['']
+
+    if (split_word_list != None and term.lower() in split_word_list):
+        # print('found')
+        return split_word_list.get(term.lower()).split(' ')
+    # else:
+    # print(term)
+
+    # discarding # if exists
+    if (term.startswith('#')):
+        term = term[1:]
+
+    if (wordlist != None and term.lower() in wordlist):
+        return [term.lower()]
+
+    words = []
+    # max freq
+    penalty = -69971
+    max_coverage = penalty
+
+    split_words_count = 6
+    # checking camel cases
+    term = re.sub(r'([0-9]+)', r' \1', term)
+    term = re.sub(r'(1st|2nd|3rd|4th|5th|6th|7th|8th|9th|0th)', r'\1 ', term)
+    term = re.sub(r'([A-Z][^A-Z ]+)', r' \1', term.strip())
+    term = re.sub(r'([A-Z]{2,})+', r' \1', term)
+    term = re.sub('_', ' ', term)
+    words = term.strip().split(' ')
+
+    n_splits = 0
+
+    if (len(words) < 3):
+        # splitting lower case and uppercase words upto 5 words
+        chars = [c for c in term.lower()]
+
+        found_all_words = False
+
+        while (n_splits < split_words_count and not found_all_words):
+            for idx in itertools.combinations(range(0, len(chars)), n_splits):
+                output = numpy.split(chars, idx)
+                line = [''.join(o) for o in output]
+
+                score = (1. / len(line)) * sum(
+                    [wordlist.get(
+                        word.strip()) if word.strip() in wordlist else 0. if word.strip().isnumeric() else penalty for
+                     word in line])
+
+                if (score > max_coverage):
+                    words = line
+                    max_coverage = score
+
+                    ll = []
+
+                    for word in line:
+                        if (word in split_word_list):
+                            ll.extend(split_word_list.get(word))
+                        else:
+                            ll.append(word)
+
+                    # line = ll
+
+                    line_is_valid_word = [word.strip() in wordlist if not word.isnumeric() else True for word in ll]
+
+                    if (all(line_is_valid_word)):
+                        found_all_words = True
+
+                    # uncomment to debug hashtag splitting
+                    # print(line, score, line_is_valid_word)
+
+            n_splits = n_splits + 1
+
+    # removing hashtag sign
+    words = [str(s) for s in words]
+
+    # dumping splits for debug
+    with open(dump_file, 'a') as f:
+        if (term != '' and len(words) > 0):
+            f.write('#' + str(term).strip() + '\t' + ' '.join(words) + '\t' + str(n_splits) + '\n')
+
+    return words
+
+
+def load_abbreviation(path='../resource/abbreviations.txt'):
+    abbreviation_dict = defaultdict()
+    with open(path) as f:
+        lines = f.readlines()
+        for line in lines:
+            token = line.lower().strip().split('\t')
+            abbreviation_dict[token[0]] = token[1]
+    return abbreviation_dict
+
+
+def build_reverse_vocab(vocab):
+    rev_vocab = defaultdict(str)
+    for k, v in vocab.items():
+        rev_vocab[v] = k
+    return rev_vocab
+
+
+def get_fasttext_weight(vocab, n=300, path=None):
     word2vecmodel = load_word2vec(path=path)
     emb_weights = numpy.zeros((len(vocab.keys()) + 1, n))
     for k, v in vocab.items():
@@ -851,3 +534,134 @@ def prepare_fasttext(x_train, x_test, max_features=20000, ngram_range=2):
         x_test = add_ngram(x_test, token_indice, ngram_range)
         print('Average train sequence length: {}'.format(numpy.mean(list(map(len, x_train)), dtype=int)))
         print('Average test sequence length: {}'.format(numpy.mean(list(map(len, x_test)), dtype=int)))
+
+
+def parsedata(dataset, word_list, split_word_list, emoji_dict, abbreviation_dict, normalize_text=False,
+              split_hashtag=False,
+              ignore_profiles=False,
+              lowercase=False, replace_emoji=True, n_grams=None, at_character=False):
+    data = []
+
+    columns = list(dataset.columns)
+
+    for i, tuple in enumerate(dataset.itertuples()):
+        # for i, line in enumerate(lines):
+        if (i % 100 == 0):
+            print(str(i) + '...', end='', flush=True)
+
+        try:
+
+            # split into token
+            # token = line.split('\t')
+            # print(token)
+
+            # ID
+            # id = token[0]
+            id = tuple.ID
+
+            # label
+            # label = int(token[1].strip())
+            label = tuple.label
+
+            target_text = tuple.text
+
+            # convert the line to lowercase
+            if (lowercase):
+                target_text = target_text.lower()
+
+            # tweet text
+            # target_text = TweetTokenizer().tokenize(token[2].strip())
+            target_text = TweetTokenizer().tokenize(target_text.strip())
+
+            if (n_grams != None):
+                n_grams_list = list(create_ngram_set(target_text, ngram_value=n_grams))
+                target_text.extend(['_'.join(n) for n in n_grams_list])
+
+            # filter text
+            target_text = filter_text(target_text, word_list, split_word_list, emoji_dict, abbreviation_dict,
+                                      normalize_text,
+                                      split_hashtag,
+                                      ignore_profiles, replace_emoji=replace_emoji)
+            # split at character
+            if (at_character):
+                target_text = [c for c in ' '.join(target_text)]
+
+            # awc dimensions
+            dimensions = []
+            # if (len(token) > 3 and token[3].strip() != 'NA'):
+            #     dimensions = [dimension.split('@@')[1] for dimension in token[3].strip().split('|')]
+            if ('psychological_dimension' in columns and tuple.psychological_dimension.strip() != 'NA'):
+                dimensions = [dimension.split('@@')[1] for dimension in
+                              tuple.psychological_dimension.strip().split('|')]
+
+            # context tweet
+            context = []
+            # if (len(token) > 4):
+            #     if (token[4] != 'NA'):
+            #         context = TweetTokenizer().tokenize(token[4].strip())
+            #         context = filter_text(context, word_list, split_word_list, emoji_dict, abbreviation_dict,
+            #                               normalize_text,
+            #                               split_hashtag,
+            #                               ignore_profiles, replace_emoji=replace_emoji)
+
+            if ('context' in columns):
+                if (tuple.context != 'NA'):
+                    context = tuple.context.strip()
+                    # convert the line to lowercase
+                    if (lowercase):
+                        context = context.lower()
+
+                    context = TweetTokenizer().tokenize(context)
+                    context = filter_text(context, word_list, split_word_list, emoji_dict, abbreviation_dict,
+                                          normalize_text,
+                                          split_hashtag,
+                                          ignore_profiles, replace_emoji=replace_emoji)
+
+            # author
+            author = 'NA'
+            # if (len(token) > 5):
+            #     author = token[5]
+
+            if ('author' in columns):
+                author = tuple.author
+
+            if (len(target_text) != 0):
+                # print((label, target_text, dimensions, context, author))
+                data.append((id, label, target_text, dimensions, context, author))
+            else:
+                print(tuple)
+        except:
+            raise
+    print('')
+    return data
+
+
+def loaddata(filename, word_file_path, split_word_path, emoji_file_path, normalize_text=False, split_hashtag=False,
+             ignore_profiles=False,
+             lowercase=True, replace_emoji=True, n_grams=None, at_character=False):
+    word_list = None
+    emoji_dict = None
+
+    # load split files
+    split_word_list = load_split_word(split_word_path)
+
+    # load word dictionary
+    if (split_hashtag):
+        word_list = InitializeWords(word_file_path)
+
+    if (replace_emoji):
+        emoji_dict = load_unicode_mapping(emoji_file_path)
+
+    abbreviation_dict = load_abbreviation()
+
+    # lines = open(filename, 'r').readlines()
+
+    dataset = pandas.read_csv(filename, sep='\t', index_col=False)
+
+    print('data size', len(dataset))
+    data = parsedata(dataset, word_list, split_word_list, emoji_dict, abbreviation_dict, normalize_text=normalize_text,
+                     split_hashtag=split_hashtag,
+                     ignore_profiles=ignore_profiles, lowercase=lowercase, replace_emoji=replace_emoji,
+                     n_grams=n_grams, at_character=at_character)
+    print('data size', len(data))
+    return data

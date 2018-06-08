@@ -1,11 +1,13 @@
 import os
 import sys
 
+sys.path.append('../')
+
 from keras import Input, Model
 from keras.layers import GlobalMaxPooling1D, GlobalMaxPooling2D
 from keras.layers.normalization import BatchNormalization
 
-sys.path.append('../')
+from src.AttentionLayer import Attention
 import collections
 import time
 import numpy
@@ -22,96 +24,11 @@ from keras.optimizers import Adam
 from keras.utils import np_utils
 from collections import defaultdict
 import src.data_processing.data_handler as dh
+import src.AttentionLayer
 
 from keras import backend as K
 
 numpy.random.seed(1337)
-
-
-class Attention(Layer):
-    def __init__(self,
-                 W_regularizer=None, b_regularizer=None,
-                 W_constraint=None, b_constraint=None,
-                 bias=True, **kwargs):
-        """
-        Keras Layer that implements an Attention mechanism for temporal data.
-        Supports Masking.
-        Follows the work of Raffel et al. [https://arxiv.org/abs/1512.08756]
-        # Input shape
-            3D tensor with shape: `(samples, steps, features)`.
-        # Output shape
-            2D tensor with shape: `(samples, features)`.
-        :param kwargs:
-        Just put it on top of an RNN Layer (GRU/LSTM/SimpleRNN) with return_sequences=True.
-        The dimensions are inferred based on the output shape of the RNN.
-        Note: The layer has been tested with Keras 2.0.6
-        Example:
-            model.add(LSTM(64, return_sequences=True))
-            model.add(Attention())
-            # next add a Dense layer (for classification/regression) or whatever...
-        """
-        self.supports_masking = True
-        self.init = initializers.get('glorot_uniform')
-
-        self.W_regularizer = regularizers.get(W_regularizer)
-        self.b_regularizer = regularizers.get(b_regularizer)
-
-        self.W_constraint = constraints.get(W_constraint)
-        self.b_constraint = constraints.get(b_constraint)
-
-        self.bias = bias
-        super(Attention, self).__init__(**kwargs)
-
-    def build(self, input_shape):
-        assert len(input_shape) == 3
-
-        self.W = self.add_weight((input_shape[-1],),
-                                 initializer=self.init,
-                                 name='{}_W'.format(self.name),
-                                 regularizer=self.W_regularizer,
-                                 constraint=self.W_constraint)
-        if self.bias:
-            self.b = self.add_weight((input_shape[1],),
-                                     initializer='zero',
-                                     name='{}_b'.format(self.name),
-                                     regularizer=self.b_regularizer,
-                                     constraint=self.b_constraint)
-        else:
-            self.b = None
-
-        self.built = True
-
-    def compute_mask(self, input, input_mask=None):
-        # do not pass the mask to the next layers
-        return None
-
-    def call(self, x, mask=None):
-        eij = K.squeeze(K.dot(x, K.expand_dims(self.W)), axis=-1)
-
-        if self.bias:
-            eij += self.b
-
-        eij = K.tanh(eij)
-
-        a = K.exp(eij)
-
-        # apply mask after the exp. will be re-normalized next
-        if mask is not None:
-            # Cast the mask to floatX to avoid float64 upcasting in theano
-            a *= K.cast(mask, K.floatx())
-
-        # in some cases especially in the early stages of training the sum may be almost zero
-        # and this results in NaN's. A workaround is to add a very small positive number ε to the sum.
-        # a /= K.cast(K.sum(a, axis=1, keepdims=True), K.floatx())
-        a /= K.cast(K.sum(a, axis=1, keepdims=True) + K.epsilon(), K.floatx())
-
-        a = K.expand_dims(a)
-
-        weighted_input = x * a
-        return K.sum(weighted_input, axis=1)
-
-    def compute_output_shape(self, input_shape):
-        return (input_shape[0], input_shape[-1])
 
 
 class offensive_content_model():
@@ -134,7 +51,42 @@ class offensive_content_model():
                        batch_size=1):
         print('Build model...')
 
-        text_input = Input(name='text', shape=(self._line_maxlen,))
+        char_input = Input(shape=(self._line_char_maxlen,))
+
+        char_emb = Embedding(char_vocab_size, 25, input_length=self._line_char_maxlen,
+                             embeddings_initializer='glorot_normal',
+                             trainable=True)(char_input)
+
+        # emb = Reshape((int(emb.shape[1]), int(emb.shape[2]), 1))(emb)
+
+        # t_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
+        #                        bias_initializer='he_normal',
+        #                        activation='relu', padding='valid', use_bias=True, input_shape=(1, self._line_maxlen))(
+        #     emb)
+        # t_cnn1 = MaxPooling2D((2, 1))(t_cnn1)
+        # t_cnn1 = Dropout(0.5)(t_cnn1)
+        #
+        # t_cnn1 = Reshape((int(t_cnn1.shape[1]), -1))(t_cnn1)
+
+        char_lstm1 = LSTM(int(hidden_units / 4), kernel_initializer='he_normal', recurrent_initializer='orthogonal',
+                       bias_initializer='he_normal', activation='sigmoid', recurrent_activation='sigmoid',
+                       kernel_regularizer=regularizers.l2(0.01), activity_regularizer=regularizers.l2(0.01),
+                       recurrent_regularizer=regularizers.l2(0.01),
+                       dropout=0.25, recurrent_dropout=.0, unit_forget_bias=False, return_sequences=True)(char_emb)
+
+        char_lstm2 = LSTM(int(hidden_units / 4), kernel_initializer='he_normal', recurrent_initializer='orthogonal',
+                       bias_initializer='he_normal', activation='sigmoid', recurrent_activation='sigmoid',
+                       kernel_regularizer=regularizers.l2(0.01), activity_regularizer=regularizers.l2(0.01),
+                       recurrent_regularizer=regularizers.l2(0.01),
+                       dropout=0.25, recurrent_dropout=.0, unit_forget_bias=False, return_sequences=True,
+                       go_backwards=True)(char_emb)
+
+        char_merged = add([char_lstm1, char_lstm2])
+        char_merged = Dropout(0.25)(char_merged)
+
+        gmp = Attention()(char_merged)
+
+        text_input = Input(shape=(self._line_maxlen,))
 
         if (len(emb_weights) == 0):
             emb = Embedding(vocab_size, 128, input_length=self._line_maxlen, embeddings_initializer='glorot_normal',
@@ -143,63 +95,28 @@ class offensive_content_model():
             emb = Embedding(vocab_size, emb_weights.shape[1], input_length=self._line_maxlen, weights=[emb_weights],
                             trainable=trainable)(text_input)
 
-        emb = Reshape((int(emb.shape[1]), int(emb.shape[2]), 1))(emb)
+        text_emb = Reshape((int(emb.shape[1]), int(emb.shape[2]), 1))(emb)
 
-        t_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
-                               bias_initializer='he_normal',
-                               activation='relu', padding='valid', use_bias=True, input_shape=(1, self._line_maxlen))(
-            emb)
-        t_cnn1 = MaxPooling2D((2, 1))(t_cnn1)
-        t_cnn1 = Dropout(0.5)(t_cnn1)
-
-        t_cnn1 = Reshape((int(t_cnn1.shape[1]), -1))(t_cnn1)
-
-        t_lstm1 = LSTM(int(hidden_units / 8), kernel_initializer='he_normal', recurrent_initializer='orthogonal',
-                       bias_initializer='he_normal', activation='sigmoid', recurrent_activation='sigmoid',
-                       kernel_regularizer=regularizers.l2(0.01), activity_regularizer=regularizers.l2(0.01),
-                       recurrent_regularizer=regularizers.l2(0.01),
-                       dropout=0.25, recurrent_dropout=.0, unit_forget_bias=False, return_sequences=True)(t_cnn1)
-
-        t_lstm2 = LSTM(int(hidden_units / 8), kernel_initializer='he_normal', recurrent_initializer='orthogonal',
-                       bias_initializer='he_normal', activation='sigmoid', recurrent_activation='sigmoid',
-                       kernel_regularizer=regularizers.l2(0.01), activity_regularizer=regularizers.l2(0.01),
-                       recurrent_regularizer=regularizers.l2(0.01),
-                       dropout=0.25, recurrent_dropout=.0, unit_forget_bias=False, return_sequences=True,
-                       go_backwards=True)(t_cnn1)
-
-        t_merged = add([t_lstm1, t_lstm2])
-        t_merged = Dropout(0.25)(t_merged)
-
-        gmp = Attention()(t_merged)
-
-        char_input = Input(name='char_text', shape=(self._line_char_maxlen,))
-
-        char_emb = Embedding(char_vocab_size, 25, input_length=self._line_char_maxlen,
-                             embeddings_initializer='glorot_normal',
-                             trainable=True)(char_input)
-
-        char_emb = Reshape((int(char_emb.shape[1]), int(char_emb.shape[2]), 1))(char_emb)
-
-        char_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
+        text_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
                                   bias_initializer='he_normal',
                                   activation='relu', padding='valid', use_bias=True,
-                                  input_shape=(1, self._line_char_maxlen))(char_emb)
-        char_cnn1 = MaxPooling2D((2, 1))(char_cnn1)
-        char_cnn1 = Dropout(0.5)(char_cnn1)
+                                  input_shape=(1, self._line_char_maxlen))(text_emb)
+        text_cnn1 = MaxPooling2D((2, 1))(text_cnn1)
+        text_cnn1 = Dropout(0.5)(text_cnn1)
 
-        char_cnn2 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
+        text_cnn2 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
                                   bias_initializer='he_normal',
-                                  activation='relu', padding='valid', use_bias=True)(char_cnn1)
-        char_cnn2 = MaxPooling2D((2, 1))(char_cnn2)
-        char_cnn2 = Dropout(0.5)(char_cnn2)
+                                  activation='relu', padding='valid', use_bias=True)(text_cnn1)
+        text_cnn2 = MaxPooling2D((2, 1))(text_cnn2)
+        text_cnn2 = Dropout(0.5)(text_cnn2)
 
-        char_cnn3 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
+        text_cnn3 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
                                   bias_initializer='he_normal',
-                                  activation='relu', padding='valid', use_bias=True)(char_cnn2)
-        char_cnn3 = MaxPooling2D((2, 1))(char_cnn3)
-        char_cnn3 = Dropout(0.5)(char_cnn3)
+                                  activation='relu', padding='valid', use_bias=True)(text_cnn2)
+        text_cnn3 = MaxPooling2D((2, 1))(text_cnn3)
+        text_cnn3 = Dropout(0.5)(text_cnn3)
 
-        char_gmp = GlobalMaxPooling2D()(char_cnn3)
+        char_gmp = GlobalMaxPooling2D()(text_cnn3)
 
         merged = concatenate([char_gmp, gmp])
 
@@ -207,7 +124,9 @@ class offensive_content_model():
 
         model = Model(inputs=[text_input, char_input], outputs=output)
 
-        model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+        adam = Adam(lr=0.01)
+
+        model.compile(loss='binary_crossentropy', optimizer=adam, metrics=['accuracy'])
         print('No of parameter:', model.count_params())
 
         print(model.summary())
@@ -287,8 +206,8 @@ class train_model(offensive_content_model):
         print('bb', len(self.train))
         print('bb', len(self.char_train))
 
-        self.train = self.train[-len(self.train) % batch_size:]
-        self.char_train = self.char_train[-len(self.char_train) % batch_size:]
+        # self.train = self.train[-len(self.train) % batch_size:]
+        # self.char_train = self.char_train[-len(self.char_train) % batch_size:]
         print('bb', len(self.train))
         print('bb', len(self.char_train))
 
@@ -297,10 +216,12 @@ class train_model(offensive_content_model):
 
         # build vocabulary
         self._vocab = dh.build_vocab(self.train)
-        self._vocab['unk'] = len(self._vocab.keys()) + 1
+        if ('unk' not in self._vocab):
+            self._vocab['unk'] = len(self._vocab.keys()) + 1
 
         self._char_vocab = dh.build_vocab(self.char_train)
-        self._char_vocab['unk'] = len(self._char_vocab.keys()) + 1
+        if ('unk' not in self._char_vocab):
+            self._char_vocab['unk'] = len(self._char_vocab.keys()) + 1
 
         print(len(self._vocab.keys()) + 1)
         print('unk::', self._vocab['unk'])
@@ -368,11 +289,11 @@ class train_model(offensive_content_model):
                                      cooldown=0, min_lr=0.000001)
 
         # training
-        # model.fit([X,cX], Y, batch_size=16, epochs=150, validation_split=0.2, shuffle=True,
-        #           callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio, verbose=1)
+        model.fit([X, cX], Y, batch_size=8, epochs=100, validation_split=0.2, shuffle=True,
+                  callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio, verbose=1)
 
-        model.fit([X, cX], Y, batch_size=8, epochs=100, validation_data=([tX, ctX], tY), shuffle=True,
-                  callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio)
+        # model.fit([X, cX], Y, batch_size=8, epochs=100, validation_data=([tX, ctX], tY), shuffle=True,
+        #           callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio)
 
     def load_train_validation_data(self, ignore_profiles=True, lowercase=True, at_character=False):
         self.train = dh.loaddata(self._train_file, self._word_file_path, self._split_word_file_path,
@@ -506,7 +427,7 @@ if __name__ == "__main__":
     # offensive content
 
     # train_file = basepath + '/resource/train/offensive_train.txt'
-    train_file = basepath + '/resource/train/hate_speech_kaggle_train.txt'
+    train_file = basepath + '/resource/train/offensive_train_v1.txt'
     validation_file = basepath + '/resource/test/onlineHarassmentDataset.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list_freq.txt'
@@ -522,9 +443,9 @@ if __name__ == "__main__":
                      vocab_file_path, output_file,
                      model_filename='offensive.json')
 
-    t = test_model(model_file, word_file_path, split_word_path, emoji_file_path, vocab_file_path, output_file)
-    t.load_trained_model('offensive.json')
-    t.predict(validation_file, verbose=True)
+    # t = test_model(model_file, word_file_path, split_word_path, emoji_file_path, vocab_file_path, output_file)
+    # t.load_trained_model('offensive.json')
+    # t.predict(validation_file, verbose=True)
 
     # hate_speech
 
