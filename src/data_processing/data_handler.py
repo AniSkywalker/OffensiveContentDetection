@@ -656,7 +656,12 @@ def loaddata(filename, word_file_path, split_word_path, emoji_file_path, normali
 
     # lines = open(filename, 'r').readlines()
 
-    dataset = pandas.read_csv(filename, sep='\t', index_col=False)
+    dataset = None
+
+    try:
+        dataset = pandas.read_csv(filename, sep='\t', index_col=False)
+    except:
+        raise
 
     print('data size', len(dataset))
     data = parsedata(dataset, word_list, split_word_list, emoji_dict, abbreviation_dict, normalize_text=normalize_text,

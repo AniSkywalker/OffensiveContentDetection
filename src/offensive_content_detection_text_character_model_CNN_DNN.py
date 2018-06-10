@@ -10,11 +10,9 @@ import collections
 import time
 import numpy
 from sklearn import metrics
-from keras import regularizers, initializers, constraints
 from keras.models import Sequential, model_from_json
 from keras.layers.core import Dropout, Dense, Activation, Reshape, Flatten, Layer
 from keras.layers.embeddings import Embedding
-from keras.layers.recurrent import LSTM
 from keras.layers.merge import add, concatenate, subtract
 from keras.layers.convolutional import Convolution2D, MaxPooling2D
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
@@ -22,15 +20,8 @@ from keras.optimizers import Adam
 from keras.utils import np_utils
 from collections import defaultdict
 import src.data_processing.data_handler as dh
-import src.AttentionLayer
-
-from keras import backend as K
 
 numpy.random.seed(1337)
-
-
-
-
 
 class offensive_content_model():
     _train_file = None
@@ -45,7 +36,7 @@ class offensive_content_model():
     _line_maxlen = None
 
     def __init__(self):
-        self._line_maxlen = 50
+        self._line_maxlen = 100
         self._line_char_maxlen = 200
 
     def _build_network(self, vocab_size, char_vocab_size, emb_weights=None, hidden_units=256, trainable=False,
@@ -199,17 +190,18 @@ class train_model(offensive_content_model):
         print('bb', len(self.train))
         print('bb', len(self.char_train))
 
-        self.train = self.train[-len(self.train) % batch_size:]
-        self.char_train = self.char_train[-len(self.char_train) % batch_size:]
-        print('bb', len(self.train))
-        print('bb', len(self.char_train))
+        # self.train = self.train[-len(self.train) % batch_size:]
+        # self.char_train = self.char_train[-len(self.char_train) % batch_size:]
+        # print('bb', len(self.train))
+        # print('bb', len(self.char_train))
 
         print(self._line_maxlen)
         print(self._line_char_maxlen)
 
         # build vocabulary
-        self._vocab = dh.build_vocab(self.train)
-        self._vocab['unk'] = len(self._vocab.keys()) + 1
+        self._vocab = dh.build_vocab(self.train, min_freq=5)
+        if ('unk' not in self._vocab):
+            self._vocab['unk'] = len(self._vocab.keys()) + 1
 
         self._char_vocab = dh.build_vocab(self.char_train)
         self._char_vocab['unk'] = len(self._char_vocab.keys()) + 1
@@ -280,11 +272,11 @@ class train_model(offensive_content_model):
                                      cooldown=0, min_lr=0.000001)
 
         # training
-        # model.fit([X,cX], Y, batch_size=16, epochs=150, validation_split=0.2, shuffle=True,
-        #           callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio, verbose=1)
+        model.fit([X, cX], Y, batch_size=128, epochs=150, validation_split=0.1, shuffle=True,
+                  callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio, verbose=1)
 
-        model.fit([X, cX], Y, batch_size=8, epochs=100, validation_data=([tX, ctX], tY), shuffle=True,
-                  callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio)
+        # model.fit([X, cX], Y, batch_size=8, epochs=100, validation_data=([tX, ctX], tY), shuffle=True,
+        #           callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio)
 
     def load_train_validation_data(self, ignore_profiles=True, lowercase=True, at_character=False):
         self.train = dh.loaddata(self._train_file, self._word_file_path, self._split_word_file_path,
@@ -418,7 +410,7 @@ if __name__ == "__main__":
     # offensive content
 
     # train_file = basepath + '/resource/train/offensive_train.txt'
-    train_file = basepath + '/resource/train/hate_speech_kaggle_train.txt'
+    train_file = basepath + '/resource/train/offensive_train_v1.txt'
     validation_file = basepath + '/resource/test/onlineHarassmentDataset.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list_freq.txt'

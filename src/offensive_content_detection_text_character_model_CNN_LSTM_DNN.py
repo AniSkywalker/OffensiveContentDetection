@@ -51,6 +51,71 @@ class offensive_content_model():
                        batch_size=1):
         print('Build model...')
 
+        text_input = Input(shape=(self._line_maxlen,))
+
+        if (len(emb_weights) == 0):
+            emb = Embedding(vocab_size, 128, input_length=self._line_maxlen, embeddings_initializer='glorot_normal',
+                            trainable=trainable)(text_input)
+        else:
+            emb = Embedding(vocab_size, emb_weights.shape[1], input_length=self._line_maxlen, weights=[emb_weights],
+                            trainable=trainable)(text_input)
+
+
+        char_lstm1 = LSTM(int(hidden_units / 4), kernel_initializer='he_normal', recurrent_initializer='orthogonal',
+                       bias_initializer='he_normal', activation='sigmoid', recurrent_activation='sigmoid',
+                       dropout=0.25, recurrent_dropout=0.5, unit_forget_bias=False, return_sequences=True)(emb)
+
+        char_lstm2 = LSTM(int(hidden_units / 4), kernel_initializer='he_normal', recurrent_initializer='orthogonal',
+                       bias_initializer='he_normal', activation='sigmoid', recurrent_activation='sigmoid',
+                       dropout=0.25, recurrent_dropout=0.5, unit_forget_bias=False, return_sequences=True,
+                       go_backwards=True)(emb)
+
+        char_merged = add([char_lstm1, char_lstm2])
+
+        gmp = Attention()(char_merged)
+
+
+        text_emb = Reshape((int(emb.shape[1]), int(emb.shape[2]), 1))(emb)
+
+        text_cnn1 = Convolution2D(int(hidden_units / 8), (2, 1), kernel_initializer='he_normal',
+                                  bias_initializer='he_normal',
+                                  activation='relu', padding='valid', use_bias=True,
+                                  input_shape=(1, self._line_char_maxlen))(text_emb)
+        text_cnn1 = MaxPooling2D((2, 1))(text_cnn1)
+        text_cnn1 = Dropout(0.5)(text_cnn1)
+
+        text_cnn2 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
+                                  bias_initializer='he_normal',
+                                  activation='relu', padding='valid', use_bias=True)(text_cnn1)
+        text_cnn2 = MaxPooling2D((2, 1))(text_cnn2)
+        text_cnn2 = Dropout(0.5)(text_cnn2)
+
+        text_cnn3 = Convolution2D(int(hidden_units / 4), (2, 1), kernel_initializer='he_normal',
+                                  bias_initializer='he_normal',
+                                  activation='relu', padding='valid', use_bias=True)(text_cnn2)
+        text_cnn3 = MaxPooling2D((2, 1))(text_cnn3)
+        text_cnn3 = Dropout(0.5)(text_cnn3)
+
+        char_gmp = GlobalMaxPooling2D()(text_cnn3)
+
+        merged = concatenate([char_gmp, gmp])
+
+        output = Dense(2, activation='softmax')(merged)
+
+        model = Model(inputs=[text_input], outputs=output)
+
+        adam = Adam(lr=0.001)
+
+        model.compile(loss='binary_crossentropy', optimizer=adam, metrics=['accuracy'])
+        print('No of parameter:', model.count_params())
+
+        print(model.summary())
+        return model
+
+    def _build_network1(self, vocab_size, char_vocab_size, emb_weights=None, hidden_units=256, trainable=False,
+                       batch_size=1):
+        print('Build model...')
+
         char_input = Input(shape=(self._line_char_maxlen,))
 
         char_emb = Embedding(char_vocab_size, 25, input_length=self._line_char_maxlen,
@@ -70,15 +135,11 @@ class offensive_content_model():
 
         char_lstm1 = LSTM(int(hidden_units / 4), kernel_initializer='he_normal', recurrent_initializer='orthogonal',
                        bias_initializer='he_normal', activation='sigmoid', recurrent_activation='sigmoid',
-                       kernel_regularizer=regularizers.l2(0.01), activity_regularizer=regularizers.l2(0.01),
-                       recurrent_regularizer=regularizers.l2(0.01),
-                       dropout=0.25, recurrent_dropout=.0, unit_forget_bias=False, return_sequences=True)(char_emb)
+                       dropout=0.25, recurrent_dropout=0.5, unit_forget_bias=False, return_sequences=True)(char_emb)
 
         char_lstm2 = LSTM(int(hidden_units / 4), kernel_initializer='he_normal', recurrent_initializer='orthogonal',
                        bias_initializer='he_normal', activation='sigmoid', recurrent_activation='sigmoid',
-                       kernel_regularizer=regularizers.l2(0.01), activity_regularizer=regularizers.l2(0.01),
-                       recurrent_regularizer=regularizers.l2(0.01),
-                       dropout=0.25, recurrent_dropout=.0, unit_forget_bias=False, return_sequences=True,
+                       dropout=0.25, recurrent_dropout=0.5, unit_forget_bias=False, return_sequences=True,
                        go_backwards=True)(char_emb)
 
         char_merged = add([char_lstm1, char_lstm2])
@@ -124,7 +185,7 @@ class offensive_content_model():
 
         model = Model(inputs=[text_input, char_input], outputs=output)
 
-        adam = Adam(lr=0.01)
+        adam = Adam(lr=0.001)
 
         model.compile(loss='binary_crossentropy', optimizer=adam, metrics=['accuracy'])
         print('No of parameter:', model.count_params())
@@ -195,41 +256,42 @@ class train_model(offensive_content_model):
         self._output_file = output_file
         self._model_filename = model_filename
 
-        self.load_train_validation_data(lowercase=False, at_character=True)
-        self.char_train = self.train
-        self.char_validation = self.validation
+        # self.load_train_validation_data(lowercase=False, at_character=True)
+        # self.char_train = self.train
+        # self.char_validation = self.validation
 
         self.load_train_validation_data()
 
         # batch size
         batch_size = 16
         print('bb', len(self.train))
-        print('bb', len(self.char_train))
+        # print('bb', len(self.char_train))
 
         # self.train = self.train[-len(self.train) % batch_size:]
         # self.char_train = self.char_train[-len(self.char_train) % batch_size:]
         print('bb', len(self.train))
-        print('bb', len(self.char_train))
+        # print('bb', len(self.char_train))
 
         print(self._line_maxlen)
         print(self._line_char_maxlen)
 
         # build vocabulary
-        self._vocab = dh.build_vocab(self.train)
+        self._vocab = dh.build_vocab(self.train, min_freq=5)
         if ('unk' not in self._vocab):
             self._vocab['unk'] = len(self._vocab.keys()) + 1
 
-        self._char_vocab = dh.build_vocab(self.char_train)
-        if ('unk' not in self._char_vocab):
-            self._char_vocab['unk'] = len(self._char_vocab.keys()) + 1
+        self._char_vocab = {}
+        # self._char_vocab = dh.build_vocab(self.char_train)
+        # if ('unk' not in self._char_vocab):
+        #     self._char_vocab['unk'] = len(self._char_vocab.keys()) + 1
 
         print(len(self._vocab.keys()) + 1)
         print('unk::', self._vocab['unk'])
-        print(len(self._char_vocab.keys()) + 1)
-        print('unk::', self._char_vocab['unk'])
+        # print(len(self._char_vocab.keys()) + 1)
+        # print('unk::', self._char_vocab['unk'])
 
         dh.write_vocab(self._vocab_file_path, self._vocab)
-        dh.write_vocab(self._vocab_file_path + '.char', self._char_vocab)
+        # dh.write_vocab(self._vocab_file_path + '.char', self._char_vocab)
 
         # prepares input
         X, Y, D, C, A = dh.vectorize_word_dimension(self.train, self._vocab)
@@ -240,14 +302,15 @@ class train_model(offensive_content_model):
         tX = dh.pad_sequence_1d(tX, maxlen=self._line_maxlen)
 
         # prepares character input
-        cX, cY, cD, cC, cA = dh.vectorize_word_dimension(self.char_train, self._char_vocab)
-        cX = dh.pad_sequence_1d(cX, maxlen=self._line_char_maxlen)
+        # cX, cY, cD, cC, cA = dh.vectorize_word_dimension(self.char_train, self._char_vocab)
+        # cX = dh.pad_sequence_1d(cX, maxlen=self._line_char_maxlen)
 
         # prepares character input
-        ctX, ctY, ctD, ctC, ctA = dh.vectorize_word_dimension(self.char_validation, self._char_vocab)
-        ctX = dh.pad_sequence_1d(ctX, maxlen=self._line_char_maxlen)
+        # ctX, ctY, ctD, ctC, ctA = dh.vectorize_word_dimension(self.char_validation, self._char_vocab)
+        # ctX = dh.pad_sequence_1d(ctX, maxlen=self._line_char_maxlen)
 
-        print("X", X.shape, cX.shape)
+        print("X", X.shape)
+        # print('cX', cX.shape)
 
         # hidden units
         hidden_units = 256
@@ -284,12 +347,12 @@ class train_model(offensive_content_model):
 
         open(self._model_file + self._model_filename, 'w').write(model.to_json())
         save_best = ModelCheckpoint(model_file + self._model_filename + '.hdf5', save_best_only=True)
-        early_stopping = EarlyStopping(monitor='loss', patience=10, verbose=1)
-        lr_tuner = ReduceLROnPlateau(monitor='loss', factor=0.1, patience=2, verbose=1, mode='auto', epsilon=0.0001,
+        early_stopping = EarlyStopping(monitor='loss', patience=50, verbose=1)
+        lr_tuner = ReduceLROnPlateau(monitor='loss', factor=0.1, patience=1, verbose=1, mode='auto', epsilon=0.0001,
                                      cooldown=0, min_lr=0.000001)
 
         # training
-        model.fit([X, cX], Y, batch_size=8, epochs=100, validation_split=0.2, shuffle=True,
+        model.fit([X], Y, batch_size=16, epochs=100, validation_split=0.1, shuffle=True,
                   callbacks=[save_best, early_stopping, lr_tuner], class_weight=ratio, verbose=1)
 
         # model.fit([X, cX], Y, batch_size=8, epochs=100, validation_data=([tX, ctX], tY), shuffle=True,

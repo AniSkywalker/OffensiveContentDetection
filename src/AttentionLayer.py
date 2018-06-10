@@ -8,6 +8,7 @@ class Attention(Layer):
     def __init__(self,
                  W_regularizer=None, b_regularizer=None,
                  W_constraint=None, b_constraint=None,
+                 return_attention=False,
                  bias=True, **kwargs):
         """
         Keras Layer that implements an Attention mechanism for temporal data.
@@ -27,6 +28,7 @@ class Attention(Layer):
             # next add a Dense layer (for classification/regression) or whatever...
         """
         self.supports_masking = True
+        self.return_attention = return_attention
         self.init = initializers.get('glorot_uniform')
 
         self.W_regularizer = regularizers.get(W_regularizer)
@@ -84,7 +86,17 @@ class Attention(Layer):
         a = K.expand_dims(a)
 
         weighted_input = x * a
-        return K.sum(weighted_input, axis=1)
+
+        result = K.sum(weighted_input, axis=1)
+
+        if self.return_attention:
+            return [result, a]
+
+        return result
 
     def compute_output_shape(self, input_shape):
-        return (input_shape[0], input_shape[-1])
+        if self.return_attention:
+            return [(input_shape[0], input_shape[-1]),
+                    (input_shape[0], input_shape[1])]
+        else:
+            return input_shape[0], input_shape[-1]
