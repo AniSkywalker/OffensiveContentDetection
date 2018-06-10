@@ -2,7 +2,7 @@ import os
 import sys
 
 from keras import Input, Model
-from keras.layers import GlobalMaxPooling1D, GlobalMaxPooling2D
+from keras.layers import GlobalMaxPooling1D, GlobalMaxPooling2D, Masking
 from keras.layers.normalization import BatchNormalization
 
 sys.path.append('../')
@@ -44,13 +44,14 @@ class offensive_content_model():
         print('Build model...')
 
         text_input = Input(name='text', shape=(self._line_maxlen,))
+        text_input_mask = Masking(mask_value=0)(text_input)
 
         if (len(emb_weights) == 0):
             emb = Embedding(vocab_size, 128, input_length=self._line_maxlen, embeddings_initializer='glorot_normal',
-                            trainable=trainable)(text_input)
+                            trainable=trainable)(text_input_mask)
         else:
             emb = Embedding(vocab_size, emb_weights.shape[1], input_length=self._line_maxlen, weights=[emb_weights],
-                            trainable=trainable)(text_input)
+                            trainable=trainable)(text_input_mask)
 
         emb = Reshape((int(emb.shape[1]), int(emb.shape[2]), 1))(emb)
 
@@ -409,8 +410,8 @@ if __name__ == "__main__":
 
     # offensive content
 
-    # train_file = basepath + '/resource/train/offensive_train.txt'
-    train_file = basepath + '/resource/train/offensive_train_v1.txt'
+    train_file = basepath + '/resource/train/train_english_sample.txt.train'
+    # train_file = basepath + '/resource/train/offensive_train_v1.txt'
     validation_file = basepath + '/resource/test/onlineHarassmentDataset.txt'
     test_file = basepath + '/resource/dev/train_english.txt.train'
     word_file_path = basepath + '/resource/word_list_freq.txt'
@@ -422,7 +423,7 @@ if __name__ == "__main__":
     model_file = basepath + '/resource/text_model/weights/'
     vocab_file_path = basepath + '/resource/text_model/vocab_list.txt'
 
-    tr = train_model(train_file, validation_file, word_file_path, split_word_path, emoji_file_path, model_file,
+    tr = train_model(train_file, train_file, word_file_path, split_word_path, emoji_file_path, model_file,
                      vocab_file_path, output_file,
                      model_filename='offensive.json')
 
